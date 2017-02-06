@@ -1,0 +1,10 @@
+.container {
+  position: relative;
+  width: auto;
+  margin: 0 25px;
+
+  @media (min-width: 1350px) {
+    width: 1300px;
+    margin: 0 auto;
+  }
+}
