@@ -7,8 +7,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/eot/fontawesome-webfont-jVM_i1ai.eot);
-  src: url(/eot/fontawesome-webfont-jVM_i1ai.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/woff2/fontawesome-webfont--xPowCeq.woff2) format("woff2"), url(/woff/fontawesome-webfont-2JcyC9hB.woff) format("woff"), url(/ttf/fontawesome-webfont-2VqpeKww.ttf) format("truetype"), url(/svg/fontawesome-webfont-3u2QumAP.svg#fontawesomeregular) format("svg");
+  src: url(/dpl-motors/eot/fontawesome-webfont-jVM_i1ai.eot);
+  src: url(/dpl-motors/eot/fontawesome-webfont-jVM_i1ai.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/dpl-motors/woff2/fontawesome-webfont--xPowCeq.woff2) format("woff2"), url(/dpl-motors/woff/fontawesome-webfont-2JcyC9hB.woff) format("woff"), url(/dpl-motors/ttf/fontawesome-webfont-2VqpeKww.ttf) format("truetype"), url(/dpl-motors/svg/fontawesome-webfont-3u2QumAP.svg#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1623,7 +1623,7 @@
     clip: auto; }
 @font-face {
   font-family: 'Abel';
-  src: url(/woff2/abel-regular_1-webfont-7Ct0skmh.woff2) format("woff2"), url(/woff/abel-regular_1-webfont-ZejM71pl.woff) format("woff");
+  src: url(/dpl-motors/woff2/abel-regular_1-webfont-7Ct0skmh.woff2) format("woff2"), url(/dpl-motors/woff/abel-regular_1-webfont-ZejM71pl.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1636,7 +1636,7 @@ html, body {
 .src-views-home-page-styles---video---V5M_K {
   position: relative;
   height: 400px;
-  background-image: url(/png/video-26oIpqCT.png);
+  background-image: url(/dpl-motors/png/video-26oIpqCT.png);
   background-size: cover;
   background-position: 50% 50%; }
   .src-views-home-page-styles---video---V5M_K video {
@@ -1653,7 +1653,7 @@ html, body {
       display: block;
       width: 240px;
       background-color: #202020;
-      background-image: url(/png/icons-3V4y03W0.png);
+      background-image: url(/dpl-motors/png/icons-3V4y03W0.png);
       background-size: 40px;
       background-position: 230px -4px;
       background-repeat: no-repeat;
