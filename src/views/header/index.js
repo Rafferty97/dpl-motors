@@ -19,13 +19,13 @@ const MenuItem = ({ title, href, end, active }) => (
 export default () => (
   <header className={styles.header}>
     <Container>
-      <a href="/">
+      <a href="*/">
         <img className={styles.logo} src={require('./dpl-motors-logo.svg')} />
       </a>
-      <MenuItem title="Services" href="/services" active />
-      <MenuItem title="Reconditioning" href="/recondtioning" />
-      <MenuItem title="Remapping" href="/remapping" />
-      <MenuItem title="Air Conditioning" href="/air-conditioning" />
+      <MenuItem title="Services" href="*/services" active />
+      <MenuItem title="Reconditioning" href="*/recondtioning" />
+      <MenuItem title="Remapping" href="*/remapping" />
+      <MenuItem title="Air Conditioning" href="*/air-conditioning" />
       <MenuItem end />
       <div className={styles.contact}>
         22 Muchison Terrace<br/>
