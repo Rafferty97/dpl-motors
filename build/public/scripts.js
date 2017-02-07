@@ -4327,7 +4327,7 @@
 	              type: 'element',
 	              tag: 'link',
 	              attribs: {
-	                href: ('/') + 'styles.css',
+	                href: ('/dpl-motors/') + 'styles.css',
 	                rel: 'stylesheet',
 	                type: 'text/css'
 	              },
@@ -4346,13 +4346,13 @@
 	              type: 'element',
 	              tag: 'script',
 	              attribs: {
-	                src: ('/') + 'scripts.js'
+	                src: ('/dpl-motors/') + 'scripts.js'
 	              },
 	              children: []
 	            });
 	            _context.next = 6;
 	            return (0, _cmmn.renderToHtml)(page, (0, _cmmnDatasource2.default)(props), {
-	              publicPath: ('/')
+	              publicPath: ('/dpl-motors/')
 	            });
 
 	          case 6:
@@ -4779,13 +4779,13 @@
 /* 37 */
 /***/ function(module, exports) {
 
-	module.exports = "/svg/dpl-motors-logo-wS1du7hj.svg";
+	module.exports = "/dpl-motors/svg/dpl-motors-logo-wS1du7hj.svg";
 
 /***/ },
 /* 38 */
 /***/ function(module, exports) {
 
-	module.exports = "/png/favicon-32x32-2iPQseXc.png";
+	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
 /* 39 */

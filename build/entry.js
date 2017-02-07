@@ -540,7 +540,7 @@ require("source-map-support").install();
 	              type: 'element',
 	              tag: 'link',
 	              attribs: {
-	                href: ('/') + 'styles.css',
+	                href: ('/dpl-motors/') + 'styles.css',
 	                rel: 'stylesheet',
 	                type: 'text/css'
 	              },
@@ -559,13 +559,13 @@ require("source-map-support").install();
 	              type: 'element',
 	              tag: 'script',
 	              attribs: {
-	                src: ('/') + 'scripts.js'
+	                src: ('/dpl-motors/') + 'scripts.js'
 	              },
 	              children: []
 	            });
 	            _context.next = 6;
 	            return (0, _cmmn.renderToHtml)(page, (0, _cmmnDatasource2.default)(props), {
-	              publicPath: ('/')
+	              publicPath: ('/dpl-motors/')
 	            });
 	
 	          case 6:
@@ -818,37 +818,37 @@ require("source-map-support").install();
 /* 13 */
 /***/ function(module, exports) {
 
-	module.exports = "/eot/fontawesome-webfont-jVM_i1ai.eot";
+	module.exports = "/dpl-motors/eot/fontawesome-webfont-jVM_i1ai.eot";
 
 /***/ },
 /* 14 */
 /***/ function(module, exports) {
 
-	module.exports = "/eot/fontawesome-webfont-jVM_i1ai.eot";
+	module.exports = "/dpl-motors/eot/fontawesome-webfont-jVM_i1ai.eot";
 
 /***/ },
 /* 15 */
 /***/ function(module, exports) {
 
-	module.exports = "/woff2/fontawesome-webfont--xPowCeq.woff2";
+	module.exports = "/dpl-motors/woff2/fontawesome-webfont--xPowCeq.woff2";
 
 /***/ },
 /* 16 */
 /***/ function(module, exports) {
 
-	module.exports = "/woff/fontawesome-webfont-2JcyC9hB.woff";
+	module.exports = "/dpl-motors/woff/fontawesome-webfont-2JcyC9hB.woff";
 
 /***/ },
 /* 17 */
 /***/ function(module, exports) {
 
-	module.exports = "/ttf/fontawesome-webfont-2VqpeKww.ttf";
+	module.exports = "/dpl-motors/ttf/fontawesome-webfont-2VqpeKww.ttf";
 
 /***/ },
 /* 18 */
 /***/ function(module, exports) {
 
-	module.exports = "/svg/fontawesome-webfont-3u2QumAP.svg";
+	module.exports = "/dpl-motors/svg/fontawesome-webfont-3u2QumAP.svg";
 
 /***/ },
 /* 19 */
@@ -958,13 +958,13 @@ require("source-map-support").install();
 /* 21 */
 /***/ function(module, exports) {
 
-	module.exports = "/woff2/abel-regular_1-webfont-7Ct0skmh.woff2";
+	module.exports = "/dpl-motors/woff2/abel-regular_1-webfont-7Ct0skmh.woff2";
 
 /***/ },
 /* 22 */
 /***/ function(module, exports) {
 
-	module.exports = "/woff/abel-regular_1-webfont-ZejM71pl.woff";
+	module.exports = "/dpl-motors/woff/abel-regular_1-webfont-ZejM71pl.woff";
 
 /***/ },
 /* 23 */
@@ -994,13 +994,13 @@ require("source-map-support").install();
 /* 24 */
 /***/ function(module, exports) {
 
-	module.exports = "/png/video-26oIpqCT.png";
+	module.exports = "/dpl-motors/png/video-26oIpqCT.png";
 
 /***/ },
 /* 25 */
 /***/ function(module, exports) {
 
-	module.exports = "/png/icons-3V4y03W0.png";
+	module.exports = "/dpl-motors/png/icons-3V4y03W0.png";
 
 /***/ },
 /* 26 */
@@ -1158,13 +1158,13 @@ require("source-map-support").install();
 /* 30 */
 /***/ function(module, exports) {
 
-	module.exports = "/svg/dpl-motors-logo-wS1du7hj.svg";
+	module.exports = "/dpl-motors/svg/dpl-motors-logo-wS1du7hj.svg";
 
 /***/ },
 /* 31 */
 /***/ function(module, exports) {
 
-	module.exports = "/png/favicon-32x32-2iPQseXc.png";
+	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
 /* 32 */
