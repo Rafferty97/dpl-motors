@@ -980,7 +980,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-home-page-styles---video---V5M_K {\n  position: relative;\n  height: 400px;\n  background-image: url(" + __webpack_require__(24) + ");\n  background-size: cover;\n  background-position: 50% 50%; }\n  .src-views-home-page-styles---video---V5M_K video {\n    width: 100%;\n    height: 400px; }\n  .src-views-home-page-styles---video__sidebar---1RhmW {\n    position: absolute;\n    top: 50%;\n    right: 0;\n    margin-top: -128px;\n    height: 256px;\n    background-color: white;\n    background-color: rgba(200, 200, 200, 0.8); }\n    .src-views-home-page-styles---video__sidebar__item---20pnL {\n      display: block;\n      width: 240px;\n      background-color: #282828;\n      background-image: url(" + __webpack_require__(25) + ");\n      background-size: 40px;\n      background-position: 230px -4px;\n      background-repeat: no-repeat;\n      margin: 1px 0 1px 1px;\n      padding: 10px 20px;\n      line-height: 30px;\n      font-size: 1.2rem;\n      text-transform: uppercase;\n      letter-spacing: 0.25em;\n      color: #e0e0e0;\n      cursor: pointer;\n      text-decoration: none; }\n      .src-views-home-page-styles---video__sidebar__item---20pnL:hover {\n        background-color: #006e9c; }\n", ""]);
+	exports.push([module.id, ".src-views-home-page-styles---video---V5M_K {\n  position: relative;\n  height: 400px;\n  background-image: url(" + __webpack_require__(24) + ");\n  background-size: cover;\n  background-position: 50% 50%; }\n  .src-views-home-page-styles---video---V5M_K video {\n    width: 100%;\n    height: 400px; }\n  .src-views-home-page-styles---video__sidebar---1RhmW {\n    position: absolute;\n    top: 50%;\n    right: 0;\n    margin-top: -128px;\n    height: 256px;\n    background-color: white;\n    background-color: rgba(200, 200, 200, 0.7); }\n    .src-views-home-page-styles---video__sidebar__item---20pnL {\n      display: block;\n      width: 240px;\n      background-color: #282828;\n      background-image: url(" + __webpack_require__(25) + ");\n      background-size: 40px;\n      background-position: 230px -4px;\n      background-repeat: no-repeat;\n      margin: 1px 0 1px 1px;\n      padding: 10px 20px;\n      line-height: 30px;\n      font-size: 1.2rem;\n      text-transform: uppercase;\n      letter-spacing: 0.25em;\n      color: #e0e0e0;\n      cursor: pointer;\n      text-decoration: none; }\n      .src-views-home-page-styles---video__sidebar__item---20pnL:hover {\n        background-color: #006e9c; }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1032,13 +1032,12 @@ require("source-map-support").install();
 	var MenuItem = function MenuItem(_ref) {
 	  var title = _ref.title,
 	      href = _ref.href,
-	      end = _ref.end,
+	      last = _ref.last,
 	      active = _ref.active;
 	  return (0, _cmmn.createElement)(
 	    'div',
-	    { className: _styles2.default.menuItem.with(end ? 'end' : '', active ? 'active' : '') },
-	    (0, _cmmn.createElement)('div', { className: _styles2.default.menuItem.bk }),
-	    end || (0, _cmmn.createElement)(
+	    { className: _styles2.default.menuItem.with(active ? 'active' : '', last ? 'last' : '') },
+	    (0, _cmmn.createElement)(
 	      'a',
 	      { href: href, className: _styles2.default.menuItem.text },
 	      title,
@@ -1062,9 +1061,9 @@ require("source-map-support").install();
 	      ),
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Services', href: '*/services', active: true }),
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Reconditioning', href: '*/recondtioning' }),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Remapping', href: '*/remapping' }),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Air Conditioning', href: '*/air-conditioning' }),
-	      (0, _cmmn.createElement)(MenuItem, { end: true }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Performance Tuning', href: '*/performance-tuning' }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Parts', href: '*/parts' }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Trade', href: '*/trade', last: true }),
 	      (0, _cmmn.createElement)(
 	        'div',
 	        { className: _styles2.default.contact },
@@ -1089,16 +1088,15 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 20px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  width: 190px; }\n  .src-views-header-styles---menu-item--end---21Poq {\n    width: 0; }\n  .src-views-header-styles---menu-item__bk---1bnsW {\n    width: 100%;\n    height: 120px;\n    border-left: 1px solid #a0a0a0;\n    -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n    -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n    transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__bk---1bnsW {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG .src-views-header-styles---menu-item__bk---1bnsW {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    position: absolute;\n    left: 15px;\n    right: 15px;\n    bottom: 0;\n    padding: 20px 5px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    text-decoration: none; }\n    .src-views-header-styles---menu-item__text---4J8E6:hover {\n      color: #03b5ff;\n      transition: color 0.4s; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n", ""]);
+	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 18px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  border-left: 1px solid #a0a0a0;\n  -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item--last---3VdyI {\n    border-right: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--last---3VdyI.src-views-header-styles---menu-item--active---2Enug {\n    border-right: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    padding: 90px 15px 15px 20px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    text-decoration: none;\n    cursor: pointer; }\n    .src-views-header-styles---menu-item__text---4J8E6:hover {\n      color: #03b5ff;\n      transition: color 0.4s; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n", ""]);
 	
 	// exports
 	exports.locals = {
 		"header": "src-views-header-styles---header---10oqo",
 		"logo": "src-views-header-styles---logo---21UGf",
 		"menu-item": "src-views-header-styles---menu-item---1P2uG",
-		"menu-item--end": "src-views-header-styles---menu-item--end---21Poq",
-		"menu-item__bk": "src-views-header-styles---menu-item__bk---1bnsW",
 		"menu-item--active": "src-views-header-styles---menu-item--active---2Enug",
+		"menu-item--last": "src-views-header-styles---menu-item--last---3VdyI",
 		"menu-item__text": "src-views-header-styles---menu-item__text---4J8E6",
 		"contact": "src-views-header-styles---contact---1NLDy"
 	};
@@ -1146,7 +1144,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-theme-components---container---gAeH- {\n  position: relative;\n  width: auto;\n  margin: 0 30px; }\n  @media (min-width: 1360px) {\n    .src-views-theme-components---container---gAeH- {\n      width: 1300px;\n      margin: 0 auto; } }\n", ""]);
+	exports.push([module.id, ".src-views-theme-components---container---gAeH- {\n  position: relative;\n  width: auto;\n  margin: 0 30px; }\n  @media (min-width: 1200px) {\n    .src-views-theme-components---container---gAeH- {\n      width: 90%;\n      min-width: 1140px;\n      max-width: 1300px;\n      margin: 0 auto; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1163,7 +1161,7 @@ require("source-map-support").install();
 /* 30 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/svg/dpl-motors-logo-wS1du7hj.svg";
+	module.exports = "/dpl-motors/svg/dpl-motors-logo-1KrUtWGe.svg";
 
 /***/ },
 /* 31 */
@@ -1200,7 +1198,7 @@ require("source-map-support").install();
 	        (0, _cmmn.createElement)(
 	          'div',
 	          { className: _styles2.default.makes.specialise },
-	          'We specialise in'
+	          'European Mechanical Specialists'
 	        ),
 	        (0, _cmmn.createElement)(
 	          'div',

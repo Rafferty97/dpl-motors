@@ -4682,13 +4682,12 @@
 	var MenuItem = function MenuItem(_ref) {
 	  var title = _ref.title,
 	      href = _ref.href,
-	      end = _ref.end,
+	      last = _ref.last,
 	      active = _ref.active;
 	  return (0, _cmmn.createElement)(
 	    'div',
-	    { className: _styles2.default.menuItem.with(end ? 'end' : '', active ? 'active' : '') },
-	    (0, _cmmn.createElement)('div', { className: _styles2.default.menuItem.bk }),
-	    end || (0, _cmmn.createElement)(
+	    { className: _styles2.default.menuItem.with(active ? 'active' : '', last ? 'last' : '') },
+	    (0, _cmmn.createElement)(
 	      'a',
 	      { href: href, className: _styles2.default.menuItem.text },
 	      title,
@@ -4712,9 +4711,9 @@
 	      ),
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Services', href: '*/services', active: true }),
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Reconditioning', href: '*/recondtioning' }),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Remapping', href: '*/remapping' }),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Air Conditioning', href: '*/air-conditioning' }),
-	      (0, _cmmn.createElement)(MenuItem, { end: true }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Performance Tuning', href: '*/performance-tuning' }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Parts', href: '*/parts' }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Trade', href: '*/trade', last: true }),
 	      (0, _cmmn.createElement)(
 	        'div',
 	        { className: _styles2.default.contact },
@@ -4735,7 +4734,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"header":"src-views-header-styles---header---10oqo","logo":"src-views-header-styles---logo---21UGf","menu-item":"src-views-header-styles---menu-item---1P2uG","menu-item--end":"src-views-header-styles---menu-item--end---21Poq","menu-item__bk":"src-views-header-styles---menu-item__bk---1bnsW","menu-item--active":"src-views-header-styles---menu-item--active---2Enug","menu-item__text":"src-views-header-styles---menu-item__text---4J8E6","contact":"src-views-header-styles---contact---1NLDy"};
+	module.exports = {"header":"src-views-header-styles---header---10oqo","logo":"src-views-header-styles---logo---21UGf","menu-item":"src-views-header-styles---menu-item---1P2uG","menu-item--active":"src-views-header-styles---menu-item--active---2Enug","menu-item--last":"src-views-header-styles---menu-item--last---3VdyI","menu-item__text":"src-views-header-styles---menu-item__text---4J8E6","contact":"src-views-header-styles---contact---1NLDy"};
 
 	// Bemify
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
@@ -4784,7 +4783,7 @@
 /* 37 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/svg/dpl-motors-logo-wS1du7hj.svg";
+	module.exports = "/dpl-motors/svg/dpl-motors-logo-1KrUtWGe.svg";
 
 /***/ },
 /* 38 */
@@ -4821,7 +4820,7 @@
 	        (0, _cmmn.createElement)(
 	          'div',
 	          { className: _styles2.default.makes.specialise },
-	          'We specialise in'
+	          'European Mechanical Specialists'
 	        ),
 	        (0, _cmmn.createElement)(
 	          'div',
