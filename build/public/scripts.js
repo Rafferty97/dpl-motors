@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(39);
+	var _cmmnDatasource = __webpack_require__(50);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4412,8 +4412,8 @@
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(38) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(38) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(49) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(49) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -4452,6 +4452,10 @@
 	var _header = __webpack_require__(31);
 
 	var _header2 = _interopRequireDefault(_header);
+
+	var _footer = __webpack_require__(38);
+
+	var _footer2 = _interopRequireDefault(_footer);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4510,7 +4514,8 @@
 	          'Book a Service'
 	        )
 	      )
-	    )
+	    ),
+	    (0, _cmmn.createElement)(_footer2.default, null)
 	  );
 	};
 
@@ -4783,12 +4788,150 @@
 
 /***/ },
 /* 38 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _cmmn = __webpack_require__(4);
+
+	__webpack_require__(11);
+
+	var _styles = __webpack_require__(39);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	var _components = __webpack_require__(34);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    'footer',
+	    { className: _styles2.default.footer },
+	    (0, _cmmn.createElement)(
+	      'div',
+	      { className: _styles2.default.makes },
+	      (0, _cmmn.createElement)(
+	        _components.Container,
+	        null,
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _styles2.default.makes.specialise },
+	          'We specialise in'
+	        ),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _styles2.default.makes.logos },
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(41) }),
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(42) }),
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(43) }),
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(44) }),
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(45) }),
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(46) }),
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(47) }),
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(48) })
+	        )
+	      )
+	    ),
+	    (0, _cmmn.createElement)('div', { className: _styles2.default.footerLinks }),
+	    (0, _cmmn.createElement)(
+	      'div',
+	      { className: _styles2.default.contact },
+	      (0, _cmmn.createElement)(
+	        _components.Container,
+	        null,
+	        (0, _cmmn.createElement)(
+	          'a',
+	          { href: '*/' },
+	          (0, _cmmn.createElement)('img', { className: _styles2.default.contact.logo, src: __webpack_require__(37) })
+	        ),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _styles2.default.contact.info },
+	          '22 Muchison Terrace',
+	          (0, _cmmn.createElement)('br', null),
+	          'Perth WA 6000',
+	          (0, _cmmn.createElement)('br', null),
+	          (0, _cmmn.createElement)('br', null),
+	          (0, _cmmn.createElement)('i', { className: 'fa fa-phone' }),
+	          '\xA0(08) 9227 5374'
+	        )
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 39 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"footer":"src-views-footer-styles---footer---1RfXZ","makes":"src-views-footer-styles---makes---xwB6j","makes__specialise":"src-views-footer-styles---makes__specialise---1Zj77","makes__logos":"src-views-footer-styles---makes__logos---UooKY","footer-links":"src-views-footer-styles---footer-links---GsbML","contact":"src-views-footer-styles---contact---72kR5","contact__logo":"src-views-footer-styles---contact__logo----TpaK","contact__info":"src-views-footer-styles---contact__info---9fVb4"};
+
+	// Bemify
+	module.exports = (__webpack_require__(22).default)(module.exports || {});
+
+/***/ },
+/* 40 */,
+/* 41 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/mercedes-benz-3KhEKosv.png";
+
+/***/ },
+/* 42 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/bmw-2K_cZx8C.png";
+
+/***/ },
+/* 43 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/audi-3sjvTOk_.png";
+
+/***/ },
+/* 44 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/aston-martin-2dd25U3z.png";
+
+/***/ },
+/* 45 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/maserati-sXtXj2IM.png";
+
+/***/ },
+/* 46 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/porche-2RSKGy2i.png";
+
+/***/ },
+/* 47 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/jaguar-3wiN46ZC.png";
+
+/***/ },
+/* 48 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/land-rover-EorU9x4G.png";
+
+/***/ },
+/* 49 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 39 */
+/* 50 */
 /***/ function(module, exports) {
 
 	"use strict";
