@@ -4,6 +4,7 @@ import '../theme';
 import styles from './styles.scss';
 
 import Header from '../header';
+import Footer from '../footer';
 
 export const getMeta = () => ({
   title: 'DPL Motors'
@@ -30,5 +31,6 @@ export default props => (
         <MenuItem icon={4}>Book a Service</MenuItem>
       </div>
     </div>
+    <Footer />
   </div>
 );

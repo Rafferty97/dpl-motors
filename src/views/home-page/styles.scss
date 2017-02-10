@@ -18,12 +18,13 @@
     right: 0;
     margin-top: -128px;
     height: 256px;
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: white;
+    background-color: rgba(200, 200, 200, 0.8);
 
     &__item {
       display: block;
       width: 240px;
-      background-color: #202020;
+      background-color: $dk-grey;
       background-image: url(./icons.png);
       background-size: 40px;
       background-position: 230px -4px;
