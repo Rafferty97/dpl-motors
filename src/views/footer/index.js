@@ -10,7 +10,7 @@ export default () => (
     <div className={styles.makes}>
       <Container>
         <div className={styles.makes.specialise}>
-          We specialise in
+          {'European Mechanical Specialists'}
         </div>
         <div className={styles.makes.logos}>
           <img src={require('./makes/mercedes-benz.png')} />

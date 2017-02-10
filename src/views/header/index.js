@@ -5,14 +5,11 @@ import styles from './styles.scss';
 
 import { Container } from '../theme/components';
 
-const MenuItem = ({ title, href, end, active }) => (
-  <div className={styles.menuItem.with(end ? 'end' : '', active ? 'active' : '')}>
-    <div className={styles.menuItem.bk} />
-    { end || (
+const MenuItem = ({ title, href, last, active }) => (
+  <div className={styles.menuItem.with(active ? 'active' : '', last ? 'last' : '')}>
       <a href={href} className={styles.menuItem.text}>
         {title} <i className="fa fa-chevron-down" />
       </a>
-    )}
   </div>
 );
 
@@ -24,9 +21,9 @@ export default () => (
       </a>
       <MenuItem title="Services" href="*/services" active />
       <MenuItem title="Reconditioning" href="*/recondtioning" />
-      <MenuItem title="Remapping" href="*/remapping" />
-      <MenuItem title="Air Conditioning" href="*/air-conditioning" />
-      <MenuItem end />
+      <MenuItem title="Performance Tuning" href="*/performance-tuning" />
+      <MenuItem title="Parts" href="*/parts" />
+      <MenuItem title="Trade" href="*/trade" last />
       <div className={styles.contact}>
         22 Muchison Terrace<br/>
         Perth WA 6000<br/><br/>
