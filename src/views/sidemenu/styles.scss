@@ -1,0 +1,60 @@
+@import '../theme/vars';
+
+.sidebar {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -128px;
+  height: 256px;
+  background-color: white;
+  background-color: rgba(200, 200, 200, 0.7);
+  overflow: hidden;
+
+  &__item {
+    position: relative;
+    display: block;
+    width: 240px;
+    background-color: $dk-grey;
+    margin: 1px 0 1px 1px;
+    padding: 10px 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #e0e0e0;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: -225px;
+    transition: margin-right 0.5s;
+
+    &:hover {
+      background-color: $primary;
+    }
+
+    &__icon {
+      display: block;
+      position: absolute;
+      background-color: $dk-grey;
+      top: 0;
+      right: 225px;
+      bottom: 0;
+      width: 55px;
+      background-image: url(./icons.png);
+      background-size: 40px;
+      background-position: 9px -4px;
+      background-repeat: no-repeat;
+      transition: right 0.5s;
+    }
+
+    &:hover &__icon {
+      background-color: $primary;
+    }
+  }
+
+  &--visible &__item {
+    margin-right: 0;
+  }
+  &--visible &__item__icon {
+    right: 0;
+  }
+}
