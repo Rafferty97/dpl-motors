@@ -36,7 +36,49 @@
 
 .footer-links {
   background-color: $primary-dark;
-  height: 200px;
+  text-align: center;
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    width: 20%;
+    text-align: center;
+    border-left: 1px solid darken($primary, 15%);
+    -webkit-transform: matrix(1,0,-0.35,1,0,0);
+    -ms-transform: matrix(1,0,-0.35,1,0,0);
+    transform: matrix(1,0,-0.35,1,0,0);
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: $primary;
+      border-left: 1px solid lighten($primary, 10%);
+    }
+    &:hover + & {
+      border-left: 1px solid lighten($primary, 10%);
+    }
+    &:last-child {
+      border-right: 1px solid darken($primary, 15%);
+    }
+    &:hover:last-child {
+      border-right: 1px solid lighten($primary, 10%);
+    }
+
+    &__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin: -35px 0 0 -35px;
+      border: 1px solid white;
+    }
+  }
 }
 
 .contact {

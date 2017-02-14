@@ -5,6 +5,13 @@ import styles from './styles.scss';
 
 import { Container } from '../theme/components';
 
+const FooterLink = ({ icon, href, children }) => (
+  <a className={styles.footerLinks.item}>
+    {children}
+    <span className={styles.footerLinks.item.icon} />
+  </a>
+);
+
 export default () => (
   <footer className={styles.footer}>
     <div className={styles.makes}>
@@ -24,7 +31,14 @@ export default () => (
         </div>
       </Container>
     </div>
-    <div className={styles.footerLinks}></div>
+    <div className={styles.footerLinks}>
+      <Container>
+        <FooterLink icon={0} href="#">Book a Service</FooterLink>
+        <FooterLink icon={1} href="#">Contact Us</FooterLink>
+        <FooterLink icon={2} href="#">Find a Part</FooterLink>
+        <FooterLink icon={3} href="#">Trade</FooterLink>
+      </Container>
+    </div>
     <div className={styles.contact}>
       <Container>
         <a href="*/">
