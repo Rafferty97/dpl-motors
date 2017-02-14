@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(50);
+	var _cmmnDatasource = __webpack_require__(53);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4412,8 +4412,8 @@
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(49) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(49) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(52) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(52) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -4449,13 +4449,17 @@
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _header = __webpack_require__(31);
+	var _header = __webpack_require__(30);
 
 	var _header2 = _interopRequireDefault(_header);
 
-	var _footer = __webpack_require__(38);
+	var _footer = __webpack_require__(37);
 
 	var _footer2 = _interopRequireDefault(_footer);
+
+	var _sidemenu = __webpack_require__(48);
+
+	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4463,18 +4467,6 @@
 	  return {
 	    title: 'DPL Motors'
 	  };
-	};
-
-	var MenuItem = function MenuItem(_ref) {
-	  var icon = _ref.icon,
-	      children = _ref.children;
-	  return (0, _cmmn.createElement)(
-	    'a',
-	    { className: _styles2.default.video.sidebar.item,
-	      style: "background-position-y: " + (-53.5 * icon - 4) + "px",
-	      href: '#' },
-	    children
-	  );
 	};
 
 	exports.default = function (props) {
@@ -4485,35 +4477,7 @@
 	    (0, _cmmn.createElement)(
 	      'div',
 	      { className: _styles2.default.video },
-	      (0, _cmmn.createElement)(
-	        'div',
-	        { className: _styles2.default.video.sidebar },
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 0 },
-	          'Book a Service'
-	        ),
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 1 },
-	          'Contact Us'
-	        ),
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 2 },
-	          'Join the Mailing List'
-	        ),
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 3 },
-	          'Find a Part'
-	        ),
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 4 },
-	          'Book a Service'
-	        )
-	      )
+	      (0, _cmmn.createElement)(_sidemenu2.default, null)
 	    ),
 	    (0, _cmmn.createElement)(_footer2.default, null)
 	  );
@@ -4649,7 +4613,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"video":"src-views-home-page-styles---video---V5M_K","video__sidebar":"src-views-home-page-styles---video__sidebar---1RhmW","video__sidebar__item":"src-views-home-page-styles---video__sidebar__item---20pnL"};
+	module.exports = {"video":"src-views-home-page-styles---video---V5M_K"};
 
 	// Bemify
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
@@ -4657,8 +4621,7 @@
 /***/ },
 /* 28 */,
 /* 29 */,
-/* 30 */,
-/* 31 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4671,11 +4634,11 @@
 
 	__webpack_require__(11);
 
-	var _styles = __webpack_require__(32);
+	var _styles = __webpack_require__(31);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _components = __webpack_require__(34);
+	var _components = __webpack_require__(33);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4707,7 +4670,7 @@
 	      (0, _cmmn.createElement)(
 	        'a',
 	        { href: '*/' },
-	        (0, _cmmn.createElement)('img', { className: _styles2.default.logo, src: __webpack_require__(37) })
+	        (0, _cmmn.createElement)('img', { className: _styles2.default.logo, src: __webpack_require__(36) })
 	      ),
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Services', href: '*/services', active: true }),
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Reconditioning', href: '*/recondtioning' }),
@@ -4730,7 +4693,7 @@
 	};
 
 /***/ },
-/* 32 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -4740,8 +4703,8 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 33 */,
-/* 34 */
+/* 32 */,
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4753,7 +4716,7 @@
 
 	var _cmmn = __webpack_require__(4);
 
-	var _components = __webpack_require__(35);
+	var _components = __webpack_require__(34);
 
 	var _components2 = _interopRequireDefault(_components);
 
@@ -4769,7 +4732,7 @@
 	};
 
 /***/ },
-/* 35 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -4779,14 +4742,14 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 36 */,
-/* 37 */
+/* 35 */,
+/* 36 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/svg/dpl-motors-logo-1KrUtWGe.svg";
 
 /***/ },
-/* 38 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4799,13 +4762,25 @@
 
 	__webpack_require__(11);
 
-	var _styles = __webpack_require__(39);
+	var _styles = __webpack_require__(38);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _components = __webpack_require__(34);
+	var _components = __webpack_require__(33);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var FooterLink = function FooterLink(_ref) {
+	  var icon = _ref.icon,
+	      href = _ref.href,
+	      children = _ref.children;
+	  return (0, _cmmn.createElement)(
+	    'a',
+	    { className: _styles2.default.footerLinks.item },
+	    children,
+	    (0, _cmmn.createElement)('span', { className: _styles2.default.footerLinks.item.icon })
+	  );
+	};
 
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
@@ -4825,18 +4800,45 @@
 	        (0, _cmmn.createElement)(
 	          'div',
 	          { className: _styles2.default.makes.logos },
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(40) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(41) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(42) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(43) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(44) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(45) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(46) }),
-	          (0, _cmmn.createElement)('img', { src: __webpack_require__(47) }),
-	          (0, _cmmn.createElement)('img', { src: __webpack_require__(48) })
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(47) })
 	        )
 	      )
 	    ),
-	    (0, _cmmn.createElement)('div', { className: _styles2.default.footerLinks }),
+	    (0, _cmmn.createElement)(
+	      'div',
+	      { className: _styles2.default.footerLinks },
+	      (0, _cmmn.createElement)(
+	        _components.Container,
+	        null,
+	        (0, _cmmn.createElement)(
+	          FooterLink,
+	          { icon: 0, href: '#' },
+	          'Book a Service'
+	        ),
+	        (0, _cmmn.createElement)(
+	          FooterLink,
+	          { icon: 1, href: '#' },
+	          'Contact Us'
+	        ),
+	        (0, _cmmn.createElement)(
+	          FooterLink,
+	          { icon: 2, href: '#' },
+	          'Find a Part'
+	        ),
+	        (0, _cmmn.createElement)(
+	          FooterLink,
+	          { icon: 3, href: '#' },
+	          'Trade'
+	        )
+	      )
+	    ),
 	    (0, _cmmn.createElement)(
 	      'div',
 	      { className: _styles2.default.contact },
@@ -4846,7 +4848,7 @@
 	        (0, _cmmn.createElement)(
 	          'a',
 	          { href: '*/' },
-	          (0, _cmmn.createElement)('img', { className: _styles2.default.contact.logo, src: __webpack_require__(37) })
+	          (0, _cmmn.createElement)('img', { className: _styles2.default.contact.logo, src: __webpack_require__(36) })
 	        ),
 	        (0, _cmmn.createElement)(
 	          'div',
@@ -4865,72 +4867,174 @@
 	};
 
 /***/ },
-/* 39 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"footer":"src-views-footer-styles---footer---1RfXZ","makes":"src-views-footer-styles---makes---xwB6j","makes__specialise":"src-views-footer-styles---makes__specialise---1Zj77","makes__logos":"src-views-footer-styles---makes__logos---UooKY","footer-links":"src-views-footer-styles---footer-links---GsbML","contact":"src-views-footer-styles---contact---72kR5","contact__logo":"src-views-footer-styles---contact__logo----TpaK","contact__info":"src-views-footer-styles---contact__info---9fVb4"};
+	module.exports = {"footer":"src-views-footer-styles---footer---1RfXZ","makes":"src-views-footer-styles---makes---xwB6j","makes__specialise":"src-views-footer-styles---makes__specialise---1Zj77","makes__logos":"src-views-footer-styles---makes__logos---UooKY","footer-links":"src-views-footer-styles---footer-links---GsbML","footer-links__item":"src-views-footer-styles---footer-links__item---3-jhm","footer-links__item__icon":"src-views-footer-styles---footer-links__item__icon---GAb6i","contact":"src-views-footer-styles---contact---72kR5","contact__logo":"src-views-footer-styles---contact__logo----TpaK","contact__info":"src-views-footer-styles---contact__info---9fVb4"};
 
 	// Bemify
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 40 */,
-/* 41 */
+/* 39 */,
+/* 40 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/mercedes-benz-3KhEKosv.png";
 
 /***/ },
-/* 42 */
+/* 41 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/bmw-2K_cZx8C.png";
 
 /***/ },
-/* 43 */
+/* 42 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/audi-3sjvTOk_.png";
 
 /***/ },
-/* 44 */
+/* 43 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/aston-martin-2dd25U3z.png";
 
 /***/ },
-/* 45 */
+/* 44 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/maserati-sXtXj2IM.png";
 
 /***/ },
-/* 46 */
+/* 45 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/porche-2RSKGy2i.png";
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/jaguar-3wiN46ZC.png";
 
 /***/ },
-/* 48 */
+/* 47 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/land-rover-EorU9x4G.png";
 
 /***/ },
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _cmmn = __webpack_require__(4);
+
+	var _styles = __webpack_require__(49);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var MenuItem = function MenuItem(_ref) {
+	  var icon = _ref.icon,
+	      children = _ref.children;
+	  return (0, _cmmn.createElement)(
+	    'a',
+	    { className: _styles2.default.sidebar.item, href: '#' },
+	    children,
+	    (0, _cmmn.createElement)('span', { className: _styles2.default.sidebar.item.icon, style: "background-position-y: " + (-53.5 * icon - 4) + "px" })
+	  );
+	};
+
+	var Sidemenu = function () {
+	  function Sidemenu() {
+	    _classCallCheck(this, Sidemenu);
+	  }
+
+	  _createClass(Sidemenu, [{
+	    key: 'render',
+	    value: function render() {
+	      return (0, _cmmn.createElement)(
+	        'div',
+	        { className: _styles2.default.sidebar },
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 0 },
+	          'Book a Service'
+	        ),
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 1 },
+	          'Contact Us'
+	        ),
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 2 },
+	          'Join the Mailing List'
+	        ),
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 3 },
+	          'Find a Part'
+	        ),
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 4 },
+	          'Book a Service'
+	        )
+	      );
+	    }
+	  }, {
+	    key: 'mount',
+	    value: function mount(node) {
+	      console.log(node);
+	      node.addEventListener('mouseover', function () {
+	        node.className = _styles2.default.sidebar.with('visible');
+	      });
+	      node.addEventListener('mouseout', function () {
+	        node.className = _styles2.default.sidebar.with();
+	      });
+	    }
+	  }]);
+
+	  return Sidemenu;
+	}();
+
+	exports.default = Sidemenu;
+	;
+
+/***/ },
 /* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"sidebar":"src-views-sidemenu-styles---sidebar---2fVwP","sidebar__item":"src-views-sidemenu-styles---sidebar__item---3tF0f","sidebar__item__icon":"src-views-sidemenu-styles---sidebar__item__icon---VvZ3o","sidebar--visible":"src-views-sidemenu-styles---sidebar--visible---3-E6V"};
+
+	// Bemify
+	module.exports = (__webpack_require__(22).default)(module.exports || {});
+
+/***/ },
+/* 50 */,
+/* 51 */,
+/* 52 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 50 */
+/* 53 */
 /***/ function(module, exports) {
 
 	"use strict";

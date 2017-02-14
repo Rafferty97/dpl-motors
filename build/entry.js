@@ -63,19 +63,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _path = __webpack_require__(43);
+	var _path = __webpack_require__(45);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
-	var _fs = __webpack_require__(44);
+	var _fs = __webpack_require__(46);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _mkdirp = __webpack_require__(45);
+	var _mkdirp = __webpack_require__(47);
 	
 	var _mkdirp2 = _interopRequireDefault(_mkdirp);
 	
-	var _routes = __webpack_require__(46);
+	var _routes = __webpack_require__(48);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -515,7 +515,7 @@ require("source-map-support").install();
 	
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 	
-	var _cmmnDatasource = __webpack_require__(42);
+	var _cmmnDatasource = __webpack_require__(44);
 	
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 	
@@ -625,8 +625,8 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(41) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(41) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(43) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(43) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -662,13 +662,17 @@ require("source-map-support").install();
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
-	var _header = __webpack_require__(26);
+	var _header = __webpack_require__(25);
 	
 	var _header2 = _interopRequireDefault(_header);
 	
-	var _footer = __webpack_require__(31);
+	var _footer = __webpack_require__(30);
 	
 	var _footer2 = _interopRequireDefault(_footer);
+	
+	var _sidemenu = __webpack_require__(40);
+	
+	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -676,18 +680,6 @@ require("source-map-support").install();
 	  return {
 	    title: 'DPL Motors'
 	  };
-	};
-	
-	var MenuItem = function MenuItem(_ref) {
-	  var icon = _ref.icon,
-	      children = _ref.children;
-	  return (0, _cmmn.createElement)(
-	    'a',
-	    { className: _styles2.default.video.sidebar.item,
-	      style: "background-position-y: " + (-53.5 * icon - 4) + "px",
-	      href: '#' },
-	    children
-	  );
 	};
 	
 	exports.default = function (props) {
@@ -698,35 +690,7 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'div',
 	      { className: _styles2.default.video },
-	      (0, _cmmn.createElement)(
-	        'div',
-	        { className: _styles2.default.video.sidebar },
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 0 },
-	          'Book a Service'
-	        ),
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 1 },
-	          'Contact Us'
-	        ),
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 2 },
-	          'Join the Mailing List'
-	        ),
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 3 },
-	          'Find a Part'
-	        ),
-	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 4 },
-	          'Book a Service'
-	        )
-	      )
+	      (0, _cmmn.createElement)(_sidemenu2.default, null)
 	    ),
 	    (0, _cmmn.createElement)(_footer2.default, null)
 	  );
@@ -980,13 +944,11 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-home-page-styles---video---V5M_K {\n  position: relative;\n  height: 400px;\n  background-image: url(" + __webpack_require__(24) + ");\n  background-size: cover;\n  background-position: 50% 50%; }\n  .src-views-home-page-styles---video---V5M_K video {\n    width: 100%;\n    height: 400px; }\n  .src-views-home-page-styles---video__sidebar---1RhmW {\n    position: absolute;\n    top: 50%;\n    right: 0;\n    margin-top: -128px;\n    height: 256px;\n    background-color: white;\n    background-color: rgba(200, 200, 200, 0.7); }\n    .src-views-home-page-styles---video__sidebar__item---20pnL {\n      display: block;\n      width: 240px;\n      background-color: #282828;\n      background-image: url(" + __webpack_require__(25) + ");\n      background-size: 40px;\n      background-position: 230px -4px;\n      background-repeat: no-repeat;\n      margin: 1px 0 1px 1px;\n      padding: 10px 20px;\n      line-height: 30px;\n      font-size: 1.2rem;\n      text-transform: uppercase;\n      letter-spacing: 0.25em;\n      color: #e0e0e0;\n      cursor: pointer;\n      text-decoration: none; }\n      .src-views-home-page-styles---video__sidebar__item---20pnL:hover {\n        background-color: #006e9c; }\n", ""]);
+	exports.push([module.id, ".src-views-home-page-styles---video---V5M_K {\n  position: relative;\n  height: 400px;\n  background-image: url(" + __webpack_require__(24) + ");\n  background-size: cover;\n  background-position: 50% 50%; }\n  .src-views-home-page-styles---video---V5M_K video {\n    width: 100%;\n    height: 400px; }\n", ""]);
 	
 	// exports
 	exports.locals = {
-		"video": "src-views-home-page-styles---video---V5M_K",
-		"video__sidebar": "src-views-home-page-styles---video__sidebar---1RhmW",
-		"video__sidebar__item": "src-views-home-page-styles---video__sidebar__item---20pnL"
+		"video": "src-views-home-page-styles---video---V5M_K"
 	};
 	
 	// Only locals
@@ -1003,12 +965,6 @@ require("source-map-support").install();
 
 /***/ },
 /* 25 */
-/***/ function(module, exports) {
-
-	module.exports = "/dpl-motors/png/icons-3V4y03W0.png";
-
-/***/ },
-/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1021,11 +977,11 @@ require("source-map-support").install();
 	
 	__webpack_require__(10);
 	
-	var _styles = __webpack_require__(27);
+	var _styles = __webpack_require__(26);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
-	var _components = __webpack_require__(28);
+	var _components = __webpack_require__(27);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1057,7 +1013,7 @@ require("source-map-support").install();
 	      (0, _cmmn.createElement)(
 	        'a',
 	        { href: '*/' },
-	        (0, _cmmn.createElement)('img', { className: _styles2.default.logo, src: __webpack_require__(30) })
+	        (0, _cmmn.createElement)('img', { className: _styles2.default.logo, src: __webpack_require__(29) })
 	      ),
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Services', href: '*/services', active: true }),
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Reconditioning', href: '*/recondtioning' }),
@@ -1080,7 +1036,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 27 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -1088,7 +1044,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 18px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  border-left: 1px solid #a0a0a0;\n  -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item--last---3VdyI {\n    border-right: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--last---3VdyI.src-views-header-styles---menu-item--active---2Enug {\n    border-right: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    padding: 90px 15px 15px 20px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    text-decoration: none;\n    cursor: pointer; }\n    .src-views-header-styles---menu-item__text---4J8E6:hover {\n      color: #03b5ff;\n      transition: color 0.4s; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n", ""]);
+	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 18px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  border-left: 1px solid #a0a0a0;\n  -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item--last---3VdyI {\n    border-right: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--last---3VdyI.src-views-header-styles---menu-item--active---2Enug {\n    border-right: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    padding: 90px 20px 15px 25px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.2em;\n    color: #e0e0e0;\n    text-decoration: none;\n    cursor: pointer; }\n    .src-views-header-styles---menu-item__text---4J8E6:hover {\n      color: #03b5ff;\n      transition: color 0.4s; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1108,7 +1064,7 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 28 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1120,7 +1076,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _components = __webpack_require__(29);
+	var _components = __webpack_require__(28);
 	
 	var _components2 = _interopRequireDefault(_components);
 	
@@ -1136,7 +1092,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 29 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -1158,13 +1114,13 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 30 */
+/* 29 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/svg/dpl-motors-logo-1KrUtWGe.svg";
 
 /***/ },
-/* 31 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1177,13 +1133,25 @@ require("source-map-support").install();
 	
 	__webpack_require__(10);
 	
-	var _styles = __webpack_require__(32);
+	var _styles = __webpack_require__(31);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
-	var _components = __webpack_require__(28);
+	var _components = __webpack_require__(27);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var FooterLink = function FooterLink(_ref) {
+	  var icon = _ref.icon,
+	      href = _ref.href,
+	      children = _ref.children;
+	  return (0, _cmmn.createElement)(
+	    'a',
+	    { className: _styles2.default.footerLinks.item },
+	    children,
+	    (0, _cmmn.createElement)('span', { className: _styles2.default.footerLinks.item.icon })
+	  );
+	};
 	
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
@@ -1203,18 +1171,45 @@ require("source-map-support").install();
 	        (0, _cmmn.createElement)(
 	          'div',
 	          { className: _styles2.default.makes.logos },
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(32) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(33) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(34) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(35) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(36) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(37) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(38) }),
-	          (0, _cmmn.createElement)('img', { src: __webpack_require__(39) }),
-	          (0, _cmmn.createElement)('img', { src: __webpack_require__(40) })
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(39) })
 	        )
 	      )
 	    ),
-	    (0, _cmmn.createElement)('div', { className: _styles2.default.footerLinks }),
+	    (0, _cmmn.createElement)(
+	      'div',
+	      { className: _styles2.default.footerLinks },
+	      (0, _cmmn.createElement)(
+	        _components.Container,
+	        null,
+	        (0, _cmmn.createElement)(
+	          FooterLink,
+	          { icon: 0, href: '#' },
+	          'Book a Service'
+	        ),
+	        (0, _cmmn.createElement)(
+	          FooterLink,
+	          { icon: 1, href: '#' },
+	          'Contact Us'
+	        ),
+	        (0, _cmmn.createElement)(
+	          FooterLink,
+	          { icon: 2, href: '#' },
+	          'Find a Part'
+	        ),
+	        (0, _cmmn.createElement)(
+	          FooterLink,
+	          { icon: 3, href: '#' },
+	          'Trade'
+	        )
+	      )
+	    ),
 	    (0, _cmmn.createElement)(
 	      'div',
 	      { className: _styles2.default.contact },
@@ -1224,7 +1219,7 @@ require("source-map-support").install();
 	        (0, _cmmn.createElement)(
 	          'a',
 	          { href: '*/' },
-	          (0, _cmmn.createElement)('img', { className: _styles2.default.contact.logo, src: __webpack_require__(30) })
+	          (0, _cmmn.createElement)('img', { className: _styles2.default.contact.logo, src: __webpack_require__(29) })
 	        ),
 	        (0, _cmmn.createElement)(
 	          'div',
@@ -1243,7 +1238,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 32 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -1251,7 +1246,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-footer-styles---footer---1RfXZ {\n  color: white; }\n\n.src-views-footer-styles---makes---xwB6j {\n  text-align: center;\n  padding: 15px 0; }\n  .src-views-footer-styles---makes__specialise---1Zj77 {\n    display: inline-block;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    vertical-align: middle;\n    color: #e0e0e0;\n    margin: 15px 10px; }\n  .src-views-footer-styles---makes__logos---UooKY {\n    display: inline-block;\n    vertical-align: middle;\n    margin: 10px 10px; }\n    .src-views-footer-styles---makes__logos---UooKY img {\n      display: inline-block;\n      height: 50px;\n      margin: 5px 10px; }\n      @media (max-width: 800px) {\n        .src-views-footer-styles---makes__logos---UooKY img {\n          height: 40px; } }\n  @media (max-width: 800px) {\n    .src-views-footer-styles---makes---xwB6j {\n      padding-bottom: 20px; } }\n\n.src-views-footer-styles---footer-links---GsbML {\n  background-color: #004a69;\n  height: 200px; }\n\n.src-views-footer-styles---contact---72kR5 {\n  text-align: right;\n  padding: 30px 0; }\n  .src-views-footer-styles---contact__logo----TpaK {\n    display: inline-block;\n    height: 50px;\n    margin-right: 50px;\n    vertical-align: middle; }\n  .src-views-footer-styles---contact__info---9fVb4 {\n    display: inline-block;\n    line-height: 2rem;\n    font-size: 1.4rem;\n    color: #e0e0e0;\n    text-align: right;\n    vertical-align: middle; }\n    .src-views-footer-styles---contact__info---9fVb4 i {\n      color: #006e9c; }\n  @media (max-width: 450px) {\n    .src-views-footer-styles---contact---72kR5 {\n      text-align: center; }\n      .src-views-footer-styles---contact__logo----TpaK {\n        margin: 0 0 25px 0; }\n      .src-views-footer-styles---contact__info---9fVb4 {\n        display: block;\n        text-align: center; } }\n", ""]);
+	exports.push([module.id, ".src-views-footer-styles---footer---1RfXZ {\n  color: white; }\n\n.src-views-footer-styles---makes---xwB6j {\n  text-align: center;\n  padding: 15px 0; }\n  .src-views-footer-styles---makes__specialise---1Zj77 {\n    display: inline-block;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    vertical-align: middle;\n    color: #e0e0e0;\n    margin: 15px 10px; }\n  .src-views-footer-styles---makes__logos---UooKY {\n    display: inline-block;\n    vertical-align: middle;\n    margin: 10px 10px; }\n    .src-views-footer-styles---makes__logos---UooKY img {\n      display: inline-block;\n      height: 50px;\n      margin: 5px 10px; }\n      @media (max-width: 800px) {\n        .src-views-footer-styles---makes__logos---UooKY img {\n          height: 40px; } }\n  @media (max-width: 800px) {\n    .src-views-footer-styles---makes---xwB6j {\n      padding-bottom: 20px; } }\n\n.src-views-footer-styles---footer-links---GsbML {\n  background-color: #004a69;\n  text-align: center; }\n  .src-views-footer-styles---footer-links__item---3-jhm {\n    position: relative;\n    display: inline-block;\n    height: 200px;\n    width: 20%;\n    text-align: center;\n    border-left: 1px solid #003850;\n    -webkit-transform: matrix(1, 0, -0.35, 1, 0, 0);\n    -ms-transform: matrix(1, 0, -0.35, 1, 0, 0);\n    transform: matrix(1, 0, -0.35, 1, 0, 0);\n    box-sizing: border-box;\n    padding: 20px;\n    font-size: 1.6rem;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    cursor: pointer; }\n    .src-views-footer-styles---footer-links__item---3-jhm:hover {\n      background-color: #006e9c;\n      border-left: 1px solid #0092cf; }\n    .src-views-footer-styles---footer-links__item---3-jhm:hover + .src-views-footer-styles---footer-links__item---3-jhm {\n      border-left: 1px solid #0092cf; }\n    .src-views-footer-styles---footer-links__item---3-jhm:last-child {\n      border-right: 1px solid #003850; }\n    .src-views-footer-styles---footer-links__item---3-jhm:hover:last-child {\n      border-right: 1px solid #0092cf; }\n    .src-views-footer-styles---footer-links__item__icon---GAb6i {\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      width: 70px;\n      height: 70px;\n      margin: -35px 0 0 -35px;\n      border: 1px solid white; }\n\n.src-views-footer-styles---contact---72kR5 {\n  text-align: right;\n  padding: 30px 0; }\n  .src-views-footer-styles---contact__logo----TpaK {\n    display: inline-block;\n    height: 50px;\n    margin-right: 50px;\n    vertical-align: middle; }\n  .src-views-footer-styles---contact__info---9fVb4 {\n    display: inline-block;\n    line-height: 2rem;\n    font-size: 1.4rem;\n    color: #e0e0e0;\n    text-align: right;\n    vertical-align: middle; }\n    .src-views-footer-styles---contact__info---9fVb4 i {\n      color: #006e9c; }\n  @media (max-width: 450px) {\n    .src-views-footer-styles---contact---72kR5 {\n      text-align: center; }\n      .src-views-footer-styles---contact__logo----TpaK {\n        margin: 0 0 25px 0; }\n      .src-views-footer-styles---contact__info---9fVb4 {\n        display: block;\n        text-align: center; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1260,6 +1255,8 @@ require("source-map-support").install();
 		"makes__specialise": "src-views-footer-styles---makes__specialise---1Zj77",
 		"makes__logos": "src-views-footer-styles---makes__logos---UooKY",
 		"footer-links": "src-views-footer-styles---footer-links---GsbML",
+		"footer-links__item": "src-views-footer-styles---footer-links__item---3-jhm",
+		"footer-links__item__icon": "src-views-footer-styles---footer-links__item__icon---GAb6i",
 		"contact": "src-views-footer-styles---contact---72kR5",
 		"contact__logo": "src-views-footer-styles---contact__logo----TpaK",
 		"contact__info": "src-views-footer-styles---contact__info---9fVb4"
@@ -1272,61 +1269,182 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 33 */
+/* 32 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/mercedes-benz-3KhEKosv.png";
 
 /***/ },
-/* 34 */
+/* 33 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/bmw-2K_cZx8C.png";
 
 /***/ },
-/* 35 */
+/* 34 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/audi-3sjvTOk_.png";
 
 /***/ },
-/* 36 */
+/* 35 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/aston-martin-2dd25U3z.png";
 
 /***/ },
-/* 37 */
+/* 36 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/maserati-sXtXj2IM.png";
 
 /***/ },
-/* 38 */
+/* 37 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/porche-2RSKGy2i.png";
 
 /***/ },
-/* 39 */
+/* 38 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/jaguar-3wiN46ZC.png";
 
 /***/ },
-/* 40 */
+/* 39 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/land-rover-EorU9x4G.png";
 
 /***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _styles = __webpack_require__(41);
+	
+	var _styles2 = _interopRequireDefault(_styles);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var MenuItem = function MenuItem(_ref) {
+	  var icon = _ref.icon,
+	      children = _ref.children;
+	  return (0, _cmmn.createElement)(
+	    'a',
+	    { className: _styles2.default.sidebar.item, href: '#' },
+	    children,
+	    (0, _cmmn.createElement)('span', { className: _styles2.default.sidebar.item.icon, style: "background-position-y: " + (-53.5 * icon - 4) + "px" })
+	  );
+	};
+	
+	var Sidemenu = function () {
+	  function Sidemenu() {
+	    _classCallCheck(this, Sidemenu);
+	  }
+	
+	  _createClass(Sidemenu, [{
+	    key: 'render',
+	    value: function render() {
+	      return (0, _cmmn.createElement)(
+	        'div',
+	        { className: _styles2.default.sidebar },
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 0 },
+	          'Book a Service'
+	        ),
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 1 },
+	          'Contact Us'
+	        ),
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 2 },
+	          'Join the Mailing List'
+	        ),
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 3 },
+	          'Find a Part'
+	        ),
+	        (0, _cmmn.createElement)(
+	          MenuItem,
+	          { icon: 4 },
+	          'Book a Service'
+	        )
+	      );
+	    }
+	  }, {
+	    key: 'mount',
+	    value: function mount(node) {
+	      console.log(node);
+	      node.addEventListener('mouseover', function () {
+	        node.className = _styles2.default.sidebar.with('visible');
+	      });
+	      node.addEventListener('mouseout', function () {
+	        node.className = _styles2.default.sidebar.with();
+	      });
+	    }
+	  }]);
+	
+	  return Sidemenu;
+	}();
+	
+	exports.default = Sidemenu;
+	;
+
+/***/ },
 /* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(12)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".src-views-sidemenu-styles---sidebar---2fVwP {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  margin-top: -128px;\n  height: 256px;\n  background-color: white;\n  background-color: rgba(200, 200, 200, 0.7);\n  overflow: hidden; }\n  .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    position: relative;\n    display: block;\n    width: 240px;\n    background-color: #282828;\n    margin: 1px 0 1px 1px;\n    padding: 10px 20px;\n    line-height: 30px;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    cursor: pointer;\n    text-decoration: none;\n    margin-right: -225px;\n    transition: margin-right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      display: block;\n      position: absolute;\n      background-color: #282828;\n      top: 0;\n      right: 225px;\n      bottom: 0;\n      width: 55px;\n      background-image: url(" + __webpack_require__(42) + ");\n      background-size: 40px;\n      background-position: 9px -4px;\n      background-repeat: no-repeat;\n      transition: right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #006e9c; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    margin-right: 0; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n    right: 0; }\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"sidebar": "src-views-sidemenu-styles---sidebar---2fVwP",
+		"sidebar__item": "src-views-sidemenu-styles---sidebar__item---3tF0f",
+		"sidebar__item__icon": "src-views-sidemenu-styles---sidebar__item__icon---VvZ3o",
+		"sidebar--visible": "src-views-sidemenu-styles---sidebar--visible---3-E6V"
+	};
+	
+	// Only locals
+	module.exports = module.exports.locals;
+	
+	// Bemify
+	module.exports = (__webpack_require__(19).default)(module.exports || {});
+
+/***/ },
+/* 42 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/icons-3V4y03W0.png";
+
+/***/ },
+/* 43 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 42 */
+/* 44 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1340,25 +1458,25 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 43 */
+/* 45 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 44 */
+/* 46 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 45 */
+/* 47 */
 /***/ function(module, exports) {
 
 	module.exports = require("mkdirp");
 
 /***/ },
-/* 46 */
+/* 48 */
 /***/ function(module, exports) {
 
 	'use strict';
