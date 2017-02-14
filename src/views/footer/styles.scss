@@ -54,7 +54,7 @@
     text-transform: uppercase;
     letter-spacing: 0.1em;
     cursor: pointer;
-    
+
     &:hover {
       background-color: $primary;
       border-left: 1px solid lighten($primary, 10%);
@@ -76,7 +76,25 @@
       width: 70px;
       height: 70px;
       margin: -35px 0 0 -35px;
-      border: 1px solid white;
+      -webkit-transform: matrix(1,0,0.35,1,0,0);
+      -ms-transform: matrix(1,0,0.35,1,0,0);
+      transform: matrix(1,0,0.35,1,0,0);
+      background-image: url(./icons.png);
+      background-size: auto 70px;
+      background-position: 6px 50%;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid white;
+        -webkit-transform: matrix(1,0,-0.35,1,0,0);
+        -ms-transform: matrix(1,0,-0.35,1,0,0);
+        transform: matrix(1,0,-0.35,1,0,0);
+      }
     }
   }
 }

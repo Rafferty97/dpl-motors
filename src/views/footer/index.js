@@ -8,7 +8,7 @@ import { Container } from '../theme/components';
 const FooterLink = ({ icon, href, children }) => (
   <a className={styles.footerLinks.item}>
     {children}
-    <span className={styles.footerLinks.item.icon} />
+    <span className={styles.footerLinks.item.icon} style={"background-position-x: " + (-97*icon + 9) + "px"} />
   </a>
 );
 

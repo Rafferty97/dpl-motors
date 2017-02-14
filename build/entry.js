@@ -63,19 +63,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _path = __webpack_require__(45);
+	var _path = __webpack_require__(46);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
-	var _fs = __webpack_require__(46);
+	var _fs = __webpack_require__(47);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _mkdirp = __webpack_require__(47);
+	var _mkdirp = __webpack_require__(48);
 	
 	var _mkdirp2 = _interopRequireDefault(_mkdirp);
 	
-	var _routes = __webpack_require__(48);
+	var _routes = __webpack_require__(49);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -515,7 +515,7 @@ require("source-map-support").install();
 	
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 	
-	var _cmmnDatasource = __webpack_require__(44);
+	var _cmmnDatasource = __webpack_require__(45);
 	
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 	
@@ -625,8 +625,8 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(43) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(43) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(44) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(44) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -670,7 +670,7 @@ require("source-map-support").install();
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _sidemenu = __webpack_require__(40);
+	var _sidemenu = __webpack_require__(41);
 	
 	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 	
@@ -1149,7 +1149,7 @@ require("source-map-support").install();
 	    'a',
 	    { className: _styles2.default.footerLinks.item },
 	    children,
-	    (0, _cmmn.createElement)('span', { className: _styles2.default.footerLinks.item.icon })
+	    (0, _cmmn.createElement)('span', { className: _styles2.default.footerLinks.item.icon, style: "background-position-x: " + (-97 * icon + 9) + "px" })
 	  );
 	};
 	
@@ -1171,14 +1171,14 @@ require("source-map-support").install();
 	        (0, _cmmn.createElement)(
 	          'div',
 	          { className: _styles2.default.makes.logos },
-	          (0, _cmmn.createElement)('img', { src: __webpack_require__(32) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(33) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(34) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(35) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(36) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(37) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(38) }),
-	          (0, _cmmn.createElement)('img', { src: __webpack_require__(39) })
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(39) }),
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(40) })
 	        )
 	      )
 	    ),
@@ -1246,7 +1246,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-footer-styles---footer---1RfXZ {\n  color: white; }\n\n.src-views-footer-styles---makes---xwB6j {\n  text-align: center;\n  padding: 15px 0; }\n  .src-views-footer-styles---makes__specialise---1Zj77 {\n    display: inline-block;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    vertical-align: middle;\n    color: #e0e0e0;\n    margin: 15px 10px; }\n  .src-views-footer-styles---makes__logos---UooKY {\n    display: inline-block;\n    vertical-align: middle;\n    margin: 10px 10px; }\n    .src-views-footer-styles---makes__logos---UooKY img {\n      display: inline-block;\n      height: 50px;\n      margin: 5px 10px; }\n      @media (max-width: 800px) {\n        .src-views-footer-styles---makes__logos---UooKY img {\n          height: 40px; } }\n  @media (max-width: 800px) {\n    .src-views-footer-styles---makes---xwB6j {\n      padding-bottom: 20px; } }\n\n.src-views-footer-styles---footer-links---GsbML {\n  background-color: #004a69;\n  text-align: center; }\n  .src-views-footer-styles---footer-links__item---3-jhm {\n    position: relative;\n    display: inline-block;\n    height: 200px;\n    width: 20%;\n    text-align: center;\n    border-left: 1px solid #003850;\n    -webkit-transform: matrix(1, 0, -0.35, 1, 0, 0);\n    -ms-transform: matrix(1, 0, -0.35, 1, 0, 0);\n    transform: matrix(1, 0, -0.35, 1, 0, 0);\n    box-sizing: border-box;\n    padding: 20px;\n    font-size: 1.6rem;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    cursor: pointer; }\n    .src-views-footer-styles---footer-links__item---3-jhm:hover {\n      background-color: #006e9c;\n      border-left: 1px solid #0092cf; }\n    .src-views-footer-styles---footer-links__item---3-jhm:hover + .src-views-footer-styles---footer-links__item---3-jhm {\n      border-left: 1px solid #0092cf; }\n    .src-views-footer-styles---footer-links__item---3-jhm:last-child {\n      border-right: 1px solid #003850; }\n    .src-views-footer-styles---footer-links__item---3-jhm:hover:last-child {\n      border-right: 1px solid #0092cf; }\n    .src-views-footer-styles---footer-links__item__icon---GAb6i {\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      width: 70px;\n      height: 70px;\n      margin: -35px 0 0 -35px;\n      border: 1px solid white; }\n\n.src-views-footer-styles---contact---72kR5 {\n  text-align: right;\n  padding: 30px 0; }\n  .src-views-footer-styles---contact__logo----TpaK {\n    display: inline-block;\n    height: 50px;\n    margin-right: 50px;\n    vertical-align: middle; }\n  .src-views-footer-styles---contact__info---9fVb4 {\n    display: inline-block;\n    line-height: 2rem;\n    font-size: 1.4rem;\n    color: #e0e0e0;\n    text-align: right;\n    vertical-align: middle; }\n    .src-views-footer-styles---contact__info---9fVb4 i {\n      color: #006e9c; }\n  @media (max-width: 450px) {\n    .src-views-footer-styles---contact---72kR5 {\n      text-align: center; }\n      .src-views-footer-styles---contact__logo----TpaK {\n        margin: 0 0 25px 0; }\n      .src-views-footer-styles---contact__info---9fVb4 {\n        display: block;\n        text-align: center; } }\n", ""]);
+	exports.push([module.id, ".src-views-footer-styles---footer---1RfXZ {\n  color: white; }\n\n.src-views-footer-styles---makes---xwB6j {\n  text-align: center;\n  padding: 15px 0; }\n  .src-views-footer-styles---makes__specialise---1Zj77 {\n    display: inline-block;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    vertical-align: middle;\n    color: #e0e0e0;\n    margin: 15px 10px; }\n  .src-views-footer-styles---makes__logos---UooKY {\n    display: inline-block;\n    vertical-align: middle;\n    margin: 10px 10px; }\n    .src-views-footer-styles---makes__logos---UooKY img {\n      display: inline-block;\n      height: 50px;\n      margin: 5px 10px; }\n      @media (max-width: 800px) {\n        .src-views-footer-styles---makes__logos---UooKY img {\n          height: 40px; } }\n  @media (max-width: 800px) {\n    .src-views-footer-styles---makes---xwB6j {\n      padding-bottom: 20px; } }\n\n.src-views-footer-styles---footer-links---GsbML {\n  background-color: #004a69;\n  text-align: center; }\n  .src-views-footer-styles---footer-links__item---3-jhm {\n    position: relative;\n    display: inline-block;\n    height: 200px;\n    width: 20%;\n    text-align: center;\n    border-left: 1px solid #003850;\n    -webkit-transform: matrix(1, 0, -0.35, 1, 0, 0);\n    -ms-transform: matrix(1, 0, -0.35, 1, 0, 0);\n    transform: matrix(1, 0, -0.35, 1, 0, 0);\n    box-sizing: border-box;\n    padding: 20px;\n    font-size: 1.6rem;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    cursor: pointer; }\n    .src-views-footer-styles---footer-links__item---3-jhm:hover {\n      background-color: #006e9c;\n      border-left: 1px solid #0092cf; }\n    .src-views-footer-styles---footer-links__item---3-jhm:hover + .src-views-footer-styles---footer-links__item---3-jhm {\n      border-left: 1px solid #0092cf; }\n    .src-views-footer-styles---footer-links__item---3-jhm:last-child {\n      border-right: 1px solid #003850; }\n    .src-views-footer-styles---footer-links__item---3-jhm:hover:last-child {\n      border-right: 1px solid #0092cf; }\n    .src-views-footer-styles---footer-links__item__icon---GAb6i {\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      width: 70px;\n      height: 70px;\n      margin: -35px 0 0 -35px;\n      -webkit-transform: matrix(1, 0, 0.35, 1, 0, 0);\n      -ms-transform: matrix(1, 0, 0.35, 1, 0, 0);\n      transform: matrix(1, 0, 0.35, 1, 0, 0);\n      background-image: url(" + __webpack_require__(32) + ");\n      background-size: auto 70px;\n      background-position: 6px 50%; }\n      .src-views-footer-styles---footer-links__item__icon---GAb6i:after {\n        content: \"\";\n        display: block;\n        position: absolute;\n        top: 0;\n        right: 0;\n        bottom: 0;\n        left: 0;\n        border: 1px solid white;\n        -webkit-transform: matrix(1, 0, -0.35, 1, 0, 0);\n        -ms-transform: matrix(1, 0, -0.35, 1, 0, 0);\n        transform: matrix(1, 0, -0.35, 1, 0, 0); }\n\n.src-views-footer-styles---contact---72kR5 {\n  text-align: right;\n  padding: 30px 0; }\n  .src-views-footer-styles---contact__logo----TpaK {\n    display: inline-block;\n    height: 50px;\n    margin-right: 50px;\n    vertical-align: middle; }\n  .src-views-footer-styles---contact__info---9fVb4 {\n    display: inline-block;\n    line-height: 2rem;\n    font-size: 1.4rem;\n    color: #e0e0e0;\n    text-align: right;\n    vertical-align: middle; }\n    .src-views-footer-styles---contact__info---9fVb4 i {\n      color: #006e9c; }\n  @media (max-width: 450px) {\n    .src-views-footer-styles---contact---72kR5 {\n      text-align: center; }\n      .src-views-footer-styles---contact__logo----TpaK {\n        margin: 0 0 25px 0; }\n      .src-views-footer-styles---contact__info---9fVb4 {\n        display: block;\n        text-align: center; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1272,52 +1272,58 @@ require("source-map-support").install();
 /* 32 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/png/mercedes-benz-3KhEKosv.png";
+	module.exports = "/dpl-motors/png/icons-3gUTBSaf.png";
 
 /***/ },
 /* 33 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/png/bmw-2K_cZx8C.png";
+	module.exports = "/dpl-motors/png/mercedes-benz-3KhEKosv.png";
 
 /***/ },
 /* 34 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/png/audi-3sjvTOk_.png";
+	module.exports = "/dpl-motors/png/bmw-2K_cZx8C.png";
 
 /***/ },
 /* 35 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/png/aston-martin-2dd25U3z.png";
+	module.exports = "/dpl-motors/png/audi-3sjvTOk_.png";
 
 /***/ },
 /* 36 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/png/maserati-sXtXj2IM.png";
+	module.exports = "/dpl-motors/png/aston-martin-2dd25U3z.png";
 
 /***/ },
 /* 37 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/png/porche-2RSKGy2i.png";
+	module.exports = "/dpl-motors/png/maserati-sXtXj2IM.png";
 
 /***/ },
 /* 38 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/png/jaguar-3wiN46ZC.png";
+	module.exports = "/dpl-motors/png/porche-2RSKGy2i.png";
 
 /***/ },
 /* 39 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/png/land-rover-EorU9x4G.png";
+	module.exports = "/dpl-motors/png/jaguar-3wiN46ZC.png";
 
 /***/ },
 /* 40 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/png/land-rover-EorU9x4G.png";
+
+/***/ },
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1330,7 +1336,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _styles = __webpack_require__(41);
+	var _styles = __webpack_require__(42);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -1407,7 +1413,7 @@ require("source-map-support").install();
 	;
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -1415,7 +1421,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-sidemenu-styles---sidebar---2fVwP {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  margin-top: -128px;\n  height: 256px;\n  background-color: white;\n  background-color: rgba(200, 200, 200, 0.7);\n  overflow: hidden; }\n  .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    position: relative;\n    display: block;\n    width: 240px;\n    background-color: #282828;\n    margin: 1px 0 1px 1px;\n    padding: 10px 20px;\n    line-height: 30px;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    cursor: pointer;\n    text-decoration: none;\n    margin-right: -225px;\n    transition: margin-right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      display: block;\n      position: absolute;\n      background-color: #282828;\n      top: 0;\n      right: 225px;\n      bottom: 0;\n      width: 55px;\n      background-image: url(" + __webpack_require__(42) + ");\n      background-size: 40px;\n      background-position: 9px -4px;\n      background-repeat: no-repeat;\n      transition: right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #006e9c; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    margin-right: 0; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n    right: 0; }\n", ""]);
+	exports.push([module.id, ".src-views-sidemenu-styles---sidebar---2fVwP {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  margin-top: -128px;\n  height: 256px;\n  background-color: white;\n  background-color: rgba(200, 200, 200, 0.7);\n  overflow: hidden; }\n  .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    position: relative;\n    display: block;\n    width: 240px;\n    background-color: #282828;\n    margin: 1px 0 1px 1px;\n    padding: 10px 20px;\n    line-height: 30px;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    cursor: pointer;\n    text-decoration: none;\n    margin-right: -225px;\n    transition: margin-right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      display: block;\n      position: absolute;\n      background-color: #282828;\n      top: 0;\n      right: 225px;\n      bottom: 0;\n      width: 55px;\n      background-image: url(" + __webpack_require__(43) + ");\n      background-size: 40px;\n      background-position: 9px -4px;\n      background-repeat: no-repeat;\n      transition: right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #006e9c; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    margin-right: 0; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n    right: 0; }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1432,19 +1438,19 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/icons-3V4y03W0.png";
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1458,25 +1464,25 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports) {
 
 	module.exports = require("mkdirp");
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports) {
 
 	'use strict';

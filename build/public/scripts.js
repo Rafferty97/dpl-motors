@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(53);
+	var _cmmnDatasource = __webpack_require__(54);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4412,8 +4412,8 @@
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(52) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(52) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(53) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(53) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -4457,7 +4457,7 @@
 
 	var _footer2 = _interopRequireDefault(_footer);
 
-	var _sidemenu = __webpack_require__(48);
+	var _sidemenu = __webpack_require__(49);
 
 	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 
@@ -4778,7 +4778,7 @@
 	    'a',
 	    { className: _styles2.default.footerLinks.item },
 	    children,
-	    (0, _cmmn.createElement)('span', { className: _styles2.default.footerLinks.item.icon })
+	    (0, _cmmn.createElement)('span', { className: _styles2.default.footerLinks.item.icon, style: "background-position-x: " + (-97 * icon + 9) + "px" })
 	  );
 	};
 
@@ -4800,14 +4800,14 @@
 	        (0, _cmmn.createElement)(
 	          'div',
 	          { className: _styles2.default.makes.logos },
-	          (0, _cmmn.createElement)('img', { src: __webpack_require__(40) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(41) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(42) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(43) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(44) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(45) }),
 	          (0, _cmmn.createElement)('img', { src: __webpack_require__(46) }),
-	          (0, _cmmn.createElement)('img', { src: __webpack_require__(47) })
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(47) }),
+	          (0, _cmmn.createElement)('img', { src: __webpack_require__(48) })
 	        )
 	      )
 	    ),
@@ -4878,55 +4878,56 @@
 
 /***/ },
 /* 39 */,
-/* 40 */
+/* 40 */,
+/* 41 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/mercedes-benz-3KhEKosv.png";
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/bmw-2K_cZx8C.png";
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/audi-3sjvTOk_.png";
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/aston-martin-2dd25U3z.png";
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/maserati-sXtXj2IM.png";
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/porche-2RSKGy2i.png";
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/jaguar-3wiN46ZC.png";
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/land-rover-EorU9x4G.png";
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -4939,7 +4940,7 @@
 
 	var _cmmn = __webpack_require__(4);
 
-	var _styles = __webpack_require__(49);
+	var _styles = __webpack_require__(50);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -5016,7 +5017,7 @@
 	;
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -5026,15 +5027,15 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 50 */,
 /* 51 */,
-/* 52 */
+/* 52 */,
+/* 53 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports) {
 
 	"use strict";

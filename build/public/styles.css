@@ -1774,7 +1774,24 @@ html, body {
       width: 70px;
       height: 70px;
       margin: -35px 0 0 -35px;
-      border: 1px solid white; }
+      -webkit-transform: matrix(1, 0, 0.35, 1, 0, 0);
+      -ms-transform: matrix(1, 0, 0.35, 1, 0, 0);
+      transform: matrix(1, 0, 0.35, 1, 0, 0);
+      background-image: url(/dpl-motors/png/icons-3gUTBSaf.png);
+      background-size: auto 70px;
+      background-position: 6px 50%; }
+      .src-views-footer-styles---footer-links__item__icon---GAb6i:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border: 1px solid white;
+        -webkit-transform: matrix(1, 0, -0.35, 1, 0, 0);
+        -ms-transform: matrix(1, 0, -0.35, 1, 0, 0);
+        transform: matrix(1, 0, -0.35, 1, 0, 0); }
 
 .src-views-footer-styles---contact---72kR5 {
   text-align: right;
