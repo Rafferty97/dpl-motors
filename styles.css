@@ -1642,33 +1642,6 @@ html, body {
   .src-views-home-page-styles---video---V5M_K video {
     width: 100%;
     height: 400px; }
-  .src-views-home-page-styles---video__sidebar---1RhmW {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -128px;
-    height: 256px;
-    background-color: white;
-    background-color: rgba(200, 200, 200, 0.7); }
-    .src-views-home-page-styles---video__sidebar__item---20pnL {
-      display: block;
-      width: 240px;
-      background-color: #282828;
-      background-image: url(/dpl-motors/png/icons-3V4y03W0.png);
-      background-size: 40px;
-      background-position: 230px -4px;
-      background-repeat: no-repeat;
-      margin: 1px 0 1px 1px;
-      padding: 10px 20px;
-      line-height: 30px;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      letter-spacing: 0.25em;
-      color: #e0e0e0;
-      cursor: pointer;
-      text-decoration: none; }
-      .src-views-home-page-styles---video__sidebar__item---20pnL:hover {
-        background-color: #006e9c; }
 .src-views-header-styles---header---10oqo {
   position: relative;
   border-bottom: 1px solid black;
@@ -1701,12 +1674,12 @@ html, body {
     border-right: 1px solid #0092cf; }
   .src-views-header-styles---menu-item__text---4J8E6 {
     display: block;
-    padding: 90px 15px 15px 20px;
+    padding: 90px 20px 15px 25px;
     line-height: 15px;
     text-align: center;
     font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.2em;
     color: #e0e0e0;
     text-decoration: none;
     cursor: pointer; }
@@ -1768,7 +1741,40 @@ html, body {
 
 .src-views-footer-styles---footer-links---GsbML {
   background-color: #004a69;
-  height: 200px; }
+  text-align: center; }
+  .src-views-footer-styles---footer-links__item---3-jhm {
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    width: 20%;
+    text-align: center;
+    border-left: 1px solid #003850;
+    -webkit-transform: matrix(1, 0, -0.35, 1, 0, 0);
+    -ms-transform: matrix(1, 0, -0.35, 1, 0, 0);
+    transform: matrix(1, 0, -0.35, 1, 0, 0);
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer; }
+    .src-views-footer-styles---footer-links__item---3-jhm:hover {
+      background-color: #006e9c;
+      border-left: 1px solid #0092cf; }
+    .src-views-footer-styles---footer-links__item---3-jhm:hover + .src-views-footer-styles---footer-links__item---3-jhm {
+      border-left: 1px solid #0092cf; }
+    .src-views-footer-styles---footer-links__item---3-jhm:last-child {
+      border-right: 1px solid #003850; }
+    .src-views-footer-styles---footer-links__item---3-jhm:hover:last-child {
+      border-right: 1px solid #0092cf; }
+    .src-views-footer-styles---footer-links__item__icon---GAb6i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 70px;
+      height: 70px;
+      margin: -35px 0 0 -35px;
+      border: 1px solid white; }
 
 .src-views-footer-styles---contact---72kR5 {
   text-align: right;
@@ -1795,3 +1801,49 @@ html, body {
       .src-views-footer-styles---contact__info---9fVb4 {
         display: block;
         text-align: center; } }
+.src-views-sidemenu-styles---sidebar---2fVwP {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -128px;
+  height: 256px;
+  background-color: white;
+  background-color: rgba(200, 200, 200, 0.7);
+  overflow: hidden; }
+  .src-views-sidemenu-styles---sidebar__item---3tF0f {
+    position: relative;
+    display: block;
+    width: 240px;
+    background-color: #282828;
+    margin: 1px 0 1px 1px;
+    padding: 10px 20px;
+    line-height: 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #e0e0e0;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: -225px;
+    transition: margin-right 0.5s; }
+    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover {
+      background-color: #006e9c; }
+    .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {
+      display: block;
+      position: absolute;
+      background-color: #282828;
+      top: 0;
+      right: 225px;
+      bottom: 0;
+      width: 55px;
+      background-image: url(/dpl-motors/png/icons-3V4y03W0.png);
+      background-size: 40px;
+      background-position: 9px -4px;
+      background-repeat: no-repeat;
+      transition: right 0.5s; }
+    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {
+      background-color: #006e9c; }
+  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item---3tF0f {
+    margin-right: 0; }
+  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {
+    right: 0; }
