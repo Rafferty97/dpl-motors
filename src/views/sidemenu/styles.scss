@@ -30,6 +30,10 @@
     &:hover {
       background-color: $primary;
     }
+    &--no-hover:hover {
+      background-color: $dk-grey;
+      cursor: default;
+    }
 
     &__icon {
       display: block;
@@ -48,6 +52,33 @@
 
     &:hover &__icon {
       background-color: $primary;
+    }
+    &--no-hover:hover &__icon {
+      background-color: $dk-grey;
+    }
+
+    &__social-link {
+      display: inline-block;
+      margin: -9px 0 -9px -19px;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      font-size: 24px;
+      & + & {
+        margin-left: 1px;
+      }
+      &--fb {
+        background-color: #004a72;
+      }
+      &--twitter {
+        background-color: #00b8f1;
+      }
+      i {
+        line-height: 48px;
+      }
     }
   }
 

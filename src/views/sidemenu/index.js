@@ -17,7 +17,11 @@ export default class Sidemenu {
         <MenuItem icon={1}>Contact Us</MenuItem>
         <MenuItem icon={2}>Join the Mailing List</MenuItem>
         <MenuItem icon={3}>Find a Part</MenuItem>
-        <MenuItem icon={4}>Book a Service</MenuItem>
+        <div className={styles.sidebar.item.with('no-hover')} href="#">
+          <a className={styles.sidebar.item.socialLink.with('fb')} href="/" target="_blank"><i className="fa fa-facebook" /></a>
+          <a className={styles.sidebar.item.socialLink.with('twitter')} href="/" target="_blank"><i className="fa fa-twitter" /></a>
+          <span className={styles.sidebar.item.icon} style={"background-position-y: " + (-53.5*4 - 4) + "px"} />
+        </div>
       </div>
     );
   }
