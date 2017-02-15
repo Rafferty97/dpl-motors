@@ -24,10 +24,11 @@ export default ({ page }) => (
       <MenuItem title="Performance Tuning" href="*/performance-tuning" active={page == 'performance-tuning'} />
       <MenuItem title="Parts" href="*/parts" active={page == 'parts'} />
       <MenuItem title="Trade" href="*/trade" active={page == 'trade'} last />
+      <a className={styles.mobileNav}><i className="fa fa-bars" /></a>
       <div className={styles.contact}>
-        22 Muchison Terrace<br/>
-        Perth WA 6000<br/><br/>
-        <i className="fa fa-phone" />&nbsp;(08) 9227 5374
+        <p>22 Muchison Terrace</p>
+        <p>Perth WA 6000</p>
+        <p className={styles.dbl}><i className="fa fa-phone" />&nbsp;(08) 9227 5374</p>
       </div>
     </Container>
   </header>

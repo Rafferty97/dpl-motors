@@ -11,8 +11,9 @@ const MenuItem = ({ icon, children }) => (
 
 export default class Sidemenu {
   render({ top }) {
+    this.top = top;
     return (
-      <div className={styles.sidebar.with(top ? 'top' : '')}>
+      <div className={styles.sidebar.with(this.top ? 'top' : '')}>
         <MenuItem icon={0}>Book a Service</MenuItem>
         <MenuItem icon={1}>Contact Us</MenuItem>
         <MenuItem icon={2}>Join the Mailing List</MenuItem>
@@ -28,10 +29,10 @@ export default class Sidemenu {
   mount(node) {
     console.log(node);
     node.addEventListener('mouseover', () => {
-      node.className = styles.sidebar.with('visible');
+      node.className = styles.sidebar.with(this.top ? 'top' : '', 'visible');
     });
     node.addEventListener('mouseout', () => {
-      node.className = styles.sidebar.with();
+      node.className = styles.sidebar.with(this.top ? 'top' : '');
     });
   }
 };

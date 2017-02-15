@@ -13,7 +13,10 @@ export default ({ children, page }) => (
     <Header page={page} />
     <div className={styles.content}>
       <Container>
-        {children}
+        <div className={styles.content.rightImg} style={`background-image: url(${require('./bk-img.jpg')});`} />
+        <div className={styles.content.copy}>
+          {children}
+        </div>
       </Container>
       <Sidemenu top />
     </div>

@@ -63,19 +63,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _path = __webpack_require__(51);
+	var _path = __webpack_require__(52);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
-	var _fs = __webpack_require__(52);
+	var _fs = __webpack_require__(53);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _mkdirp = __webpack_require__(53);
+	var _mkdirp = __webpack_require__(54);
 	
 	var _mkdirp2 = _interopRequireDefault(_mkdirp);
 	
-	var _routes = __webpack_require__(54);
+	var _routes = __webpack_require__(55);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -515,7 +515,7 @@ require("source-map-support").install();
 	
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 	
-	var _cmmnDatasource = __webpack_require__(50);
+	var _cmmnDatasource = __webpack_require__(51);
 	
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 	
@@ -607,11 +607,11 @@ require("source-map-support").install();
 	
 	var services = _interopRequireWildcard(_services);
 	
-	var _performanceTuning = __webpack_require__(47);
+	var _performanceTuning = __webpack_require__(48);
 	
 	var performanceTuning = _interopRequireWildcard(_performanceTuning);
 	
-	var _reconditioning = __webpack_require__(48);
+	var _reconditioning = __webpack_require__(49);
 	
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 	
@@ -650,8 +650,8 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(49) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(49) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(50) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(50) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -1047,15 +1047,29 @@ require("source-map-support").install();
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Parts', href: '*/parts', active: page == 'parts' }),
 	      (0, _cmmn.createElement)(MenuItem, { title: 'Trade', href: '*/trade', active: page == 'trade', last: true }),
 	      (0, _cmmn.createElement)(
+	        'a',
+	        { className: _styles2.default.mobileNav },
+	        (0, _cmmn.createElement)('i', { className: 'fa fa-bars' })
+	      ),
+	      (0, _cmmn.createElement)(
 	        'div',
 	        { className: _styles2.default.contact },
-	        '22 Muchison Terrace',
-	        (0, _cmmn.createElement)('br', null),
-	        'Perth WA 6000',
-	        (0, _cmmn.createElement)('br', null),
-	        (0, _cmmn.createElement)('br', null),
-	        (0, _cmmn.createElement)('i', { className: 'fa fa-phone' }),
-	        '\xA0(08) 9227 5374'
+	        (0, _cmmn.createElement)(
+	          'p',
+	          null,
+	          '22 Muchison Terrace'
+	        ),
+	        (0, _cmmn.createElement)(
+	          'p',
+	          null,
+	          'Perth WA 6000'
+	        ),
+	        (0, _cmmn.createElement)(
+	          'p',
+	          { className: _styles2.default.dbl },
+	          (0, _cmmn.createElement)('i', { className: 'fa fa-phone' }),
+	          '\xA0(08) 9227 5374'
+	        )
 	      )
 	    )
 	  );
@@ -1070,7 +1084,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 18px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  border-left: 1px solid #a0a0a0;\n  -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item--last---3VdyI {\n    border-right: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--last---3VdyI.src-views-header-styles---menu-item--active---2Enug {\n    border-right: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    padding: 90px 20px 15px 25px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.2em;\n    color: #e0e0e0;\n    text-decoration: none;\n    cursor: pointer; }\n    .src-views-header-styles---menu-item__text---4J8E6:hover {\n      color: #03b5ff;\n      transition: color 0.4s; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n", ""]);
+	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 18px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  border-left: 1px solid #a0a0a0;\n  -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item--last---3VdyI {\n    border-right: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--last---3VdyI.src-views-header-styles---menu-item--active---2Enug {\n    border-right: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    padding: 90px 20px 15px 25px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.2em;\n    color: #e0e0e0;\n    text-decoration: none;\n    cursor: pointer; }\n    .src-views-header-styles---menu-item__text---4J8E6:hover {\n      color: #03b5ff;\n      transition: color 0.4s; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n  @media (max-width: 1150px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      margin-top: 3rem; }\n      .src-views-header-styles---menu-item__text---4J8E6 {\n        padding-top: 60px; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      display: none; } }\n\n.src-views-header-styles---mobile-nav---3skS1 {\n  display: none;\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -0.5rem;\n  text-align: center;\n  border: 1px solid #202020;\n  border-radius: 3px;\n  cursor: pointer; }\n  .src-views-header-styles---mobile-nav---3skS1 i {\n    width: 4rem;\n    line-height: 4rem;\n    color: white;\n    text-decoration: none;\n    font-size: 2rem; }\n  .src-views-header-styles---mobile-nav---3skS1:hover {\n    background-color: #202020; }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      display: block; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      margin-top: -3.25rem; } }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n  .src-views-header-styles---contact---1NLDy p {\n    margin: 0; }\n    .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n      margin-top: 1.4em; }\n  @media (max-width: 1150px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 0.5rem;\n      margin: 0; }\n      .src-views-header-styles---contact---1NLDy p {\n        display: inline-block;\n        margin-left: 15px; }\n        .src-views-header-styles---contact---1NLDy p, .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n          margin-top: 0; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 1rem; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---contact---1NLDy {\n      position: relative;\n      text-align: center;\n      top: 0;\n      margin-top: 0.5rem;\n      margin-bottom: 1rem; }\n      .src-views-header-styles---contact---1NLDy p {\n        margin: 0 7px; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1080,7 +1094,9 @@ require("source-map-support").install();
 		"menu-item--active": "src-views-header-styles---menu-item--active---2Enug",
 		"menu-item--last": "src-views-header-styles---menu-item--last---3VdyI",
 		"menu-item__text": "src-views-header-styles---menu-item__text---4J8E6",
-		"contact": "src-views-header-styles---contact---1NLDy"
+		"mobile-nav": "src-views-header-styles---mobile-nav---3skS1",
+		"contact": "src-views-header-styles---contact---1NLDy",
+		"dbl": "src-views-header-styles---dbl---1nYJb"
 	};
 	
 	// Only locals
@@ -1391,9 +1407,10 @@ require("source-map-support").install();
 	    value: function render(_ref2) {
 	      var top = _ref2.top;
 	
+	      this.top = top;
 	      return (0, _cmmn.createElement)(
 	        'div',
-	        { className: _styles2.default.sidebar.with(top ? 'top' : '') },
+	        { className: _styles2.default.sidebar.with(this.top ? 'top' : '') },
 	        (0, _cmmn.createElement)(
 	          MenuItem,
 	          { icon: 0 },
@@ -1434,12 +1451,14 @@ require("source-map-support").install();
 	  }, {
 	    key: 'mount',
 	    value: function mount(node) {
+	      var _this = this;
+	
 	      console.log(node);
 	      node.addEventListener('mouseover', function () {
-	        node.className = _styles2.default.sidebar.with('visible');
+	        node.className = _styles2.default.sidebar.with(_this.top ? 'top' : '', 'visible');
 	      });
 	      node.addEventListener('mouseout', function () {
-	        node.className = _styles2.default.sidebar.with();
+	        node.className = _styles2.default.sidebar.with(_this.top ? 'top' : '');
 	      });
 	    }
 	  }]);
@@ -1459,7 +1478,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-sidemenu-styles---sidebar---2fVwP {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  margin-top: -128px;\n  height: 256px;\n  background-color: white;\n  background-color: rgba(200, 200, 200, 0.7);\n  overflow: hidden; }\n  .src-views-sidemenu-styles---sidebar--top---g_xw8 {\n    top: 0;\n    margin-top: 100px; }\n  .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    position: relative;\n    display: block;\n    width: 240px;\n    background-color: #282828;\n    margin: 1px 0 1px 1px;\n    padding: 10px 20px;\n    line-height: 30px;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    cursor: pointer;\n    text-decoration: none;\n    margin-right: -225px;\n    transition: margin-right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item--no-hover---364jd:hover {\n      background-color: #282828;\n      cursor: default; }\n    .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      display: block;\n      position: absolute;\n      background-color: #282828;\n      top: 0;\n      right: 225px;\n      bottom: 0;\n      width: 55px;\n      background-image: url(" + __webpack_require__(43) + ");\n      background-size: 40px;\n      background-position: 9px -4px;\n      background-repeat: no-repeat;\n      transition: right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item--no-hover---364jd:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #282828; }\n    .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ {\n      display: inline-block;\n      margin: -9px 0 -9px -19px;\n      width: 48px;\n      height: 48px;\n      cursor: pointer;\n      color: white;\n      text-decoration: none;\n      text-align: center;\n      font-size: 24px; }\n      .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ + .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ {\n        margin-left: 1px; }\n      .src-views-sidemenu-styles---sidebar__item__social-link--fb---287lu {\n        background-color: #004a72; }\n      .src-views-sidemenu-styles---sidebar__item__social-link--twitter---2CSIZ {\n        background-color: #00b8f1; }\n      .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ i {\n        line-height: 48px; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    margin-right: 0; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n    right: 0; }\n", ""]);
+	exports.push([module.id, ".src-views-sidemenu-styles---sidebar---2fVwP {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  margin-top: -128px;\n  height: 256px;\n  background-color: white;\n  background-color: rgba(200, 200, 200, 0.7);\n  overflow: hidden; }\n  .src-views-sidemenu-styles---sidebar--top---g_xw8 {\n    top: 0;\n    margin-top: 100px; }\n    @media (max-width: 1000px) {\n      .src-views-sidemenu-styles---sidebar--top---g_xw8 {\n        margin-top: 40px; } }\n  .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    position: relative;\n    display: block;\n    width: 240px;\n    background-color: #282828;\n    margin: 1px 0 1px 1px;\n    padding: 10px 20px;\n    line-height: 30px;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    cursor: pointer;\n    text-decoration: none;\n    margin-right: -225px;\n    transition: margin-right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item--no-hover---364jd:hover {\n      background-color: #282828;\n      cursor: default; }\n    .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      display: block;\n      position: absolute;\n      background-color: #282828;\n      top: 0;\n      right: 225px;\n      bottom: 0;\n      width: 55px;\n      background-image: url(" + __webpack_require__(43) + ");\n      background-size: 40px;\n      background-position: 9px -4px;\n      background-repeat: no-repeat;\n      transition: right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item--no-hover---364jd:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #282828; }\n    .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ {\n      display: inline-block;\n      margin: -9px 0 -9px -19px;\n      width: 48px;\n      height: 48px;\n      cursor: pointer;\n      color: white;\n      text-decoration: none;\n      text-align: center;\n      font-size: 24px; }\n      .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ + .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ {\n        margin-left: 1px; }\n      .src-views-sidemenu-styles---sidebar__item__social-link--fb---287lu {\n        background-color: #004a72; }\n      .src-views-sidemenu-styles---sidebar__item__social-link--twitter---2CSIZ {\n        background-color: #00b8f1; }\n      .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ i {\n        line-height: 48px; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    margin-right: 0; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n    right: 0; }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1615,7 +1634,12 @@ require("source-map-support").install();
 	      (0, _cmmn.createElement)(
 	        _components.Container,
 	        null,
-	        children
+	        (0, _cmmn.createElement)('div', { className: _styles2.default.content.rightImg, style: 'background-image: url(' + __webpack_require__(47) + ');' }),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _styles2.default.content.copy },
+	          children
+	        )
 	      ),
 	      (0, _cmmn.createElement)(_sidemenu2.default, { top: true })
 	    ),
@@ -1632,11 +1656,13 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-pages-styles---content---15gAm {\n  position: relative;\n  background-color: white;\n  min-height: 300px;\n  padding: 60px 0; }\n  .src-views-pages-styles---content---15gAm h1 {\n    font-size: 3.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    font-weight: 300;\n    line-height: 1.4;\n    margin: 0 0 0.7em 0; }\n  .src-views-pages-styles---content---15gAm h3 {\n    font-size: 1.6rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n    font-weight: 600;\n    line-height: 1.4;\n    margin: 1.4em 0 0.7em 0; }\n  .src-views-pages-styles---content---15gAm p, .src-views-pages-styles---content---15gAm ul {\n    font-size: 1.6rem;\n    line-height: 1.3;\n    margin: 1.3em 0; }\n", ""]);
+	exports.push([module.id, ".src-views-pages-styles---content---15gAm {\n  position: relative;\n  background-color: white;\n  min-height: 300px;\n  padding: 60px 0;\n  overflow: hidden; }\n  .src-views-pages-styles---content---15gAm h1 {\n    font-size: 3.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    font-weight: 300;\n    line-height: 1.4;\n    margin: 0 0 0.7em 0; }\n  .src-views-pages-styles---content---15gAm h3 {\n    font-size: 1.6rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n    font-weight: 600;\n    line-height: 1.4;\n    margin: 1.4em 0 0.7em 0;\n    color: #006e9c; }\n  .src-views-pages-styles---content---15gAm p, .src-views-pages-styles---content---15gAm ul {\n    font-size: 1.6rem;\n    line-height: 1.3;\n    margin: 1.3em 0; }\n  .src-views-pages-styles---content__copy---11d-X {\n    width: 550px; }\n  .src-views-pages-styles---content__right-img---ha2cC {\n    position: absolute;\n    top: 0;\n    height: 100%;\n    max-height: 500px;\n    left: 600px;\n    right: -200px;\n    background-size: cover;\n    background-position: 0 50%; }\n  @media (max-width: 1000px) {\n    .src-views-pages-styles---content__copy---11d-X {\n      position: relative;\n      width: auto;\n      margin-top: -8rem; }\n      .src-views-pages-styles---content__copy---11d-X h1 {\n        color: white;\n        z-index: 100;\n        line-height: 6rem;\n        padding: 1rem 0;\n        margin-bottom: 3rem;\n        text-shadow: 0 1px 3px black; }\n      .src-views-pages-styles---content__copy---11d-X:before {\n        content: \"\";\n        display: block;\n        width: 45px;\n        height: 160px;\n        float: right; }\n    .src-views-pages-styles---content__right-img---ha2cC {\n      position: relative;\n      left: 0;\n      right: 0;\n      margin: -70px -200px 0 -200px;\n      height: 250px;\n      background-position: 50% 50%; } }\n  @media (max-width: 450px) {\n    .src-views-pages-styles---content__copy---11d-X h1 {\n      font-size: 2.6rem; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
-		"content": "src-views-pages-styles---content---15gAm"
+		"content": "src-views-pages-styles---content---15gAm",
+		"content__copy": "src-views-pages-styles---content__copy---11d-X",
+		"content__right-img": "src-views-pages-styles---content__right-img---ha2cC"
 	};
 	
 	// Only locals
@@ -1647,6 +1673,12 @@ require("source-map-support").install();
 
 /***/ },
 /* 47 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/jpg/bk-img-2JMeFrCm.jpg";
+
+/***/ },
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1775,7 +1807,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1881,13 +1913,13 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1901,25 +1933,25 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports) {
 
 	module.exports = require("mkdirp");
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports) {
 
 	'use strict';
