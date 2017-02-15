@@ -55,10 +55,11 @@
       h1 {
         color: white;
         z-index: 100;
-        line-height: 6rem;
+        line-height: 3rem;
         padding: 1rem 0;
         margin-bottom: 3rem;
         text-shadow: 0 1px 3px black;
+        height: 6rem;
       }
       &:before {
         content: "";
