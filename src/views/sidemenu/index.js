@@ -10,9 +10,9 @@ const MenuItem = ({ icon, children }) => (
 );
 
 export default class Sidemenu {
-  render() {
+  render({ top }) {
     return (
-      <div className={styles.sidebar}>
+      <div className={styles.sidebar.with(top ? 'top' : '')}>
         <MenuItem icon={0}>Book a Service</MenuItem>
         <MenuItem icon={1}>Contact Us</MenuItem>
         <MenuItem icon={2}>Join the Mailing List</MenuItem>

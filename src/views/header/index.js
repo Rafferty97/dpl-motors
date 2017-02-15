@@ -13,17 +13,17 @@ const MenuItem = ({ title, href, last, active }) => (
   </div>
 );
 
-export default () => (
+export default ({ page }) => (
   <header className={styles.header}>
     <Container>
       <a href="*/">
         <img className={styles.logo} src={require('./dpl-motors-logo.svg')} />
       </a>
-      <MenuItem title="Services" href="*/services" active />
-      <MenuItem title="Reconditioning" href="*/recondtioning" />
-      <MenuItem title="Performance Tuning" href="*/performance-tuning" />
-      <MenuItem title="Parts" href="*/parts" />
-      <MenuItem title="Trade" href="*/trade" last />
+      <MenuItem title="Services" href="*/services" active={page == 'services'} />
+      <MenuItem title="Reconditioning" href="*/reconditioning" active={page == 'reconditioning'} />
+      <MenuItem title="Performance Tuning" href="*/performance-tuning" active={page == 'performance-tuning'} />
+      <MenuItem title="Parts" href="*/parts" active={page == 'parts'} />
+      <MenuItem title="Trade" href="*/trade" active={page == 'trade'} last />
       <div className={styles.contact}>
         22 Muchison Terrace<br/>
         Perth WA 6000<br/><br/>

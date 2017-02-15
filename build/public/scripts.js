@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(54);
+	var _cmmnDatasource = __webpack_require__(60);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4390,11 +4390,36 @@
 
 	var home = _interopRequireWildcard(_homePage);
 
+	var _services = __webpack_require__(53);
+
+	var services = _interopRequireWildcard(_services);
+
+	var _performanceTuning = __webpack_require__(57);
+
+	var performanceTuning = _interopRequireWildcard(_performanceTuning);
+
+	var _reconditioning = __webpack_require__(58);
+
+	var reconditioning = _interopRequireWildcard(_reconditioning);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function route(props) {
 	  var page = home;
 	  var viewProps = {};
+	  if (props.route.length > 0) {
+	    switch (props.route[0]) {
+	      case 'services':
+	        page = services;
+	        break;
+	      case 'performance-tuning':
+	        page = performanceTuning;
+	        break;
+	      case 'reconditioning':
+	        page = reconditioning;
+	        break;
+	    }
+	  }
 	  return { page: page, viewProps: viewProps };
 	}
 
@@ -4412,8 +4437,8 @@
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(53) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(53) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(59) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(59) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -4660,7 +4685,8 @@
 	  );
 	};
 
-	exports.default = function () {
+	exports.default = function (_ref2) {
+	  var page = _ref2.page;
 	  return (0, _cmmn.createElement)(
 	    'header',
 	    { className: _styles2.default.header },
@@ -4672,11 +4698,11 @@
 	        { href: '*/' },
 	        (0, _cmmn.createElement)('img', { className: _styles2.default.logo, src: __webpack_require__(36) })
 	      ),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Services', href: '*/services', active: true }),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Reconditioning', href: '*/recondtioning' }),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Performance Tuning', href: '*/performance-tuning' }),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Parts', href: '*/parts' }),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Trade', href: '*/trade', last: true }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Services', href: '*/services', active: page == 'services' }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Reconditioning', href: '*/reconditioning', active: page == 'reconditioning' }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Performance Tuning', href: '*/performance-tuning', active: page == 'performance-tuning' }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Parts', href: '*/parts', active: page == 'parts' }),
+	      (0, _cmmn.createElement)(MenuItem, { title: 'Trade', href: '*/trade', active: page == 'trade', last: true }),
 	      (0, _cmmn.createElement)(
 	        'div',
 	        { className: _styles2.default.contact },
@@ -4966,10 +4992,12 @@
 
 	  _createClass(Sidemenu, [{
 	    key: 'render',
-	    value: function render() {
+	    value: function render(_ref2) {
+	      var top = _ref2.top;
+
 	      return (0, _cmmn.createElement)(
 	        'div',
-	        { className: _styles2.default.sidebar },
+	        { className: _styles2.default.sidebar.with(top ? 'top' : '') },
 	        (0, _cmmn.createElement)(
 	          MenuItem,
 	          { icon: 0 },
@@ -4991,9 +5019,19 @@
 	          'Find a Part'
 	        ),
 	        (0, _cmmn.createElement)(
-	          MenuItem,
-	          { icon: 4 },
-	          'Book a Service'
+	          'div',
+	          { className: _styles2.default.sidebar.item.with('no-hover'), href: '#' },
+	          (0, _cmmn.createElement)(
+	            'a',
+	            { className: _styles2.default.sidebar.item.socialLink.with('fb'), href: '/', target: '_blank' },
+	            (0, _cmmn.createElement)('i', { className: 'fa fa-facebook' })
+	          ),
+	          (0, _cmmn.createElement)(
+	            'a',
+	            { className: _styles2.default.sidebar.item.socialLink.with('twitter'), href: '/', target: '_blank' },
+	            (0, _cmmn.createElement)('i', { className: 'fa fa-twitter' })
+	          ),
+	          (0, _cmmn.createElement)('span', { className: _styles2.default.sidebar.item.icon, style: "background-position-y: " + (-53.5 * 4 - 4) + "px" })
 	        )
 	      );
 	    }
@@ -5021,7 +5059,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"sidebar":"src-views-sidemenu-styles---sidebar---2fVwP","sidebar__item":"src-views-sidemenu-styles---sidebar__item---3tF0f","sidebar__item__icon":"src-views-sidemenu-styles---sidebar__item__icon---VvZ3o","sidebar--visible":"src-views-sidemenu-styles---sidebar--visible---3-E6V"};
+	module.exports = {"sidebar":"src-views-sidemenu-styles---sidebar---2fVwP","sidebar--top":"src-views-sidemenu-styles---sidebar--top---g_xw8","sidebar__item":"src-views-sidemenu-styles---sidebar__item---3tF0f","sidebar__item--no-hover":"src-views-sidemenu-styles---sidebar__item--no-hover---364jd","sidebar__item__icon":"src-views-sidemenu-styles---sidebar__item__icon---VvZ3o","sidebar__item__social-link":"src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ","sidebar__item__social-link--fb":"src-views-sidemenu-styles---sidebar__item__social-link--fb---287lu","sidebar__item__social-link--twitter":"src-views-sidemenu-styles---sidebar__item__social-link--twitter---2CSIZ","sidebar--visible":"src-views-sidemenu-styles---sidebar--visible---3-E6V"};
 
 	// Bemify
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
@@ -5030,12 +5068,395 @@
 /* 51 */,
 /* 52 */,
 /* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(54);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Services'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'services' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Services'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'DPL Motors are an independent mechanical workshop placed in East Perth.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'After gaining many years of experience in the motor trade we decided to set up on our own in 2011. We mainly specialise in German vehicles, such as Mercedes, BMW, Audi, VW, SEAT or Skoda, however don\u2019t hesitate if you own different brand of car as we have the capability to work on any brand. The latest diagnostic software and equipment allows us to work on any vehicle, from a Holden to a Range Rover. This diagnostic equipment is up to main dealer standard so we can carry out all diagnostic work at a fraction of the price compared to a franchised dealer.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We have the technical knowledge and experience to look after you and your vehicle in our clean and modern workshop. We offer courtesy cars and commercial vehicles to keep you on the road while we take care of your vehicle. We can also arrange to collect and deliver your vehicle if you are local.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Volkswagen TDi with loss of power?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We have many cases of lack of power from VW and Audi TDi engines and know      how to fix this. We have had new customers come to us after spending      thousands of dollars at other garage\'s without the problem being fixed,\n      and we have been able to sort this out within a few hours. If you are\n      experiencing a loss of power please give us a call and we will see\n      what we can do.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Porsche Cayenne or VW Touareg with tail-shaft vibration?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'There is a known problem with the bearings on these prop shafts and the main dealer will quote you for a new replacement part. Although this is one option, another is to have the bearing fixed at a fraction of the price. DPL Motors can help you with either option, and it will be signification cheaper than the main dealer prices.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'BMW\'s with suspension issues? Mercedes with gearbox problems?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We encounter these and many more issues weekly and with our experience and knowledge we will have your vehicle back to you in no time.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _cmmn = __webpack_require__(4);
+
+	__webpack_require__(11);
+
+	var _styles = __webpack_require__(55);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	var _header = __webpack_require__(30);
+
+	var _header2 = _interopRequireDefault(_header);
+
+	var _footer = __webpack_require__(37);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
+	var _components = __webpack_require__(33);
+
+	var _sidemenu = __webpack_require__(49);
+
+	var _sidemenu2 = _interopRequireDefault(_sidemenu);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function (_ref) {
+	  var children = _ref.children,
+	      page = _ref.page;
+	  return (0, _cmmn.createElement)(
+	    'div',
+	    null,
+	    (0, _cmmn.createElement)(_header2.default, { page: page }),
+	    (0, _cmmn.createElement)(
+	      'div',
+	      { className: _styles2.default.content },
+	      (0, _cmmn.createElement)(
+	        _components.Container,
+	        null,
+	        children
+	      ),
+	      (0, _cmmn.createElement)(_sidemenu2.default, { top: true })
+	    ),
+	    (0, _cmmn.createElement)(_footer2.default, null)
+	  );
+	};
+
+/***/ },
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"content":"src-views-pages-styles---content---15gAm"};
+
+	// Bemify
+	module.exports = (__webpack_require__(22).default)(module.exports || {});
+
+/***/ },
+/* 56 */,
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(54);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Performance Tuning'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Performance Tuning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'A DPL Motors TUNE REMAP Will Give You The Following Gains:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'More Horsepower.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'More Torque.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Improved Throttle Response.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Smoother Power Delivery.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Safer Overtaking.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Guaranteed Better Fuel Economy.'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When You take Your vehicle Away, You Will leave With:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'A 30 Day Money Back Guarantee.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'A Lifetime Warranty On All Remaps.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Guaranteed Better Fuel Economy On All Diesel Remaps.'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car\u2019s engine to a very conservative level. Yes, that\u2019s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'We also supply a loan car when necessary!'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(54);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Reconditioning'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Reconditioning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Engine Rebuild, Repair, Replacement and Rebore services from DPL MOTORS.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'So your engine\'s Head gasket has blown, The car is producing a horrible knocking noise from the bottom end?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The engine has seized? The chain has stretched or belt has snapped? So what to do?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Why not take a look at our engine rebuild service (petrol and diesel) for the private motorist or the transport industry.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at DPL MOTORS we specialise is European vehicles!'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Importing and stocking a large quantity of our parts for cost effective services!'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'The Reconditioning Process'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We receive your vehicle and accept your instruction at our state of the art workshop. Your engine and all associated parts are removed and inspected. The cylinder head is removed from the engine block. Both cylinder head and block are dismantled into their component parts. All worn or broken parts are replaced as part of our quality control system.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The parts for reassembly pass through our specialist cleaning process. At this point all items that require machining are engineered to our exacting specifications. Machined parts are cleaned and measured prior to reassembly.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Your original engine is then rebuilt using new bearings, seals, piston rings and gaskets. Once fully assembled the engine is replaced into your vehicle with new fluids and filters. The engine is then started and tuned for optimum reliability utilising the latest diagnostic systems'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'The Guarantee'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our workmanship and materials are both guaranteed for either the first 12 months from the date of purchase, or 12,000 kms if sooner. In the event of a failure we will replace either the engine or parts free of charge and at our discretion.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Contact us today for a friendly quote.'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 59 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 54 */
+/* 60 */
 /***/ function(module, exports) {
 
 	"use strict";

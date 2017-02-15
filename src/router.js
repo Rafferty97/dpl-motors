@@ -1,10 +1,26 @@
 import { createElement } from 'cmmn';
 
 import * as home from './views/home-page';
+import * as services from './views/pages/services';
+import * as performanceTuning from './views/pages/performance-tuning';
+import * as reconditioning from './views/pages/reconditioning';
 
 function route(props) {
   let page = home;
   let viewProps = {};
+  if (props.route.length > 0) {
+    switch (props.route[0]) {
+      case 'services':
+        page = services;
+        break;
+      case 'performance-tuning':
+        page = performanceTuning;
+        break;
+      case 'reconditioning':
+        page = reconditioning;
+        break;
+    }
+  }
   return { page, viewProps };
 }
 
