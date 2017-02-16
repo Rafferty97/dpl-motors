@@ -27,7 +27,6 @@ export default class Sidemenu {
     );
   }
   mount(node) {
-    console.log(node);
     node.addEventListener('mouseover', () => {
       node.className = styles.sidebar.with(this.top ? 'top' : '', 'visible');
     });

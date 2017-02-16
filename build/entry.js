@@ -63,19 +63,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _path = __webpack_require__(55);
+	var _path = __webpack_require__(57);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
-	var _fs = __webpack_require__(56);
+	var _fs = __webpack_require__(58);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _mkdirp = __webpack_require__(57);
+	var _mkdirp = __webpack_require__(59);
 	
 	var _mkdirp2 = _interopRequireDefault(_mkdirp);
 	
-	var _routes = __webpack_require__(58);
+	var _routes = __webpack_require__(60);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -515,7 +515,7 @@ require("source-map-support").install();
 	
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 	
-	var _cmmnDatasource = __webpack_require__(54);
+	var _cmmnDatasource = __webpack_require__(56);
 	
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 	
@@ -657,8 +657,8 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(53) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(53) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(55) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(55) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -1464,7 +1464,6 @@ require("source-map-support").install();
 	    value: function mount(node) {
 	      var _this = this;
 	
-	      console.log(node);
 	      node.addEventListener('mouseover', function () {
 	        node.className = _styles2.default.sidebar.with(_this.top ? 'top' : '', 'visible');
 	      });
@@ -1936,17 +1935,29 @@ require("source-map-support").install();
 	});
 	exports.getMeta = undefined;
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _cmmn = __webpack_require__(3);
+	
+	var _superagent = __webpack_require__(51);
+	
+	var _superagent2 = _interopRequireDefault(_superagent);
+	
+	var _superagentJsonp = __webpack_require__(52);
+	
+	var _superagentJsonp2 = _interopRequireDefault(_superagentJsonp);
 	
 	var _template = __webpack_require__(45);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
-	var _styles = __webpack_require__(51);
+	var _styles = __webpack_require__(53);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var getMeta = exports.getMeta = function getMeta() {
 	  return {
@@ -1958,6 +1969,145 @@ require("source-map-support").install();
 	for (var i = 2017; i >= 1950; i--) {
 	  years.push(i);
 	}
+	var Form = function () {
+	  function Form() {
+	    _classCallCheck(this, Form);
+	  }
+	
+	  _createClass(Form, [{
+	    key: 'render',
+	    value: function render() {
+	      return (0, _cmmn.createElement)(
+	        'form',
+	        { className: _styles2.default.form },
+	        (0, _cmmn.createElement)(
+	          'select',
+	          { name: 'year', className: _styles2.default.half },
+	          (0, _cmmn.createElement)(
+	            'option',
+	            null,
+	            'Year'
+	          ),
+	          years.map(function (year) {
+	            return (0, _cmmn.createElement)(
+	              'option',
+	              null,
+	              year + ''
+	            );
+	          })
+	        ),
+	        (0, _cmmn.createElement)('br', null),
+	        (0, _cmmn.createElement)(
+	          'select',
+	          { name: 'make', className: _styles2.default.half },
+	          (0, _cmmn.createElement)(
+	            'option',
+	            null,
+	            'Make'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'option',
+	            null,
+	            'Please select a year'
+	          )
+	        ),
+	        (0, _cmmn.createElement)(
+	          'select',
+	          { name: 'model', className: _styles2.default.half },
+	          (0, _cmmn.createElement)(
+	            'option',
+	            null,
+	            'Model'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'option',
+	            null,
+	            'Please select a year'
+	          )
+	        ),
+	        (0, _cmmn.createElement)(
+	          'select',
+	          { name: 'category' },
+	          (0, _cmmn.createElement)(
+	            'option',
+	            { value: '-1' },
+	            'Category'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'option',
+	            { value: 'other' },
+	            'Other...'
+	          )
+	        ),
+	        (0, _cmmn.createElement)('input', { style: 'display: none;', type: 'text', name: 'category-other', placeholder: 'Category' }),
+	        (0, _cmmn.createElement)('textarea', { name: 'message' }),
+	        (0, _cmmn.createElement)('input', { type: 'submit', name: 'submit', value: 'Submit' })
+	      );
+	    }
+	  }, {
+	    key: 'mount',
+	    value: function mount(form) {
+	      var yearSel = form.querySelector('[name="year"]');
+	      var makeSel = form.querySelector('[name="make"]');
+	      var modelSel = form.querySelector('[name="model"]');
+	      var categorySel = form.querySelector('[name="category"]');
+	      var categoryInput = form.querySelector('[name="category-other"]');
+	      var year = -1,
+	          make = -1,
+	          model = -1;
+	
+	      yearSel.addEventListener('change', function (event) {
+	        if (year == yearSel.value) return;
+	        year = yearSel.value;
+	        if (year == 'Year') {
+	          year = -1;
+	          makeSel.innerHTML = '<option value="-1">Make</option><option value="-1">Please select a year</option>';
+	          modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a year</option>';
+	          return;
+	        }
+	        makeSel.innerHTML = '<option value="-1">Loading...</option>';
+	        modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a make</option>';
+	        _superagent2.default.get('http://www.carqueryapi.com/api/0.3/').query({ cmd: 'getMakes', year: year }).use(_superagentJsonp2.default).end(function (err, res) {
+	          if (err) {
+	            console.error(err);
+	            return;
+	          }
+	          makeSel.innerHTML = '<option value="-1">Make</option>' + res.body.Makes.map(function (make) {
+	            return '<option value="' + make.make_id + '">' + make.make_display + '</option>';
+	          }).join('');
+	        });
+	      });
+	
+	      makeSel.addEventListener('change', function (event) {
+	        if (year == -1) return;
+	        if (make == makeSel.value) return;
+	        make = makeSel.value;
+	        if (make == '-1') {
+	          year = -1;
+	          modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a make</option>';
+	          return;
+	        }
+	        modelSel.innerHTML = '<option value="-1">Loading...</option>';
+	        _superagent2.default.get('http://www.carqueryapi.com/api/0.3/').query({ cmd: 'getModels', year: year, make: make }).use(_superagentJsonp2.default).end(function (err, res) {
+	          if (err) {
+	            console.error(err);
+	            return;
+	          }
+	          modelSel.innerHTML = '<option>Model</option>' + res.body.Models.map(function (model) {
+	            return '<option>' + model.model_name + '</option>';
+	          }).join('');
+	        });
+	      });
+	
+	      categorySel.addEventListener('change', function (event) {
+	        categoryInput.style = categorySel.value == 'other' ? '' : 'display: none;';
+	      });
+	    }
+	  }]);
+	
+	  return Form;
+	}();
+	
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
@@ -1967,67 +2117,24 @@ require("source-map-support").install();
 	      null,
 	      'Find a Part'
 	    ),
-	    (0, _cmmn.createElement)(
-	      'form',
-	      { className: _styles2.default.form },
-	      (0, _cmmn.createElement)(
-	        'select',
-	        { name: 'year', className: _styles2.default.half },
-	        (0, _cmmn.createElement)(
-	          'option',
-	          null,
-	          'Year'
-	        ),
-	        years.map(function (year) {
-	          return (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            year + ''
-	          );
-	        })
-	      ),
-	      (0, _cmmn.createElement)('br', null),
-	      (0, _cmmn.createElement)(
-	        'select',
-	        { name: 'make', className: _styles2.default.half },
-	        (0, _cmmn.createElement)(
-	          'option',
-	          null,
-	          'Make'
-	        )
-	      ),
-	      (0, _cmmn.createElement)(
-	        'select',
-	        { name: 'model', className: _styles2.default.half },
-	        (0, _cmmn.createElement)(
-	          'option',
-	          null,
-	          'Model'
-	        )
-	      ),
-	      (0, _cmmn.createElement)(
-	        'select',
-	        { name: 'category' },
-	        (0, _cmmn.createElement)(
-	          'option',
-	          null,
-	          'Category'
-	        ),
-	        (0, _cmmn.createElement)(
-	          'option',
-	          null,
-	          'Other...'
-	        )
-	      ),
-	      (0, _cmmn.createElement)('input', { type: 'text', name: 'category-other', placeholder: 'Category' }),
-	      (0, _cmmn.createElement)('textarea', { name: 'message' }),
-	      (0, _cmmn.createElement)('input', { type: 'submit', name: 'submit', value: 'Submit' })
-	    )
+	    (0, _cmmn.createElement)(Form, null)
 	  );
 	};
 
 /***/ },
 /* 51 */
+/***/ function(module, exports) {
+
+	module.exports = require("superagent");
+
+/***/ },
+/* 52 */
+/***/ function(module, exports) {
+
+	module.exports = require("superagent-jsonp");
+
+/***/ },
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -2035,7 +2142,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(52) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px; }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
+	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(54) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px;\n    max-width: calc(98% - 8px); }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -2050,19 +2157,19 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 52 */
+/* 54 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/chevron-3vB6y-nq.png";
 
 /***/ },
-/* 53 */
+/* 55 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 54 */
+/* 56 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2076,25 +2183,25 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 55 */
+/* 57 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 56 */
+/* 58 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 57 */
+/* 59 */
 /***/ function(module, exports) {
 
 	module.exports = require("mkdirp");
 
 /***/ },
-/* 58 */
+/* 60 */
 /***/ function(module, exports) {
 
 	'use strict';

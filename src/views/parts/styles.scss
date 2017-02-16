@@ -33,6 +33,7 @@
 
   textarea {
     min-height: 140px;
+    max-width: calc(98% - 8px);
   }
 
   input[type="submit"] {

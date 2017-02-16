@@ -14,7 +14,7 @@ build({
   buildDir: path.join(__dirname, argv.static ? 'build' : 'tmp'),
   node_modules: path.join(__dirname, 'node_modules'),
   publicPath: argv.static ? '/dpl-motors/' : '/',
-  clientExterns: ['whatwg-fetch']
+  clientExterns: ['superagent', 'superagent-jsonp']
 })
   .then(function(stats) {
     console.log('Project is built.');
