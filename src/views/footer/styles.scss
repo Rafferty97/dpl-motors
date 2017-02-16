@@ -49,11 +49,14 @@
     -ms-transform: matrix(1,0,-0.35,1,0,0);
     transform: matrix(1,0,-0.35,1,0,0);
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 10px;
     font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     cursor: pointer;
+    line-height: 2rem;
+    color: white;
+    text-decoration: none;
 
     &:hover {
       background-color: $primary;
@@ -81,7 +84,13 @@
       transform: matrix(1,0,0.35,1,0,0);
       background-image: url(./icons.png);
       background-size: auto 70px;
-      background-position: 6px 50%;
+      background-position: 0 50%;
+      background-repeat: no-repeat;
+      vertical-align: top;
+      &--icon-0 { background-position-x: 9px; }
+      &--icon-1 { background-position-x: -88px; }
+      &--icon-2 { background-position-x: -185px; }
+      &--icon-3 { background-position-x: -282px; }
       &:after {
         content: "";
         display: block;
@@ -96,6 +105,54 @@
         transform: matrix(1,0,-0.35,1,0,0);
       }
     }
+
+    @media (max-width: $bp-wide) {
+      font-size: 1.4rem;
+      height: 170px;
+      &__icon {
+        width: 50px;
+        height: 50px;
+        margin: -25px 0 0 -25px;
+        background-size: auto 50px;
+        background-position: 6px 50%;
+        &--icon-0 { background-position-x: 7px; }
+        &--icon-1 { background-position-x: -65px; }
+        &--icon-2 { background-position-x: -132px; }
+        &--icon-3 { background-position-x: -200px; }
+      }
+    }
+
+    @media (max-width: $bp-medium) {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      width: 40%;
+      border: 1px solid darken($primary, 15%);
+      margin: 10px;
+      border-radius: 3px;
+      &:hover {
+        background-color: $primary;
+        border: 1px solid lighten($primary, 10%);
+      }
+      &:hover + & {
+        border: 1px solid darken($primary, 15%);
+      }
+    }
+
+    @media (max-width: $bp-smallest) {
+      width: 90%;
+      height: 13.5rem;
+      margin: 5px;
+      &__icon {
+        top: auto;
+        margin-top: 0;
+        bottom: 25px;
+      }
+    }
+  }
+
+  @media (max-width: $bp-medium) {
+    padding: 10px 0;
   }
 }
 

@@ -85,11 +85,27 @@
   border-radius: 3px;
   cursor: pointer;
   i {
-    width: 4rem;
     line-height: 4rem;
     color: white;
     text-decoration: none;
     font-size: 2rem;
+    padding: 0 1.5rem;
+    &:before {
+      vertical-align: middle;
+    }
+    &:after {
+      content: "Navigation";
+      font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 1.4rem;
+      margin-left: 0.5em;
+      text-transform: uppercase;
+      vertical-align: middle;
+      letter-spacing: 0.05em;
+      @media (max-width: $bp-smallest) {
+        content: "";
+        display: none;
+      }
+    }
   }
   &:hover {
     background-color: #202020;

@@ -6,9 +6,9 @@ import styles from './styles.scss';
 import { Container } from '../theme/components';
 
 const FooterLink = ({ icon, href, children }) => (
-  <a className={styles.footerLinks.item}>
+  <a className={styles.footerLinks.item} href={href}>
     {children}
-    <span className={styles.footerLinks.item.icon} style={"background-position-x: " + (-97*icon + 9) + "px"} />
+    <span className={styles.footerLinks.item.icon.with('icon-' + icon)} />
   </a>
 );
 
@@ -33,10 +33,10 @@ export default () => (
     </div>
     <div className={styles.footerLinks}>
       <Container>
-        <FooterLink icon={0} href="#">Book a Service</FooterLink>
-        <FooterLink icon={1} href="#">Contact Us</FooterLink>
-        <FooterLink icon={2} href="#">Find a Part</FooterLink>
-        <FooterLink icon={3} href="#">Trade</FooterLink>
+        <FooterLink icon={0} href="*/book/">Book a Service</FooterLink>
+        <FooterLink icon={1} href="*/contact-us/">Contact Us</FooterLink>
+        <FooterLink icon={2} href="*/parts/">Find a Part</FooterLink>
+        <FooterLink icon={3} href="*/trade/">Trade</FooterLink>
       </Container>
     </div>
     <div className={styles.contact}>
