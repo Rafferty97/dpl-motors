@@ -2114,7 +2114,8 @@ html, body {
     background-position: 100% 50%;
     background-repeat: no-repeat; }
   .src-views-parts-styles---form---2ktVT textarea {
-    min-height: 140px; }
+    min-height: 140px;
+    max-width: calc(98% - 8px); }
   .src-views-parts-styles---form---2ktVT input[type="submit"] {
     background-color: #006e9c;
     border: none;
