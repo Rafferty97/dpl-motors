@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(61);
+	var _cmmnDatasource = __webpack_require__(65);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4402,6 +4402,10 @@
 
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 
+	var _parts = __webpack_require__(60);
+
+	var parts = _interopRequireWildcard(_parts);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function route(props) {
@@ -4417,6 +4421,9 @@
 	        break;
 	      case 'reconditioning':
 	        page = reconditioning;
+	        break;
+	      case 'parts':
+	        page = parts;
 	        break;
 	    }
 	  }
@@ -4437,8 +4444,8 @@
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(60) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(60) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(64) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(64) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -5201,14 +5208,15 @@
 
 	exports.default = function (_ref) {
 	  var children = _ref.children,
-	      page = _ref.page;
+	      page = _ref.page,
+	      grey = _ref.grey;
 	  return (0, _cmmn.createElement)(
 	    'div',
 	    null,
 	    (0, _cmmn.createElement)(_header2.default, { page: page }),
 	    (0, _cmmn.createElement)(
 	      'div',
-	      { className: _styles2.default.content },
+	      { className: _styles2.default.content.with(grey ? 'grey' : '') },
 	      (0, _cmmn.createElement)(
 	        _components.Container,
 	        null,
@@ -5230,7 +5238,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"content":"src-views-pages-styles---content---15gAm","content__copy":"src-views-pages-styles---content__copy---11d-X","content__right-img":"src-views-pages-styles---content__right-img---ha2cC"};
+	module.exports = {"content":"src-views-pages-styles---content---15gAm","content--grey":"src-views-pages-styles---content--grey---1CK5C","content__copy":"src-views-pages-styles---content__copy---11d-X","content__right-img":"src-views-pages-styles---content__right-img---ha2cC"};
 
 	// Bemify
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
@@ -5479,12 +5487,125 @@
 
 /***/ },
 /* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(54);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	var _styles = __webpack_require__(61);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Parts'
+	  };
+	};
+
+	var years = [];
+	for (var i = 2017; i >= 1950; i--) {
+	  years.push(i);
+	}
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'parts', grey: true },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Find a Part'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'form',
+	      { className: _styles2.default.form },
+	      (0, _cmmn.createElement)(
+	        'select',
+	        { name: 'year', className: _styles2.default.half },
+	        (0, _cmmn.createElement)(
+	          'option',
+	          null,
+	          'Year'
+	        ),
+	        years.map(function (year) {
+	          return (0, _cmmn.createElement)(
+	            'option',
+	            null,
+	            year + ''
+	          );
+	        })
+	      ),
+	      (0, _cmmn.createElement)('br', null),
+	      (0, _cmmn.createElement)(
+	        'select',
+	        { name: 'make', className: _styles2.default.half },
+	        (0, _cmmn.createElement)(
+	          'option',
+	          null,
+	          'Make'
+	        )
+	      ),
+	      (0, _cmmn.createElement)(
+	        'select',
+	        { name: 'model', className: _styles2.default.half },
+	        (0, _cmmn.createElement)(
+	          'option',
+	          null,
+	          'Model'
+	        )
+	      ),
+	      (0, _cmmn.createElement)(
+	        'select',
+	        { name: 'category' },
+	        (0, _cmmn.createElement)(
+	          'option',
+	          null,
+	          'Category'
+	        ),
+	        (0, _cmmn.createElement)(
+	          'option',
+	          null,
+	          'Other...'
+	        )
+	      ),
+	      (0, _cmmn.createElement)('input', { type: 'text', name: 'category-other', placeholder: 'Category' }),
+	      (0, _cmmn.createElement)('textarea', { name: 'message' }),
+	      (0, _cmmn.createElement)('input', { type: 'submit', name: 'submit', value: 'Submit' })
+	    )
+	  );
+	};
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"form":"src-views-parts-styles---form---2ktVT","half":"src-views-parts-styles---half---25g4o"};
+
+	// Bemify
+	module.exports = (__webpack_require__(22).default)(module.exports || {});
+
+/***/ },
+/* 62 */,
+/* 63 */,
+/* 64 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 61 */
+/* 65 */
 /***/ function(module, exports) {
 
 	"use strict";
