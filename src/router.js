@@ -4,6 +4,7 @@ import * as home from './views/home-page';
 import * as services from './views/pages/services';
 import * as performanceTuning from './views/pages/performance-tuning';
 import * as reconditioning from './views/pages/reconditioning';
+import * as parts from './views/parts';
 
 function route(props) {
   let page = home;
@@ -18,6 +19,9 @@ function route(props) {
         break;
       case 'reconditioning':
         page = reconditioning;
+        break;
+      case 'parts':
+        page = parts;
         break;
     }
   }
