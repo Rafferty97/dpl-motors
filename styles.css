@@ -2112,7 +2112,8 @@ html, body {
     background-image: url(/dpl-motors/png/chevron-3vB6y-nq.png);
     background-size: 30px;
     background-position: 100% 50%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    cursor: pointer; }
   .src-views-parts-styles---form---2ktVT textarea {
     min-height: 140px;
     max-width: calc(98% - 8px); }
@@ -2124,7 +2125,10 @@ html, body {
     font-size: 1.6rem;
     color: white;
     text-transform: uppercase;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    cursor: pointer; }
+    .src-views-parts-styles---form---2ktVT input[type="submit"]:hover {
+      background-color: #0092cf; }
   @media (max-width: 1000px) {
     .src-views-parts-styles---form---2ktVT {
       margin-top: 50px; } }
