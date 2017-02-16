@@ -4823,9 +4823,9 @@
 	      children = _ref.children;
 	  return (0, _cmmn.createElement)(
 	    'a',
-	    { className: _styles2.default.footerLinks.item },
+	    { className: _styles2.default.footerLinks.item, href: href },
 	    children,
-	    (0, _cmmn.createElement)('span', { className: _styles2.default.footerLinks.item.icon, style: "background-position-x: " + (-97 * icon + 9) + "px" })
+	    (0, _cmmn.createElement)('span', { className: _styles2.default.footerLinks.item.icon.with('icon-' + icon) })
 	  );
 	};
 
@@ -4866,22 +4866,22 @@
 	        null,
 	        (0, _cmmn.createElement)(
 	          FooterLink,
-	          { icon: 0, href: '#' },
+	          { icon: 0, href: '*/book/' },
 	          'Book a Service'
 	        ),
 	        (0, _cmmn.createElement)(
 	          FooterLink,
-	          { icon: 1, href: '#' },
+	          { icon: 1, href: '*/contact-us/' },
 	          'Contact Us'
 	        ),
 	        (0, _cmmn.createElement)(
 	          FooterLink,
-	          { icon: 2, href: '#' },
+	          { icon: 2, href: '*/parts/' },
 	          'Find a Part'
 	        ),
 	        (0, _cmmn.createElement)(
 	          FooterLink,
-	          { icon: 3, href: '#' },
+	          { icon: 3, href: '*/trade/' },
 	          'Trade'
 	        )
 	      )
@@ -4918,7 +4918,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"footer":"src-views-footer-styles---footer---1RfXZ","makes":"src-views-footer-styles---makes---xwB6j","makes__specialise":"src-views-footer-styles---makes__specialise---1Zj77","makes__logos":"src-views-footer-styles---makes__logos---UooKY","footer-links":"src-views-footer-styles---footer-links---GsbML","footer-links__item":"src-views-footer-styles---footer-links__item---3-jhm","footer-links__item__icon":"src-views-footer-styles---footer-links__item__icon---GAb6i","contact":"src-views-footer-styles---contact---72kR5","contact__logo":"src-views-footer-styles---contact__logo----TpaK","contact__info":"src-views-footer-styles---contact__info---9fVb4"};
+	module.exports = {"footer":"src-views-footer-styles---footer---1RfXZ","makes":"src-views-footer-styles---makes---xwB6j","makes__specialise":"src-views-footer-styles---makes__specialise---1Zj77","makes__logos":"src-views-footer-styles---makes__logos---UooKY","footer-links":"src-views-footer-styles---footer-links---GsbML","footer-links__item":"src-views-footer-styles---footer-links__item---3-jhm","footer-links__item__icon":"src-views-footer-styles---footer-links__item__icon---GAb6i","footer-links__item__icon--icon-0":"src-views-footer-styles---footer-links__item__icon--icon-0---1skvb","footer-links__item__icon--icon-1":"src-views-footer-styles---footer-links__item__icon--icon-1---3_Ijs","footer-links__item__icon--icon-2":"src-views-footer-styles---footer-links__item__icon--icon-2---3Hz6m","footer-links__item__icon--icon-3":"src-views-footer-styles---footer-links__item__icon--icon-3---jJE6W","contact":"src-views-footer-styles---contact---72kR5","contact__logo":"src-views-footer-styles---contact__logo----TpaK","contact__info":"src-views-footer-styles---contact__info---9fVb4"};
 
 	// Bemify
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
