@@ -22,7 +22,7 @@ export default ({ page }) => (
       </a>
       <MenuItem title="Services" href="*/services" active={page == 'services'}>
         <SubMenu>
-          <link href="#">Air Conditioning</link>
+          <link href="*/services/air-conditioning">Air Conditioning</link>
           <link href="#">Scheduled Servicing</link>
         </SubMenu>
       </MenuItem>

@@ -2,6 +2,7 @@ import { createElement } from 'cmmn';
 
 import * as home from './views/home-page';
 import * as services from './views/pages/services';
+import * as airConditioning from './views/pages/air-conditioning';
 import * as performanceTuning from './views/pages/performance-tuning';
 import * as reconditioning from './views/pages/reconditioning';
 import * as parts from './views/parts';
@@ -13,6 +14,13 @@ function route(props) {
     switch (props.route[0]) {
       case 'services':
         page = services;
+        if (props.route.length > 1) {
+          switch (props.route[1]) {
+            case 'air-conditioning':
+            page = airConditioning;
+            break;
+          }
+        }
         break;
       case 'performance-tuning':
         page = performanceTuning;

@@ -63,19 +63,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _path = __webpack_require__(58);
+	var _path = __webpack_require__(59);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
-	var _fs = __webpack_require__(59);
+	var _fs = __webpack_require__(60);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _mkdirp = __webpack_require__(60);
+	var _mkdirp = __webpack_require__(61);
 	
 	var _mkdirp2 = _interopRequireDefault(_mkdirp);
 	
-	var _routes = __webpack_require__(61);
+	var _routes = __webpack_require__(62);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -515,7 +515,7 @@ require("source-map-support").install();
 	
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 	
-	var _cmmnDatasource = __webpack_require__(57);
+	var _cmmnDatasource = __webpack_require__(58);
 	
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 	
@@ -607,15 +607,19 @@ require("source-map-support").install();
 	
 	var services = _interopRequireWildcard(_services);
 	
-	var _performanceTuning = __webpack_require__(49);
+	var _airConditioning = __webpack_require__(49);
+	
+	var airConditioning = _interopRequireWildcard(_airConditioning);
+	
+	var _performanceTuning = __webpack_require__(50);
 	
 	var performanceTuning = _interopRequireWildcard(_performanceTuning);
 	
-	var _reconditioning = __webpack_require__(50);
+	var _reconditioning = __webpack_require__(51);
 	
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 	
-	var _parts = __webpack_require__(51);
+	var _parts = __webpack_require__(52);
 	
 	var parts = _interopRequireWildcard(_parts);
 	
@@ -628,6 +632,13 @@ require("source-map-support").install();
 	    switch (props.route[0]) {
 	      case 'services':
 	        page = services;
+	        if (props.route.length > 1) {
+	          switch (props.route[1]) {
+	            case 'air-conditioning':
+	              page = airConditioning;
+	              break;
+	          }
+	        }
 	        break;
 	      case 'performance-tuning':
 	        page = performanceTuning;
@@ -657,8 +668,8 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(56) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(56) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(57) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(57) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -1060,7 +1071,7 @@ require("source-map-support").install();
 	          null,
 	          (0, _cmmn.createElement)(
 	            'link',
-	            { href: '#' },
+	            { href: '*/services/air-conditioning' },
 	            'Air Conditioning'
 	          ),
 	          (0, _cmmn.createElement)(
@@ -1848,6 +1859,97 @@ require("source-map-support").install();
 	
 	var getMeta = exports.getMeta = function getMeta() {
 	  return {
+	    title: 'Services'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'services' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Air Conditioning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'A/C System Ragas And Repairs at DPL MOTORS'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The Air Con system in your car is a serviceable item, just as you have to change your oil and air filters from time to time. It is very important to maintain your Air Conditioning system for the following reasons:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Due to natural leakage through naturally slightly porous pipes, most A/C systems will lose around 15-20% refrigerant every 12 months resulting in a less powerful and less efficient system. Bacteria and Fungi and can grow in car A/C systems and can cause allergic reactions such as hay-fever, skin irritations, runny noses and itchy eyes.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Your A/C system will put a strain on the compressor which can result in the compressor wearing out quickly If not serviced regularly. This can be costly, as it increases fuel consumption and draws more engine power to run the system. It is recommend that a vehicle\'s air con system is serviced every year to ensure it operates at maximum efficiency. However, there are some indicators that will help you determine if you have a problem with your Air Conditioning system:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The interior takes longer to cool down? There\u2019s a noticeable increase in fuel consumption? The windscreen doesn\u2019t clear quickly?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The Air-Con System Service Includes:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Testing for leaks'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Emptying and recharging the gas in the system.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Cleaning and Deodorising the entire Air Conditioning'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'If you notice an odd, particularly musty smell in your car, it is more than likely that the entire air con system needs proper cleaning with a de-fungicide.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
 	    title: 'Performance Tuning'
 	  };
 	};
@@ -1957,7 +2059,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2063,7 +2165,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2077,11 +2179,11 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _superagent = __webpack_require__(52);
+	var _superagent = __webpack_require__(53);
 	
 	var _superagent2 = _interopRequireDefault(_superagent);
 	
-	var _superagentJsonp = __webpack_require__(53);
+	var _superagentJsonp = __webpack_require__(54);
 	
 	var _superagentJsonp2 = _interopRequireDefault(_superagentJsonp);
 	
@@ -2089,7 +2191,7 @@ require("source-map-support").install();
 	
 	var _template2 = _interopRequireDefault(_template);
 	
-	var _styles = __webpack_require__(54);
+	var _styles = __webpack_require__(55);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -2263,19 +2365,19 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports) {
 
 	module.exports = require("superagent");
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports) {
 
 	module.exports = require("superagent-jsonp");
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -2283,7 +2385,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(55) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat;\n    cursor: pointer; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px;\n    max-width: calc(98% - 8px); }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0;\n    cursor: pointer; }\n    .src-views-parts-styles---form---2ktVT input[type=\"submit\"]:hover {\n      background-color: #0092cf; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
+	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(56) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat;\n    cursor: pointer; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px;\n    max-width: calc(98% - 8px); }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0;\n    cursor: pointer; }\n    .src-views-parts-styles---form---2ktVT input[type=\"submit\"]:hover {\n      background-color: #0092cf; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -2298,19 +2400,19 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/chevron-3vB6y-nq.png";
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2324,25 +2426,25 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports) {
 
 	module.exports = require("mkdirp");
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2350,7 +2452,7 @@ require("source-map-support").install();
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var routes = ['/', '/services/', '/performance-tuning/', '/reconditioning/', '/parts/'];
+	var routes = ['/', '/services/', '/services/air-conditioning/', '/performance-tuning/', '/reconditioning/', '/parts/'];
 	
 	exports.default = routes;
 
