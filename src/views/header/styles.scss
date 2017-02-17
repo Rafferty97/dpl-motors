@@ -74,6 +74,38 @@
   }
 }
 
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: $dk-grey;
+  display: none;
+  li {
+    border-top: 1px solid #a0a0a0;
+  }
+  .menu-item--active & {
+    background-color: $primary;
+    li {
+      border-top: 1px solid lighten($primary, 10%);
+    }
+  }
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    padding: 0.5em 0.75em;
+    &:hover {
+      background-color: rgba(255,255,255,0.1);
+    }
+  }
+}
+
 .mobile-nav {
   display: none;
   position: absolute;

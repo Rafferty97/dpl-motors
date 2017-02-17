@@ -16,6 +16,7 @@ export default ({ children, page, grey }) => (
         <div className={styles.content.rightImg} style={`background-image: url(${require('./bk-img.jpg')});`} />
         <div className={styles.content.copy}>
           {children}
+          <a href="*/book/" className={styles.bookBtn}>Book Service</a>
         </div>
       </Container>
       <Sidemenu top />

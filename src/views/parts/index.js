@@ -61,6 +61,8 @@ class Form {
       }
       makeSel.innerHTML = '<option value="-1">Loading...</option>';
       modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a make</option>';
+      make = -1;
+      model = -1;
       request
         .get('http://www.carqueryapi.com/api/0.3/')
         .query({ cmd: 'getMakes', year })
@@ -86,6 +88,7 @@ class Form {
         return;
       }
       modelSel.innerHTML = '<option value="-1">Loading...</option>';
+      model = -1;
       request
         .get('http://www.carqueryapi.com/api/0.3/')
         .query({ cmd: 'getModels', year, make })
