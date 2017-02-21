@@ -4,6 +4,10 @@ import * as home from './views/home-page';
 import * as services from './views/pages/services';
 import * as airConditioning from './views/pages/air-conditioning';
 import * as performanceTuning from './views/pages/performance-tuning';
+import * as ecuTuning from './views/pages/ecu-tuning';
+import * as dpfSolution from './views/pages/dpf-solution';
+import * as egrSolution from './views/pages/egr-solution';
+import * as truckTuning from './views/pages/truck-tuning';
 import * as reconditioning from './views/pages/reconditioning';
 import * as parts from './views/parts';
 
@@ -24,6 +28,14 @@ function route(props) {
         break;
       case 'performance-tuning':
         page = performanceTuning;
+        if (props.route.length > 1) {
+          switch (props.route[1]) {
+            case 'ecu-tuning': page = ecuTuning; break;
+            case 'dpf-solution': page = dpfSolution; break;
+            case 'egr-solution': page = egrSolution; break;
+            case 'truck-tuning': page = truckTuning; break;
+          }
+        }
         break;
       case 'reconditioning':
         page = reconditioning;

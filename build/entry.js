@@ -63,19 +63,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _path = __webpack_require__(59);
+	var _path = __webpack_require__(63);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
-	var _fs = __webpack_require__(60);
+	var _fs = __webpack_require__(64);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _mkdirp = __webpack_require__(61);
+	var _mkdirp = __webpack_require__(65);
 	
 	var _mkdirp2 = _interopRequireDefault(_mkdirp);
 	
-	var _routes = __webpack_require__(62);
+	var _routes = __webpack_require__(66);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -515,7 +515,7 @@ require("source-map-support").install();
 	
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 	
-	var _cmmnDatasource = __webpack_require__(58);
+	var _cmmnDatasource = __webpack_require__(62);
 	
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 	
@@ -615,11 +615,27 @@ require("source-map-support").install();
 	
 	var performanceTuning = _interopRequireWildcard(_performanceTuning);
 	
-	var _reconditioning = __webpack_require__(51);
+	var _ecuTuning = __webpack_require__(51);
+	
+	var ecuTuning = _interopRequireWildcard(_ecuTuning);
+	
+	var _dpfSolution = __webpack_require__(52);
+	
+	var dpfSolution = _interopRequireWildcard(_dpfSolution);
+	
+	var _egrSolution = __webpack_require__(53);
+	
+	var egrSolution = _interopRequireWildcard(_egrSolution);
+	
+	var _truckTuning = __webpack_require__(54);
+	
+	var truckTuning = _interopRequireWildcard(_truckTuning);
+	
+	var _reconditioning = __webpack_require__(55);
 	
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 	
-	var _parts = __webpack_require__(52);
+	var _parts = __webpack_require__(56);
 	
 	var parts = _interopRequireWildcard(_parts);
 	
@@ -642,6 +658,18 @@ require("source-map-support").install();
 	        break;
 	      case 'performance-tuning':
 	        page = performanceTuning;
+	        if (props.route.length > 1) {
+	          switch (props.route[1]) {
+	            case 'ecu-tuning':
+	              page = ecuTuning;break;
+	            case 'dpf-solution':
+	              page = dpfSolution;break;
+	            case 'egr-solution':
+	              page = egrSolution;break;
+	            case 'truck-tuning':
+	              page = truckTuning;break;
+	          }
+	        }
 	        break;
 	      case 'reconditioning':
 	        page = reconditioning;
@@ -668,8 +696,8 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'head',
 	      null,
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(57) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(57) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(61) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(61) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -1117,13 +1145,23 @@ require("source-map-support").install();
 	          null,
 	          (0, _cmmn.createElement)(
 	            'link',
-	            { href: '#' },
-	            'CPU Tuning'
+	            { href: '*/performance-tuning/ecu-tuning' },
+	            'ECU Tuning'
 	          ),
 	          (0, _cmmn.createElement)(
 	            'link',
-	            { href: '#' },
-	            'PTS & EGR Solutions'
+	            { href: '*/performance-tuning/dpf-solution' },
+	            'DPF Solution'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'link',
+	            { href: '*/performance-tuning/egr-solution' },
+	            'EGR Solution'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'link',
+	            { href: '*/performance-tuning/truck-tuning' },
+	            'Truck Tuning'
 	          )
 	        )
 	      ),
@@ -2079,6 +2117,489 @@ require("source-map-support").install();
 	
 	var getMeta = exports.getMeta = function getMeta() {
 	  return {
+	    title: 'ECU Tuning'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'ECU Tuning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'What is ECU Remapping/Programming?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When a manufacturer develops a new car they have to take into consideration all of the conditions it may be subjected to in all of the regions in which they intend to sell this model. This means instead of just optimising the ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'ECU\'s program or \'map\''
+	      ),
+	      ' to deliver the best performance or the most fuel efficiency they have to make compromises to the map to take into account these potential differing operating conditions. These could include sub-standard fuels, extremes in temperature and altitude, differing emission laws and even the possibility that vehicle may not be serviced on a regular basis and in accordance with the manufacturers recommended instructions.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'ECU remapping'
+	      ),
+	      ' is taking a read from the ECU\u2019s processing chip of the vehicles standard compromised map and adjusting various parameters within the map such as fuel pressure, boost pressure (on turbocharged applications) ignition advance and throttle pedal control amongst others to release the true performance from the engine. It is a completely safe process as it is just giving the engine the performance it should have had in the first place before all the compromises were applied to the original programming. Every engine will have its own unique map and by adjusting this we can fine tune the characteristics of the engine; unleashing more power and in many cases reduce fuel consumption too.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Benefits of ECU Remapping/Programming'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'ECU programming'
+	      ),
+	      ' will not only improve the engines power and torque figures it will also sharpen the throttle response and widen the power-band. This will make the power delivery a lot more linear, which in turn will make the vehicle feel a lot livelier to drive and the engine more flexible. Frequently, the vehicles power output is restricted by the manufacturer for no other reason than to ensure that the vehicle fits into a class to suit fleet buyers. As a driving enthusiast, you do not need or want such restrictions placed upon your vehicles ECU and its performance therefore you can benefit from the hidden power and torque locked away within your engine management system.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The other main benefit of ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'remapping'
+	      ),
+	      ' will be a reduction in fuel consumption. With the extra torque especially at the bottom of the rev range you will see a fuel saving as it will require less throttle input to maintain motorway speeds, you can drive in a higher gear at a slower speed as well as helping significantly when fully laden, towing or on gradients and even in start stop traffic.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'DPF Solution'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'DPF Solution'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'What is a DPF?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'A ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'DPF (Diesel Particulate Filter)'
+	      ),
+	      ' also known as ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'FAP'
+	      ),
+	      ' on some French vehicles, is a device fitted to the exhaust system of modern diesel vehicles to reduce emissions and meet European emission standards. It does this by trapping ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Soot (Particulate Matter - PM)'
+	      ),
+	      ' from the exhaust gasses while letting the gasses flow through the system.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'As with any type of filter a ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Particulate Filter'
+	      ),
+	      ' needs to be cleaned regularly to function properly. With DPF\u2019s this is done by a process known as ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Regeneration'
+	      ),
+	      ' which involves a combination of a ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Catalyst'
+	      ),
+	      ' function in the system and burning the soot to gas at a very high temperature leaving behind an ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Ash residue'
+	      ),
+	      ' within the DPF. Regeneration should be an automatic process taking place in the normal use of your vehicle, you may have noticed this in the form of a blast of white smoke form the exhaust on occasions.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Problems Encountered with DPF'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'If regeneration doesn\u2019t function properly it leads to a build-up of soot affecting performance and fuel economy, left unattended this will result in a ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Blocked DPF'
+	      ),
+	      ' which can ultimately cause very expensive damage to other engine components. A blocked DPF is also potentially dangerous as it can cause overheating in the exhaust system and cause a fire risk. To prevent this damage most new vehicles will go into \u201CLimp Home\u201D safety mode at this stage, meaning the vehicle will have minimum power barely sufficient to crawl home.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'For regeneration to take place it requires the vehicle to be driven regularly at some speed on open roads e.g. motorway driving, typically driving at around 2500 RPM for approx. 15-30mins at least once a month, this will keep things working.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Many diesel vehicles are used primarily in urban areas or on short stop start journeys e.g. local deliveries, taxi\u2019s, school runs etc and many have auto gearbox, so the vehicle does not get the chance to heat up sufficiently and is unable to carry out a full regeneration process.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Even if the regeneration functions as it should, over time the ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Ash Residue'
+	      ),
+	      ' will build up in the DPF and have the same affect ultimately resulting in a blocked DPF. For this reason a DPF is classified as a Serviceable Item by the vehicle manufacturers like brake pads or air filters etc and not covered under warranty. ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'DPF systems therefore need to be maintained properly.'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'ECU Tuning'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'ECU Tuning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'A DPL Motors TUNE REMAP Will Give You The Following Gains:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'More Horsepower.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'More Torque.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Improved Throttle Response.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Smoother Power Delivery.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Safer Overtaking.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Guaranteed Better Fuel Economy.'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When You take Your vehicle Away, You Will leave With:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'A 30 Day Money Back Guarantee.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'A Lifetime Warranty On All Remaps.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Guaranteed Better Fuel Economy On All Diesel Remaps.'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car\u2019s engine to a very conservative level. Yes, that\u2019s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'We also supply a loan car when necessary!'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'ECU Tuning'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'ECU Tuning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'A DPL Motors TUNE REMAP Will Give You The Following Gains:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'More Horsepower.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'More Torque.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Improved Throttle Response.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Smoother Power Delivery.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Safer Overtaking.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Guaranteed Better Fuel Economy.'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When You take Your vehicle Away, You Will leave With:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'A 30 Day Money Back Guarantee.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'A Lifetime Warranty On All Remaps.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Guaranteed Better Fuel Economy On All Diesel Remaps.'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car\u2019s engine to a very conservative level. Yes, that\u2019s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'We also supply a loan car when necessary!'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
 	    title: 'Reconditioning'
 	  };
 	};
@@ -2165,7 +2686,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 52 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2179,11 +2700,11 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _superagent = __webpack_require__(53);
+	var _superagent = __webpack_require__(57);
 	
 	var _superagent2 = _interopRequireDefault(_superagent);
 	
-	var _superagentJsonp = __webpack_require__(54);
+	var _superagentJsonp = __webpack_require__(58);
 	
 	var _superagentJsonp2 = _interopRequireDefault(_superagentJsonp);
 	
@@ -2191,7 +2712,7 @@ require("source-map-support").install();
 	
 	var _template2 = _interopRequireDefault(_template);
 	
-	var _styles = __webpack_require__(55);
+	var _styles = __webpack_require__(59);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -2365,19 +2886,19 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 53 */
+/* 57 */
 /***/ function(module, exports) {
 
 	module.exports = require("superagent");
 
 /***/ },
-/* 54 */
+/* 58 */
 /***/ function(module, exports) {
 
 	module.exports = require("superagent-jsonp");
 
 /***/ },
-/* 55 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -2385,7 +2906,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(56) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat;\n    cursor: pointer; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px;\n    max-width: calc(98% - 8px); }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0;\n    cursor: pointer; }\n    .src-views-parts-styles---form---2ktVT input[type=\"submit\"]:hover {\n      background-color: #0092cf; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
+	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(60) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat;\n    cursor: pointer; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px;\n    max-width: calc(98% - 8px); }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0;\n    cursor: pointer; }\n    .src-views-parts-styles---form---2ktVT input[type=\"submit\"]:hover {\n      background-color: #0092cf; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -2400,19 +2921,19 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 56 */
+/* 60 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/chevron-3vB6y-nq.png";
 
 /***/ },
-/* 57 */
+/* 61 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 58 */
+/* 62 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2426,25 +2947,25 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 59 */
+/* 63 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 60 */
+/* 64 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 61 */
+/* 65 */
 /***/ function(module, exports) {
 
 	module.exports = require("mkdirp");
 
 /***/ },
-/* 62 */
+/* 66 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2452,7 +2973,7 @@ require("source-map-support").install();
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var routes = ['/', '/services/', '/services/air-conditioning/', '/performance-tuning/', '/reconditioning/', '/parts/'];
+	var routes = ['/', '/services/', '/services/air-conditioning/', '/performance-tuning/', '/performance-tuning/ecu-tuning/', '/performance-tuning/dpf-solution/', '/performance-tuning/egr-solution/', '/performance-tuning/truck-tuning/', '/reconditioning/', '/parts/'];
 	
 	exports.default = routes;
 

@@ -36,8 +36,10 @@ export default ({ page }) => (
       </MenuItem>
       <MenuItem title="Performance Tuning" href="*/performance-tuning" active={page == 'performance-tuning'}>
         <SubMenu>
-          <link href="#">CPU Tuning</link>
-          <link href="#">PTS & EGR Solutions</link>
+          <link href="*/performance-tuning/ecu-tuning">ECU Tuning</link>
+          <link href="*/performance-tuning/dpf-solution">DPF Solution</link>
+          <link href="*/performance-tuning/egr-solution">EGR Solution</link>
+          <link href="*/performance-tuning/truck-tuning">Truck Tuning</link>
         </SubMenu>
       </MenuItem>
       <MenuItem title="Parts" href="*/parts" active={page == 'parts'} />
