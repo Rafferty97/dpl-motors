@@ -3,43 +3,24 @@ import { createElement } from 'cmmn';
 import Page from './template';
 
 export const getMeta = () => ({
-  title: 'ECU Tuning'
+  title: 'EGR Solution'
 });
 
 export default () => (
   <Page page="performance-tuning">
-    <h1>ECU Tuning</h1>
+    <h1>WHAT IS EGR?</h1>
     <p>
-      Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.
+      A widely adopted route to reduce NOx emissions is <strong>Exhaust Gas Recirculation (EGR)</strong>. This involves recirculating a controllable proportion of the {`engine's`} exhaust back into the intake air. A valve is usually used to control the flow of gas, and the valve may be closed completely if required.
     </p>
     <p>
-      Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.
+      {`The substitution of burnt gas (which takes no further part in combustion) for oxygen rich air reduces the proportion of the cylinder contents available for combustion. This causes a correspondingly lower heat release and peak cylinder temperature, and reduces the formation of NOx. The presence of an inert gas in the cylinder further limits the peak temperature (more than throttling alone in a spark ignition engine).`}
     </p>
     <p>
-      A DPL Motors TUNE REMAP Will Give You The Following Gains:
+      The gas to be recirculated may also be passed through an <strong>EGR cooler</strong>, which is usually of the air/water type. This reduces the temperature of the gas, which reduces the cylinder charge temperature when EGR is employed. This has two benefits- the reduction of charge temperature results in lower peak temperature, and the greater density of cooled EGR gas allows a higher proportion of EGR to be used. On a diesel engine the recirculated fraction may be as high as 50% under some operating conditions.
     </p>
-    <ul>
-      <li>More Horsepower.</li>
-      <li>More Torque.</li>
-      <li>Improved Throttle Response.</li>
-      <li>Smoother Power Delivery.</li>
-      <li>Safer Overtaking.</li>
-      <li>Guaranteed Better Fuel Economy.</li>
-    </ul>
+    <h3>EGR Solution</h3>
     <p>
-      Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.
+      Here at <strong>DPL Motors</strong>, we have a very <strong>advanced solution for EGR</strong>. The valves can become clogged with carbon deposits, causing them to fail or stick, thereby causing error codes and the vehicle not to run correctly. Our software solution to disable the EGR valve is a simple and effective method of improving the efficiency of your engine.
     </p>
-    <p>
-      When You take Your vehicle Away, You Will leave With:
-    </p>
-    <ul>
-      <li>A 30 Day Money Back Guarantee.</li>
-      <li>A Lifetime Warranty On All Remaps.</li>
-      <li>Guaranteed Better Fuel Economy On All Diesel Remaps.</li>
-    </ul>
-    <p>
-      When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car’s engine to a very conservative level. Yes, that’s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.
-    </p>
-    <p><strong>We also supply a loan car when necessary!</strong></p>
   </Page>
 );

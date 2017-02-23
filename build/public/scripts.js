@@ -5900,7 +5900,7 @@
 
 	var getMeta = exports.getMeta = function getMeta() {
 	  return {
-	    title: 'ECU Tuning'
+	    title: 'EGR Solution'
 	  };
 	};
 
@@ -5911,99 +5911,58 @@
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
-	      'ECU Tuning'
+	      'WHAT IS EGR?'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'A DPL Motors TUNE REMAP Will Give You The Following Gains:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Horsepower.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Torque.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Improved Throttle Response.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Smoother Power Delivery.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Safer Overtaking.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy.'
-	      )
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'When You take Your vehicle Away, You Will leave With:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A 30 Day Money Back Guarantee.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A Lifetime Warranty On All Remaps.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy On All Diesel Remaps.'
-	      )
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car\u2019s engine to a very conservative level. Yes, that\u2019s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
+	      'A widely adopted route to reduce NOx emissions is ',
 	      (0, _cmmn.createElement)(
 	        'strong',
 	        null,
-	        'We also supply a loan car when necessary!'
-	      )
+	        'Exhaust Gas Recirculation (EGR)'
+	      ),
+	      '. This involves recirculating a controllable proportion of the ',
+	      'engine\'s',
+	      ' exhaust back into the intake air. A valve is usually used to control the flow of gas, and the valve may be closed completely if required.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The substitution of burnt gas (which takes no further part in combustion) for oxygen rich air reduces the proportion of the cylinder contents available for combustion. This causes a correspondingly lower heat release and peak cylinder temperature, and reduces the formation of NOx. The presence of an inert gas in the cylinder further limits the peak temperature (more than throttling alone in a spark ignition engine).'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The gas to be recirculated may also be passed through an ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'EGR cooler'
+	      ),
+	      ', which is usually of the air/water type. This reduces the temperature of the gas, which reduces the cylinder charge temperature when EGR is employed. This has two benefits- the reduction of charge temperature results in lower peak temperature, and the greater density of cooled EGR gas allows a higher proportion of EGR to be used. On a diesel engine the recirculated fraction may be as high as 50% under some operating conditions.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'EGR Solution'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'DPL Motors'
+	      ),
+	      ', we have a very ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'advanced solution for EGR'
+	      ),
+	      '. The valves can become clogged with carbon deposits, causing them to fail or stick, thereby causing error codes and the vehicle not to run correctly. Our software solution to disable the EGR valve is a simple and effective method of improving the efficiency of your engine.'
 	    )
 	  );
 	};
@@ -6029,7 +5988,7 @@
 
 	var getMeta = exports.getMeta = function getMeta() {
 	  return {
-	    title: 'ECU Tuning'
+	    title: 'Truck Tuning'
 	  };
 	};
 
@@ -6040,99 +5999,57 @@
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
-	      'ECU Tuning'
+	      'Truck Tuning'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.'
+	      'Here at DPL we have created the perfect product in HGV, Truck and commercial turbo diesel engine performance upgrades. We pride ourselves in doing so without spoiling any of the principle reasons for running a turbo diesel powered vehicle in the first place and believe that key points such as their fabulous low down tractability, their reliability and of course the all important fuel economy should never, ever be compromised.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
+	      'Our aim when creating our HGV, Truck and commercial turbo diesel engine performance upgrades is to gain the perfect increased power curve and fuel economy improvements yet retain all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'A DPL Motors TUNE REMAP Will Give You The Following Gains:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Horsepower.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Torque.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Improved Throttle Response.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Smoother Power Delivery.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Safer Overtaking.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy.'
-	      )
+	      'All our HGV, Trucks and commercial vehicle remaps are programmed to give a strong, linear power delivery right across the rev range.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
+	      'Rest assured that we don\u2019t just look for a torque and power peak to make the numbers look good. We aim for maximum safe improvements everywhere so the vehicle feels like it has a bigger engine.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'How is this acheived?'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'When You take Your vehicle Away, You Will leave With:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A 30 Day Money Back Guarantee.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A Lifetime Warranty On All Remaps.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy On All Diesel Remaps.'
-	      )
+	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exacting standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car\u2019s engine to a very conservative level. Yes, that\u2019s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.'
+	      'We also offer other services as part of the remap.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'We also supply a loan car when necessary!'
-	      )
+	      'For example a vehicle used for motorsport may require removal of the EGR, a DPF delete, and also benefit from having the vehicle speed limiter removed.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Buy with Confidence'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'All our turbo diesel OBD tuning comes as standard with a lifetime warranty against defects and corruption of the product and of course our standard 30 day no quibble trial period.'
 	    )
 	  );
 	};

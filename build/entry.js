@@ -1205,7 +1205,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 18px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  border-left: 1px solid #a0a0a0;\n  -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item--last---3VdyI {\n    border-right: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--last---3VdyI.src-views-header-styles---menu-item--active---2Enug {\n    border-right: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    padding: 90px 20px 15px 25px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.2em;\n    color: #e0e0e0;\n    text-decoration: none;\n    cursor: pointer; }\n    .src-views-header-styles---menu-item__text---4J8E6:hover {\n      color: #03b5ff;\n      transition: color 0.4s; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n  @media (max-width: 1150px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      margin-top: 3rem; }\n      .src-views-header-styles---menu-item__text---4J8E6 {\n        padding-top: 60px; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      display: none; } }\n\n.src-views-header-styles---dd-menu---3m0IT {\n  position: absolute;\n  top: 100%;\n  left: 0;\n  min-width: 100%;\n  padding: 0;\n  margin: 0;\n  list-style: none;\n  background-color: #282828;\n  display: none; }\n  .src-views-header-styles---dd-menu---3m0IT li {\n    border-top: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---dd-menu---3m0IT {\n    background-color: #006e9c; }\n    .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---dd-menu---3m0IT li {\n      border-top: 1px solid #0092cf; }\n  .src-views-header-styles---dd-menu---3m0IT a {\n    display: block;\n    color: white;\n    text-decoration: none;\n    font-size: 1.4rem;\n    line-height: 1.4;\n    padding: 0.5em 0.75em; }\n    .src-views-header-styles---dd-menu---3m0IT a:hover {\n      background-color: rgba(255, 255, 255, 0.1); }\n\n.src-views-header-styles---mobile-nav---3skS1 {\n  display: none;\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -0.5rem;\n  text-align: center;\n  border: 1px solid #202020;\n  border-radius: 3px;\n  cursor: pointer; }\n  .src-views-header-styles---mobile-nav---3skS1 i {\n    line-height: 4rem;\n    color: white;\n    text-decoration: none;\n    font-size: 2rem;\n    padding: 0 1.5rem; }\n    .src-views-header-styles---mobile-nav---3skS1 i:before {\n      vertical-align: middle; }\n    .src-views-header-styles---mobile-nav---3skS1 i:after {\n      content: \"Navigation\";\n      font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n      font-size: 1.4rem;\n      margin-left: 0.5em;\n      text-transform: uppercase;\n      vertical-align: middle;\n      letter-spacing: 0.05em; }\n      @media (max-width: 450px) {\n        .src-views-header-styles---mobile-nav---3skS1 i:after {\n          content: \"\";\n          display: none; } }\n  .src-views-header-styles---mobile-nav---3skS1:hover {\n    background-color: #202020; }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      display: block; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      margin-top: -3.25rem; } }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n  .src-views-header-styles---contact---1NLDy p {\n    margin: 0; }\n    .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n      margin-top: 1.4em; }\n  @media (max-width: 1150px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 0.5rem;\n      margin: 0; }\n      .src-views-header-styles---contact---1NLDy p {\n        display: inline-block;\n        margin-left: 15px; }\n        .src-views-header-styles---contact---1NLDy p, .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n          margin-top: 0; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 1rem; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---contact---1NLDy {\n      position: relative;\n      text-align: center;\n      top: 0;\n      margin-top: 0.5rem;\n      margin-bottom: 1rem; }\n      .src-views-header-styles---contact---1NLDy p {\n        margin: 0 7px; } }\n", ""]);
+	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 18px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  border-left: 1px solid #a0a0a0;\n  -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item--last---3VdyI {\n    border-right: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--last---3VdyI.src-views-header-styles---menu-item--active---2Enug {\n    border-right: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    padding: 90px 20px 15px 25px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.2em;\n    color: #e0e0e0;\n    text-decoration: none;\n    cursor: pointer; }\n    .src-views-header-styles---menu-item__text---4J8E6:hover {\n      color: #03b5ff;\n      transition: color 0.4s; }\n    @media (min-width: 1200px) {\n      .src-views-header-styles---menu-item__text---4J8E6 {\n        font-size: 1.3rem;\n        letter-spacing: 0.15em; } }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n  @media (max-width: 1200px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      margin-top: 3rem; }\n      .src-views-header-styles---menu-item__text---4J8E6 {\n        padding-top: 60px; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      display: none; } }\n\n.src-views-header-styles---dd-menu---3m0IT {\n  position: absolute;\n  top: 100%;\n  left: 0;\n  min-width: 100%;\n  padding: 0;\n  margin: 0;\n  list-style: none;\n  background-color: #282828;\n  display: none; }\n  .src-views-header-styles---dd-menu---3m0IT li {\n    border-top: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---dd-menu---3m0IT {\n    background-color: #006e9c; }\n    .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---dd-menu---3m0IT li {\n      border-top: 1px solid #0092cf; }\n  .src-views-header-styles---dd-menu---3m0IT a {\n    display: block;\n    color: white;\n    text-decoration: none;\n    font-size: 1.4rem;\n    line-height: 1.4;\n    padding: 0.5em 0.75em; }\n    .src-views-header-styles---dd-menu---3m0IT a:hover {\n      background-color: rgba(255, 255, 255, 0.1); }\n\n.src-views-header-styles---mobile-nav---3skS1 {\n  display: none;\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -0.5rem;\n  text-align: center;\n  border: 1px solid #202020;\n  border-radius: 3px;\n  cursor: pointer; }\n  .src-views-header-styles---mobile-nav---3skS1 i {\n    line-height: 4rem;\n    color: white;\n    text-decoration: none;\n    font-size: 2rem;\n    padding: 0 1.5rem; }\n    .src-views-header-styles---mobile-nav---3skS1 i:before {\n      vertical-align: middle; }\n    .src-views-header-styles---mobile-nav---3skS1 i:after {\n      content: \"Navigation\";\n      font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n      font-size: 1.4rem;\n      margin-left: 0.5em;\n      text-transform: uppercase;\n      vertical-align: middle;\n      letter-spacing: 0.05em; }\n      @media (max-width: 450px) {\n        .src-views-header-styles---mobile-nav---3skS1 i:after {\n          content: \"\";\n          display: none; } }\n  .src-views-header-styles---mobile-nav---3skS1:hover {\n    background-color: #202020; }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      display: block; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      margin-top: -3.25rem; } }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n  .src-views-header-styles---contact---1NLDy p {\n    margin: 0; }\n    .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n      margin-top: 1.4em; }\n  @media (max-width: 1200px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 0.5rem;\n      margin: 0; }\n      .src-views-header-styles---contact---1NLDy p {\n        display: inline-block;\n        margin-left: 15px; }\n        .src-views-header-styles---contact---1NLDy p, .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n          margin-top: 0; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 1rem; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---contact---1NLDy {\n      position: relative;\n      text-align: center;\n      top: 0;\n      margin-top: 0.5rem;\n      margin-bottom: 1rem; }\n      .src-views-header-styles---contact---1NLDy p {\n        margin: 0 7px; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -2342,7 +2342,7 @@ require("source-map-support").install();
 	
 	var getMeta = exports.getMeta = function getMeta() {
 	  return {
-	    title: 'ECU Tuning'
+	    title: 'EGR Solution'
 	  };
 	};
 	
@@ -2353,99 +2353,58 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
-	      'ECU Tuning'
+	      'WHAT IS EGR?'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'A DPL Motors TUNE REMAP Will Give You The Following Gains:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Horsepower.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Torque.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Improved Throttle Response.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Smoother Power Delivery.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Safer Overtaking.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy.'
-	      )
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'When You take Your vehicle Away, You Will leave With:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A 30 Day Money Back Guarantee.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A Lifetime Warranty On All Remaps.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy On All Diesel Remaps.'
-	      )
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car\u2019s engine to a very conservative level. Yes, that\u2019s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
+	      'A widely adopted route to reduce NOx emissions is ',
 	      (0, _cmmn.createElement)(
 	        'strong',
 	        null,
-	        'We also supply a loan car when necessary!'
-	      )
+	        'Exhaust Gas Recirculation (EGR)'
+	      ),
+	      '. This involves recirculating a controllable proportion of the ',
+	      'engine\'s',
+	      ' exhaust back into the intake air. A valve is usually used to control the flow of gas, and the valve may be closed completely if required.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The substitution of burnt gas (which takes no further part in combustion) for oxygen rich air reduces the proportion of the cylinder contents available for combustion. This causes a correspondingly lower heat release and peak cylinder temperature, and reduces the formation of NOx. The presence of an inert gas in the cylinder further limits the peak temperature (more than throttling alone in a spark ignition engine).'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The gas to be recirculated may also be passed through an ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'EGR cooler'
+	      ),
+	      ', which is usually of the air/water type. This reduces the temperature of the gas, which reduces the cylinder charge temperature when EGR is employed. This has two benefits- the reduction of charge temperature results in lower peak temperature, and the greater density of cooled EGR gas allows a higher proportion of EGR to be used. On a diesel engine the recirculated fraction may be as high as 50% under some operating conditions.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'EGR Solution'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'DPL Motors'
+	      ),
+	      ', we have a very ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'advanced solution for EGR'
+	      ),
+	      '. The valves can become clogged with carbon deposits, causing them to fail or stick, thereby causing error codes and the vehicle not to run correctly. Our software solution to disable the EGR valve is a simple and effective method of improving the efficiency of your engine.'
 	    )
 	  );
 	};
@@ -2471,7 +2430,7 @@ require("source-map-support").install();
 	
 	var getMeta = exports.getMeta = function getMeta() {
 	  return {
-	    title: 'ECU Tuning'
+	    title: 'Truck Tuning'
 	  };
 	};
 	
@@ -2482,99 +2441,57 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
-	      'ECU Tuning'
+	      'Truck Tuning'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.'
+	      'Here at DPL we have created the perfect product in HGV, Truck and commercial turbo diesel engine performance upgrades. We pride ourselves in doing so without spoiling any of the principle reasons for running a turbo diesel powered vehicle in the first place and believe that key points such as their fabulous low down tractability, their reliability and of course the all important fuel economy should never, ever be compromised.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
+	      'Our aim when creating our HGV, Truck and commercial turbo diesel engine performance upgrades is to gain the perfect increased power curve and fuel economy improvements yet retain all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'A DPL Motors TUNE REMAP Will Give You The Following Gains:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Horsepower.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Torque.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Improved Throttle Response.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Smoother Power Delivery.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Safer Overtaking.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy.'
-	      )
+	      'All our HGV, Trucks and commercial vehicle remaps are programmed to give a strong, linear power delivery right across the rev range.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
+	      'Rest assured that we don\u2019t just look for a torque and power peak to make the numbers look good. We aim for maximum safe improvements everywhere so the vehicle feels like it has a bigger engine.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'How is this acheived?'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'When You take Your vehicle Away, You Will leave With:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A 30 Day Money Back Guarantee.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A Lifetime Warranty On All Remaps.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy On All Diesel Remaps.'
-	      )
+	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exacting standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      'When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car\u2019s engine to a very conservative level. Yes, that\u2019s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.'
+	      'We also offer other services as part of the remap.'
 	    ),
 	    (0, _cmmn.createElement)(
 	      'p',
 	      null,
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'We also supply a loan car when necessary!'
-	      )
+	      'For example a vehicle used for motorsport may require removal of the EGR, a DPF delete, and also benefit from having the vehicle speed limiter removed.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Buy with Confidence'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'All our turbo diesel OBD tuning comes as standard with a lifetime warranty against defects and corruption of the product and of course our standard 30 day no quibble trial period.'
 	    )
 	  );
 	};

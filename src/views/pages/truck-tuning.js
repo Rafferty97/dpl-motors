@@ -3,43 +3,37 @@ import { createElement } from 'cmmn';
 import Page from './template';
 
 export const getMeta = () => ({
-  title: 'ECU Tuning'
+  title: 'Truck Tuning'
 });
 
 export default () => (
   <Page page="performance-tuning">
-    <h1>ECU Tuning</h1>
+    <h1>Truck Tuning</h1>
     <p>
-      Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.
+      Here at DPL we have created the perfect product in HGV, Truck and commercial turbo diesel engine performance upgrades. We pride ourselves in doing so without spoiling any of the principle reasons for running a turbo diesel powered vehicle in the first place and believe that key points such as their fabulous low down tractability, their reliability and of course the all important fuel economy should never, ever be compromised.
     </p>
     <p>
-      Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.
+      Our aim when creating our HGV, Truck and commercial turbo diesel engine performance upgrades is to gain the perfect increased power curve and fuel economy improvements yet retain all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.
     </p>
     <p>
-      A DPL Motors TUNE REMAP Will Give You The Following Gains:
-    </p>
-    <ul>
-      <li>More Horsepower.</li>
-      <li>More Torque.</li>
-      <li>Improved Throttle Response.</li>
-      <li>Smoother Power Delivery.</li>
-      <li>Safer Overtaking.</li>
-      <li>Guaranteed Better Fuel Economy.</li>
-    </ul>
-    <p>
-      Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.
+      All our HGV, Trucks and commercial vehicle remaps are programmed to give a strong, linear power delivery right across the rev range.
     </p>
     <p>
-      When You take Your vehicle Away, You Will leave With:
+      Rest assured that we don’t just look for a torque and power peak to make the numbers look good. We aim for maximum safe improvements everywhere so the vehicle feels like it has a bigger engine.
     </p>
-    <ul>
-      <li>A 30 Day Money Back Guarantee.</li>
-      <li>A Lifetime Warranty On All Remaps.</li>
-      <li>Guaranteed Better Fuel Economy On All Diesel Remaps.</li>
-    </ul>
+    <h3>How is this acheived?</h3>
     <p>
-      When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car’s engine to a very conservative level. Yes, that’s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.
+      Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exacting standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.
     </p>
-    <p><strong>We also supply a loan car when necessary!</strong></p>
+    <p>
+      We also offer other services as part of the remap.
+    </p>
+    <p>
+      For example a vehicle used for motorsport may require removal of the EGR, a DPF delete, and also benefit from having the vehicle speed limiter removed.
+    </p>
+    <h3>Buy with Confidence</h3>
+    <p>
+      All our turbo diesel OBD tuning comes as standard with a lifetime warranty against defects and corruption of the product and of course our standard 30 day no quibble trial period.
+    </p>
   </Page>
 );
