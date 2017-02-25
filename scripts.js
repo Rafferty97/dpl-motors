@@ -4727,9 +4727,7 @@
 	    (0, _cmmn.createElement)(
 	      'a',
 	      { href: href, className: _styles2.default.menuItem.text },
-	      title,
-	      ' ',
-	      (0, _cmmn.createElement)('i', { className: 'fa fa-chevron-down' })
+	      title
 	    ),
 	    children
 	  );
@@ -4763,6 +4761,11 @@
 	            'link',
 	            { href: '#' },
 	            'Scheduled Servicing'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'link',
+	            { href: '#' },
+	            'Repairs'
 	          )
 	        )
 	      ),
@@ -4780,17 +4783,12 @@
 	          (0, _cmmn.createElement)(
 	            'link',
 	            { href: '#' },
-	            'Reconditioning'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '#' },
 	            'Replacement Motors'
 	          ),
 	          (0, _cmmn.createElement)(
 	            'link',
 	            { href: '#' },
-	            'Cylinder Head Repairs'
+	            'Cylinder Head Repair'
 	          )
 	        )
 	      ),
@@ -4956,10 +4954,10 @@
 	    value: function mount(node) {
 	      var parent = node.parentNode;
 	      parent.addEventListener('mouseover', function () {
-	        node.style = 'display: block;';
+	        node.style.display = 'block';
 	      });
 	      parent.addEventListener('mouseout', function () {
-	        node.style = 'display: none;';
+	        node.style.display = 'none';
 	      });
 	    }
 	  }]);
