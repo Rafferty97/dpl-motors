@@ -8,7 +8,7 @@ import SubMenu from './submenu';
 const MenuItem = ({ title, href, last, active, children }) => (
   <div className={styles.menuItem.with(active ? 'active' : '', last ? 'last' : '')}>
       <a href={href} className={styles.menuItem.text}>
-        {title} <i className="fa fa-chevron-down" />
+        {title}
       </a>
       {children}
   </div>
@@ -24,14 +24,14 @@ export default ({ page }) => (
         <SubMenu>
           <link href="*/services/air-conditioning">Air Conditioning</link>
           <link href="#">Scheduled Servicing</link>
+          <link href="#">Repairs</link>
         </SubMenu>
       </MenuItem>
       <MenuItem title="Reconditioning" href="*/reconditioning" active={page == 'reconditioning'}>
         <SubMenu>
           <link href="#">Motor Rebuilds</link>
-          <link href="#">Reconditioning</link>
           <link href="#">Replacement Motors</link>
-          <link href="#">Cylinder Head Repairs</link>
+          <link href="#">Cylinder Head Repair</link>
         </SubMenu>
       </MenuItem>
       <MenuItem title="Performance Tuning" href="*/performance-tuning" active={page == 'performance-tuning'}>

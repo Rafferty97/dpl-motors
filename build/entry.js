@@ -1070,9 +1070,7 @@ require("source-map-support").install();
 	    (0, _cmmn.createElement)(
 	      'a',
 	      { href: href, className: _styles2.default.menuItem.text },
-	      title,
-	      ' ',
-	      (0, _cmmn.createElement)('i', { className: 'fa fa-chevron-down' })
+	      title
 	    ),
 	    children
 	  );
@@ -1106,6 +1104,11 @@ require("source-map-support").install();
 	            'link',
 	            { href: '#' },
 	            'Scheduled Servicing'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'link',
+	            { href: '#' },
+	            'Repairs'
 	          )
 	        )
 	      ),
@@ -1123,17 +1126,12 @@ require("source-map-support").install();
 	          (0, _cmmn.createElement)(
 	            'link',
 	            { href: '#' },
-	            'Reconditioning'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '#' },
 	            'Replacement Motors'
 	          ),
 	          (0, _cmmn.createElement)(
 	            'link',
 	            { href: '#' },
-	            'Cylinder Head Repairs'
+	            'Cylinder Head Repair'
 	          )
 	        )
 	      ),
@@ -1330,10 +1328,10 @@ require("source-map-support").install();
 	    value: function mount(node) {
 	      var parent = node.parentNode;
 	      parent.addEventListener('mouseover', function () {
-	        node.style = 'display: block;';
+	        node.style.display = 'block';
 	      });
 	      parent.addEventListener('mouseout', function () {
-	        node.style = 'display: none;';
+	        node.style.display = 'none';
 	      });
 	    }
 	  }]);

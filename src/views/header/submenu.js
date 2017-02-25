@@ -18,10 +18,10 @@ export default class SubMenu {
   {
     const parent = node.parentNode;
     parent.addEventListener('mouseover', () => {
-      node.style = 'display: block;';
+      node.style.display = 'block';
     });
     parent.addEventListener('mouseout', () => {
-      node.style = 'display: none;';
+      node.style.display = 'none';
     });
   }
 }
