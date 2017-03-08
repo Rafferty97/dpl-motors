@@ -10,6 +10,7 @@ import * as egrSolution from './views/pages/egr-solution';
 import * as truckTuning from './views/pages/truck-tuning';
 import * as reconditioning from './views/pages/reconditioning';
 import * as parts from './views/parts';
+import * as book from './views/pages/booking';
 
 function route(props) {
   let page = home;
@@ -42,6 +43,9 @@ function route(props) {
         break;
       case 'parts':
         page = parts;
+        break;
+      case 'book':
+        page = book;
         break;
     }
   }

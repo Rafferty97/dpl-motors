@@ -8,7 +8,8 @@ let routes = [
   '/performance-tuning/egr-solution/',
   '/performance-tuning/truck-tuning/',
   '/reconditioning/',
-  '/parts/'
+  '/parts/',
+  '/book/'
 ];
 
 export default routes;
