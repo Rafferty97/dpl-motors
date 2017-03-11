@@ -4751,6 +4751,21 @@
 	  );
 	};
 
+	var menu = [{
+	  title: 'Services', href: 'services', active: 'services',
+	  items: [{ title: 'Air Conditioning', href: 'services/air-conditioning' }, { title: 'Scheduled Servicing', href: 'services/scheduled-servicing' }, { title: 'Repairs', href: 'services/repairs' }]
+	}, {
+	  title: 'Reconditioning', href: 'reconditioning', active: 'reconditioning',
+	  items: [{ title: 'Motor Rebuilds', href: 'reconditioning/motor-rebuilds' }, { title: 'Replacement Motors', href: 'reconditioning/replacement-motors' }, { title: 'Cylinder Head Repair', href: 'reconditioning/cylinder-head-repair' }]
+	}, {
+	  title: 'Performance Tuning', href: 'performance-tuning', active: 'performance-tuning',
+	  items: [{ title: 'ECU Tuning', href: 'performance-tuning/ecu-tuning' }, { title: 'DPF Solution', href: 'performance-tuning/dpf-solution' }, { title: 'EGR Solution', href: 'performance-tuning/egr-solution' }, { title: 'Truck Tuning', href: 'performance-tuning/truck-tuning' }]
+	}, {
+	  title: 'Parts', href: 'parts', active: 'parts'
+	}, {
+	  title: 'Trade', href: 'trade', active: 'trade'
+	}];
+
 	exports.default = function (_ref2) {
 	  var page = _ref2.page;
 	  return (0, _cmmn.createElement)(
@@ -4764,82 +4779,27 @@
 	        { href: '*/' },
 	        (0, _cmmn.createElement)('img', { className: _styles2.default.logo, src: __webpack_require__(37) })
 	      ),
-	      (0, _cmmn.createElement)(
-	        MenuItem,
-	        { title: 'Services', href: '*/services', active: page == 'services' },
-	        (0, _cmmn.createElement)(
-	          _submenu2.default,
-	          null,
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '*/services/air-conditioning' },
-	            'Air Conditioning'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '#' },
-	            'Scheduled Servicing'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '#' },
-	            'Repairs'
-	          )
-	        )
-	      ),
-	      (0, _cmmn.createElement)(
-	        MenuItem,
-	        { title: 'Reconditioning', href: '*/reconditioning', active: page == 'reconditioning' },
-	        (0, _cmmn.createElement)(
-	          _submenu2.default,
-	          null,
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '#' },
-	            'Motor Rebuilds'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '#' },
-	            'Replacement Motors'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '#' },
-	            'Cylinder Head Repair'
-	          )
-	        )
-	      ),
-	      (0, _cmmn.createElement)(
-	        MenuItem,
-	        { title: 'Performance Tuning', href: '*/performance-tuning', active: page == 'performance-tuning' },
-	        (0, _cmmn.createElement)(
-	          _submenu2.default,
-	          null,
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '*/performance-tuning/ecu-tuning' },
-	            'ECU Tuning'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '*/performance-tuning/dpf-solution' },
-	            'DPF Solution'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '*/performance-tuning/egr-solution' },
-	            'EGR Solution'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'link',
-	            { href: '*/performance-tuning/truck-tuning' },
-	            'Truck Tuning'
-	          )
-	        )
-	      ),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Parts', href: '*/parts', active: page == 'parts' }),
-	      (0, _cmmn.createElement)(MenuItem, { title: 'Trade', href: '*/trade', active: page == 'trade', last: true }),
+	      menu.map(function (_ref3, i) {
+	        var title = _ref3.title,
+	            href = _ref3.href,
+	            active = _ref3.active,
+	            items = _ref3.items;
+	        return (0, _cmmn.createElement)(
+	          MenuItem,
+	          { title: title, href: '*/' + href, active: page == active, last: i == menu.length - 1 },
+	          items != null ? (0, _cmmn.createElement)(
+	            _submenu2.default,
+	            null,
+	            items.map(function (item) {
+	              return (0, _cmmn.createElement)(
+	                'link',
+	                { href: '*/' + item.href },
+	                item.title
+	              );
+	            })
+	          ) : null
+	        );
+	      }),
 	      (0, _cmmn.createElement)(
 	        'a',
 	        { className: _styles2.default.mobileNav },
