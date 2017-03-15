@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(83);
+	var _cmmnDatasource = __webpack_require__(86);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4430,6 +4430,10 @@
 
 	var book = _interopRequireWildcard(_booking);
 
+	var _contact = __webpack_require__(82);
+
+	var contact = _interopRequireWildcard(_contact);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function route(props) {
@@ -4471,6 +4475,9 @@
 	      case 'book':
 	        page = book;
 	        break;
+	      case 'contact-us':
+	        page = contact;
+	        break;
 	    }
 	  }
 	  return { page: page, viewProps: viewProps };
@@ -4495,8 +4502,8 @@
 	        null,
 	        '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,\'script\',\'dataLayer\',\'GTM-TD3SK9D\');'
 	      ),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(82) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(82) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(85) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(85) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -5516,7 +5523,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"content":"src-views-pages-styles---content---15gAm","content--grey":"src-views-pages-styles---content--grey---1CK5C","content__copy":"src-views-pages-styles---content__copy---11d-X","content__right-img":"src-views-pages-styles---content__right-img---ha2cC","book-btn":"src-views-pages-styles---book-btn---JVOXc"};
+	module.exports = {"content":"src-views-pages-styles---content---15gAm","content--grey":"src-views-pages-styles---content--grey---1CK5C","content__copy":"src-views-pages-styles---content__copy---11d-X","content__right-img":"src-views-pages-styles---content__right-img---ha2cC","content__right-img--map":"src-views-pages-styles---content__right-img--map---2IIgO","book-btn":"src-views-pages-styles---book-btn---JVOXc"};
 
 	// Bemify
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
@@ -8626,12 +8633,137 @@
 /***/ },
 /* 81 */,
 /* 82 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _header = __webpack_require__(30);
+
+	var _header2 = _interopRequireDefault(_header);
+
+	var _footer = __webpack_require__(38);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
+	var _components = __webpack_require__(33);
+
+	var _sidemenu = __webpack_require__(50);
+
+	var _sidemenu2 = _interopRequireDefault(_sidemenu);
+
+	__webpack_require__(11);
+
+	var _styles = __webpack_require__(83);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	var _styles3 = __webpack_require__(56);
+
+	var _styles4 = _interopRequireDefault(_styles3);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var GOOGLE_API_KEY = 'AIzaSyCIZ_yfAfZlAhRFSrbdh-gs2n3QPBH1yhw';
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Contact'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    'div',
+	    null,
+	    (0, _cmmn.createElement)(_header2.default, { page: '' }),
+	    (0, _cmmn.createElement)(
+	      'div',
+	      { className: _styles4.default.content },
+	      (0, _cmmn.createElement)(
+	        _components.Container,
+	        null,
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _styles4.default.content.rightImg.with('map') },
+	          (0, _cmmn.createElement)('iframe', {
+	            style: 'border: 0; height: 100%; width: 100%;',
+	            frameborder: '0',
+	            src: 'https://www.google.com/maps/embed/v1/place?key=' + GOOGLE_API_KEY + '&q=22+Murchison+Terrace,+Perth+WA+6000',
+	            allowfullscreen: true })
+	        ),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _styles4.default.content.copy },
+	          (0, _cmmn.createElement)(
+	            'h1',
+	            null,
+	            'Contact Us'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'p',
+	            null,
+	            (0, _cmmn.createElement)(
+	              'strong',
+	              null,
+	              'DPL Motors'
+	            )
+	          ),
+	          (0, _cmmn.createElement)(
+	            'p',
+	            null,
+	            '22 Muchison Terrace, Perth, WA 6000'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'p',
+	            null,
+	            (0, _cmmn.createElement)('i', { className: _styles2.default.pIcon + ' fa fa-phone' }),
+	            '(08) 9227 5374'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'p',
+	            null,
+	            (0, _cmmn.createElement)('i', { className: _styles2.default.pIcon + ' fa fa-envelope' }),
+	            'info@dplmotors.com.au'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'a',
+	            { href: '*/book/', className: _styles4.default.bookBtn },
+	            'Book Service'
+	          )
+	        )
+	      ),
+	      (0, _cmmn.createElement)(_sidemenu2.default, { top: true })
+	    ),
+	    (0, _cmmn.createElement)(_footer2.default, null)
+	  );
+	};
+
+/***/ },
+/* 83 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"p-icon":"src-views-contact-styles---p-icon---3Mzre"};
+
+	// Bemify
+	module.exports = (__webpack_require__(22).default)(module.exports || {});
+
+/***/ },
+/* 84 */,
+/* 85 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 83 */
+/* 86 */
 /***/ function(module, exports) {
 
 	"use strict";
