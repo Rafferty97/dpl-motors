@@ -2121,7 +2121,8 @@ html, body {
     .src-views-pages-styles---content__copy---11d-X {
       position: relative;
       width: auto;
-      margin-top: -8rem; }
+      margin-top: -8rem;
+      min-height: none; }
       .src-views-pages-styles---content__copy---11d-X h1 {
         color: white;
         z-index: 100;
@@ -2144,8 +2145,6 @@ html, body {
       height: 250px;
       background-position: 50% 50%; } }
   @media (max-width: 450px) {
-    .src-views-pages-styles---content__copy---11d-X {
-      min-height: none; }
     .src-views-pages-styles---content__copy---11d-X h1 {
       font-size: 2.6rem; } }
 
