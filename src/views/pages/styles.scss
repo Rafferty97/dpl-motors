@@ -38,6 +38,7 @@
 
   &__copy {
     width: 550px;
+    min-height: 500px;
   }
 
   &__right-img {
@@ -49,6 +50,11 @@
     right: -200px;
     background-size: cover;
     background-position: 0 50%;
+
+    &--map {
+      left: 500px;
+      right: -100px;
+    }
   }
 
   @media (max-width: $bp-wide) {
@@ -84,6 +90,9 @@
   }
 
   @media (max-width: $bp-smallest) {
+    &__copy {
+      min-height: none;
+    }
     &__copy h1 {
       font-size: 2.6rem;
     }

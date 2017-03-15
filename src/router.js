@@ -11,6 +11,7 @@ import * as truckTuning from './views/pages/truck-tuning';
 import * as reconditioning from './views/pages/reconditioning';
 import * as parts from './views/parts';
 import * as book from './views/pages/booking';
+import * as contact from './views/contact';
 
 function route(props) {
   let page = home;
@@ -46,6 +47,9 @@ function route(props) {
         break;
       case 'book':
         page = book;
+        break;
+      case 'contact-us':
+        page = contact;
         break;
     }
   }

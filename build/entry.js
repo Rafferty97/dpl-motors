@@ -63,19 +63,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _path = __webpack_require__(65);
+	var _path = __webpack_require__(67);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
-	var _fs = __webpack_require__(66);
+	var _fs = __webpack_require__(68);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _mkdirp = __webpack_require__(67);
+	var _mkdirp = __webpack_require__(69);
 	
 	var _mkdirp2 = _interopRequireDefault(_mkdirp);
 	
-	var _routes = __webpack_require__(68);
+	var _routes = __webpack_require__(70);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -515,7 +515,7 @@ require("source-map-support").install();
 	
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 	
-	var _cmmnDatasource = __webpack_require__(64);
+	var _cmmnDatasource = __webpack_require__(66);
 	
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 	
@@ -643,6 +643,10 @@ require("source-map-support").install();
 	
 	var book = _interopRequireWildcard(_booking);
 	
+	var _contact = __webpack_require__(63);
+	
+	var contact = _interopRequireWildcard(_contact);
+	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	function route(props) {
@@ -684,6 +688,9 @@ require("source-map-support").install();
 	      case 'book':
 	        page = book;
 	        break;
+	      case 'contact-us':
+	        page = contact;
+	        break;
 	    }
 	  }
 	  return { page: page, viewProps: viewProps };
@@ -708,8 +715,8 @@ require("source-map-support").install();
 	        null,
 	        '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,\'script\',\'dataLayer\',\'GTM-TD3SK9D\');'
 	      ),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(63) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(63) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(65) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(65) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -1949,7 +1956,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-pages-styles---content---15gAm {\n  position: relative;\n  background-color: white;\n  min-height: 300px;\n  padding: 60px 0;\n  overflow: hidden; }\n  .src-views-pages-styles---content--grey---1CK5C {\n    background-color: #f4f4f4; }\n  .src-views-pages-styles---content---15gAm h1 {\n    font-size: 3.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    font-weight: 300;\n    line-height: 1.4;\n    margin: 0 0 0.7em 0; }\n  .src-views-pages-styles---content---15gAm h3 {\n    font-size: 1.6rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n    font-weight: 600;\n    line-height: 1.4;\n    margin: 1.4em 0 0.7em 0;\n    color: #006e9c; }\n  .src-views-pages-styles---content---15gAm p, .src-views-pages-styles---content---15gAm ul {\n    font-size: 1.6rem;\n    line-height: 1.3;\n    margin: 1.3em 0; }\n  .src-views-pages-styles---content__copy---11d-X {\n    width: 550px; }\n  .src-views-pages-styles---content__right-img---ha2cC {\n    position: absolute;\n    top: 0;\n    height: 100%;\n    max-height: 500px;\n    left: 600px;\n    right: -200px;\n    background-size: cover;\n    background-position: 0 50%; }\n  @media (max-width: 1000px) {\n    .src-views-pages-styles---content__copy---11d-X {\n      position: relative;\n      width: auto;\n      margin-top: -8rem; }\n      .src-views-pages-styles---content__copy---11d-X h1 {\n        color: white;\n        z-index: 100;\n        line-height: 3rem;\n        padding: 1rem 0;\n        margin-bottom: 3rem;\n        text-shadow: 0 1px 3px black;\n        height: 6rem; }\n      .src-views-pages-styles---content__copy---11d-X:before {\n        content: \"\";\n        display: block;\n        width: 45px;\n        height: 160px;\n        float: right; }\n    .src-views-pages-styles---content__right-img---ha2cC {\n      position: relative;\n      left: 0;\n      right: 0;\n      margin: -70px -200px 0 -200px;\n      height: 250px;\n      background-position: 50% 50%; } }\n  @media (max-width: 450px) {\n    .src-views-pages-styles---content__copy---11d-X h1 {\n      font-size: 2.6rem; } }\n\n.src-views-pages-styles---book-btn---JVOXc {\n  display: inline-block;\n  font-size: 1.6rem;\n  line-height: 1.4;\n  padding: 0.75em 1em;\n  width: 100%;\n  max-width: 250px;\n  margin: 1em 0;\n  background-color: #006e9c;\n  color: white;\n  text-decoration: none;\n  text-align: center;\n  text-transform: uppercase;\n  letter-spacing: 0.1em; }\n  .src-views-pages-styles---book-btn---JVOXc:hover {\n    background-color: #0092cf; }\n", ""]);
+	exports.push([module.id, ".src-views-pages-styles---content---15gAm {\n  position: relative;\n  background-color: white;\n  min-height: 300px;\n  padding: 60px 0;\n  overflow: hidden; }\n  .src-views-pages-styles---content--grey---1CK5C {\n    background-color: #f4f4f4; }\n  .src-views-pages-styles---content---15gAm h1 {\n    font-size: 3.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    font-weight: 300;\n    line-height: 1.4;\n    margin: 0 0 0.7em 0; }\n  .src-views-pages-styles---content---15gAm h3 {\n    font-size: 1.6rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n    font-weight: 600;\n    line-height: 1.4;\n    margin: 1.4em 0 0.7em 0;\n    color: #006e9c; }\n  .src-views-pages-styles---content---15gAm p, .src-views-pages-styles---content---15gAm ul {\n    font-size: 1.6rem;\n    line-height: 1.3;\n    margin: 1.3em 0; }\n  .src-views-pages-styles---content__copy---11d-X {\n    width: 550px;\n    min-height: 500px; }\n  .src-views-pages-styles---content__right-img---ha2cC {\n    position: absolute;\n    top: 0;\n    height: 100%;\n    max-height: 500px;\n    left: 600px;\n    right: -200px;\n    background-size: cover;\n    background-position: 0 50%; }\n    .src-views-pages-styles---content__right-img--map---2IIgO {\n      left: 500px;\n      right: -100px; }\n  @media (max-width: 1000px) {\n    .src-views-pages-styles---content__copy---11d-X {\n      position: relative;\n      width: auto;\n      margin-top: -8rem; }\n      .src-views-pages-styles---content__copy---11d-X h1 {\n        color: white;\n        z-index: 100;\n        line-height: 3rem;\n        padding: 1rem 0;\n        margin-bottom: 3rem;\n        text-shadow: 0 1px 3px black;\n        height: 6rem; }\n      .src-views-pages-styles---content__copy---11d-X:before {\n        content: \"\";\n        display: block;\n        width: 45px;\n        height: 160px;\n        float: right; }\n    .src-views-pages-styles---content__right-img---ha2cC {\n      position: relative;\n      left: 0;\n      right: 0;\n      margin: -70px -200px 0 -200px;\n      height: 250px;\n      background-position: 50% 50%; } }\n  @media (max-width: 450px) {\n    .src-views-pages-styles---content__copy---11d-X {\n      min-height: none; }\n    .src-views-pages-styles---content__copy---11d-X h1 {\n      font-size: 2.6rem; } }\n\n.src-views-pages-styles---book-btn---JVOXc {\n  display: inline-block;\n  font-size: 1.6rem;\n  line-height: 1.4;\n  padding: 0.75em 1em;\n  width: 100%;\n  max-width: 250px;\n  margin: 1em 0;\n  background-color: #006e9c;\n  color: white;\n  text-decoration: none;\n  text-align: center;\n  text-transform: uppercase;\n  letter-spacing: 0.1em; }\n  .src-views-pages-styles---book-btn---JVOXc:hover {\n    background-color: #0092cf; }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1957,6 +1964,7 @@ require("source-map-support").install();
 		"content--grey": "src-views-pages-styles---content--grey---1CK5C",
 		"content__copy": "src-views-pages-styles---content__copy---11d-X",
 		"content__right-img": "src-views-pages-styles---content__right-img---ha2cC",
+		"content__right-img--map": "src-views-pages-styles---content__right-img--map---2IIgO",
 		"book-btn": "src-views-pages-styles---book-btn---JVOXc"
 	};
 	
@@ -3035,12 +3043,148 @@ require("source-map-support").install();
 
 /***/ },
 /* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _header = __webpack_require__(25);
+	
+	var _header2 = _interopRequireDefault(_header);
+	
+	var _footer = __webpack_require__(31);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	var _components = __webpack_require__(27);
+	
+	var _sidemenu = __webpack_require__(42);
+	
+	var _sidemenu2 = _interopRequireDefault(_sidemenu);
+	
+	__webpack_require__(10);
+	
+	var _styles = __webpack_require__(64);
+	
+	var _styles2 = _interopRequireDefault(_styles);
+	
+	var _styles3 = __webpack_require__(47);
+	
+	var _styles4 = _interopRequireDefault(_styles3);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var GOOGLE_API_KEY = 'AIzaSyCIZ_yfAfZlAhRFSrbdh-gs2n3QPBH1yhw';
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Contact'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    'div',
+	    null,
+	    (0, _cmmn.createElement)(_header2.default, { page: '' }),
+	    (0, _cmmn.createElement)(
+	      'div',
+	      { className: _styles4.default.content },
+	      (0, _cmmn.createElement)(
+	        _components.Container,
+	        null,
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _styles4.default.content.rightImg.with('map') },
+	          (0, _cmmn.createElement)('iframe', {
+	            style: 'border: 0; height: 100%; width: 100%;',
+	            frameborder: '0',
+	            src: 'https://www.google.com/maps/embed/v1/place?key=' + GOOGLE_API_KEY + '&q=22+Murchison+Terrace,+Perth+WA+6000',
+	            allowfullscreen: true })
+	        ),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _styles4.default.content.copy },
+	          (0, _cmmn.createElement)(
+	            'h1',
+	            null,
+	            'Contact Us'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'p',
+	            null,
+	            (0, _cmmn.createElement)(
+	              'strong',
+	              null,
+	              'DPL Motors'
+	            )
+	          ),
+	          (0, _cmmn.createElement)(
+	            'p',
+	            null,
+	            '22 Muchison Terrace, Perth, WA 6000'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'p',
+	            null,
+	            (0, _cmmn.createElement)('i', { className: _styles2.default.pIcon + ' fa fa-phone' }),
+	            '(08) 9227 5374'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'p',
+	            null,
+	            (0, _cmmn.createElement)('i', { className: _styles2.default.pIcon + ' fa fa-envelope' }),
+	            'info@dplmotors.com.au'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'a',
+	            { href: '*/book/', className: _styles4.default.bookBtn },
+	            'Book Service'
+	          )
+	        )
+	      ),
+	      (0, _cmmn.createElement)(_sidemenu2.default, { top: true })
+	    ),
+	    (0, _cmmn.createElement)(_footer2.default, null)
+	  );
+	};
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(12)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".src-views-contact-styles---p-icon---3Mzre {\n  color: #006e9c;\n  margin-right: 0.5em; }\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"p-icon": "src-views-contact-styles---p-icon---3Mzre"
+	};
+	
+	// Only locals
+	module.exports = module.exports.locals;
+	
+	// Bemify
+	module.exports = (__webpack_require__(19).default)(module.exports || {});
+
+/***/ },
+/* 65 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 64 */
+/* 66 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3054,25 +3198,25 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 65 */
+/* 67 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 66 */
+/* 68 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 67 */
+/* 69 */
 /***/ function(module, exports) {
 
 	module.exports = require("mkdirp");
 
 /***/ },
-/* 68 */
+/* 70 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3080,7 +3224,7 @@ require("source-map-support").install();
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var routes = ['/', '/services/', '/services/air-conditioning/', '/performance-tuning/', '/performance-tuning/ecu-tuning/', '/performance-tuning/dpf-solution/', '/performance-tuning/egr-solution/', '/performance-tuning/truck-tuning/', '/reconditioning/', '/parts/', '/book/'];
+	var routes = ['/', '/services/', '/services/air-conditioning/', '/performance-tuning/', '/performance-tuning/ecu-tuning/', '/performance-tuning/dpf-solution/', '/performance-tuning/egr-solution/', '/performance-tuning/truck-tuning/', '/reconditioning/', '/parts/', '/book/', '/contact-us/'];
 	
 	exports.default = routes;
 

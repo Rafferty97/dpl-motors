@@ -9,7 +9,8 @@ let routes = [
   '/performance-tuning/truck-tuning/',
   '/reconditioning/',
   '/parts/',
-  '/book/'
+  '/book/',
+  '/contact-us/'
 ];
 
 export default routes;
