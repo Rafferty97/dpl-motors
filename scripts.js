@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(86);
+	var _cmmnDatasource = __webpack_require__(91);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4394,43 +4394,63 @@
 
 	var services = _interopRequireWildcard(_services);
 
-	var _airConditioning = __webpack_require__(59);
+	var _servicing = __webpack_require__(59);
+
+	var servicing = _interopRequireWildcard(_servicing);
+
+	var _airConditioning = __webpack_require__(60);
 
 	var airConditioning = _interopRequireWildcard(_airConditioning);
 
-	var _performanceTuning = __webpack_require__(60);
+	var _performanceTuning = __webpack_require__(61);
 
 	var performanceTuning = _interopRequireWildcard(_performanceTuning);
 
-	var _ecuTuning = __webpack_require__(61);
+	var _ecuTuning = __webpack_require__(62);
 
 	var ecuTuning = _interopRequireWildcard(_ecuTuning);
 
-	var _dpfSolution = __webpack_require__(62);
+	var _dpfSolution = __webpack_require__(63);
 
 	var dpfSolution = _interopRequireWildcard(_dpfSolution);
 
-	var _egrSolution = __webpack_require__(63);
+	var _egrSolution = __webpack_require__(64);
 
 	var egrSolution = _interopRequireWildcard(_egrSolution);
 
-	var _truckTuning = __webpack_require__(64);
+	var _truckTuning = __webpack_require__(65);
 
 	var truckTuning = _interopRequireWildcard(_truckTuning);
 
-	var _reconditioning = __webpack_require__(65);
+	var _reconditioning = __webpack_require__(66);
 
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 
-	var _parts = __webpack_require__(66);
+	var _motorRebuilds = __webpack_require__(67);
+
+	var motorRebuilds = _interopRequireWildcard(_motorRebuilds);
+
+	var _cylinderHeadRepair = __webpack_require__(68);
+
+	var cylinderHeadRepair = _interopRequireWildcard(_cylinderHeadRepair);
+
+	var _headGasketRepair = __webpack_require__(69);
+
+	var headGasketRepair = _interopRequireWildcard(_headGasketRepair);
+
+	var _parts = __webpack_require__(70);
 
 	var parts = _interopRequireWildcard(_parts);
 
-	var _booking = __webpack_require__(79);
+	var _booking = __webpack_require__(83);
 
 	var book = _interopRequireWildcard(_booking);
 
-	var _contact = __webpack_require__(82);
+	var _trade = __webpack_require__(86);
+
+	var trade = _interopRequireWildcard(_trade);
+
+	var _contact = __webpack_require__(87);
 
 	var contact = _interopRequireWildcard(_contact);
 
@@ -4446,8 +4466,9 @@
 	        if (props.route.length > 1) {
 	          switch (props.route[1]) {
 	            case 'air-conditioning':
-	              page = airConditioning;
-	              break;
+	              page = airConditioning;break;
+	            case 'scheduled-servicing':
+	              page = servicing;break;
 	          }
 	        }
 	        break;
@@ -4468,12 +4489,25 @@
 	        break;
 	      case 'reconditioning':
 	        page = reconditioning;
+	        if (props.route.length > 1) {
+	          switch (props.route[1]) {
+	            case 'motor-rebuilds':
+	              page = motorRebuilds;break;
+	            case 'cylinder-head-repair':
+	              page = cylinderHeadRepair;break;
+	            case 'head-gasket-repair':
+	              page = headGasketRepair;break;
+	          }
+	        }
 	        break;
 	      case 'parts':
 	        page = parts;
 	        break;
 	      case 'book':
 	        page = book;
+	        break;
+	      case 'trade':
+	        page = trade;
 	        break;
 	      case 'contact-us':
 	        page = contact;
@@ -4502,8 +4536,8 @@
 	        null,
 	        '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,\'script\',\'dataLayer\',\'GTM-TD3SK9D\');'
 	      ),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(85) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(85) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(90) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(90) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -4767,7 +4801,9 @@
 	  items: [{ title: 'Air Conditioning', href: 'services/air-conditioning' }, { title: 'Scheduled Servicing', href: 'services/scheduled-servicing' }, { title: 'Repairs', href: 'services/repairs' }]
 	}, {
 	  title: 'Reconditioning', href: 'reconditioning', active: 'reconditioning',
-	  items: [{ title: 'Motor Rebuilds', href: 'reconditioning/motor-rebuilds' }, { title: 'Replacement Motors', href: 'reconditioning/replacement-motors' }, { title: 'Cylinder Head Repair', href: 'reconditioning/cylinder-head-repair' }]
+	  items: [{ title: 'Motor Rebuilds', href: 'reconditioning/motor-rebuilds' },
+	  //{ title: 'Replacement Motors', href: 'reconditioning/replacement-motors' },
+	  { title: 'Cylinder Head Repair', href: 'reconditioning/cylinder-head-repair' }, { title: 'Head Gasket Repair', href: 'reconditioning/head-gasket-repair' }]
 	}, {
 	  title: 'Performance Tuning', href: 'performance-tuning', active: 'performance-tuning',
 	  items: [{ title: 'ECU Tuning', href: 'performance-tuning/ecu-tuning' }, { title: 'DPF Solution', href: 'performance-tuning/dpf-solution' }, { title: 'EGR Solution', href: 'performance-tuning/egr-solution' }, { title: 'Truck Tuning', href: 'performance-tuning/truck-tuning' }]
@@ -5556,6 +5592,58 @@
 
 	var getMeta = exports.getMeta = function getMeta() {
 	  return {
+	    title: 'Servicing'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'services' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Scheduled Servicing'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'At DPL motors we customise our service to suit your budget and car type. We specialise not only in European vehicles but any make or model,  whether it\'s a small car, family car, sports car, SUV, 4WD, ute or van.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our logbook services are carried out according to manufacturer\u2019s specifications and we replace all scheduled parts. We also carry out a full safety check and every service comes with a 6month/10,000km warranty. Our European trained mechanics only use the best quality parts on your vehicle, we use parts that are manufactured to match or exceed the Original Equipment Manufacturer (OEM).'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our Minor Service is the minimum you should do to your vehicle. This service helps maintain your vehicle and prevents unforeseen faults. In this service we will replace your Engine Oil and Oil Filter and we check and report on the following; Brakes Front and Rear, Tyre Condition and Thread Depth, all lights, Suspension and Shocks, Instruments, Engine and Gearbox leaks, Exhaust system, CV Joints, Wipers, Check all levels and refill, Check any warning lights and reset the service computer using the very latest diagnostic equipment. Prices for this service start from as little as $179.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(55);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
 	    title: 'Services'
 	  };
 	};
@@ -5627,7 +5715,7 @@
 	};
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5756,7 +5844,7 @@
 	};
 
 /***/ },
-/* 61 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5845,7 +5933,7 @@
 	};
 
 /***/ },
-/* 62 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5981,7 +6069,7 @@
 	};
 
 /***/ },
-/* 63 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6069,7 +6157,7 @@
 	};
 
 /***/ },
-/* 64 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6156,7 +6244,7 @@
 	};
 
 /***/ },
-/* 65 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6262,7 +6350,192 @@
 	};
 
 /***/ },
-/* 66 */
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(55);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Motor Rebuilds'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Motor Rebuilds'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'The Reconditioning process'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We receive your vehicle and accept your instruction at our workshop. Your engine and all associated parts are removed and inspected. The cylinder head is removed from the engine block. Both cylinder head and block are dismantled into their component parts. All worn or broken parts are replaced as part of our quality control system. The parts for reassembly pass through our specialist cleaning process. At this point all items that require machining are engineered to our exacting specifications. Machined parts are cleaned and measured prior to reassembly.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Your original engine is then rebuilt using new bearings, seals, piston rings and gaskets. Once fully assembled the engine is replaced into your vehicle with new fluids and filters. The engine is then started and tuned for optimum reliability utilising the latest diagnostic systems'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our workmanship and materials are both guaranteed for 12 months from the date of purchase, or 15,000km whichever comes 1st. In the event of a failure we will replace either the engine or parts free of charge and at our discretion.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(55);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Cylinder Head Repair'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Cylinder Head Repair'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Valve steam oil seals provide a controlled leak of oil to allow the valve stem to be lubricated as it slides in the valve guide. The amount of oil that passes by the valve stem seal must be precisely controlled, as too little oil causes stem and guide wear. Too much oil causes carbon build-up leading to valve seat damage, increased emissions and excessive oil consumption.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'One of the most noticeable signs of worn or cracked valve stem seals will be just after a cold engine start. When the engine first starts up, residual oil gets sucked down through the bad seal and into the combustion chamber. A large cloud of blue-white smoke will be seen exiting the exhaust just after start-up. On many vehicle we have a cost effective way of replacing the seals without removing the cylinder head.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We also provide cylinder head rebuilds, bent valve replacement, valve seating and much more.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(55);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Head Gasket Repair'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Head Gasket Repair'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The head gasket acts as a seal between the 2 main parts of your engine (the cylinder block and the cylinder head), so it\u2019s vital to keeping your engine running correctly and safely. If your head gasket has blown, you need a repair or replacement carried out professionally. As soon as you notice any of the major signs of a blown head gasket contact us straight away and we\u2019ll arrange to test it for you.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Common signs of a blown head gasket are:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Engine overheating.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'White smoke coming from the exhaust.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Your engine oil is a milky colour.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Losing coolant at a high rate.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Bubbles in the coolant overflow tank.'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6276,11 +6549,11 @@
 
 	var _cmmn = __webpack_require__(4);
 
-	var _superagent = __webpack_require__(67);
+	var _superagent = __webpack_require__(71);
 
 	var _superagent2 = _interopRequireDefault(_superagent);
 
-	var _superagentJsonp = __webpack_require__(75);
+	var _superagentJsonp = __webpack_require__(79);
 
 	var _superagentJsonp2 = _interopRequireDefault(_superagentJsonp);
 
@@ -6288,7 +6561,7 @@
 
 	var _template2 = _interopRequireDefault(_template);
 
-	var _styles = __webpack_require__(76);
+	var _styles = __webpack_require__(80);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -6462,7 +6735,7 @@
 	};
 
 /***/ },
-/* 67 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6486,12 +6759,12 @@
 	  root = undefined;
 	}
 
-	var Emitter = __webpack_require__(68);
-	var RequestBase = __webpack_require__(69);
-	var isObject = __webpack_require__(70);
-	var isFunction = __webpack_require__(71);
-	var ResponseBase = __webpack_require__(72);
-	var shouldRetry = __webpack_require__(74);
+	var Emitter = __webpack_require__(72);
+	var RequestBase = __webpack_require__(73);
+	var isObject = __webpack_require__(74);
+	var isFunction = __webpack_require__(75);
+	var ResponseBase = __webpack_require__(76);
+	var shouldRetry = __webpack_require__(78);
 
 	/**
 	 * Noop.
@@ -7403,7 +7676,7 @@
 	};
 
 /***/ },
-/* 68 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7567,7 +7840,7 @@
 	};
 
 /***/ },
-/* 69 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7577,7 +7850,7 @@
 	/**
 	 * Module of mixed-in functions shared between node and client code
 	 */
-	var isObject = __webpack_require__(70);
+	var isObject = __webpack_require__(74);
 
 	/**
 	 * Expose `RequestBase`.
@@ -8155,7 +8428,7 @@
 	};
 
 /***/ },
-/* 70 */
+/* 74 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8177,7 +8450,7 @@
 	module.exports = isObject;
 
 /***/ },
-/* 71 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8189,7 +8462,7 @@
 	 * @return {Boolean}
 	 * @api private
 	 */
-	var isObject = __webpack_require__(70);
+	var isObject = __webpack_require__(74);
 
 	function isFunction(fn) {
 	  var tag = isObject(fn) ? Object.prototype.toString.call(fn) : '';
@@ -8199,7 +8472,7 @@
 	module.exports = isFunction;
 
 /***/ },
-/* 72 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8208,7 +8481,7 @@
 	 * Module dependencies.
 	 */
 
-	var utils = __webpack_require__(73);
+	var utils = __webpack_require__(77);
 
 	/**
 	 * Expose `ResponseBase`.
@@ -8336,7 +8609,7 @@
 	};
 
 /***/ },
-/* 73 */
+/* 77 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8410,7 +8683,7 @@
 	};
 
 /***/ },
-/* 74 */
+/* 78 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8434,7 +8707,7 @@
 	};
 
 /***/ },
-/* 75 */
+/* 79 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8537,7 +8810,7 @@
 	}
 
 /***/ },
-/* 76 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -8547,9 +8820,9 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 77 */,
-/* 78 */,
-/* 79 */
+/* 81 */,
+/* 82 */,
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8581,7 +8854,7 @@
 
 	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 
-	var _booking = __webpack_require__(80);
+	var _booking = __webpack_require__(84);
 
 	var _booking2 = _interopRequireDefault(_booking);
 
@@ -8621,7 +8894,7 @@
 	};
 
 /***/ },
-/* 80 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -8631,8 +8904,50 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 81 */,
-/* 82 */
+/* 85 */,
+/* 86 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(55);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Trade'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'trade' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Trade'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Do you have a fleet of vehicles? Why not let us look after all your service and repair needs. For fleet and business customers we offer substantial discounts, fixed price servicing, final invoices always matching the quote, monthly invoicing, a pick up and drop off service and we can provide a loan car. With our loan cars we will try our best to give you like for like. We normally have small cars, vans and table top utes in stock.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8660,7 +8975,7 @@
 
 	__webpack_require__(11);
 
-	var _styles = __webpack_require__(83);
+	var _styles = __webpack_require__(88);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -8746,7 +9061,7 @@
 	};
 
 /***/ },
-/* 83 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -8756,14 +9071,14 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 84 */,
-/* 85 */
+/* 89 */,
+/* 90 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 86 */
+/* 91 */
 /***/ function(module, exports) {
 
 	"use strict";
