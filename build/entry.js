@@ -63,19 +63,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _path = __webpack_require__(67);
+	var _path = __webpack_require__(72);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
-	var _fs = __webpack_require__(68);
+	var _fs = __webpack_require__(73);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _mkdirp = __webpack_require__(69);
+	var _mkdirp = __webpack_require__(74);
 	
 	var _mkdirp2 = _interopRequireDefault(_mkdirp);
 	
-	var _routes = __webpack_require__(70);
+	var _routes = __webpack_require__(75);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -515,7 +515,7 @@ require("source-map-support").install();
 	
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 	
-	var _cmmnDatasource = __webpack_require__(66);
+	var _cmmnDatasource = __webpack_require__(71);
 	
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 	
@@ -607,43 +607,63 @@ require("source-map-support").install();
 	
 	var services = _interopRequireWildcard(_services);
 	
-	var _airConditioning = __webpack_require__(49);
+	var _servicing = __webpack_require__(49);
+	
+	var servicing = _interopRequireWildcard(_servicing);
+	
+	var _airConditioning = __webpack_require__(50);
 	
 	var airConditioning = _interopRequireWildcard(_airConditioning);
 	
-	var _performanceTuning = __webpack_require__(50);
+	var _performanceTuning = __webpack_require__(51);
 	
 	var performanceTuning = _interopRequireWildcard(_performanceTuning);
 	
-	var _ecuTuning = __webpack_require__(51);
+	var _ecuTuning = __webpack_require__(52);
 	
 	var ecuTuning = _interopRequireWildcard(_ecuTuning);
 	
-	var _dpfSolution = __webpack_require__(52);
+	var _dpfSolution = __webpack_require__(53);
 	
 	var dpfSolution = _interopRequireWildcard(_dpfSolution);
 	
-	var _egrSolution = __webpack_require__(53);
+	var _egrSolution = __webpack_require__(54);
 	
 	var egrSolution = _interopRequireWildcard(_egrSolution);
 	
-	var _truckTuning = __webpack_require__(54);
+	var _truckTuning = __webpack_require__(55);
 	
 	var truckTuning = _interopRequireWildcard(_truckTuning);
 	
-	var _reconditioning = __webpack_require__(55);
+	var _reconditioning = __webpack_require__(56);
 	
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 	
-	var _parts = __webpack_require__(56);
+	var _motorRebuilds = __webpack_require__(57);
+	
+	var motorRebuilds = _interopRequireWildcard(_motorRebuilds);
+	
+	var _cylinderHeadRepair = __webpack_require__(58);
+	
+	var cylinderHeadRepair = _interopRequireWildcard(_cylinderHeadRepair);
+	
+	var _headGasketRepair = __webpack_require__(59);
+	
+	var headGasketRepair = _interopRequireWildcard(_headGasketRepair);
+	
+	var _parts = __webpack_require__(60);
 	
 	var parts = _interopRequireWildcard(_parts);
 	
-	var _booking = __webpack_require__(61);
+	var _booking = __webpack_require__(65);
 	
 	var book = _interopRequireWildcard(_booking);
 	
-	var _contact = __webpack_require__(63);
+	var _trade = __webpack_require__(67);
+	
+	var trade = _interopRequireWildcard(_trade);
+	
+	var _contact = __webpack_require__(68);
 	
 	var contact = _interopRequireWildcard(_contact);
 	
@@ -659,8 +679,9 @@ require("source-map-support").install();
 	        if (props.route.length > 1) {
 	          switch (props.route[1]) {
 	            case 'air-conditioning':
-	              page = airConditioning;
-	              break;
+	              page = airConditioning;break;
+	            case 'scheduled-servicing':
+	              page = servicing;break;
 	          }
 	        }
 	        break;
@@ -681,12 +702,25 @@ require("source-map-support").install();
 	        break;
 	      case 'reconditioning':
 	        page = reconditioning;
+	        if (props.route.length > 1) {
+	          switch (props.route[1]) {
+	            case 'motor-rebuilds':
+	              page = motorRebuilds;break;
+	            case 'cylinder-head-repair':
+	              page = cylinderHeadRepair;break;
+	            case 'head-gasket-repair':
+	              page = headGasketRepair;break;
+	          }
+	        }
 	        break;
 	      case 'parts':
 	        page = parts;
 	        break;
 	      case 'book':
 	        page = book;
+	        break;
+	      case 'trade':
+	        page = trade;
 	        break;
 	      case 'contact-us':
 	        page = contact;
@@ -715,8 +749,8 @@ require("source-map-support").install();
 	        null,
 	        '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,\'script\',\'dataLayer\',\'GTM-TD3SK9D\');'
 	      ),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(65) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(65) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(70) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(70) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -1110,7 +1144,9 @@ require("source-map-support").install();
 	  items: [{ title: 'Air Conditioning', href: 'services/air-conditioning' }, { title: 'Scheduled Servicing', href: 'services/scheduled-servicing' }, { title: 'Repairs', href: 'services/repairs' }]
 	}, {
 	  title: 'Reconditioning', href: 'reconditioning', active: 'reconditioning',
-	  items: [{ title: 'Motor Rebuilds', href: 'reconditioning/motor-rebuilds' }, { title: 'Replacement Motors', href: 'reconditioning/replacement-motors' }, { title: 'Cylinder Head Repair', href: 'reconditioning/cylinder-head-repair' }]
+	  items: [{ title: 'Motor Rebuilds', href: 'reconditioning/motor-rebuilds' },
+	  //{ title: 'Replacement Motors', href: 'reconditioning/replacement-motors' },
+	  { title: 'Cylinder Head Repair', href: 'reconditioning/cylinder-head-repair' }, { title: 'Head Gasket Repair', href: 'reconditioning/head-gasket-repair' }]
 	}, {
 	  title: 'Performance Tuning', href: 'performance-tuning', active: 'performance-tuning',
 	  items: [{ title: 'ECU Tuning', href: 'performance-tuning/ecu-tuning' }, { title: 'DPF Solution', href: 'performance-tuning/dpf-solution' }, { title: 'EGR Solution', href: 'performance-tuning/egr-solution' }, { title: 'Truck Tuning', href: 'performance-tuning/truck-tuning' }]
@@ -1956,7 +1992,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-pages-styles---content---15gAm {\n  position: relative;\n  background-color: white;\n  min-height: 300px;\n  padding: 60px 0;\n  overflow: hidden; }\n  .src-views-pages-styles---content--grey---1CK5C {\n    background-color: #f4f4f4; }\n  .src-views-pages-styles---content---15gAm h1 {\n    font-size: 3.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    font-weight: 300;\n    line-height: 1.4;\n    margin: 0 0 0.7em 0; }\n  .src-views-pages-styles---content---15gAm h3 {\n    font-size: 1.6rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n    font-weight: 600;\n    line-height: 1.4;\n    margin: 1.4em 0 0.7em 0;\n    color: #006e9c; }\n  .src-views-pages-styles---content---15gAm p, .src-views-pages-styles---content---15gAm ul {\n    font-size: 1.6rem;\n    line-height: 1.3;\n    margin: 1.3em 0; }\n  .src-views-pages-styles---content__copy---11d-X {\n    width: 550px;\n    min-height: 500px; }\n  .src-views-pages-styles---content__right-img---ha2cC {\n    position: absolute;\n    top: 0;\n    height: 100%;\n    max-height: 500px;\n    left: 600px;\n    right: -200px;\n    background-size: cover;\n    background-position: 0 50%; }\n    .src-views-pages-styles---content__right-img--map---2IIgO {\n      left: 500px;\n      right: -100px; }\n  @media (max-width: 1000px) {\n    .src-views-pages-styles---content__copy---11d-X {\n      position: relative;\n      width: auto;\n      margin-top: -8rem;\n      min-height: none; }\n      .src-views-pages-styles---content__copy---11d-X h1 {\n        color: white;\n        z-index: 100;\n        line-height: 3rem;\n        padding: 1rem 0;\n        margin-bottom: 3rem;\n        text-shadow: 0 1px 3px black;\n        height: 6rem; }\n      .src-views-pages-styles---content__copy---11d-X:before {\n        content: \"\";\n        display: block;\n        width: 45px;\n        height: 160px;\n        float: right; }\n    .src-views-pages-styles---content__right-img---ha2cC {\n      position: relative;\n      left: 0;\n      right: 0;\n      margin: -70px -200px 0 -200px;\n      height: 250px;\n      background-position: 50% 50%; } }\n  @media (max-width: 450px) {\n    .src-views-pages-styles---content__copy---11d-X h1 {\n      font-size: 2.6rem; } }\n\n.src-views-pages-styles---book-btn---JVOXc {\n  display: inline-block;\n  font-size: 1.6rem;\n  line-height: 1.4;\n  padding: 0.75em 1em;\n  width: 100%;\n  max-width: 250px;\n  margin: 1em 0;\n  background-color: #006e9c;\n  color: white;\n  text-decoration: none;\n  text-align: center;\n  text-transform: uppercase;\n  letter-spacing: 0.1em; }\n  .src-views-pages-styles---book-btn---JVOXc:hover {\n    background-color: #0092cf; }\n", ""]);
+	exports.push([module.id, ".src-views-pages-styles---content---15gAm {\n  position: relative;\n  background-color: white;\n  min-height: 300px;\n  padding: 60px 0;\n  overflow: hidden; }\n  .src-views-pages-styles---content--grey---1CK5C {\n    background-color: #f4f4f4; }\n  .src-views-pages-styles---content---15gAm h1 {\n    font-size: 3.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.1em;\n    font-weight: 300;\n    line-height: 1.4;\n    margin: 0 0 0.7em 0; }\n  .src-views-pages-styles---content---15gAm h3 {\n    font-size: 1.6rem;\n    text-transform: uppercase;\n    letter-spacing: 0.05em;\n    font-weight: 600;\n    line-height: 1.4;\n    margin: 1.4em 0 0.7em 0;\n    color: #006e9c; }\n  .src-views-pages-styles---content---15gAm p, .src-views-pages-styles---content---15gAm ul {\n    font-size: 1.6rem;\n    line-height: 1.3;\n    margin: 1.3em 0; }\n  .src-views-pages-styles---content__copy---11d-X {\n    width: 550px;\n    min-height: 500px; }\n  .src-views-pages-styles---content__right-img---ha2cC {\n    position: absolute;\n    top: 0;\n    height: 100%;\n    max-height: 500px;\n    left: 600px;\n    right: -200px;\n    background-size: cover;\n    background-position: 0 50%; }\n    .src-views-pages-styles---content__right-img--map---2IIgO {\n      left: 500px;\n      right: -100px; }\n  @media (max-width: 1000px) {\n    .src-views-pages-styles---content__copy---11d-X {\n      position: relative;\n      width: auto;\n      margin-top: -8rem;\n      min-height: 0; }\n      .src-views-pages-styles---content__copy---11d-X h1 {\n        color: white;\n        z-index: 100;\n        line-height: 3rem;\n        padding: 1rem 0;\n        margin-bottom: 3rem;\n        text-shadow: 0 1px 3px black;\n        height: 6rem; }\n      .src-views-pages-styles---content__copy---11d-X:before {\n        content: \"\";\n        display: block;\n        width: 45px;\n        height: 160px;\n        float: right; }\n    .src-views-pages-styles---content__right-img---ha2cC {\n      position: relative;\n      left: 0;\n      right: 0;\n      margin: -70px -200px 0 -200px;\n      height: 250px;\n      background-position: 50% 50%; } }\n  @media (max-width: 450px) {\n    .src-views-pages-styles---content__copy---11d-X h1 {\n      font-size: 2.6rem; } }\n\n.src-views-pages-styles---book-btn---JVOXc {\n  display: inline-block;\n  font-size: 1.6rem;\n  line-height: 1.4;\n  padding: 0.75em 1em;\n  width: 100%;\n  max-width: 250px;\n  margin: 1em 0;\n  background-color: #006e9c;\n  color: white;\n  text-decoration: none;\n  text-align: center;\n  text-transform: uppercase;\n  letter-spacing: 0.1em; }\n  .src-views-pages-styles---book-btn---JVOXc:hover {\n    background-color: #0092cf; }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1982,6 +2018,58 @@ require("source-map-support").install();
 
 /***/ },
 /* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Servicing'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'services' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Scheduled Servicing'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'At DPL motors we customise our service to suit your budget and car type. We specialise not only in European vehicles but any make or model,  whether it\'s a small car, family car, sports car, SUV, 4WD, ute or van.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our logbook services are carried out according to manufacturer\u2019s specifications and we replace all scheduled parts. We also carry out a full safety check and every service comes with a 6month/10,000km warranty. Our European trained mechanics only use the best quality parts on your vehicle, we use parts that are manufactured to match or exceed the Original Equipment Manufacturer (OEM).'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our Minor Service is the minimum you should do to your vehicle. This service helps maintain your vehicle and prevents unforeseen faults. In this service we will replace your Engine Oil and Oil Filter and we check and report on the following; Brakes Front and Rear, Tyre Condition and Thread Depth, all lights, Suspension and Shocks, Instruments, Engine and Gearbox leaks, Exhaust system, CV Joints, Wipers, Check all levels and refill, Check any warning lights and reset the service computer using the very latest diagnostic equipment. Prices for this service start from as little as $179.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2072,7 +2160,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2201,7 +2289,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2290,7 +2378,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2426,7 +2514,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2514,7 +2602,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2601,7 +2689,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2707,7 +2795,192 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 56 */
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Motor Rebuilds'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Motor Rebuilds'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'The Reconditioning process'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We receive your vehicle and accept your instruction at our workshop. Your engine and all associated parts are removed and inspected. The cylinder head is removed from the engine block. Both cylinder head and block are dismantled into their component parts. All worn or broken parts are replaced as part of our quality control system. The parts for reassembly pass through our specialist cleaning process. At this point all items that require machining are engineered to our exacting specifications. Machined parts are cleaned and measured prior to reassembly.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Your original engine is then rebuilt using new bearings, seals, piston rings and gaskets. Once fully assembled the engine is replaced into your vehicle with new fluids and filters. The engine is then started and tuned for optimum reliability utilising the latest diagnostic systems'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our workmanship and materials are both guaranteed for 12 months from the date of purchase, or 15,000km whichever comes 1st. In the event of a failure we will replace either the engine or parts free of charge and at our discretion.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 58 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Cylinder Head Repair'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Cylinder Head Repair'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Valve steam oil seals provide a controlled leak of oil to allow the valve stem to be lubricated as it slides in the valve guide. The amount of oil that passes by the valve stem seal must be precisely controlled, as too little oil causes stem and guide wear. Too much oil causes carbon build-up leading to valve seat damage, increased emissions and excessive oil consumption.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'One of the most noticeable signs of worn or cracked valve stem seals will be just after a cold engine start. When the engine first starts up, residual oil gets sucked down through the bad seal and into the combustion chamber. A large cloud of blue-white smoke will be seen exiting the exhaust just after start-up. On many vehicle we have a cost effective way of replacing the seals without removing the cylinder head.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We also provide cylinder head rebuilds, bent valve replacement, valve seating and much more.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Head Gasket Repair'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Head Gasket Repair'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The head gasket acts as a seal between the 2 main parts of your engine (the cylinder block and the cylinder head), so it\u2019s vital to keeping your engine running correctly and safely. If your head gasket has blown, you need a repair or replacement carried out professionally. As soon as you notice any of the major signs of a blown head gasket contact us straight away and we\u2019ll arrange to test it for you.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Common signs of a blown head gasket are:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Engine overheating.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'White smoke coming from the exhaust.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Your engine oil is a milky colour.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Losing coolant at a high rate.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Bubbles in the coolant overflow tank.'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2721,11 +2994,11 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _superagent = __webpack_require__(57);
+	var _superagent = __webpack_require__(61);
 	
 	var _superagent2 = _interopRequireDefault(_superagent);
 	
-	var _superagentJsonp = __webpack_require__(58);
+	var _superagentJsonp = __webpack_require__(62);
 	
 	var _superagentJsonp2 = _interopRequireDefault(_superagentJsonp);
 	
@@ -2733,7 +3006,7 @@ require("source-map-support").install();
 	
 	var _template2 = _interopRequireDefault(_template);
 	
-	var _styles = __webpack_require__(59);
+	var _styles = __webpack_require__(63);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -2907,19 +3180,19 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 57 */
+/* 61 */
 /***/ function(module, exports) {
 
 	module.exports = require("superagent");
 
 /***/ },
-/* 58 */
+/* 62 */
 /***/ function(module, exports) {
 
 	module.exports = require("superagent-jsonp");
 
 /***/ },
-/* 59 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -2927,7 +3200,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(60) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat;\n    cursor: pointer; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px;\n    max-width: calc(98% - 8px); }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0;\n    cursor: pointer; }\n    .src-views-parts-styles---form---2ktVT input[type=\"submit\"]:hover {\n      background-color: #0092cf; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
+	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(64) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat;\n    cursor: pointer; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px;\n    max-width: calc(98% - 8px); }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0;\n    cursor: pointer; }\n    .src-views-parts-styles---form---2ktVT input[type=\"submit\"]:hover {\n      background-color: #0092cf; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -2942,13 +3215,13 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 60 */
+/* 64 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/chevron-3vB6y-nq.png";
 
 /***/ },
-/* 61 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2980,7 +3253,7 @@ require("source-map-support").install();
 	
 	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 	
-	var _booking = __webpack_require__(62);
+	var _booking = __webpack_require__(66);
 	
 	var _booking2 = _interopRequireDefault(_booking);
 	
@@ -3020,7 +3293,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 62 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -3042,7 +3315,49 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 63 */
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+	
+	var _cmmn = __webpack_require__(3);
+	
+	var _template = __webpack_require__(46);
+	
+	var _template2 = _interopRequireDefault(_template);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Trade'
+	  };
+	};
+	
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'trade' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Trade'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Do you have a fleet of vehicles? Why not let us look after all your service and repair needs. For fleet and business customers we offer substantial discounts, fixed price servicing, final invoices always matching the quote, monthly invoicing, a pick up and drop off service and we can provide a loan car. With our loan cars we will try our best to give you like for like. We normally have small cars, vans and table top utes in stock.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3070,7 +3385,7 @@ require("source-map-support").install();
 	
 	__webpack_require__(10);
 	
-	var _styles = __webpack_require__(64);
+	var _styles = __webpack_require__(69);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -3156,7 +3471,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 64 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -3178,13 +3493,13 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 65 */
+/* 70 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 66 */
+/* 71 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3198,25 +3513,25 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 67 */
+/* 72 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 68 */
+/* 73 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 69 */
+/* 74 */
 /***/ function(module, exports) {
 
 	module.exports = require("mkdirp");
 
 /***/ },
-/* 70 */
+/* 75 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -3224,7 +3539,9 @@ require("source-map-support").install();
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var routes = ['/', '/services/', '/services/air-conditioning/', '/performance-tuning/', '/performance-tuning/ecu-tuning/', '/performance-tuning/dpf-solution/', '/performance-tuning/egr-solution/', '/performance-tuning/truck-tuning/', '/reconditioning/', '/parts/', '/book/', '/contact-us/'];
+	var routes = ['/', '/services/', '/services/air-conditioning/', '/services/scheduled-servicing/', '/services/repairs/', '/performance-tuning/', '/performance-tuning/ecu-tuning/', '/performance-tuning/dpf-solution/', '/performance-tuning/egr-solution/', '/performance-tuning/truck-tuning/', '/reconditioning/', '/reconditioning/motor-rebuilds/',
+	//'/reconditioning/replacement-motors/',
+	'/reconditioning/cylinder-head-repair/', '/reconditioning/head-gasket-repair/', '/parts/', '/trade/', '/book/', '/contact-us/'];
 	
 	exports.default = routes;
 

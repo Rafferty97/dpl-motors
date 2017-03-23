@@ -2,6 +2,7 @@ import { createElement } from 'cmmn';
 
 import * as home from './views/home-page';
 import * as services from './views/pages/services';
+import * as servicing from './views/pages/servicing';
 import * as airConditioning from './views/pages/air-conditioning';
 import * as performanceTuning from './views/pages/performance-tuning';
 import * as ecuTuning from './views/pages/ecu-tuning';
@@ -9,8 +10,12 @@ import * as dpfSolution from './views/pages/dpf-solution';
 import * as egrSolution from './views/pages/egr-solution';
 import * as truckTuning from './views/pages/truck-tuning';
 import * as reconditioning from './views/pages/reconditioning';
+import * as motorRebuilds from './views/pages/motor-rebuilds';
+import * as cylinderHeadRepair from './views/pages/cylinder-head-repair';
+import * as headGasketRepair from './views/pages/head-gasket-repair';
 import * as parts from './views/parts';
 import * as book from './views/pages/booking';
+import * as trade from './views/pages/trade';
 import * as contact from './views/contact';
 
 function route(props) {
@@ -22,9 +27,8 @@ function route(props) {
         page = services;
         if (props.route.length > 1) {
           switch (props.route[1]) {
-            case 'air-conditioning':
-            page = airConditioning;
-            break;
+            case 'air-conditioning': page = airConditioning; break;
+            case 'scheduled-servicing': page = servicing; break;
           }
         }
         break;
@@ -41,12 +45,22 @@ function route(props) {
         break;
       case 'reconditioning':
         page = reconditioning;
+        if (props.route.length > 1) {
+          switch (props.route[1]) {
+            case 'motor-rebuilds': page = motorRebuilds; break;
+            case 'cylinder-head-repair': page = cylinderHeadRepair; break;
+            case 'head-gasket-repair': page = headGasketRepair; break;
+          }
+        }
         break;
       case 'parts':
         page = parts;
         break;
       case 'book':
         page = book;
+        break;
+      case 'trade':
+        page = trade;
         break;
       case 'contact-us':
         page = contact;

@@ -27,8 +27,9 @@ const menu = [
     title: 'Reconditioning', href: 'reconditioning', active: 'reconditioning',
     items: [
       { title: 'Motor Rebuilds', href: 'reconditioning/motor-rebuilds' },
-      { title: 'Replacement Motors', href: 'reconditioning/replacement-motors' },
-      { title: 'Cylinder Head Repair', href: 'reconditioning/cylinder-head-repair' }
+      //{ title: 'Replacement Motors', href: 'reconditioning/replacement-motors' },
+      { title: 'Cylinder Head Repair', href: 'reconditioning/cylinder-head-repair' },
+      { title: 'Head Gasket Repair', href: 'reconditioning/head-gasket-repair' }
     ]
   },
   {

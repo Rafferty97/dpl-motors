@@ -2122,7 +2122,7 @@ html, body {
       position: relative;
       width: auto;
       margin-top: -8rem;
-      min-height: none; }
+      min-height: 0; }
       .src-views-pages-styles---content__copy---11d-X h1 {
         color: white;
         z-index: 100;
