@@ -4798,7 +4798,9 @@
 
 	var menu = [{
 	  title: 'Services', href: 'services', active: 'services',
-	  items: [{ title: 'Air Conditioning', href: 'services/air-conditioning' }, { title: 'Scheduled Servicing', href: 'services/scheduled-servicing' }, { title: 'Repairs', href: 'services/repairs' }]
+	  items: [{ title: 'Air Conditioning', href: 'services/air-conditioning' }, { title: 'Scheduled Servicing', href: 'services/scheduled-servicing' }
+	  //{ title: 'Repairs', href: 'services/repairs' }
+	  ]
 	}, {
 	  title: 'Reconditioning', href: 'reconditioning', active: 'reconditioning',
 	  items: [{ title: 'Motor Rebuilds', href: 'reconditioning/motor-rebuilds' },
