@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(91);
+	var _cmmnDatasource = __webpack_require__(90);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4390,67 +4390,67 @@
 
 	var home = _interopRequireWildcard(_homePage);
 
-	var _services = __webpack_require__(54);
+	var _services = __webpack_require__(62);
 
 	var services = _interopRequireWildcard(_services);
 
-	var _servicing = __webpack_require__(59);
+	var _servicing = __webpack_require__(67);
 
 	var servicing = _interopRequireWildcard(_servicing);
 
-	var _airConditioning = __webpack_require__(60);
+	var _airConditioning = __webpack_require__(68);
 
 	var airConditioning = _interopRequireWildcard(_airConditioning);
 
-	var _performanceTuning = __webpack_require__(61);
+	var _performanceTuning = __webpack_require__(69);
 
 	var performanceTuning = _interopRequireWildcard(_performanceTuning);
 
-	var _ecuTuning = __webpack_require__(62);
+	var _ecuTuning = __webpack_require__(70);
 
 	var ecuTuning = _interopRequireWildcard(_ecuTuning);
 
-	var _dpfSolution = __webpack_require__(63);
+	var _dpfSolution = __webpack_require__(71);
 
 	var dpfSolution = _interopRequireWildcard(_dpfSolution);
 
-	var _egrSolution = __webpack_require__(64);
+	var _egrSolution = __webpack_require__(72);
 
 	var egrSolution = _interopRequireWildcard(_egrSolution);
 
-	var _truckTuning = __webpack_require__(65);
+	var _truckTuning = __webpack_require__(73);
 
 	var truckTuning = _interopRequireWildcard(_truckTuning);
 
-	var _reconditioning = __webpack_require__(66);
+	var _reconditioning = __webpack_require__(74);
 
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 
-	var _motorRebuilds = __webpack_require__(67);
+	var _motorRebuilds = __webpack_require__(75);
 
 	var motorRebuilds = _interopRequireWildcard(_motorRebuilds);
 
-	var _cylinderHeadRepair = __webpack_require__(68);
+	var _cylinderHeadRepair = __webpack_require__(76);
 
 	var cylinderHeadRepair = _interopRequireWildcard(_cylinderHeadRepair);
 
-	var _headGasketRepair = __webpack_require__(69);
+	var _headGasketRepair = __webpack_require__(77);
 
 	var headGasketRepair = _interopRequireWildcard(_headGasketRepair);
 
-	var _parts = __webpack_require__(70);
+	var _parts = __webpack_require__(78);
 
 	var parts = _interopRequireWildcard(_parts);
 
-	var _booking = __webpack_require__(83);
+	var _booking = __webpack_require__(82);
 
 	var book = _interopRequireWildcard(_booking);
 
-	var _trade = __webpack_require__(86);
+	var _trade = __webpack_require__(85);
 
 	var trade = _interopRequireWildcard(_trade);
 
-	var _contact = __webpack_require__(87);
+	var _contact = __webpack_require__(86);
 
 	var contact = _interopRequireWildcard(_contact);
 
@@ -4536,8 +4536,8 @@
 	        null,
 	        '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,\'script\',\'dataLayer\',\'GTM-TD3SK9D\');'
 	      ),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(90) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(90) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(89) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(89) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -4924,7 +4924,12 @@
 	              'p',
 	              { className: _styles2.default.dbl },
 	              (0, _cmmn.createElement)('i', { className: 'fa fa-phone' }),
-	              '\xA0(08) 9227 5374'
+	              '\xA0',
+	              (0, _cmmn.createElement)(
+	                'a',
+	                { href: 'tel:0892275374' },
+	                '(08) 9227 5374'
+	              )
 	            )
 	          )
 	        ),
@@ -5075,7 +5080,7 @@
 
 	      return (0, _cmmn.createElement)(
 	        'ul',
-	        { id: 'xyz', className: _styles2.default.ddMenu },
+	        { className: _styles2.default.ddMenu },
 	        children.map(function (el) {
 	          return (0, _cmmn.createElement)(
 	            'li',
@@ -5305,13 +5310,19 @@
 
 	var _cmmn = __webpack_require__(4);
 
-	var _styles = __webpack_require__(51);
+	var _superagent = __webpack_require__(51);
+
+	var _superagent2 = _interopRequireDefault(_superagent);
+
+	var _styles = __webpack_require__(59);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var subscribeEmailURL = '/subscribe';
 
 	var MenuItem = function MenuItem(_ref) {
 	  var icon = _ref.icon,
@@ -5322,6 +5333,25 @@
 	    { className: _styles2.default.sidebar.item, href: href },
 	    children,
 	    (0, _cmmn.createElement)('span', { className: _styles2.default.sidebar.item.icon, style: "background-position-y: " + (-53.5 * icon - 4) + "px" })
+	  );
+	};
+
+	var NewsletterForm = function NewsletterForm() {
+	  return (0, _cmmn.createElement)(
+	    'div',
+	    { className: _styles2.default.sidebar.item.with('backface', 'no-hover') },
+	    (0, _cmmn.createElement)(
+	      'form',
+	      { className: _styles2.default.newsletterForm },
+	      (0, _cmmn.createElement)('div', { className: _styles2.default.newsletterForm.status }),
+	      (0, _cmmn.createElement)('input', { type: 'email', name: 'email', placeholder: 'Your Email' }),
+	      (0, _cmmn.createElement)('input', { type: 'submit', value: 'OK' }),
+	      (0, _cmmn.createElement)(
+	        'button',
+	        null,
+	        'X'
+	      )
+	    )
 	  );
 	};
 
@@ -5354,6 +5384,7 @@
 	          { href: 'javascript:void(0);', icon: 2 },
 	          'Join the Mailing List'
 	        ),
+	        (0, _cmmn.createElement)(NewsletterForm, null),
 	        (0, _cmmn.createElement)(
 	          MenuItem,
 	          { href: '*/parts/', icon: 3 },
@@ -5381,12 +5412,51 @@
 	    value: function mount(node) {
 	      var _this = this;
 
+	      var mousein = false,
+	          formopen = false;
 	      node.addEventListener('mouseover', function () {
+	        mousein = true;
 	        node.className = _styles2.default.sidebar.with(_this.top ? 'top' : '', 'visible');
 	      });
 	      node.addEventListener('mouseout', function () {
+	        mousein = false;
+	        if (formopen) return;
 	        node.className = _styles2.default.sidebar.with(_this.top ? 'top' : '');
 	      });
+	      var newsletterBtn = node.querySelector('.' + _styles2.default.sidebar.item.toString().trim() + ':nth-child(3)');
+	      var newsletterForm = node.querySelector('.' + _styles2.default.sidebar.item.toString().trim() + ':nth-child(4)');
+	      var formStatus = node.querySelector('.' + _styles2.default.newsletterForm.status);
+	      newsletterBtn.addEventListener('click', function () {
+	        formopen = true;
+	        newsletterBtn.className = _styles2.default.sidebar.item.with('flipped');
+	        newsletterForm.className = _styles2.default.sidebar.item.with('flipped', 'backface', 'no-hover');
+	      });
+	      newsletterForm.querySelector('form').addEventListener('submit', function (event) {
+	        event.preventDefault();
+	        var address = newsletterForm.querySelector('form input[name="email"]').value;
+	        formStatus.className = _styles2.default.newsletterForm.status.with('visible');
+	        formStatus.innerHTML = 'Working...';
+	        _superagent2.default.post(subscribeEmailURL).send({ emailaddress: address }).end(function (err, res) {
+	          if (err) {
+	            console.error(err);
+	            formStatus.innerHTML = 'An error occurred.';
+	          } else {
+	            formStatus.innerHTML = 'Thanks for subscribing!';
+	          }
+	          setTimeout(closeForm, 1500);
+	        });
+	      });
+	      newsletterForm.querySelector('form button').addEventListener('click', function (event) {
+	        event.preventDefault();
+	        closeForm();
+	      });
+	      var closeForm = function closeForm() {
+	        formopen = false;
+	        formStatus.className = _styles2.default.newsletterForm.status;
+	        newsletterBtn.className = _styles2.default.sidebar.item.with();
+	        newsletterForm.className = _styles2.default.sidebar.item.with('backface', 'no-hover');
+	        if (!mousein) node.className = _styles2.default.sidebar.with(_this.top ? 'top' : '');
+	      };
 	    }
 	  }]);
 
@@ -5398,1346 +5468,6 @@
 
 /***/ },
 /* 51 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"sidebar":"src-views-sidemenu-styles---sidebar---2fVwP","sidebar--top":"src-views-sidemenu-styles---sidebar--top---g_xw8","sidebar__item":"src-views-sidemenu-styles---sidebar__item---3tF0f","sidebar__item--no-hover":"src-views-sidemenu-styles---sidebar__item--no-hover---364jd","sidebar__item__icon":"src-views-sidemenu-styles---sidebar__item__icon---VvZ3o","sidebar__item__social-link":"src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ","sidebar__item__social-link--fb":"src-views-sidemenu-styles---sidebar__item__social-link--fb---287lu","sidebar__item__social-link--twitter":"src-views-sidemenu-styles---sidebar__item__social-link--twitter---2CSIZ","sidebar--visible":"src-views-sidemenu-styles---sidebar--visible---3-E6V"};
-
-	// Bemify
-	module.exports = (__webpack_require__(22).default)(module.exports || {});
-
-/***/ },
-/* 52 */,
-/* 53 */,
-/* 54 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Services'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'services' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Services'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'DPL Motors are an independent mechanical workshop placed in East Perth.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'After gaining many years of experience in the motor trade we decided to set up on our own in 2011. We mainly specialise in German vehicles, such as Mercedes, BMW, Audi, VW, SEAT or Skoda, however don\u2019t hesitate if you own different brand of car as we have the capability to work on any brand. The latest diagnostic software and equipment allows us to work on any vehicle, from a Holden to a Range Rover. This diagnostic equipment is up to main dealer standard so we can carry out all diagnostic work at a fraction of the price compared to a franchised dealer.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'We have the technical knowledge and experience to look after you and your vehicle in our clean and modern workshop. We offer courtesy cars and commercial vehicles to keep you on the road while we take care of your vehicle. We can also arrange to collect and deliver your vehicle if you are local.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'Volkswagen TDi with loss of power?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'We have many cases of lack of power from VW and Audi TDi engines and know      how to fix this. We have had new customers come to us after spending      thousands of dollars at other garage\'s without the problem being fixed,\n      and we have been able to sort this out within a few hours. If you are\n      experiencing a loss of power please give us a call and we will see\n      what we can do.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'Porsche Cayenne or VW Touareg with tail-shaft vibration?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'There is a known problem with the bearings on these prop shafts and the main dealer will quote you for a new replacement part. Although this is one option, another is to have the bearing fixed at a fraction of the price. DPL Motors can help you with either option, and it will be signification cheaper than the main dealer prices.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'BMW\'s with suspension issues? Mercedes with gearbox problems?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'We encounter these and many more issues weekly and with our experience and knowledge we will have your vehicle back to you in no time.'
-	    )
-	  );
-	};
-
-/***/ },
-/* 55 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _cmmn = __webpack_require__(4);
-
-	__webpack_require__(11);
-
-	var _styles = __webpack_require__(56);
-
-	var _styles2 = _interopRequireDefault(_styles);
-
-	var _header = __webpack_require__(30);
-
-	var _header2 = _interopRequireDefault(_header);
-
-	var _footer = __webpack_require__(38);
-
-	var _footer2 = _interopRequireDefault(_footer);
-
-	var _components = __webpack_require__(33);
-
-	var _sidemenu = __webpack_require__(50);
-
-	var _sidemenu2 = _interopRequireDefault(_sidemenu);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = function (_ref) {
-	  var children = _ref.children,
-	      page = _ref.page,
-	      grey = _ref.grey;
-	  return (0, _cmmn.createElement)(
-	    'div',
-	    null,
-	    (0, _cmmn.createElement)(_header2.default, { page: page }),
-	    (0, _cmmn.createElement)(
-	      'div',
-	      { className: _styles2.default.content.with(grey ? 'grey' : '') },
-	      (0, _cmmn.createElement)(
-	        _components.Container,
-	        null,
-	        (0, _cmmn.createElement)('div', { className: _styles2.default.content.rightImg, style: 'background-image: url(' + __webpack_require__(58) + ');' }),
-	        (0, _cmmn.createElement)(
-	          'div',
-	          { className: _styles2.default.content.copy },
-	          children,
-	          (0, _cmmn.createElement)(
-	            'a',
-	            { href: '*/book/', className: _styles2.default.bookBtn },
-	            'Book Service'
-	          )
-	        )
-	      ),
-	      (0, _cmmn.createElement)(_sidemenu2.default, { top: true })
-	    ),
-	    (0, _cmmn.createElement)(_footer2.default, null)
-	  );
-	};
-
-/***/ },
-/* 56 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// removed by extract-text-webpack-plugin
-	module.exports = {"content":"src-views-pages-styles---content---15gAm","content--grey":"src-views-pages-styles---content--grey---1CK5C","content__copy":"src-views-pages-styles---content__copy---11d-X","content__right-img":"src-views-pages-styles---content__right-img---ha2cC","content__right-img--map":"src-views-pages-styles---content__right-img--map---2IIgO","book-btn":"src-views-pages-styles---book-btn---JVOXc"};
-
-	// Bemify
-	module.exports = (__webpack_require__(22).default)(module.exports || {});
-
-/***/ },
-/* 57 */,
-/* 58 */
-/***/ function(module, exports) {
-
-	module.exports = "/dpl-motors/jpg/bk-img-2JMeFrCm.jpg";
-
-/***/ },
-/* 59 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Servicing'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'services' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Scheduled Servicing'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'At DPL motors we customise our service to suit your budget and car type. We specialise not only in European vehicles but any make or model,  whether it\'s a small car, family car, sports car, SUV, 4WD, ute or van.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our logbook services are carried out according to manufacturer\u2019s specifications and we replace all scheduled parts. We also carry out a full safety check and every service comes with a 6month/10,000km warranty. Our European trained mechanics only use the best quality parts on your vehicle, we use parts that are manufactured to match or exceed the Original Equipment Manufacturer (OEM).'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our Minor Service is the minimum you should do to your vehicle. This service helps maintain your vehicle and prevents unforeseen faults. In this service we will replace your Engine Oil and Oil Filter and we check and report on the following; Brakes Front and Rear, Tyre Condition and Thread Depth, all lights, Suspension and Shocks, Instruments, Engine and Gearbox leaks, Exhaust system, CV Joints, Wipers, Check all levels and refill, Check any warning lights and reset the service computer using the very latest diagnostic equipment. Prices for this service start from as little as $179.'
-	    )
-	  );
-	};
-
-/***/ },
-/* 60 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Services'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'services' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Air Conditioning'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'A/C System Ragas And Repairs at DPL MOTORS'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'The Air Con system in your car is a serviceable item, just as you have to change your oil and air filters from time to time. It is very important to maintain your Air Conditioning system for the following reasons:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Due to natural leakage through naturally slightly porous pipes, most A/C systems will lose around 15-20% refrigerant every 12 months resulting in a less powerful and less efficient system. Bacteria and Fungi and can grow in car A/C systems and can cause allergic reactions such as hay-fever, skin irritations, runny noses and itchy eyes.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Your A/C system will put a strain on the compressor which can result in the compressor wearing out quickly If not serviced regularly. This can be costly, as it increases fuel consumption and draws more engine power to run the system. It is recommend that a vehicle\'s air con system is serviced every year to ensure it operates at maximum efficiency. However, there are some indicators that will help you determine if you have a problem with your Air Conditioning system:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'The interior takes longer to cool down? There\u2019s a noticeable increase in fuel consumption? The windscreen doesn\u2019t clear quickly?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'The Air-Con System Service Includes:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Testing for leaks'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Emptying and recharging the gas in the system.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Cleaning and Deodorising the entire Air Conditioning'
-	      )
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'If you notice an odd, particularly musty smell in your car, it is more than likely that the entire air con system needs proper cleaning with a de-fungicide.'
-	    )
-	  );
-	};
-
-/***/ },
-/* 61 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Performance Tuning'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'performance-tuning' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Performance Tuning'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'A DPL Motors TUNE REMAP Will Give You The Following Gains:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Horsepower.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'More Torque.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Improved Throttle Response.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Smoother Power Delivery.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Safer Overtaking.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy.'
-	      )
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'When You take Your vehicle Away, You Will leave With:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A 30 Day Money Back Guarantee.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'A Lifetime Warranty On All Remaps.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Guaranteed Better Fuel Economy On All Diesel Remaps.'
-	      )
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car\u2019s engine to a very conservative level. Yes, that\u2019s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'We also supply a loan car when necessary!'
-	      )
-	    )
-	  );
-	};
-
-/***/ },
-/* 62 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'ECU Tuning'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'performance-tuning' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'ECU Tuning'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'What is ECU Remapping/Programming?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'When a manufacturer develops a new car they have to take into consideration all of the conditions it may be subjected to in all of the regions in which they intend to sell this model. This means instead of just optimising the ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'ECU\'s program or \'map\''
-	      ),
-	      ' to deliver the best performance or the most fuel efficiency they have to make compromises to the map to take into account these potential differing operating conditions. These could include sub-standard fuels, extremes in temperature and altitude, differing emission laws and even the possibility that vehicle may not be serviced on a regular basis and in accordance with the manufacturers recommended instructions.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'ECU remapping'
-	      ),
-	      ' is taking a read from the ECU\u2019s processing chip of the vehicles standard compromised map and adjusting various parameters within the map such as fuel pressure, boost pressure (on turbocharged applications) ignition advance and throttle pedal control amongst others to release the true performance from the engine. It is a completely safe process as it is just giving the engine the performance it should have had in the first place before all the compromises were applied to the original programming. Every engine will have its own unique map and by adjusting this we can fine tune the characteristics of the engine; unleashing more power and in many cases reduce fuel consumption too.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'Benefits of ECU Remapping/Programming'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'ECU programming'
-	      ),
-	      ' will not only improve the engines power and torque figures it will also sharpen the throttle response and widen the power-band. This will make the power delivery a lot more linear, which in turn will make the vehicle feel a lot livelier to drive and the engine more flexible. Frequently, the vehicles power output is restricted by the manufacturer for no other reason than to ensure that the vehicle fits into a class to suit fleet buyers. As a driving enthusiast, you do not need or want such restrictions placed upon your vehicles ECU and its performance therefore you can benefit from the hidden power and torque locked away within your engine management system.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'The other main benefit of ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'remapping'
-	      ),
-	      ' will be a reduction in fuel consumption. With the extra torque especially at the bottom of the rev range you will see a fuel saving as it will require less throttle input to maintain motorway speeds, you can drive in a higher gear at a slower speed as well as helping significantly when fully laden, towing or on gradients and even in start stop traffic.'
-	    )
-	  );
-	};
-
-/***/ },
-/* 63 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'DPF Solution'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'performance-tuning' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'DPF Solution'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'What is a DPF?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'A ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'DPF (Diesel Particulate Filter)'
-	      ),
-	      ' also known as ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'FAP'
-	      ),
-	      ' on some French vehicles, is a device fitted to the exhaust system of modern diesel vehicles to reduce emissions and meet European emission standards. It does this by trapping ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'Soot (Particulate Matter - PM)'
-	      ),
-	      ' from the exhaust gasses while letting the gasses flow through the system.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'As with any type of filter a ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'Particulate Filter'
-	      ),
-	      ' needs to be cleaned regularly to function properly. With DPF\u2019s this is done by a process known as ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'Regeneration'
-	      ),
-	      ' which involves a combination of a ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'Catalyst'
-	      ),
-	      ' function in the system and burning the soot to gas at a very high temperature leaving behind an ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'Ash residue'
-	      ),
-	      ' within the DPF. Regeneration should be an automatic process taking place in the normal use of your vehicle, you may have noticed this in the form of a blast of white smoke form the exhaust on occasions.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'Problems Encountered with DPF'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'If regeneration doesn\u2019t function properly it leads to a build-up of soot affecting performance and fuel economy, left unattended this will result in a ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'Blocked DPF'
-	      ),
-	      ' which can ultimately cause very expensive damage to other engine components. A blocked DPF is also potentially dangerous as it can cause overheating in the exhaust system and cause a fire risk. To prevent this damage most new vehicles will go into \u201CLimp Home\u201D safety mode at this stage, meaning the vehicle will have minimum power barely sufficient to crawl home.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'For regeneration to take place it requires the vehicle to be driven regularly at some speed on open roads e.g. motorway driving, typically driving at around 2500 RPM for approx. 15-30mins at least once a month, this will keep things working.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Many diesel vehicles are used primarily in urban areas or on short stop start journeys e.g. local deliveries, taxi\u2019s, school runs etc and many have auto gearbox, so the vehicle does not get the chance to heat up sufficiently and is unable to carry out a full regeneration process.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Even if the regeneration functions as it should, over time the ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'Ash Residue'
-	      ),
-	      ' will build up in the DPF and have the same affect ultimately resulting in a blocked DPF. For this reason a DPF is classified as a Serviceable Item by the vehicle manufacturers like brake pads or air filters etc and not covered under warranty. ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'DPF systems therefore need to be maintained properly.'
-	      )
-	    )
-	  );
-	};
-
-/***/ },
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'EGR Solution'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'performance-tuning' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'WHAT IS EGR?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'A widely adopted route to reduce NOx emissions is ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'Exhaust Gas Recirculation (EGR)'
-	      ),
-	      '. This involves recirculating a controllable proportion of the ',
-	      'engine\'s',
-	      ' exhaust back into the intake air. A valve is usually used to control the flow of gas, and the valve may be closed completely if required.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'The substitution of burnt gas (which takes no further part in combustion) for oxygen rich air reduces the proportion of the cylinder contents available for combustion. This causes a correspondingly lower heat release and peak cylinder temperature, and reduces the formation of NOx. The presence of an inert gas in the cylinder further limits the peak temperature (more than throttling alone in a spark ignition engine).'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'The gas to be recirculated may also be passed through an ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'EGR cooler'
-	      ),
-	      ', which is usually of the air/water type. This reduces the temperature of the gas, which reduces the cylinder charge temperature when EGR is employed. This has two benefits- the reduction of charge temperature results in lower peak temperature, and the greater density of cooled EGR gas allows a higher proportion of EGR to be used. On a diesel engine the recirculated fraction may be as high as 50% under some operating conditions.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'EGR Solution'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Here at ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'DPL Motors'
-	      ),
-	      ', we have a very ',
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'advanced solution for EGR'
-	      ),
-	      '. The valves can become clogged with carbon deposits, causing them to fail or stick, thereby causing error codes and the vehicle not to run correctly. Our software solution to disable the EGR valve is a simple and effective method of improving the efficiency of your engine.'
-	    )
-	  );
-	};
-
-/***/ },
-/* 65 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Truck Tuning'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'performance-tuning' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Truck Tuning'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Here at DPL we have created the perfect product in HGV, Truck and commercial turbo diesel engine performance upgrades. We pride ourselves in doing so without spoiling any of the principle reasons for running a turbo diesel powered vehicle in the first place and believe that key points such as their fabulous low down tractability, their reliability and of course the all important fuel economy should never, ever be compromised.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our aim when creating our HGV, Truck and commercial turbo diesel engine performance upgrades is to gain the perfect increased power curve and fuel economy improvements yet retain all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'All our HGV, Trucks and commercial vehicle remaps are programmed to give a strong, linear power delivery right across the rev range.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Rest assured that we don\u2019t just look for a torque and power peak to make the numbers look good. We aim for maximum safe improvements everywhere so the vehicle feels like it has a bigger engine.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'How is this acheived?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exacting standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'We also offer other services as part of the remap.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'For example a vehicle used for motorsport may require removal of the EGR, a DPF delete, and also benefit from having the vehicle speed limiter removed.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'Buy with Confidence'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'All our turbo diesel OBD tuning comes as standard with a lifetime warranty against defects and corruption of the product and of course our standard 30 day no quibble trial period.'
-	    )
-	  );
-	};
-
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Reconditioning'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'reconditioning' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Reconditioning'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Engine Rebuild, Repair, Replacement and Rebore services from DPL MOTORS.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'So your engine\'s Head gasket has blown, The car is producing a horrible knocking noise from the bottom end?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'The engine has seized? The chain has stretched or belt has snapped? So what to do?'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Why not take a look at our engine rebuild service (petrol and diesel) for the private motorist or the transport industry.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Here at DPL MOTORS we specialise is European vehicles!'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Importing and stocking a large quantity of our parts for cost effective services!'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'The Reconditioning Process'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'We receive your vehicle and accept your instruction at our state of the art workshop. Your engine and all associated parts are removed and inspected. The cylinder head is removed from the engine block. Both cylinder head and block are dismantled into their component parts. All worn or broken parts are replaced as part of our quality control system.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'The parts for reassembly pass through our specialist cleaning process. At this point all items that require machining are engineered to our exacting specifications. Machined parts are cleaned and measured prior to reassembly.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Your original engine is then rebuilt using new bearings, seals, piston rings and gaskets. Once fully assembled the engine is replaced into your vehicle with new fluids and filters. The engine is then started and tuned for optimum reliability utilising the latest diagnostic systems'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'The Guarantee'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our workmanship and materials are both guaranteed for either the first 12 months from the date of purchase, or 12,000 kms if sooner. In the event of a failure we will replace either the engine or parts free of charge and at our discretion.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'strong',
-	        null,
-	        'Contact us today for a friendly quote.'
-	      )
-	    )
-	  );
-	};
-
-/***/ },
-/* 67 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Motor Rebuilds'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'reconditioning' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Motor Rebuilds'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'h3',
-	      null,
-	      'The Reconditioning process'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'We receive your vehicle and accept your instruction at our workshop. Your engine and all associated parts are removed and inspected. The cylinder head is removed from the engine block. Both cylinder head and block are dismantled into their component parts. All worn or broken parts are replaced as part of our quality control system. The parts for reassembly pass through our specialist cleaning process. At this point all items that require machining are engineered to our exacting specifications. Machined parts are cleaned and measured prior to reassembly.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Your original engine is then rebuilt using new bearings, seals, piston rings and gaskets. Once fully assembled the engine is replaced into your vehicle with new fluids and filters. The engine is then started and tuned for optimum reliability utilising the latest diagnostic systems'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Our workmanship and materials are both guaranteed for 12 months from the date of purchase, or 15,000km whichever comes 1st. In the event of a failure we will replace either the engine or parts free of charge and at our discretion.'
-	    )
-	  );
-	};
-
-/***/ },
-/* 68 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Cylinder Head Repair'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'reconditioning' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Cylinder Head Repair'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Valve steam oil seals provide a controlled leak of oil to allow the valve stem to be lubricated as it slides in the valve guide. The amount of oil that passes by the valve stem seal must be precisely controlled, as too little oil causes stem and guide wear. Too much oil causes carbon build-up leading to valve seat damage, increased emissions and excessive oil consumption.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'One of the most noticeable signs of worn or cracked valve stem seals will be just after a cold engine start. When the engine first starts up, residual oil gets sucked down through the bad seal and into the combustion chamber. A large cloud of blue-white smoke will be seen exiting the exhaust just after start-up. On many vehicle we have a cost effective way of replacing the seals without removing the cylinder head.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'We also provide cylinder head rebuilds, bent valve replacement, valve seating and much more.'
-	    )
-	  );
-	};
-
-/***/ },
-/* 69 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _cmmn = __webpack_require__(4);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Head Gasket Repair'
-	  };
-	};
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'reconditioning' },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Head Gasket Repair'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'The head gasket acts as a seal between the 2 main parts of your engine (the cylinder block and the cylinder head), so it\u2019s vital to keeping your engine running correctly and safely. If your head gasket has blown, you need a repair or replacement carried out professionally. As soon as you notice any of the major signs of a blown head gasket contact us straight away and we\u2019ll arrange to test it for you.'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'p',
-	      null,
-	      'Common signs of a blown head gasket are:'
-	    ),
-	    (0, _cmmn.createElement)(
-	      'ul',
-	      null,
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Engine overheating.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'White smoke coming from the exhaust.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Your engine oil is a milky colour.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Losing coolant at a high rate.'
-	      ),
-	      (0, _cmmn.createElement)(
-	        'li',
-	        null,
-	        'Bubbles in the coolant overflow tank.'
-	      )
-	    )
-	  );
-	};
-
-/***/ },
-/* 70 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.getMeta = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _cmmn = __webpack_require__(4);
-
-	var _superagent = __webpack_require__(71);
-
-	var _superagent2 = _interopRequireDefault(_superagent);
-
-	var _superagentJsonp = __webpack_require__(79);
-
-	var _superagentJsonp2 = _interopRequireDefault(_superagentJsonp);
-
-	var _template = __webpack_require__(55);
-
-	var _template2 = _interopRequireDefault(_template);
-
-	var _styles = __webpack_require__(80);
-
-	var _styles2 = _interopRequireDefault(_styles);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var getMeta = exports.getMeta = function getMeta() {
-	  return {
-	    title: 'Parts'
-	  };
-	};
-
-	var years = [];
-	for (var i = 2017; i >= 1950; i--) {
-	  years.push(i);
-	}
-	var Form = function () {
-	  function Form() {
-	    _classCallCheck(this, Form);
-	  }
-
-	  _createClass(Form, [{
-	    key: 'render',
-	    value: function render() {
-	      return (0, _cmmn.createElement)(
-	        'form',
-	        { className: _styles2.default.form },
-	        (0, _cmmn.createElement)(
-	          'select',
-	          { name: 'year', className: _styles2.default.half },
-	          (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            'Year'
-	          ),
-	          years.map(function (year) {
-	            return (0, _cmmn.createElement)(
-	              'option',
-	              null,
-	              year + ''
-	            );
-	          })
-	        ),
-	        (0, _cmmn.createElement)('br', null),
-	        (0, _cmmn.createElement)(
-	          'select',
-	          { name: 'make', className: _styles2.default.half },
-	          (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            'Make'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            'Please select a year'
-	          )
-	        ),
-	        (0, _cmmn.createElement)(
-	          'select',
-	          { name: 'model', className: _styles2.default.half },
-	          (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            'Model'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            'Please select a year'
-	          )
-	        ),
-	        (0, _cmmn.createElement)(
-	          'select',
-	          { name: 'category' },
-	          (0, _cmmn.createElement)(
-	            'option',
-	            { value: '-1' },
-	            'Category'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'option',
-	            { value: 'other' },
-	            'Other...'
-	          )
-	        ),
-	        (0, _cmmn.createElement)('input', { style: 'display: none;', type: 'text', name: 'category-other', placeholder: 'Category' }),
-	        (0, _cmmn.createElement)('textarea', { name: 'message' }),
-	        (0, _cmmn.createElement)('input', { type: 'submit', name: 'submit', value: 'Submit' })
-	      );
-	    }
-	  }, {
-	    key: 'mount',
-	    value: function mount(form) {
-	      var yearSel = form.querySelector('[name="year"]');
-	      var makeSel = form.querySelector('[name="make"]');
-	      var modelSel = form.querySelector('[name="model"]');
-	      var categorySel = form.querySelector('[name="category"]');
-	      var categoryInput = form.querySelector('[name="category-other"]');
-	      var year = -1,
-	          make = -1,
-	          model = -1;
-
-	      yearSel.addEventListener('change', function (event) {
-	        if (year == yearSel.value) return;
-	        year = yearSel.value;
-	        if (year == 'Year') {
-	          year = -1;
-	          makeSel.innerHTML = '<option value="-1">Make</option><option value="-1">Please select a year</option>';
-	          modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a year</option>';
-	          return;
-	        }
-	        makeSel.innerHTML = '<option value="-1">Loading...</option>';
-	        modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a make</option>';
-	        make = -1;
-	        model = -1;
-	        _superagent2.default.get('http://www.carqueryapi.com/api/0.3/').query({ cmd: 'getMakes', year: year }).use(_superagentJsonp2.default).end(function (err, res) {
-	          if (err) {
-	            console.error(err);
-	            return;
-	          }
-	          makeSel.innerHTML = '<option value="-1">Make</option>' + res.body.Makes.map(function (make) {
-	            return '<option value="' + make.make_id + '">' + make.make_display + '</option>';
-	          }).join('');
-	        });
-	      });
-
-	      makeSel.addEventListener('change', function (event) {
-	        if (year == -1) return;
-	        if (make == makeSel.value) return;
-	        make = makeSel.value;
-	        if (make == '-1') {
-	          year = -1;
-	          modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a make</option>';
-	          return;
-	        }
-	        modelSel.innerHTML = '<option value="-1">Loading...</option>';
-	        model = -1;
-	        _superagent2.default.get('http://www.carqueryapi.com/api/0.3/').query({ cmd: 'getModels', year: year, make: make }).use(_superagentJsonp2.default).end(function (err, res) {
-	          if (err) {
-	            console.error(err);
-	            return;
-	          }
-	          modelSel.innerHTML = '<option>Model</option>' + res.body.Models.map(function (model) {
-	            return '<option>' + model.model_name + '</option>';
-	          }).join('');
-	        });
-	      });
-
-	      categorySel.addEventListener('change', function (event) {
-	        categoryInput.style = categorySel.value == 'other' ? '' : 'display: none;';
-	      });
-	    }
-	  }]);
-
-	  return Form;
-	}();
-
-	exports.default = function () {
-	  return (0, _cmmn.createElement)(
-	    _template2.default,
-	    { page: 'parts', grey: true },
-	    (0, _cmmn.createElement)(
-	      'h1',
-	      null,
-	      'Find a Part'
-	    ),
-	    (0, _cmmn.createElement)(Form, null)
-	  );
-	};
-
-/***/ },
-/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -6761,12 +5491,12 @@
 	  root = undefined;
 	}
 
-	var Emitter = __webpack_require__(72);
-	var RequestBase = __webpack_require__(73);
-	var isObject = __webpack_require__(74);
-	var isFunction = __webpack_require__(75);
-	var ResponseBase = __webpack_require__(76);
-	var shouldRetry = __webpack_require__(78);
+	var Emitter = __webpack_require__(52);
+	var RequestBase = __webpack_require__(53);
+	var isObject = __webpack_require__(54);
+	var isFunction = __webpack_require__(55);
+	var ResponseBase = __webpack_require__(56);
+	var shouldRetry = __webpack_require__(58);
 
 	/**
 	 * Noop.
@@ -7678,7 +6408,7 @@
 	};
 
 /***/ },
-/* 72 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7842,7 +6572,7 @@
 	};
 
 /***/ },
-/* 73 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7852,7 +6582,7 @@
 	/**
 	 * Module of mixed-in functions shared between node and client code
 	 */
-	var isObject = __webpack_require__(74);
+	var isObject = __webpack_require__(54);
 
 	/**
 	 * Expose `RequestBase`.
@@ -8430,7 +7160,7 @@
 	};
 
 /***/ },
-/* 74 */
+/* 54 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8452,7 +7182,7 @@
 	module.exports = isObject;
 
 /***/ },
-/* 75 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8464,7 +7194,7 @@
 	 * @return {Boolean}
 	 * @api private
 	 */
-	var isObject = __webpack_require__(74);
+	var isObject = __webpack_require__(54);
 
 	function isFunction(fn) {
 	  var tag = isObject(fn) ? Object.prototype.toString.call(fn) : '';
@@ -8474,7 +7204,7 @@
 	module.exports = isFunction;
 
 /***/ },
-/* 76 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8483,7 +7213,7 @@
 	 * Module dependencies.
 	 */
 
-	var utils = __webpack_require__(77);
+	var utils = __webpack_require__(57);
 
 	/**
 	 * Expose `ResponseBase`.
@@ -8611,7 +7341,7 @@
 	};
 
 /***/ },
-/* 77 */
+/* 57 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8685,7 +7415,7 @@
 	};
 
 /***/ },
-/* 78 */
+/* 58 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8709,122 +7439,19 @@
 	};
 
 /***/ },
-/* 79 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-	var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
-		return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-	} : function (obj) {
-		return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-	};
-
-	function _defineProperty(obj, key, value) {
-		if (key in obj) {
-			Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
-		} else {
-			obj[key] = value;
-		}return obj;
-	}
-
-	var serialise = function serialise(obj) {
-		if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) != 'object') return obj;
-		var pairs = [];
-		for (var key in obj) {
-			if (null != obj[key]) {
-				pairs.push(encodeURIComponent(key) + '=' + encodeURIComponent(obj[key]));
-			}
-		}
-		return pairs.join('&');
-	};
-
-	var jsonp = function jsonp(requestOrConfig) {
-		var reqFunc = function reqFunc(request) {
-			// In case this is in nodejs, run without modifying request
-			if (typeof window == 'undefined') return request;
-
-			request.end = end.bind(request)(requestOrConfig);
-			return request;
-		};
-		// if requestOrConfig is request
-		if (typeof requestOrConfig.end == 'function') {
-			return reqFunc(requestOrConfig);
-		} else {
-			return reqFunc;
-		}
-	};
-
-	jsonp.callbackWrapper = function (data) {
-		var err = null;
-		var res = {
-			body: data
-		};
-		clearTimeout(this._jsonp.timeout);
-
-		this._jsonp.callback.call(this, err, res);
-	};
-
-	jsonp.errorWrapper = function () {
-		var err = new Error('404 NotFound');
-		this._jsonp.callback.call(this, err, null);
-	};
-
-	var end = function end() {
-		var config = arguments.length <= 0 || arguments[0] === undefined ? { timeout: 1000 } : arguments[0];
-
-		return function (callback) {
-
-			var timeout = setTimeout(jsonp.errorWrapper.bind(this), config.timeout);
-
-			this._jsonp = {
-				callbackParam: config.callbackParam || 'callback',
-				callbackName: config.callbackName || 'superagentCallback' + new Date().valueOf() + parseInt(Math.random() * 1000),
-				callback: callback,
-				timeout: timeout
-			};
-
-			window[this._jsonp.callbackName] = jsonp.callbackWrapper.bind(this);
-
-			var params = _defineProperty({}, this._jsonp.callbackParam, this._jsonp.callbackName);
-
-			this._query.push(serialise(params));
-			var queryString = this._query.join('&');
-
-			var s = document.createElement('script');
-			var separator = this.url.indexOf('?') > -1 ? '&' : '?';
-			var url = this.url + separator + queryString;
-
-			s.src = url;
-			document.getElementsByTagName('head')[0].appendChild(s);
-
-			return this;
-		};
-	};
-
-	// Prefer node/browserify style requires
-	if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-		module.exports = jsonp;
-	} else if (typeof window !== 'undefined') {
-		window.superagentJSONP = jsonp;
-	}
-
-/***/ },
-/* 80 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"form":"src-views-parts-styles---form---2ktVT","half":"src-views-parts-styles---half---25g4o"};
+	module.exports = {"sidebar":"src-views-sidemenu-styles---sidebar---2fVwP","sidebar--top":"src-views-sidemenu-styles---sidebar--top---g_xw8","sidebar__item":"src-views-sidemenu-styles---sidebar__item---3tF0f","sidebar__item--backface":"src-views-sidemenu-styles---sidebar__item--backface---1e3xE","sidebar__item--flipped":"src-views-sidemenu-styles---sidebar__item--flipped---3vNhu","sidebar__item--no-hover":"src-views-sidemenu-styles---sidebar__item--no-hover---364jd","sidebar__item__icon":"src-views-sidemenu-styles---sidebar__item__icon---VvZ3o","sidebar__item__social-link":"src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ","sidebar__item__social-link--fb":"src-views-sidemenu-styles---sidebar__item__social-link--fb---287lu","sidebar__item__social-link--twitter":"src-views-sidemenu-styles---sidebar__item__social-link--twitter---2CSIZ","sidebar--visible":"src-views-sidemenu-styles---sidebar--visible---3-E6V","newsletterForm":"src-views-sidemenu-styles---newsletterForm---1Jb3f","newsletterForm__status":"src-views-sidemenu-styles---newsletterForm__status---3OnUe","newsletterForm__status--visible":"src-views-sidemenu-styles---newsletterForm__status--visible---3wbKs"};
 
 	// Bemify
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 81 */,
-/* 82 */,
-/* 83 */
+/* 60 */,
+/* 61 */,
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8836,9 +7463,90 @@
 
 	var _cmmn = __webpack_require__(4);
 
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Services'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'services' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Services'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'DPL Motors are an independent mechanical workshop placed in East Perth.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'After gaining many years of experience in the motor trade we decided to set up on our own in 2011. We mainly specialise in German vehicles, such as Mercedes, BMW, Audi, VW, SEAT or Skoda, however don\u2019t hesitate if you own different brand of car as we have the capability to work on any brand. The latest diagnostic software and equipment allows us to work on any vehicle, from a Holden to a Range Rover. This diagnostic equipment is up to main dealer standard so we can carry out all diagnostic work at a fraction of the price compared to a franchised dealer.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We have the technical knowledge and experience to look after you and your vehicle in our clean and modern workshop. We offer courtesy cars and commercial vehicles to keep you on the road while we take care of your vehicle. We can also arrange to collect and deliver your vehicle if you are local.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Volkswagen TDi with loss of power?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We have many cases of lack of power from VW and Audi TDi engines and know      how to fix this. We have had new customers come to us after spending      thousands of dollars at other garage\'s without the problem being fixed,\n      and we have been able to sort this out within a few hours. If you are\n      experiencing a loss of power please give us a call and we will see\n      what we can do.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Porsche Cayenne or VW Touareg with tail-shaft vibration?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'There is a known problem with the bearings on these prop shafts and the main dealer will quote you for a new replacement part. Although this is one option, another is to have the bearing fixed at a fraction of the price. DPL Motors can help you with either option, and it will be signification cheaper than the main dealer prices.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'BMW\'s with suspension issues? Mercedes with gearbox problems?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We encounter these and many more issues weekly and with our experience and knowledge we will have your vehicle back to you in no time.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _cmmn = __webpack_require__(4);
+
 	__webpack_require__(11);
 
-	var _styles = __webpack_require__(56);
+	var _styles = __webpack_require__(64);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -8856,7 +7564,1238 @@
 
 	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 
-	var _booking = __webpack_require__(84);
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = function (_ref) {
+	  var children = _ref.children,
+	      page = _ref.page,
+	      grey = _ref.grey;
+	  return (0, _cmmn.createElement)(
+	    'div',
+	    null,
+	    (0, _cmmn.createElement)(_header2.default, { page: page }),
+	    (0, _cmmn.createElement)(
+	      'div',
+	      { className: _styles2.default.content.with(grey ? 'grey' : '') },
+	      (0, _cmmn.createElement)(
+	        _components.Container,
+	        null,
+	        (0, _cmmn.createElement)('div', { className: _styles2.default.content.rightImg, style: 'background-image: url(' + __webpack_require__(66) + ');' }),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _styles2.default.content.copy },
+	          children,
+	          (0, _cmmn.createElement)(
+	            'a',
+	            { href: '*/book/', className: _styles2.default.bookBtn },
+	            'Book Now'
+	          )
+	        )
+	      ),
+	      (0, _cmmn.createElement)(_sidemenu2.default, { top: true })
+	    ),
+	    (0, _cmmn.createElement)(_footer2.default, null)
+	  );
+	};
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"content":"src-views-pages-styles---content---15gAm","content--grey":"src-views-pages-styles---content--grey---1CK5C","content__copy":"src-views-pages-styles---content__copy---11d-X","content__right-img":"src-views-pages-styles---content__right-img---ha2cC","content__right-img--map":"src-views-pages-styles---content__right-img--map---2IIgO","book-btn":"src-views-pages-styles---book-btn---JVOXc"};
+
+	// Bemify
+	module.exports = (__webpack_require__(22).default)(module.exports || {});
+
+/***/ },
+/* 65 */,
+/* 66 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/jpg/bk-img-2JMeFrCm.jpg";
+
+/***/ },
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Servicing'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'services' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Scheduled Servicing'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'At DPL motors we customise our service to suit your budget and car type. We specialise not only in European vehicles but any make or model,  whether it\'s a small car, family car, sports car, SUV, 4WD, ute or van.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our logbook services are carried out according to manufacturer\u2019s specifications and we replace all scheduled parts. We also carry out a full safety check and every service comes with a 6month/10,000km warranty. Our European trained mechanics only use the best quality parts on your vehicle, we use parts that are manufactured to match or exceed the Original Equipment Manufacturer (OEM).'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our Minor Service is the minimum you should do to your vehicle. This service helps maintain your vehicle and prevents unforeseen faults. In this service we will replace your Engine Oil and Oil Filter and we check and report on the following; Brakes Front and Rear, Tyre Condition and Thread Depth, all lights, Suspension and Shocks, Instruments, Engine and Gearbox leaks, Exhaust system, CV Joints, Wipers, Check all levels and refill, Check any warning lights and reset the service computer using the very latest diagnostic equipment. Prices for this service start from as little as $179.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Services'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'services' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Air Conditioning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'A/C System Ragas And Repairs at DPL MOTORS'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The Air Con system in your car is a serviceable item, just as you have to change your oil and air filters from time to time. It is very important to maintain your Air Conditioning system for the following reasons:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Due to natural leakage through naturally slightly porous pipes, most A/C systems will lose around 15-20% refrigerant every 12 months resulting in a less powerful and less efficient system. Bacteria and Fungi and can grow in car A/C systems and can cause allergic reactions such as hay-fever, skin irritations, runny noses and itchy eyes.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Your A/C system will put a strain on the compressor which can result in the compressor wearing out quickly If not serviced regularly. This can be costly, as it increases fuel consumption and draws more engine power to run the system. It is recommend that a vehicle\'s air con system is serviced every year to ensure it operates at maximum efficiency. However, there are some indicators that will help you determine if you have a problem with your Air Conditioning system:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The interior takes longer to cool down? There\u2019s a noticeable increase in fuel consumption? The windscreen doesn\u2019t clear quickly?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The Air-Con System Service Includes:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Testing for leaks'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Emptying and recharging the gas in the system.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Cleaning and Deodorising the entire Air Conditioning'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'If you notice an odd, particularly musty smell in your car, it is more than likely that the entire air con system needs proper cleaning with a de-fungicide.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Performance Tuning'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Performance Tuning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our aim when creating performance chips, diesel remapping via OBD port or general turbo tuning is to gain the perfect increased power curve and fuel economy improvements. QuattroTune retains all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'A DPL Motors TUNE REMAP Will Give You The Following Gains:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'More Horsepower.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'More Torque.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Improved Throttle Response.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Smoother Power Delivery.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Safer Overtaking.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Guaranteed Better Fuel Economy.'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exact standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When You take Your vehicle Away, You Will leave With:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'A 30 Day Money Back Guarantee.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'A Lifetime Warranty On All Remaps.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Guaranteed Better Fuel Economy On All Diesel Remaps.'
+	      )
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When a manufacturer releases a car it is usually a worldwide release meaning the car needs to be able to survive in areas that have extreme climates and poor quality fuels and other additives. With this in mind most manufacturers dial back a car\u2019s engine to a very conservative level. Yes, that\u2019s right! They lower the performance so the engine can survive in very raff conditions and at QUATTRO TUNE we can replace this lost power with our remapping services.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'We also supply a loan car when necessary!'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'ECU Tuning'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'ECU Tuning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'What is ECU Remapping/Programming?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'When a manufacturer develops a new car they have to take into consideration all of the conditions it may be subjected to in all of the regions in which they intend to sell this model. This means instead of just optimising the ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'ECU\'s program or \'map\''
+	      ),
+	      ' to deliver the best performance or the most fuel efficiency they have to make compromises to the map to take into account these potential differing operating conditions. These could include sub-standard fuels, extremes in temperature and altitude, differing emission laws and even the possibility that vehicle may not be serviced on a regular basis and in accordance with the manufacturers recommended instructions.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'ECU remapping'
+	      ),
+	      ' is taking a read from the ECU\u2019s processing chip of the vehicles standard compromised map and adjusting various parameters within the map such as fuel pressure, boost pressure (on turbocharged applications) ignition advance and throttle pedal control amongst others to release the true performance from the engine. It is a completely safe process as it is just giving the engine the performance it should have had in the first place before all the compromises were applied to the original programming. Every engine will have its own unique map and by adjusting this we can fine tune the characteristics of the engine; unleashing more power and in many cases reduce fuel consumption too.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Benefits of ECU Remapping/Programming'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'ECU programming'
+	      ),
+	      ' will not only improve the engines power and torque figures it will also sharpen the throttle response and widen the power-band. This will make the power delivery a lot more linear, which in turn will make the vehicle feel a lot livelier to drive and the engine more flexible. Frequently, the vehicles power output is restricted by the manufacturer for no other reason than to ensure that the vehicle fits into a class to suit fleet buyers. As a driving enthusiast, you do not need or want such restrictions placed upon your vehicles ECU and its performance therefore you can benefit from the hidden power and torque locked away within your engine management system.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The other main benefit of ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'remapping'
+	      ),
+	      ' will be a reduction in fuel consumption. With the extra torque especially at the bottom of the rev range you will see a fuel saving as it will require less throttle input to maintain motorway speeds, you can drive in a higher gear at a slower speed as well as helping significantly when fully laden, towing or on gradients and even in start stop traffic.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 71 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'DPF Solution'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'DPF Solution'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'What is a DPF?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'A ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'DPF (Diesel Particulate Filter)'
+	      ),
+	      ' also known as ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'FAP'
+	      ),
+	      ' on some French vehicles, is a device fitted to the exhaust system of modern diesel vehicles to reduce emissions and meet European emission standards. It does this by trapping ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Soot (Particulate Matter - PM)'
+	      ),
+	      ' from the exhaust gasses while letting the gasses flow through the system.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'As with any type of filter a ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Particulate Filter'
+	      ),
+	      ' needs to be cleaned regularly to function properly. With DPF\u2019s this is done by a process known as ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Regeneration'
+	      ),
+	      ' which involves a combination of a ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Catalyst'
+	      ),
+	      ' function in the system and burning the soot to gas at a very high temperature leaving behind an ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Ash residue'
+	      ),
+	      ' within the DPF. Regeneration should be an automatic process taking place in the normal use of your vehicle, you may have noticed this in the form of a blast of white smoke form the exhaust on occasions.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Problems Encountered with DPF'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'If regeneration doesn\u2019t function properly it leads to a build-up of soot affecting performance and fuel economy, left unattended this will result in a ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Blocked DPF'
+	      ),
+	      ' which can ultimately cause very expensive damage to other engine components. A blocked DPF is also potentially dangerous as it can cause overheating in the exhaust system and cause a fire risk. To prevent this damage most new vehicles will go into \u201CLimp Home\u201D safety mode at this stage, meaning the vehicle will have minimum power barely sufficient to crawl home.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'For regeneration to take place it requires the vehicle to be driven regularly at some speed on open roads e.g. motorway driving, typically driving at around 2500 RPM for approx. 15-30mins at least once a month, this will keep things working.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Many diesel vehicles are used primarily in urban areas or on short stop start journeys e.g. local deliveries, taxi\u2019s, school runs etc and many have auto gearbox, so the vehicle does not get the chance to heat up sufficiently and is unable to carry out a full regeneration process.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Even if the regeneration functions as it should, over time the ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Ash Residue'
+	      ),
+	      ' will build up in the DPF and have the same affect ultimately resulting in a blocked DPF. For this reason a DPF is classified as a Serviceable Item by the vehicle manufacturers like brake pads or air filters etc and not covered under warranty. ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'DPF systems therefore need to be maintained properly.'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 72 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'EGR Solution'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'WHAT IS EGR?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'A widely adopted route to reduce NOx emissions is ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Exhaust Gas Recirculation (EGR)'
+	      ),
+	      '. This involves recirculating a controllable proportion of the ',
+	      'engine\'s',
+	      ' exhaust back into the intake air. A valve is usually used to control the flow of gas, and the valve may be closed completely if required.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The substitution of burnt gas (which takes no further part in combustion) for oxygen rich air reduces the proportion of the cylinder contents available for combustion. This causes a correspondingly lower heat release and peak cylinder temperature, and reduces the formation of NOx. The presence of an inert gas in the cylinder further limits the peak temperature (more than throttling alone in a spark ignition engine).'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The gas to be recirculated may also be passed through an ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'EGR cooler'
+	      ),
+	      ', which is usually of the air/water type. This reduces the temperature of the gas, which reduces the cylinder charge temperature when EGR is employed. This has two benefits- the reduction of charge temperature results in lower peak temperature, and the greater density of cooled EGR gas allows a higher proportion of EGR to be used. On a diesel engine the recirculated fraction may be as high as 50% under some operating conditions.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'EGR Solution'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'DPL Motors'
+	      ),
+	      ', we have a very ',
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'advanced solution for EGR'
+	      ),
+	      '. The valves can become clogged with carbon deposits, causing them to fail or stick, thereby causing error codes and the vehicle not to run correctly. Our software solution to disable the EGR valve is a simple and effective method of improving the efficiency of your engine.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 73 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Truck Tuning'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'performance-tuning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Truck Tuning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at DPL we have created the perfect product in HGV, Truck and commercial turbo diesel engine performance upgrades. We pride ourselves in doing so without spoiling any of the principle reasons for running a turbo diesel powered vehicle in the first place and believe that key points such as their fabulous low down tractability, their reliability and of course the all important fuel economy should never, ever be compromised.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our aim when creating our HGV, Truck and commercial turbo diesel engine performance upgrades is to gain the perfect increased power curve and fuel economy improvements yet retain all the safety parameters originally programmed into the engine management by the manufacturer so as to protect your engine and drive train from damage.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'All our HGV, Trucks and commercial vehicle remaps are programmed to give a strong, linear power delivery right across the rev range.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Rest assured that we don\u2019t just look for a torque and power peak to make the numbers look good. We aim for maximum safe improvements everywhere so the vehicle feels like it has a bigger engine.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'How is this acheived?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our power gains and improved fuel economy are achieved by very careful matching of parameters such as boost pressure, fuel delivery rates & pump timing along with adjustments to maps that electronically limit torque, throttle response and top speed. All this information in your ECU calibration file is carefully optimised to our exacting standards and then programmed back into your ECU and the vehicle comprehensively tested before we allow you to take the vehicle away.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We also offer other services as part of the remap.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'For example a vehicle used for motorsport may require removal of the EGR, a DPF delete, and also benefit from having the vehicle speed limiter removed.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'Buy with Confidence'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'All our turbo diesel OBD tuning comes as standard with a lifetime warranty against defects and corruption of the product and of course our standard 30 day no quibble trial period.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 74 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Reconditioning'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Reconditioning'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Engine Rebuild, Repair, Replacement and Rebore services from DPL MOTORS.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'So your engine\'s Head gasket has blown, The car is producing a horrible knocking noise from the bottom end?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The engine has seized? The chain has stretched or belt has snapped? So what to do?'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Why not take a look at our engine rebuild service (petrol and diesel) for the private motorist or the transport industry.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Here at DPL MOTORS we specialise is European vehicles!'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Importing and stocking a large quantity of our parts for cost effective services!'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'The Reconditioning Process'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We receive your vehicle and accept your instruction at our state of the art workshop. Your engine and all associated parts are removed and inspected. The cylinder head is removed from the engine block. Both cylinder head and block are dismantled into their component parts. All worn or broken parts are replaced as part of our quality control system.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The parts for reassembly pass through our specialist cleaning process. At this point all items that require machining are engineered to our exacting specifications. Machined parts are cleaned and measured prior to reassembly.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Your original engine is then rebuilt using new bearings, seals, piston rings and gaskets. Once fully assembled the engine is replaced into your vehicle with new fluids and filters. The engine is then started and tuned for optimum reliability utilising the latest diagnostic systems'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'The Guarantee'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our workmanship and materials are both guaranteed for either the first 12 months from the date of purchase, or 12,000 kms if sooner. In the event of a failure we will replace either the engine or parts free of charge and at our discretion.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'strong',
+	        null,
+	        'Contact us today for a friendly quote.'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 75 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Motor Rebuilds'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Motor Rebuilds'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'h3',
+	      null,
+	      'The Reconditioning process'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We receive your vehicle and accept your instruction at our workshop. Your engine and all associated parts are removed and inspected. The cylinder head is removed from the engine block. Both cylinder head and block are dismantled into their component parts. All worn or broken parts are replaced as part of our quality control system. The parts for reassembly pass through our specialist cleaning process. At this point all items that require machining are engineered to our exacting specifications. Machined parts are cleaned and measured prior to reassembly.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Your original engine is then rebuilt using new bearings, seals, piston rings and gaskets. Once fully assembled the engine is replaced into your vehicle with new fluids and filters. The engine is then started and tuned for optimum reliability utilising the latest diagnostic systems'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Our workmanship and materials are both guaranteed for 12 months from the date of purchase, or 15,000km whichever comes 1st. In the event of a failure we will replace either the engine or parts free of charge and at our discretion.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 76 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Cylinder Head Repair'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Cylinder Head Repair'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Valve steam oil seals provide a controlled leak of oil to allow the valve stem to be lubricated as it slides in the valve guide. The amount of oil that passes by the valve stem seal must be precisely controlled, as too little oil causes stem and guide wear. Too much oil causes carbon build-up leading to valve seat damage, increased emissions and excessive oil consumption.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'One of the most noticeable signs of worn or cracked valve stem seals will be just after a cold engine start. When the engine first starts up, residual oil gets sucked down through the bad seal and into the combustion chamber. A large cloud of blue-white smoke will be seen exiting the exhaust just after start-up. On many vehicle we have a cost effective way of replacing the seals without removing the cylinder head.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'We also provide cylinder head rebuilds, bent valve replacement, valve seating and much more.'
+	    )
+	  );
+	};
+
+/***/ },
+/* 77 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Head Gasket Repair'
+	  };
+	};
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'reconditioning' },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Head Gasket Repair'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'The head gasket acts as a seal between the 2 main parts of your engine (the cylinder block and the cylinder head), so it\u2019s vital to keeping your engine running correctly and safely. If your head gasket has blown, you need a repair or replacement carried out professionally. As soon as you notice any of the major signs of a blown head gasket contact us straight away and we\u2019ll arrange to test it for you.'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'p',
+	      null,
+	      'Common signs of a blown head gasket are:'
+	    ),
+	    (0, _cmmn.createElement)(
+	      'ul',
+	      null,
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Engine overheating.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'White smoke coming from the exhaust.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Your engine oil is a milky colour.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Losing coolant at a high rate.'
+	      ),
+	      (0, _cmmn.createElement)(
+	        'li',
+	        null,
+	        'Bubbles in the coolant overflow tank.'
+	      )
+	    )
+	  );
+	};
+
+/***/ },
+/* 78 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	//import request from 'superagent';
+	//import superagentJSONP from 'superagent-jsonp';
+
+	var _cmmn = __webpack_require__(4);
+
+	var _template = __webpack_require__(63);
+
+	var _template2 = _interopRequireDefault(_template);
+
+	var _styles = __webpack_require__(79);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var getMeta = exports.getMeta = function getMeta() {
+	  return {
+	    title: 'Parts'
+	  };
+	};
+
+	var years = [];
+	for (var i = 2017; i >= 1950; i--) {
+	  years.push(i);
+	}
+	var Form = function () {
+	  function Form() {
+	    _classCallCheck(this, Form);
+	  }
+
+	  _createClass(Form, [{
+	    key: 'render',
+	    value: function render() {
+	      return (0, _cmmn.createElement)(
+	        'form',
+	        { className: _styles2.default.form },
+	        (0, _cmmn.createElement)(
+	          'select',
+	          { name: 'year', className: _styles2.default.half },
+	          (0, _cmmn.createElement)(
+	            'option',
+	            null,
+	            'Year'
+	          ),
+	          years.map(function (year) {
+	            return (0, _cmmn.createElement)(
+	              'option',
+	              null,
+	              year + ''
+	            );
+	          })
+	        ),
+	        (0, _cmmn.createElement)('br', null),
+	        (0, _cmmn.createElement)('input', { type: 'text', name: 'make', placeholder: 'Make', className: _styles2.default.half }),
+	        (0, _cmmn.createElement)('input', { type: 'text', name: 'model', placeholder: 'Model', className: _styles2.default.half }),
+	        (0, _cmmn.createElement)(
+	          'select',
+	          { name: 'category' },
+	          (0, _cmmn.createElement)(
+	            'option',
+	            { value: '-1' },
+	            'Category'
+	          ),
+	          (0, _cmmn.createElement)(
+	            'option',
+	            { value: 'other' },
+	            'Other...'
+	          )
+	        ),
+	        (0, _cmmn.createElement)('input', { style: 'display: none;', type: 'text', name: 'category-other', placeholder: 'Category' }),
+	        (0, _cmmn.createElement)('textarea', { name: 'message' }),
+	        (0, _cmmn.createElement)('input', { type: 'submit', name: 'submit', value: 'Submit' })
+	      );
+	    }
+	  }, {
+	    key: 'mount',
+	    value: function mount(form) {
+	      /* const yearSel = form.querySelector('[name="year"]');
+	      const makeSel = form.querySelector('[name="make"]');
+	      const modelSel = form.querySelector('[name="model"]');
+	      let year = -1, make = -1, model = -1;
+	       yearSel.addEventListener('change', event => {
+	        if (year == yearSel.value) return;
+	        year = yearSel.value;
+	        if (year == 'Year') {
+	          year = -1;
+	          makeSel.innerHTML = '<option value="-1">Make</option><option value="-1">Please select a year</option>';
+	          modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a year</option>';
+	          return;
+	        }
+	        makeSel.innerHTML = '<option value="-1">Loading...</option>';
+	        modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a make</option>';
+	        make = -1;
+	        model = -1;
+	        request
+	          .get('http://www.carqueryapi.com/api/0.3/')
+	          .query({ cmd: 'getMakes', year })
+	          .use(superagentJSONP)
+	          .end((err, res) => {
+	            if (err) {
+	              console.error(err);
+	              return;
+	            }
+	            makeSel.innerHTML = '<option value="-1">Make</option>' + res.body.Makes.map(make => {
+	              return `<option value="${make.make_id}">${make.make_display}</option>`;
+	            }).join('');
+	          });
+	      });
+	       makeSel.addEventListener('change', event => {
+	        if (year == -1) return;
+	        if (make == makeSel.value) return;
+	        make = makeSel.value;
+	        if (make == '-1') {
+	          year = -1;
+	          modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a make</option>';
+	          return;
+	        }
+	        modelSel.innerHTML = '<option value="-1">Loading...</option>';
+	        model = -1;
+	        request
+	          .get('http://www.carqueryapi.com/api/0.3/')
+	          .query({ cmd: 'getModels', year, make })
+	          .use(superagentJSONP)
+	          .end((err, res) => {
+	            if (err) {
+	              console.error(err);
+	              return;
+	            }
+	            modelSel.innerHTML = '<option>Model</option>' + res.body.Models.map(model => {
+	              return `<option>${model.model_name}</option>`;
+	            }).join('');
+	          });
+	      }); */
+
+	      var categoryInput = form.querySelector('[name="category-other"]');
+	      var categorySel = form.querySelector('[name="category"]');
+	      categorySel.addEventListener('change', function (event) {
+	        categoryInput.style = categorySel.value == 'other' ? '' : 'display: none;';
+	      });
+	    }
+	  }]);
+
+	  return Form;
+	}();
+
+	exports.default = function () {
+	  return (0, _cmmn.createElement)(
+	    _template2.default,
+	    { page: 'parts', grey: true },
+	    (0, _cmmn.createElement)(
+	      'h1',
+	      null,
+	      'Find a Part'
+	    ),
+	    (0, _cmmn.createElement)(Form, null)
+	  );
+	};
+
+/***/ },
+/* 79 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"form":"src-views-parts-styles---form---2ktVT","half":"src-views-parts-styles---half---25g4o"};
+
+	// Bemify
+	module.exports = (__webpack_require__(22).default)(module.exports || {});
+
+/***/ },
+/* 80 */,
+/* 81 */,
+/* 82 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.getMeta = undefined;
+
+	var _cmmn = __webpack_require__(4);
+
+	__webpack_require__(11);
+
+	var _styles = __webpack_require__(64);
+
+	var _styles2 = _interopRequireDefault(_styles);
+
+	var _header = __webpack_require__(30);
+
+	var _header2 = _interopRequireDefault(_header);
+
+	var _footer = __webpack_require__(38);
+
+	var _footer2 = _interopRequireDefault(_footer);
+
+	var _components = __webpack_require__(33);
+
+	var _sidemenu = __webpack_require__(50);
+
+	var _sidemenu2 = _interopRequireDefault(_sidemenu);
+
+	var _booking = __webpack_require__(83);
 
 	var _booking2 = _interopRequireDefault(_booking);
 
@@ -8896,7 +8835,7 @@
 	};
 
 /***/ },
-/* 84 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -8906,8 +8845,8 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 85 */,
-/* 86 */
+/* 84 */,
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8919,7 +8858,7 @@
 
 	var _cmmn = __webpack_require__(4);
 
-	var _template = __webpack_require__(55);
+	var _template = __webpack_require__(63);
 
 	var _template2 = _interopRequireDefault(_template);
 
@@ -8949,7 +8888,7 @@
 	};
 
 /***/ },
-/* 87 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8977,11 +8916,11 @@
 
 	__webpack_require__(11);
 
-	var _styles = __webpack_require__(88);
+	var _styles = __webpack_require__(87);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
-	var _styles3 = __webpack_require__(56);
+	var _styles3 = __webpack_require__(64);
 
 	var _styles4 = _interopRequireDefault(_styles3);
 
@@ -9041,13 +8980,21 @@
 	            'p',
 	            null,
 	            (0, _cmmn.createElement)('i', { className: _styles2.default.pIcon + ' fa fa-phone' }),
-	            '(08) 9227 5374'
+	            (0, _cmmn.createElement)(
+	              'a',
+	              { href: 'tel:0892275374' },
+	              '(08) 9227 5374'
+	            )
 	          ),
 	          (0, _cmmn.createElement)(
 	            'p',
 	            null,
 	            (0, _cmmn.createElement)('i', { className: _styles2.default.pIcon + ' fa fa-envelope' }),
-	            'info@dplmotors.com.au'
+	            (0, _cmmn.createElement)(
+	              'a',
+	              { href: 'mailto:info@dplmotors.com.au' },
+	              'info@dplmotors.com.au'
+	            )
 	          ),
 	          (0, _cmmn.createElement)(
 	            'a',
@@ -9063,7 +9010,7 @@
 	};
 
 /***/ },
-/* 88 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -9073,14 +9020,14 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 89 */,
-/* 90 */
+/* 88 */,
+/* 89 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 91 */
+/* 90 */
 /***/ function(module, exports) {
 
 	"use strict";
