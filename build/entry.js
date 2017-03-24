@@ -63,19 +63,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _path = __webpack_require__(72);
+	var _path = __webpack_require__(71);
 	
 	var _path2 = _interopRequireDefault(_path);
 	
-	var _fs = __webpack_require__(73);
+	var _fs = __webpack_require__(72);
 	
 	var _fs2 = _interopRequireDefault(_fs);
 	
-	var _mkdirp = __webpack_require__(74);
+	var _mkdirp = __webpack_require__(73);
 	
 	var _mkdirp2 = _interopRequireDefault(_mkdirp);
 	
-	var _routes = __webpack_require__(75);
+	var _routes = __webpack_require__(74);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -515,7 +515,7 @@ require("source-map-support").install();
 	
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 	
-	var _cmmnDatasource = __webpack_require__(71);
+	var _cmmnDatasource = __webpack_require__(70);
 	
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 	
@@ -603,67 +603,67 @@ require("source-map-support").install();
 	
 	var home = _interopRequireWildcard(_homePage);
 	
-	var _services = __webpack_require__(45);
+	var _services = __webpack_require__(46);
 	
 	var services = _interopRequireWildcard(_services);
 	
-	var _servicing = __webpack_require__(49);
+	var _servicing = __webpack_require__(50);
 	
 	var servicing = _interopRequireWildcard(_servicing);
 	
-	var _airConditioning = __webpack_require__(50);
+	var _airConditioning = __webpack_require__(51);
 	
 	var airConditioning = _interopRequireWildcard(_airConditioning);
 	
-	var _performanceTuning = __webpack_require__(51);
+	var _performanceTuning = __webpack_require__(52);
 	
 	var performanceTuning = _interopRequireWildcard(_performanceTuning);
 	
-	var _ecuTuning = __webpack_require__(52);
+	var _ecuTuning = __webpack_require__(53);
 	
 	var ecuTuning = _interopRequireWildcard(_ecuTuning);
 	
-	var _dpfSolution = __webpack_require__(53);
+	var _dpfSolution = __webpack_require__(54);
 	
 	var dpfSolution = _interopRequireWildcard(_dpfSolution);
 	
-	var _egrSolution = __webpack_require__(54);
+	var _egrSolution = __webpack_require__(55);
 	
 	var egrSolution = _interopRequireWildcard(_egrSolution);
 	
-	var _truckTuning = __webpack_require__(55);
+	var _truckTuning = __webpack_require__(56);
 	
 	var truckTuning = _interopRequireWildcard(_truckTuning);
 	
-	var _reconditioning = __webpack_require__(56);
+	var _reconditioning = __webpack_require__(57);
 	
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 	
-	var _motorRebuilds = __webpack_require__(57);
+	var _motorRebuilds = __webpack_require__(58);
 	
 	var motorRebuilds = _interopRequireWildcard(_motorRebuilds);
 	
-	var _cylinderHeadRepair = __webpack_require__(58);
+	var _cylinderHeadRepair = __webpack_require__(59);
 	
 	var cylinderHeadRepair = _interopRequireWildcard(_cylinderHeadRepair);
 	
-	var _headGasketRepair = __webpack_require__(59);
+	var _headGasketRepair = __webpack_require__(60);
 	
 	var headGasketRepair = _interopRequireWildcard(_headGasketRepair);
 	
-	var _parts = __webpack_require__(60);
+	var _parts = __webpack_require__(61);
 	
 	var parts = _interopRequireWildcard(_parts);
 	
-	var _booking = __webpack_require__(65);
+	var _booking = __webpack_require__(64);
 	
 	var book = _interopRequireWildcard(_booking);
 	
-	var _trade = __webpack_require__(67);
+	var _trade = __webpack_require__(66);
 	
 	var trade = _interopRequireWildcard(_trade);
 	
-	var _contact = __webpack_require__(68);
+	var _contact = __webpack_require__(67);
 	
 	var contact = _interopRequireWildcard(_contact);
 	
@@ -749,8 +749,8 @@ require("source-map-support").install();
 	        null,
 	        '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,\'script\',\'dataLayer\',\'GTM-TD3SK9D\');'
 	      ),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(70) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(70) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(69) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(69) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -1042,7 +1042,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, "@font-face {\n  font-family: 'Abel';\n  src: url(" + __webpack_require__(21) + ") format(\"woff2\"), url(" + __webpack_require__(22) + ") format(\"woff\");\n  font-weight: normal;\n  font-style: normal; }\n\nhtml, body {\n  padding: 0;\n  margin: 0;\n  font-size: 10px;\n  font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  background-color: #282828; }\n", ""]);
+	exports.push([module.id, "@font-face {\n  font-family: 'Abel';\n  src: url(" + __webpack_require__(21) + ") format(\"woff2\"), url(" + __webpack_require__(22) + ") format(\"woff\");\n  font-weight: normal;\n  font-style: normal; }\n\nhtml, body {\n  padding: 0;\n  margin: 0;\n  font-size: 10px;\n  font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  background-color: #282828; }\n\na {\n  color: #006e9c; }\n  a:hover {\n    color: #0092cf; }\n", ""]);
 	
 	// exports
 	
@@ -1267,7 +1267,12 @@ require("source-map-support").install();
 	              'p',
 	              { className: _styles2.default.dbl },
 	              (0, _cmmn.createElement)('i', { className: 'fa fa-phone' }),
-	              '\xA0(08) 9227 5374'
+	              '\xA0',
+	              (0, _cmmn.createElement)(
+	                'a',
+	                { href: 'tel:0892275374' },
+	                '(08) 9227 5374'
+	              )
 	            )
 	          )
 	        ),
@@ -1343,7 +1348,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 18px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  border-left: 1px solid #a0a0a0;\n  -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item--last---3VdyI {\n    border-right: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--last---3VdyI.src-views-header-styles---menu-item--active---2Enug {\n    border-right: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    padding: 90px 20px 15px 25px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.2em;\n    color: #e0e0e0;\n    text-decoration: none;\n    cursor: pointer; }\n    .src-views-header-styles---menu-item__text---4J8E6:hover {\n      color: #03b5ff;\n      transition: color 0.4s; }\n    @media (min-width: 1200px) {\n      .src-views-header-styles---menu-item__text---4J8E6 {\n        font-size: 1.3rem;\n        letter-spacing: 0.15em; } }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n  @media (max-width: 1200px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      margin-top: 3rem; }\n      .src-views-header-styles---menu-item__text---4J8E6 {\n        padding-top: 60px; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      display: none; } }\n\n.src-views-header-styles---dd-menu---3m0IT {\n  position: absolute;\n  top: 100%;\n  left: 0;\n  min-width: 100%;\n  padding: 0;\n  margin: 0;\n  list-style: none;\n  background-color: #282828;\n  display: none; }\n  .src-views-header-styles---dd-menu---3m0IT li {\n    border-top: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---dd-menu---3m0IT {\n    background-color: #006e9c; }\n    .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---dd-menu---3m0IT li {\n      border-top: 1px solid #0092cf; }\n  .src-views-header-styles---dd-menu---3m0IT a {\n    display: block;\n    color: white;\n    text-decoration: none;\n    font-size: 1.4rem;\n    line-height: 1.4;\n    padding: 0.5em 0.75em; }\n    .src-views-header-styles---dd-menu---3m0IT a:hover {\n      background-color: rgba(255, 255, 255, 0.1); }\n\n.src-views-header-styles---mobile-nav---3skS1 {\n  display: none;\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -0.5rem;\n  text-align: center;\n  border: 1px solid #202020;\n  border-radius: 3px;\n  cursor: pointer; }\n  .src-views-header-styles---mobile-nav---3skS1 i {\n    line-height: 4rem;\n    color: white;\n    text-decoration: none;\n    font-size: 2rem;\n    padding: 0 1.5rem; }\n    .src-views-header-styles---mobile-nav---3skS1 i:before {\n      vertical-align: middle; }\n    .src-views-header-styles---mobile-nav---3skS1 i:after {\n      content: \"Navigation\";\n      font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n      font-size: 1.4rem;\n      margin-left: 0.5em;\n      text-transform: uppercase;\n      vertical-align: middle;\n      letter-spacing: 0.05em; }\n      @media (max-width: 450px) {\n        .src-views-header-styles---mobile-nav---3skS1 i:after {\n          content: \"\";\n          display: none; } }\n  .src-views-header-styles---mobile-nav---3skS1:hover {\n    background-color: #202020; }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      display: block; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      margin-top: -3.25rem; } }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n  .src-views-header-styles---contact---1NLDy p {\n    margin: 0; }\n    .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n      margin-top: 1.4em; }\n  @media (max-width: 1200px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 0.5rem;\n      margin: 0; }\n      .src-views-header-styles---contact---1NLDy p {\n        display: inline-block;\n        margin-left: 15px; }\n        .src-views-header-styles---contact---1NLDy p, .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n          margin-top: 0; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 1rem; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---contact---1NLDy {\n      position: relative;\n      text-align: center;\n      top: 0;\n      margin-top: 0.5rem;\n      margin-bottom: 1rem; }\n      .src-views-header-styles---contact---1NLDy p {\n        margin: 0 7px; } }\n\n.src-views-header-styles---mobile-menu---210GA {\n  background-color: black;\n  font-size: 1.6rem;\n  padding: 1px 0;\n  overflow: hidden; }\n  .src-views-header-styles---mobile-menu---210GA ul {\n    margin: 20px 0;\n    padding: 0;\n    list-style: none; }\n  .src-views-header-styles---mobile-menu---210GA li {\n    text-align: left;\n    margin-top: 0.7em; }\n  .src-views-header-styles---mobile-menu---210GA a {\n    color: #e0e0e0;\n    text-decoration: none;\n    line-height: 1.4; }\n    .src-views-header-styles---mobile-menu---210GA a:hover {\n      color: white; }\n  .src-views-header-styles---mobile-menu---210GA li.src-views-header-styles---mobile-menu__subitem---2ppyM {\n    margin-top: 0; }\n    .src-views-header-styles---mobile-menu---210GA li.src-views-header-styles---mobile-menu__subitem---2ppyM > a {\n      padding-left: 1.4em; }\n", ""]);
+	exports.push([module.id, ".src-views-header-styles---header---10oqo {\n  position: relative;\n  border-bottom: 1px solid black;\n  z-index: 1000;\n  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }\n\n.src-views-header-styles---logo---21UGf {\n  display: inline-block;\n  width: 180px;\n  margin: 20px 40px 18px 0;\n  vertical-align: middle; }\n\n.src-views-header-styles---menu-item---1P2uG {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n  border-left: 1px solid #a0a0a0;\n  -webkit-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  -ms-transform: matrix(1, 0, -0.35, 1, 8, 0);\n  transform: matrix(1, 0, -0.35, 1, 8, 0); }\n  .src-views-header-styles---menu-item--active---2Enug, .src-views-header-styles---menu-item---1P2uG:hover {\n    background-color: #006e9c;\n    border-left: 1px solid #0092cf;\n    color: white; }\n  .src-views-header-styles---menu-item--active---2Enug + .src-views-header-styles---menu-item---1P2uG, .src-views-header-styles---menu-item---1P2uG:hover + .src-views-header-styles---menu-item---1P2uG {\n    border-left: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item--last---3VdyI {\n    border-right: 1px solid #a0a0a0; }\n  .src-views-header-styles---menu-item--last---3VdyI.src-views-header-styles---menu-item--active---2Enug, .src-views-header-styles---menu-item--last---3VdyI:hover {\n    border-right: 1px solid #0092cf; }\n  .src-views-header-styles---menu-item__text---4J8E6 {\n    display: block;\n    padding: 90px 20px 15px 25px;\n    line-height: 15px;\n    text-align: center;\n    font-size: 1.1rem;\n    text-transform: uppercase;\n    letter-spacing: 0.2em;\n    color: #e0e0e0;\n    text-decoration: none;\n    cursor: pointer; }\n    @media (min-width: 1200px) {\n      .src-views-header-styles---menu-item__text---4J8E6 {\n        font-size: 1.3rem;\n        letter-spacing: 0.15em; } }\n  .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6, .src-views-header-styles---menu-item--active---2Enug .src-views-header-styles---menu-item__text---4J8E6:hover {\n    color: white; }\n  @media (max-width: 1200px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      margin-top: 3rem; }\n      .src-views-header-styles---menu-item__text---4J8E6 {\n        padding-top: 60px; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---menu-item---1P2uG {\n      display: none; } }\n\n.src-views-header-styles---dd-menu---3m0IT {\n  position: absolute;\n  top: 100%;\n  left: 0;\n  min-width: 100%;\n  padding: 0;\n  margin: 0;\n  list-style: none;\n  background-color: #282828;\n  display: none;\n  background-color: #006e9c; }\n  .src-views-header-styles---dd-menu---3m0IT li {\n    border-top: 1px solid #a0a0a0; }\n  .src-views-header-styles---dd-menu---3m0IT li {\n    border-top: 1px solid #0092cf; }\n  .src-views-header-styles---dd-menu---3m0IT a {\n    display: block;\n    color: white;\n    text-decoration: none;\n    font-size: 1.4rem;\n    line-height: 1.4;\n    padding: 0.5em 0.75em; }\n    .src-views-header-styles---dd-menu---3m0IT a:hover {\n      background-color: rgba(255, 255, 255, 0.1); }\n\n.src-views-header-styles---mobile-nav---3skS1 {\n  display: none;\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -0.5rem;\n  text-align: center;\n  border: 1px solid #202020;\n  border-radius: 3px;\n  cursor: pointer; }\n  .src-views-header-styles---mobile-nav---3skS1 i {\n    line-height: 4rem;\n    color: white;\n    text-decoration: none;\n    font-size: 2rem;\n    padding: 0 1.5rem; }\n    .src-views-header-styles---mobile-nav---3skS1 i:before {\n      vertical-align: middle; }\n    .src-views-header-styles---mobile-nav---3skS1 i:after {\n      content: \"Navigation\";\n      font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n      font-size: 1.4rem;\n      margin-left: 0.5em;\n      text-transform: uppercase;\n      vertical-align: middle;\n      letter-spacing: 0.05em; }\n      @media (max-width: 450px) {\n        .src-views-header-styles---mobile-nav---3skS1 i:after {\n          content: \"\";\n          display: none; } }\n  .src-views-header-styles---mobile-nav---3skS1:hover {\n    background-color: #202020; }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      display: block; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---mobile-nav---3skS1 {\n      margin-top: -3.25rem; } }\n\n.src-views-header-styles---contact---1NLDy {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  margin-top: -4rem;\n  line-height: 2rem;\n  font-size: 1.4rem;\n  color: #e0e0e0;\n  text-align: right; }\n  .src-views-header-styles---contact---1NLDy i {\n    color: #006e9c; }\n  .src-views-header-styles---contact---1NLDy p {\n    margin: 0; }\n    .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n      margin-top: 1.4em; }\n  .src-views-header-styles---contact---1NLDy a {\n    color: inherit; }\n  @media (max-width: 1200px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 0.5rem;\n      margin: 0; }\n      .src-views-header-styles---contact---1NLDy p {\n        display: inline-block;\n        margin-left: 15px; }\n        .src-views-header-styles---contact---1NLDy p, .src-views-header-styles---contact---1NLDy p.src-views-header-styles---dbl---1nYJb {\n          margin-top: 0; } }\n  @media (max-width: 1000px) {\n    .src-views-header-styles---contact---1NLDy {\n      top: 1rem; } }\n  @media (max-width: 600px) {\n    .src-views-header-styles---contact---1NLDy {\n      position: relative;\n      text-align: center;\n      top: 0;\n      margin-top: 0.5rem;\n      margin-bottom: 1rem; }\n      .src-views-header-styles---contact---1NLDy p {\n        margin: 0 7px; } }\n\n.src-views-header-styles---mobile-menu---210GA {\n  background-color: black;\n  font-size: 1.6rem;\n  padding: 1px 0;\n  overflow: hidden; }\n  .src-views-header-styles---mobile-menu---210GA ul {\n    margin: 20px 0;\n    padding: 0;\n    list-style: none; }\n  .src-views-header-styles---mobile-menu---210GA li {\n    text-align: left;\n    margin-top: 0.7em; }\n  .src-views-header-styles---mobile-menu---210GA a {\n    color: #e0e0e0;\n    text-decoration: none;\n    line-height: 1.4; }\n    .src-views-header-styles---mobile-menu---210GA a:hover {\n      color: white; }\n  .src-views-header-styles---mobile-menu---210GA li.src-views-header-styles---mobile-menu__subitem---2ppyM {\n    margin-top: 0; }\n    .src-views-header-styles---mobile-menu---210GA li.src-views-header-styles---mobile-menu__subitem---2ppyM > a {\n      padding-left: 1.4em; }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -1451,7 +1456,7 @@ require("source-map-support").install();
 	
 	      return (0, _cmmn.createElement)(
 	        'ul',
-	        { id: 'xyz', className: _styles2.default.ddMenu },
+	        { className: _styles2.default.ddMenu },
 	        children.map(function (el) {
 	          return (0, _cmmn.createElement)(
 	            'li',
@@ -1710,13 +1715,19 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _styles = __webpack_require__(43);
+	var _superagent = __webpack_require__(43);
+	
+	var _superagent2 = _interopRequireDefault(_superagent);
+	
+	var _styles = __webpack_require__(44);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var subscribeEmailURL = '/subscribe';
 	
 	var MenuItem = function MenuItem(_ref) {
 	  var icon = _ref.icon,
@@ -1727,6 +1738,25 @@ require("source-map-support").install();
 	    { className: _styles2.default.sidebar.item, href: href },
 	    children,
 	    (0, _cmmn.createElement)('span', { className: _styles2.default.sidebar.item.icon, style: "background-position-y: " + (-53.5 * icon - 4) + "px" })
+	  );
+	};
+	
+	var NewsletterForm = function NewsletterForm() {
+	  return (0, _cmmn.createElement)(
+	    'div',
+	    { className: _styles2.default.sidebar.item.with('backface', 'no-hover') },
+	    (0, _cmmn.createElement)(
+	      'form',
+	      { className: _styles2.default.newsletterForm },
+	      (0, _cmmn.createElement)('div', { className: _styles2.default.newsletterForm.status }),
+	      (0, _cmmn.createElement)('input', { type: 'email', name: 'email', placeholder: 'Your Email' }),
+	      (0, _cmmn.createElement)('input', { type: 'submit', value: 'OK' }),
+	      (0, _cmmn.createElement)(
+	        'button',
+	        null,
+	        'X'
+	      )
+	    )
 	  );
 	};
 	
@@ -1759,6 +1789,7 @@ require("source-map-support").install();
 	          { href: 'javascript:void(0);', icon: 2 },
 	          'Join the Mailing List'
 	        ),
+	        (0, _cmmn.createElement)(NewsletterForm, null),
 	        (0, _cmmn.createElement)(
 	          MenuItem,
 	          { href: '*/parts/', icon: 3 },
@@ -1786,12 +1817,51 @@ require("source-map-support").install();
 	    value: function mount(node) {
 	      var _this = this;
 	
+	      var mousein = false,
+	          formopen = false;
 	      node.addEventListener('mouseover', function () {
+	        mousein = true;
 	        node.className = _styles2.default.sidebar.with(_this.top ? 'top' : '', 'visible');
 	      });
 	      node.addEventListener('mouseout', function () {
+	        mousein = false;
+	        if (formopen) return;
 	        node.className = _styles2.default.sidebar.with(_this.top ? 'top' : '');
 	      });
+	      var newsletterBtn = node.querySelector('.' + _styles2.default.sidebar.item.toString().trim() + ':nth-child(3)');
+	      var newsletterForm = node.querySelector('.' + _styles2.default.sidebar.item.toString().trim() + ':nth-child(4)');
+	      var formStatus = node.querySelector('.' + _styles2.default.newsletterForm.status);
+	      newsletterBtn.addEventListener('click', function () {
+	        formopen = true;
+	        newsletterBtn.className = _styles2.default.sidebar.item.with('flipped');
+	        newsletterForm.className = _styles2.default.sidebar.item.with('flipped', 'backface', 'no-hover');
+	      });
+	      newsletterForm.querySelector('form').addEventListener('submit', function (event) {
+	        event.preventDefault();
+	        var address = newsletterForm.querySelector('form input[name="email"]').value;
+	        formStatus.className = _styles2.default.newsletterForm.status.with('visible');
+	        formStatus.innerHTML = 'Working...';
+	        _superagent2.default.post(subscribeEmailURL).send({ emailaddress: address }).end(function (err, res) {
+	          if (err) {
+	            console.error(err);
+	            formStatus.innerHTML = 'An error occurred.';
+	          } else {
+	            formStatus.innerHTML = 'Thanks for subscribing!';
+	          }
+	          setTimeout(closeForm, 1500);
+	        });
+	      });
+	      newsletterForm.querySelector('form button').addEventListener('click', function (event) {
+	        event.preventDefault();
+	        closeForm();
+	      });
+	      var closeForm = function closeForm() {
+	        formopen = false;
+	        formStatus.className = _styles2.default.newsletterForm.status;
+	        newsletterBtn.className = _styles2.default.sidebar.item.with();
+	        newsletterForm.className = _styles2.default.sidebar.item.with('backface', 'no-hover');
+	        if (!mousein) node.className = _styles2.default.sidebar.with(_this.top ? 'top' : '');
+	      };
 	    }
 	  }]);
 	
@@ -1803,6 +1873,12 @@ require("source-map-support").install();
 
 /***/ },
 /* 43 */
+/***/ function(module, exports) {
+
+	module.exports = require("superagent");
+
+/***/ },
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -1810,19 +1886,24 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-sidemenu-styles---sidebar---2fVwP {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  margin-top: -128px;\n  height: 256px;\n  background-color: white;\n  background-color: rgba(200, 200, 200, 0.7);\n  overflow: hidden; }\n  .src-views-sidemenu-styles---sidebar--top---g_xw8 {\n    top: 0;\n    margin-top: 100px; }\n    @media (max-width: 1000px) {\n      .src-views-sidemenu-styles---sidebar--top---g_xw8 {\n        margin-top: 40px; } }\n  .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    position: relative;\n    display: block;\n    width: 240px;\n    background-color: #282828;\n    margin: 1px 0 1px 1px;\n    padding: 10px 20px;\n    line-height: 30px;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    cursor: pointer;\n    text-decoration: none;\n    margin-right: -225px;\n    transition: margin-right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item--no-hover---364jd:hover {\n      background-color: #282828;\n      cursor: default; }\n    .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      display: block;\n      position: absolute;\n      background-color: #282828;\n      top: 0;\n      right: 225px;\n      bottom: 0;\n      width: 55px;\n      background-image: url(" + __webpack_require__(44) + ");\n      background-size: 40px;\n      background-position: 9px -4px;\n      background-repeat: no-repeat;\n      transition: right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item--no-hover---364jd:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #282828; }\n    .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ {\n      display: inline-block;\n      margin: -9px 0 -9px -19px;\n      width: 48px;\n      height: 48px;\n      cursor: pointer;\n      color: white;\n      text-decoration: none;\n      text-align: center;\n      font-size: 24px; }\n      .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ + .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ {\n        margin-left: 1px; }\n      .src-views-sidemenu-styles---sidebar__item__social-link--fb---287lu {\n        background-color: #004a72; }\n      .src-views-sidemenu-styles---sidebar__item__social-link--twitter---2CSIZ {\n        background-color: #00b8f1; }\n      .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ i {\n        line-height: 48px; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    margin-right: 0; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n    right: 0; }\n", ""]);
+	exports.push([module.id, ".src-views-sidemenu-styles---sidebar---2fVwP {\n  position: absolute;\n  top: 50%;\n  right: 0;\n  margin-top: -128px;\n  height: 256px;\n  background-color: white;\n  background-color: rgba(200, 200, 200, 0.7);\n  overflow: hidden;\n  perspective: 500px; }\n  .src-views-sidemenu-styles---sidebar--top---g_xw8 {\n    top: 0;\n    margin-top: 100px; }\n    @media (max-width: 1000px) {\n      .src-views-sidemenu-styles---sidebar--top---g_xw8 {\n        margin-top: 40px; } }\n  .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    position: relative;\n    display: block;\n    width: 240px;\n    background-color: #282828;\n    margin: 1px 0 1px 1px;\n    padding: 10px 20px;\n    line-height: 30px;\n    height: 30px;\n    font-size: 1.2rem;\n    text-transform: uppercase;\n    letter-spacing: 0.25em;\n    color: #e0e0e0;\n    cursor: pointer;\n    text-decoration: none;\n    margin-right: -225px;\n    transition: margin-right 0.5s, transform 0.5s, visibility 0.5s;\n    backface-visibility: hidden; }\n    .src-views-sidemenu-styles---sidebar__item--backface---1e3xE {\n      margin-top: -51px; }\n    .src-views-sidemenu-styles---sidebar__item--flipped---3vNhu, .src-views-sidemenu-styles---sidebar__item--backface---1e3xE {\n      transform: rotateX(180deg);\n      visibility: hidden; }\n    .src-views-sidemenu-styles---sidebar__item--flipped---3vNhu.src-views-sidemenu-styles---sidebar__item--backface---1e3xE {\n      transform: rotateX(360deg);\n      visibility: visible; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover {\n      background-color: #006e9c;\n      color: white; }\n    .src-views-sidemenu-styles---sidebar__item--no-hover---364jd:hover {\n      background-color: #282828;\n      cursor: default; }\n    .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      display: block;\n      position: absolute;\n      background-color: #282828;\n      top: 0;\n      right: 225px;\n      bottom: 0;\n      width: 55px;\n      background-image: url(" + __webpack_require__(45) + ");\n      background-size: 40px;\n      background-position: 9px -4px;\n      background-repeat: no-repeat;\n      transition: right 0.5s; }\n    .src-views-sidemenu-styles---sidebar__item---3tF0f:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #006e9c; }\n    .src-views-sidemenu-styles---sidebar__item--no-hover---364jd:hover .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n      background-color: #282828; }\n    .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ {\n      display: inline-block;\n      margin: -9px 0 -9px -19px;\n      width: 48px;\n      height: 48px;\n      cursor: pointer;\n      color: white;\n      text-decoration: none;\n      text-align: center;\n      font-size: 24px; }\n      .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ + .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ {\n        margin-left: 1px; }\n      .src-views-sidemenu-styles---sidebar__item__social-link--fb---287lu {\n        background-color: #004a72; }\n      .src-views-sidemenu-styles---sidebar__item__social-link--twitter---2CSIZ {\n        background-color: #00b8f1; }\n      .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ i {\n        line-height: 48px; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item---3tF0f {\n    margin-right: 0; }\n  .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {\n    right: 0; }\n\n.src-views-sidemenu-styles---newsletterForm---1Jb3f {\n  margin: 0 -10px;\n  padding: 0; }\n  .src-views-sidemenu-styles---newsletterForm---1Jb3f input[type=\"email\"] {\n    background-color: transparent;\n    border: 1px solid #808080;\n    font-size: 14px;\n    line-height: 16px;\n    padding: 6px 8px;\n    color: white;\n    width: 180px;\n    box-sizing: border-box; }\n  .src-views-sidemenu-styles---newsletterForm---1Jb3f input[type=\"submit\"], .src-views-sidemenu-styles---newsletterForm---1Jb3f button {\n    background-color: white;\n    color: black;\n    border: none;\n    border-radius: 0;\n    -webkit-appearance: none;\n    height: 100%;\n    vertical-align: top;\n    padding: 0 8px;\n    margin: 0 0 0 5px;\n    font-size: 14px; }\n  .src-views-sidemenu-styles---newsletterForm__status---3OnUe {\n    display: none;\n    font-size: 12px;\n    line-height: 30px;\n    background-color: #282828;\n    padding: 0 10px; }\n    .src-views-sidemenu-styles---newsletterForm__status--visible---3wbKs {\n      display: block; }\n      .src-views-sidemenu-styles---newsletterForm__status--visible---3wbKs ~ * {\n        display: none; }\n  .src-views-sidemenu-styles---newsletterForm---1Jb3f button {\n    background-color: #b04040;\n    color: white; }\n", ""]);
 	
 	// exports
 	exports.locals = {
 		"sidebar": "src-views-sidemenu-styles---sidebar---2fVwP",
 		"sidebar--top": "src-views-sidemenu-styles---sidebar--top---g_xw8",
 		"sidebar__item": "src-views-sidemenu-styles---sidebar__item---3tF0f",
+		"sidebar__item--backface": "src-views-sidemenu-styles---sidebar__item--backface---1e3xE",
+		"sidebar__item--flipped": "src-views-sidemenu-styles---sidebar__item--flipped---3vNhu",
 		"sidebar__item--no-hover": "src-views-sidemenu-styles---sidebar__item--no-hover---364jd",
 		"sidebar__item__icon": "src-views-sidemenu-styles---sidebar__item__icon---VvZ3o",
 		"sidebar__item__social-link": "src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ",
 		"sidebar__item__social-link--fb": "src-views-sidemenu-styles---sidebar__item__social-link--fb---287lu",
 		"sidebar__item__social-link--twitter": "src-views-sidemenu-styles---sidebar__item__social-link--twitter---2CSIZ",
-		"sidebar--visible": "src-views-sidemenu-styles---sidebar--visible---3-E6V"
+		"sidebar--visible": "src-views-sidemenu-styles---sidebar--visible---3-E6V",
+		"newsletterForm": "src-views-sidemenu-styles---newsletterForm---1Jb3f",
+		"newsletterForm__status": "src-views-sidemenu-styles---newsletterForm__status---3OnUe",
+		"newsletterForm__status--visible": "src-views-sidemenu-styles---newsletterForm__status--visible---3wbKs"
 	};
 	
 	// Only locals
@@ -1832,13 +1913,13 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/icons-3V4y03W0.png";
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1850,7 +1931,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -1920,7 +2001,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1933,7 +2014,7 @@ require("source-map-support").install();
 	
 	__webpack_require__(10);
 	
-	var _styles = __webpack_require__(47);
+	var _styles = __webpack_require__(48);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -1967,7 +2048,7 @@ require("source-map-support").install();
 	      (0, _cmmn.createElement)(
 	        _components.Container,
 	        null,
-	        (0, _cmmn.createElement)('div', { className: _styles2.default.content.rightImg, style: 'background-image: url(' + __webpack_require__(48) + ');' }),
+	        (0, _cmmn.createElement)('div', { className: _styles2.default.content.rightImg, style: 'background-image: url(' + __webpack_require__(49) + ');' }),
 	        (0, _cmmn.createElement)(
 	          'div',
 	          { className: _styles2.default.content.copy },
@@ -1975,7 +2056,7 @@ require("source-map-support").install();
 	          (0, _cmmn.createElement)(
 	            'a',
 	            { href: '*/book/', className: _styles2.default.bookBtn },
-	            'Book Service'
+	            'Book Now'
 	          )
 	        )
 	      ),
@@ -1986,7 +2067,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -2013,13 +2094,13 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/jpg/bk-img-2JMeFrCm.jpg";
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2031,7 +2112,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2071,7 +2152,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2083,7 +2164,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2162,7 +2243,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2174,7 +2255,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2291,7 +2372,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 52 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2303,7 +2384,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2380,7 +2461,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 53 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2392,7 +2473,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2516,7 +2597,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 54 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2528,7 +2609,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2604,7 +2685,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 55 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2616,7 +2697,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2691,7 +2772,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 56 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2703,7 +2784,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2797,7 +2878,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 57 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2809,7 +2890,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2854,7 +2935,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 58 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2866,7 +2947,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2906,7 +2987,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 59 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2918,7 +2999,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -2982,7 +3063,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 60 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2993,22 +3074,16 @@ require("source-map-support").install();
 	exports.getMeta = undefined;
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	//import request from 'superagent';
+	//import superagentJSONP from 'superagent-jsonp';
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _superagent = __webpack_require__(61);
-	
-	var _superagent2 = _interopRequireDefault(_superagent);
-	
-	var _superagentJsonp = __webpack_require__(62);
-	
-	var _superagentJsonp2 = _interopRequireDefault(_superagentJsonp);
-	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
-	var _styles = __webpack_require__(63);
+	var _styles = __webpack_require__(62);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -3054,34 +3129,8 @@ require("source-map-support").install();
 	          })
 	        ),
 	        (0, _cmmn.createElement)('br', null),
-	        (0, _cmmn.createElement)(
-	          'select',
-	          { name: 'make', className: _styles2.default.half },
-	          (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            'Make'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            'Please select a year'
-	          )
-	        ),
-	        (0, _cmmn.createElement)(
-	          'select',
-	          { name: 'model', className: _styles2.default.half },
-	          (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            'Model'
-	          ),
-	          (0, _cmmn.createElement)(
-	            'option',
-	            null,
-	            'Please select a year'
-	          )
-	        ),
+	        (0, _cmmn.createElement)('input', { type: 'text', name: 'make', placeholder: 'Make', className: _styles2.default.half }),
+	        (0, _cmmn.createElement)('input', { type: 'text', name: 'model', placeholder: 'Model', className: _styles2.default.half }),
 	        (0, _cmmn.createElement)(
 	          'select',
 	          { name: 'category' },
@@ -3104,16 +3153,11 @@ require("source-map-support").install();
 	  }, {
 	    key: 'mount',
 	    value: function mount(form) {
-	      var yearSel = form.querySelector('[name="year"]');
-	      var makeSel = form.querySelector('[name="make"]');
-	      var modelSel = form.querySelector('[name="model"]');
-	      var categorySel = form.querySelector('[name="category"]');
-	      var categoryInput = form.querySelector('[name="category-other"]');
-	      var year = -1,
-	          make = -1,
-	          model = -1;
-	
-	      yearSel.addEventListener('change', function (event) {
+	      /* const yearSel = form.querySelector('[name="year"]');
+	      const makeSel = form.querySelector('[name="make"]');
+	      const modelSel = form.querySelector('[name="model"]');
+	      let year = -1, make = -1, model = -1;
+	       yearSel.addEventListener('change', event => {
 	        if (year == yearSel.value) return;
 	        year = yearSel.value;
 	        if (year == 'Year') {
@@ -3126,18 +3170,21 @@ require("source-map-support").install();
 	        modelSel.innerHTML = '<option value="-1">Model</option><option value="-1">Please select a make</option>';
 	        make = -1;
 	        model = -1;
-	        _superagent2.default.get('http://www.carqueryapi.com/api/0.3/').query({ cmd: 'getMakes', year: year }).use(_superagentJsonp2.default).end(function (err, res) {
-	          if (err) {
-	            console.error(err);
-	            return;
-	          }
-	          makeSel.innerHTML = '<option value="-1">Make</option>' + res.body.Makes.map(function (make) {
-	            return '<option value="' + make.make_id + '">' + make.make_display + '</option>';
-	          }).join('');
-	        });
+	        request
+	          .get('http://www.carqueryapi.com/api/0.3/')
+	          .query({ cmd: 'getMakes', year })
+	          .use(superagentJSONP)
+	          .end((err, res) => {
+	            if (err) {
+	              console.error(err);
+	              return;
+	            }
+	            makeSel.innerHTML = '<option value="-1">Make</option>' + res.body.Makes.map(make => {
+	              return `<option value="${make.make_id}">${make.make_display}</option>`;
+	            }).join('');
+	          });
 	      });
-	
-	      makeSel.addEventListener('change', function (event) {
+	       makeSel.addEventListener('change', event => {
 	        if (year == -1) return;
 	        if (make == makeSel.value) return;
 	        make = makeSel.value;
@@ -3148,17 +3195,23 @@ require("source-map-support").install();
 	        }
 	        modelSel.innerHTML = '<option value="-1">Loading...</option>';
 	        model = -1;
-	        _superagent2.default.get('http://www.carqueryapi.com/api/0.3/').query({ cmd: 'getModels', year: year, make: make }).use(_superagentJsonp2.default).end(function (err, res) {
-	          if (err) {
-	            console.error(err);
-	            return;
-	          }
-	          modelSel.innerHTML = '<option>Model</option>' + res.body.Models.map(function (model) {
-	            return '<option>' + model.model_name + '</option>';
-	          }).join('');
-	        });
-	      });
+	        request
+	          .get('http://www.carqueryapi.com/api/0.3/')
+	          .query({ cmd: 'getModels', year, make })
+	          .use(superagentJSONP)
+	          .end((err, res) => {
+	            if (err) {
+	              console.error(err);
+	              return;
+	            }
+	            modelSel.innerHTML = '<option>Model</option>' + res.body.Models.map(model => {
+	              return `<option>${model.model_name}</option>`;
+	            }).join('');
+	          });
+	      }); */
 	
+	      var categoryInput = form.querySelector('[name="category-other"]');
+	      var categorySel = form.querySelector('[name="category"]');
 	      categorySel.addEventListener('change', function (event) {
 	        categoryInput.style = categorySel.value == 'other' ? '' : 'display: none;';
 	      });
@@ -3182,19 +3235,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 61 */
-/***/ function(module, exports) {
-
-	module.exports = require("superagent");
-
-/***/ },
 /* 62 */
-/***/ function(module, exports) {
-
-	module.exports = require("superagent-jsonp");
-
-/***/ },
-/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -3202,7 +3243,7 @@ require("source-map-support").install();
 	
 	
 	// module
-	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(64) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat;\n    cursor: pointer; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px;\n    max-width: calc(98% - 8px); }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0;\n    cursor: pointer; }\n    .src-views-parts-styles---form---2ktVT input[type=\"submit\"]:hover {\n      background-color: #0092cf; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
+	exports.push([module.id, ".src-views-parts-styles---form---2ktVT {\n  margin-right: -8px; }\n  .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {\n    display: inline-block;\n    background: white;\n    border: 1px solid #d0d0d0;\n    border-radius: 0;\n    font-size: 1.4rem;\n    padding: 0.5em 0.75em;\n    width: calc(98% - 8px);\n    margin-right: 8px;\n    margin-bottom: 8px;\n    -webkit-appearance: none;\n    box-sizing: border-box; }\n    .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n      width: calc(49% - 8px); }\n      @media (max-width: 450px) {\n        .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {\n          width: calc(98% - 8px); } }\n  .src-views-parts-styles---form---2ktVT select {\n    background-image: url(" + __webpack_require__(63) + ");\n    background-size: 30px;\n    background-position: 100% 50%;\n    background-repeat: no-repeat;\n    cursor: pointer; }\n  .src-views-parts-styles---form---2ktVT textarea {\n    min-height: 140px;\n    max-width: calc(98% - 8px); }\n  .src-views-parts-styles---form---2ktVT input[type=\"submit\"] {\n    background-color: #006e9c;\n    border: none;\n    color: white;\n    padding: 0.75em;\n    font-size: 1.6rem;\n    color: white;\n    text-transform: uppercase;\n    margin-bottom: 0;\n    cursor: pointer; }\n    .src-views-parts-styles---form---2ktVT input[type=\"submit\"]:hover {\n      background-color: #0092cf; }\n  @media (max-width: 1000px) {\n    .src-views-parts-styles---form---2ktVT {\n      margin-top: 50px; } }\n", ""]);
 	
 	// exports
 	exports.locals = {
@@ -3217,13 +3258,13 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 64 */
+/* 63 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/chevron-3vB6y-nq.png";
 
 /***/ },
-/* 65 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3237,7 +3278,7 @@ require("source-map-support").install();
 	
 	__webpack_require__(10);
 	
-	var _styles = __webpack_require__(47);
+	var _styles = __webpack_require__(48);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
@@ -3255,7 +3296,7 @@ require("source-map-support").install();
 	
 	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 	
-	var _booking = __webpack_require__(66);
+	var _booking = __webpack_require__(65);
 	
 	var _booking2 = _interopRequireDefault(_booking);
 	
@@ -3295,7 +3336,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 66 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -3317,7 +3358,7 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 67 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3329,7 +3370,7 @@ require("source-map-support").install();
 	
 	var _cmmn = __webpack_require__(3);
 	
-	var _template = __webpack_require__(46);
+	var _template = __webpack_require__(47);
 	
 	var _template2 = _interopRequireDefault(_template);
 	
@@ -3359,7 +3400,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 68 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -3387,11 +3428,11 @@ require("source-map-support").install();
 	
 	__webpack_require__(10);
 	
-	var _styles = __webpack_require__(69);
+	var _styles = __webpack_require__(68);
 	
 	var _styles2 = _interopRequireDefault(_styles);
 	
-	var _styles3 = __webpack_require__(47);
+	var _styles3 = __webpack_require__(48);
 	
 	var _styles4 = _interopRequireDefault(_styles3);
 	
@@ -3451,13 +3492,21 @@ require("source-map-support").install();
 	            'p',
 	            null,
 	            (0, _cmmn.createElement)('i', { className: _styles2.default.pIcon + ' fa fa-phone' }),
-	            '(08) 9227 5374'
+	            (0, _cmmn.createElement)(
+	              'a',
+	              { href: 'tel:0892275374' },
+	              '(08) 9227 5374'
+	            )
 	          ),
 	          (0, _cmmn.createElement)(
 	            'p',
 	            null,
 	            (0, _cmmn.createElement)('i', { className: _styles2.default.pIcon + ' fa fa-envelope' }),
-	            'info@dplmotors.com.au'
+	            (0, _cmmn.createElement)(
+	              'a',
+	              { href: 'mailto:info@dplmotors.com.au' },
+	              'info@dplmotors.com.au'
+	            )
 	          ),
 	          (0, _cmmn.createElement)(
 	            'a',
@@ -3473,7 +3522,7 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 69 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(12)();
@@ -3495,13 +3544,13 @@ require("source-map-support").install();
 	module.exports = (__webpack_require__(19).default)(module.exports || {});
 
 /***/ },
-/* 70 */
+/* 69 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 71 */
+/* 70 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3515,25 +3564,25 @@ require("source-map-support").install();
 	};
 
 /***/ },
-/* 72 */
+/* 71 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 73 */
+/* 72 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 74 */
+/* 73 */
 /***/ function(module, exports) {
 
 	module.exports = require("mkdirp");
 
 /***/ },
-/* 75 */
+/* 74 */
 /***/ function(module, exports) {
 
 	'use strict';

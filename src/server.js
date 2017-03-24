@@ -14,6 +14,12 @@ routes.forEach(route => {
   });
 });
 
+app.post('/subscribe', (req, res) => {
+  console.log('Subscribing');
+  // http://us15.api.mailchimp.com/3.0/lists/a5b1b37a9d/members/
+  res.end('Done.');
+})
+
 app.listen(8080, function (err) {
   if (err) console.error(err);
   else console.log('Server is listening on port 8080.');

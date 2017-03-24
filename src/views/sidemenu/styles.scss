@@ -9,6 +9,7 @@
   background-color: white;
   background-color: rgba(200, 200, 200, 0.7);
   overflow: hidden;
+  perspective: 500px;
 
   &--top {
     top: 0;
@@ -26,6 +27,7 @@
     margin: 1px 0 1px 1px;
     padding: 10px 20px;
     line-height: 30px;
+    height: 30px;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.25em;
@@ -33,10 +35,26 @@
     cursor: pointer;
     text-decoration: none;
     margin-right: -225px;
-    transition: margin-right 0.5s;
+    transition: margin-right 0.5s, transform 0.5s, visibility 0.5s;
+    backface-visibility: hidden;
+
+    &--backface {
+      margin-top: -51px;
+    }
+
+    &--flipped, &--backface {
+      transform: rotateX(180deg);
+      visibility: hidden;
+    }
+
+    &--flipped#{& + '--backface'} {
+      transform: rotateX(360deg);
+      visibility: visible;
+    }
 
     &:hover {
       background-color: $primary;
+      color: white;
     }
     &--no-hover:hover {
       background-color: $dk-grey;
@@ -95,5 +113,54 @@
   }
   &--visible &__item__icon {
     right: 0;
+  }
+}
+
+.newsletterForm {
+  margin: 0 -10px;
+  padding: 0;
+
+  input[type="email"] {
+    background-color: transparent;
+    border: 1px solid #808080;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 6px 8px;
+    color: white;
+    width: 180px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"], button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    height: 100%;
+    vertical-align: top;
+    padding: 0 8px;
+    margin: 0 0 0 5px;
+    font-size: 14px;
+  }
+
+  &__status {
+    display: none;
+    font-size: 12px;
+    line-height: 30px;
+    background-color: $dk-grey;
+    padding: 0 10px;
+
+    &--visible {
+      display: block;
+      & ~ * {
+        display: none;
+      }
+    }
+  }
+
+  button {
+    background-color: #b04040;
+    color: white;
   }
 }
