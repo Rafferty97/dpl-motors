@@ -113,7 +113,7 @@ class Form {
 }
 
 export default () => (
-  <Page page="parts" grey bk={require('../pages/bks/trade.jpg')}>
+  <Page page="parts" grey bk={require('../pages/bks/trade.jpg')} nobook>
     <h1>Find a Part</h1>
     <Form />
   </Page>

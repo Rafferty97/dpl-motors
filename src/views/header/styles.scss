@@ -4,7 +4,6 @@
   position: relative;
   border-bottom: 1px solid black;
   z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
 }
 
 .logo {
@@ -49,6 +48,10 @@
     color: #e0e0e0;
     text-decoration: none;
     cursor: pointer;
+
+    &--minwid {
+      min-width: 90px;
+    }
 
     @media (min-width: 1200px) {
       font-size: 1.3rem;

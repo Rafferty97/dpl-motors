@@ -13,7 +13,7 @@ build({
   datasource: path.join(__dirname, 'src/datasource.js'),
   buildDir: path.join(__dirname, argv.static ? 'build' : 'tmp'),
   node_modules: path.join(__dirname, 'node_modules'),
-  publicPath: argv.static ? '/dpl-motors/' : '/',
+  publicPath: argv.static ? '/demo/' : '/',
   clientExterns: ['superagent', 'superagent-jsonp']
 })
   .then(function(stats) {

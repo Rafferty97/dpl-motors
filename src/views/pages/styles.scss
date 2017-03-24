@@ -113,5 +113,6 @@
   letter-spacing: 0.1em;
   &:hover {
     background-color: lighten($primary, 10%);
+    color: white;
   }
 }

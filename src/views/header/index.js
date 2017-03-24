@@ -5,9 +5,9 @@ import styles from './styles.scss';
 import { Container } from '../theme/components';
 import SubMenu from './submenu';
 
-const MenuItem = ({ title, href, last, active, children }) => (
+const MenuItem = ({ title, href, last, active, children, minwid }) => (
   <div className={styles.menuItem.with(active ? 'active' : '', last ? 'last' : '')}>
-      <a href={href} className={styles.menuItem.text}>
+      <a href={href} className={styles.menuItem.text.with(minwid ? 'minwid' : '')}>
         {title}
       </a>
       {children}
@@ -103,7 +103,7 @@ export default class {
             <img className={styles.logo} src={require('./dpl-motors-logo.svg')} />
           </a>
           { menu.map(({ title, href, active, items }, i) => (
-            <MenuItem title={title} href={'*/' + href} active={page == active} last={i == menu.length - 1}>
+            <MenuItem title={title} href={'*/' + href} active={page == active} last={i == menu.length - 1} minwid={i == 0}>
               { items != null ? (
                 <SubMenu>
                   { items.map(item => <link href={'*/' + item.href}>{item.title}</link>) }
