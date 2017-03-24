@@ -23,18 +23,18 @@
   -ms-transform: matrix(1,0,-0.35,1,8,0);
   transform: matrix(1,0,-0.35,1,8,0);
 
-  &--active {
+  &--active, &:hover {
     background-color: $primary;
     border-left: 1px solid lighten($primary, 10%);
     color: white;
   }
-  &--active + & {
+  &--active + &, &:hover + & {
     border-left: 1px solid lighten($primary, 10%);
   }
   &--last {
     border-right: 1px solid #a0a0a0;
   }
-  &--last#{& + '--active'} {
+  &--last#{& + '--active'}, &--last:hover {
     border-right: 1px solid lighten($primary, 10%);
   }
 
@@ -49,11 +49,6 @@
     color: #e0e0e0;
     text-decoration: none;
     cursor: pointer;
-
-    &:hover {
-      color: $primary-light;
-      transition: color 0.4s;
-    }
 
     @media (min-width: 1200px) {
       font-size: 1.3rem;
@@ -92,12 +87,12 @@
   li {
     border-top: 1px solid #a0a0a0;
   }
-  .menu-item--active & {
+  //.menu-item--active & {
     background-color: $primary;
     li {
       border-top: 1px solid lighten($primary, 10%);
     }
-  }
+  //}
   a {
     display: block;
     color: white;
@@ -174,6 +169,10 @@
     &.dbl {
       margin-top: 1.4em;
     }
+  }
+
+  a {
+    color: inherit;
   }
 
   @media (max-width: 1200px) {

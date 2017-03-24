@@ -1,6 +1,6 @@
 import { createElement } from 'cmmn';
-import request from 'superagent';
-import superagentJSONP from 'superagent-jsonp';
+//import request from 'superagent';
+//import superagentJSONP from 'superagent-jsonp';
 
 import Page from '../pages/template';
 
@@ -22,14 +22,16 @@ class Form {
           { years.map(year => <option>{ year + '' }</option>) }
         </select>
         <br/>
-        <select name="make" className={styles.half}>
+        {/*<select name="make" className={styles.half}>
           <option>Make</option>
           <option>Please select a year</option>
         </select>
         <select name="model" className={styles.half}>
           <option>Model</option>
           <option>Please select a year</option>
-        </select>
+        </select>*/}
+        <input type="text" name="make" placeholder="Make" className={styles.half} />
+        <input type="text" name="model" placeholder="Model" className={styles.half} />
         <select name="category">
           <option value="-1">Category</option>
           <option value="other">Other...</option>
@@ -43,11 +45,9 @@ class Form {
   }
 
   mount(form) {
-    const yearSel = form.querySelector('[name="year"]');
+    /* const yearSel = form.querySelector('[name="year"]');
     const makeSel = form.querySelector('[name="make"]');
     const modelSel = form.querySelector('[name="model"]');
-    const categorySel = form.querySelector('[name="category"]');
-    const categoryInput = form.querySelector('[name="category-other"]');
     let year = -1, make = -1, model = -1;
 
     yearSel.addEventListener('change', event => {
@@ -102,12 +102,13 @@ class Form {
             return `<option>${model.model_name}</option>`;
           }).join('');
         });
-    });
+    }); */
 
+    const categoryInput = form.querySelector('[name="category-other"]');
+    const categorySel = form.querySelector('[name="category"]');
     categorySel.addEventListener('change', event => {
       categoryInput.style = categorySel.value == 'other' ? '' : 'display: none;';
     });
-
   }
 }
 

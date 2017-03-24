@@ -15,3 +15,10 @@ html, body {
   font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: $dk-grey;
 }
+
+a {
+  color: $primary;
+  &:hover {
+    color: lighten($primary, 10%);
+  }
+}

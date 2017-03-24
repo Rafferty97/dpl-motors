@@ -115,7 +115,7 @@ export default class {
           <div className={styles.contact}>
             <p>22 Muchison Terrace</p>
             <p>Perth WA 6000</p>
-            <p className={styles.dbl}><i className="fa fa-phone" />&nbsp;(08) 9227 5374</p>
+            <p className={styles.dbl}><i className="fa fa-phone" />&nbsp;<a href="tel:0892275374">(08) 9227 5374</a></p>
           </div>
         </Container>
         <div className={styles.mobileMenu} style="display: none;">

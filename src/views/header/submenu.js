@@ -6,7 +6,7 @@ export default class SubMenu {
   render({ children })
   {
     return (
-      <ul id="xyz" className={styles.ddMenu}>
+      <ul className={styles.ddMenu}>
         { children.map(el => (
           <li><a href={el.attribs.href}>{ el.children }</a></li>
         ))}
