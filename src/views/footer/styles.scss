@@ -61,6 +61,7 @@
     &:hover {
       background-color: $primary;
       border-left: 1px solid lighten($primary, 10%);
+      color: white;
     }
     &:hover + & {
       border-left: 1px solid lighten($primary, 10%);

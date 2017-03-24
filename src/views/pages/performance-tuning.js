@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="performance-tuning">
+  <Page page="performance-tuning" bk={require('./bks/performance-tuning.jpg')}>
     <h1>Performance Tuning</h1>
     <p>
       Here at DPL Motors we specialise in performance tuning, remapping via OBD port and general turbo tuning and we pride ourselves in doing so without spoiling any of the principle reasons for buying a turbo powered vehicle in the first place. We believe that their reliability and of course the all important fuel economy should never be compromised.

@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="reconditioning">
+  <Page page="reconditioning" bk={require('./bks/reconditioning.jpg')}>
     <h1>Cylinder Head Repair</h1>
     <p>
       Valve steam oil seals provide a controlled leak of oil to allow the valve stem to be lubricated as it slides in the valve guide. The amount of oil that passes by the valve stem seal must be precisely controlled, as too little oil causes stem and guide wear. Too much oil causes carbon build-up leading to valve seat damage, increased emissions and excessive oil consumption.

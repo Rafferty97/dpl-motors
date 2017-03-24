@@ -1641,7 +1641,7 @@ a {
 .src-views-home-page-styles---video---V5M_K {
   position: relative;
   height: 400px;
-  background-image: url(/dpl-motors/png/video-26oIpqCT.png);
+  background-image: url(/dpl-motors/jpg/home-367wBOdf.jpg);
   background-size: cover;
   background-position: 50% 50%; }
   .src-views-home-page-styles---video---V5M_K video {
@@ -1891,7 +1891,8 @@ a {
     text-decoration: none; }
     .src-views-footer-styles---footer-links__item---3-jhm:hover {
       background-color: #006e9c;
-      border-left: 1px solid #0092cf; }
+      border-left: 1px solid #0092cf;
+      color: white; }
     .src-views-footer-styles---footer-links__item---3-jhm:hover + .src-views-footer-styles---footer-links__item---3-jhm {
       border-left: 1px solid #0092cf; }
     .src-views-footer-styles---footer-links__item---3-jhm:last-child {

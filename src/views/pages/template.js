@@ -8,12 +8,12 @@ import Footer from '../footer';
 import { Container } from '../theme/components';
 import Sidemenu from '../sidemenu';
 
-export default ({ children, page, grey }) => (
+export default ({ children, page, grey, bk }) => (
   <div>
     <Header page={page} />
     <div className={styles.content.with(grey ? 'grey' : '')}>
       <Container>
-        <div className={styles.content.rightImg} style={`background-image: url(${require('./bk-img.jpg')});`} />
+        <div className={styles.content.rightImg} style={`background-image: url(${bk});`} />
         <div className={styles.content.copy}>
           {children}
           <a href="*/book/" className={styles.bookBtn}>Book Now</a>

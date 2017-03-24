@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="services">
+  <Page page="services" bk={require('./bks/services.jpg')}>
     <h1>Services</h1>
     <p>
       DPL Motors are an independent mechanical workshop placed in East Perth.

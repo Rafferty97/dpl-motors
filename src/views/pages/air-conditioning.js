@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="services">
+  <Page page="services" bk={require('./bks/aircon.jpg')}>
     <h1>Air Conditioning</h1>
     <h3>
       A/C System Ragas And Repairs at DPL MOTORS

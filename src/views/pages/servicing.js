@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="services">
+  <Page page="services" bk={require('./bks/services.jpg')}>
     <h1>Scheduled Servicing</h1>
     <p>
       {`At DPL motors we customise our service to suit your budget and car type. We specialise not only in European vehicles but any make or model,  whether it's a small car, family car, sports car, SUV, 4WD, ute or van.`}

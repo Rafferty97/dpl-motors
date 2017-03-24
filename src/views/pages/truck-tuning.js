@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="performance-tuning">
+  <Page page="performance-tuning" bk={require('./bks/performance-tuning.jpg')}>
     <h1>Truck Tuning</h1>
     <p>
       Here at DPL we have created the perfect product in HGV, Truck and commercial turbo diesel engine performance upgrades. We pride ourselves in doing so without spoiling any of the principle reasons for running a turbo diesel powered vehicle in the first place and believe that key points such as their fabulous low down tractability, their reliability and of course the all important fuel economy should never, ever be compromised.

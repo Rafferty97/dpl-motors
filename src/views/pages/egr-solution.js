@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="performance-tuning">
+  <Page page="performance-tuning" bk={require('./bks/performance-tuning.jpg')}>
     <h1>WHAT IS EGR?</h1>
     <p>
       A widely adopted route to reduce NOx emissions is <strong>Exhaust Gas Recirculation (EGR)</strong>. This involves recirculating a controllable proportion of the {`engine's`} exhaust back into the intake air. A valve is usually used to control the flow of gas, and the valve may be closed completely if required.

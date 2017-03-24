@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(90);
+	var _cmmnDatasource = __webpack_require__(94);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4402,55 +4402,55 @@
 
 	var airConditioning = _interopRequireWildcard(_airConditioning);
 
-	var _performanceTuning = __webpack_require__(69);
+	var _performanceTuning = __webpack_require__(70);
 
 	var performanceTuning = _interopRequireWildcard(_performanceTuning);
 
-	var _ecuTuning = __webpack_require__(70);
+	var _ecuTuning = __webpack_require__(72);
 
 	var ecuTuning = _interopRequireWildcard(_ecuTuning);
 
-	var _dpfSolution = __webpack_require__(71);
+	var _dpfSolution = __webpack_require__(73);
 
 	var dpfSolution = _interopRequireWildcard(_dpfSolution);
 
-	var _egrSolution = __webpack_require__(72);
+	var _egrSolution = __webpack_require__(74);
 
 	var egrSolution = _interopRequireWildcard(_egrSolution);
 
-	var _truckTuning = __webpack_require__(73);
+	var _truckTuning = __webpack_require__(75);
 
 	var truckTuning = _interopRequireWildcard(_truckTuning);
 
-	var _reconditioning = __webpack_require__(74);
+	var _reconditioning = __webpack_require__(76);
 
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 
-	var _motorRebuilds = __webpack_require__(75);
+	var _motorRebuilds = __webpack_require__(78);
 
 	var motorRebuilds = _interopRequireWildcard(_motorRebuilds);
 
-	var _cylinderHeadRepair = __webpack_require__(76);
+	var _cylinderHeadRepair = __webpack_require__(79);
 
 	var cylinderHeadRepair = _interopRequireWildcard(_cylinderHeadRepair);
 
-	var _headGasketRepair = __webpack_require__(77);
+	var _headGasketRepair = __webpack_require__(80);
 
 	var headGasketRepair = _interopRequireWildcard(_headGasketRepair);
 
-	var _parts = __webpack_require__(78);
+	var _parts = __webpack_require__(81);
 
 	var parts = _interopRequireWildcard(_parts);
 
-	var _booking = __webpack_require__(82);
+	var _booking = __webpack_require__(86);
 
 	var book = _interopRequireWildcard(_booking);
 
-	var _trade = __webpack_require__(85);
+	var _trade = __webpack_require__(89);
 
 	var trade = _interopRequireWildcard(_trade);
 
-	var _contact = __webpack_require__(86);
+	var _contact = __webpack_require__(90);
 
 	var contact = _interopRequireWildcard(_contact);
 
@@ -4536,8 +4536,8 @@
 	        null,
 	        '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,\'script\',\'dataLayer\',\'GTM-TD3SK9D\');'
 	      ),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(89) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(89) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(93) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(93) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -7478,7 +7478,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'services' },
+	    { page: 'services', bk: __webpack_require__(66) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -7569,7 +7569,8 @@
 	exports.default = function (_ref) {
 	  var children = _ref.children,
 	      page = _ref.page,
-	      grey = _ref.grey;
+	      grey = _ref.grey,
+	      bk = _ref.bk;
 	  return (0, _cmmn.createElement)(
 	    'div',
 	    null,
@@ -7580,7 +7581,7 @@
 	      (0, _cmmn.createElement)(
 	        _components.Container,
 	        null,
-	        (0, _cmmn.createElement)('div', { className: _styles2.default.content.rightImg, style: 'background-image: url(' + __webpack_require__(66) + ');' }),
+	        (0, _cmmn.createElement)('div', { className: _styles2.default.content.rightImg, style: 'background-image: url(' + bk + ');' }),
 	        (0, _cmmn.createElement)(
 	          'div',
 	          { className: _styles2.default.content.copy },
@@ -7613,7 +7614,7 @@
 /* 66 */
 /***/ function(module, exports) {
 
-	module.exports = "/dpl-motors/jpg/bk-img-2JMeFrCm.jpg";
+	module.exports = "/dpl-motors/jpg/services-X4rtbtnv.jpg";
 
 /***/ },
 /* 67 */
@@ -7643,7 +7644,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'services' },
+	    { page: 'services', bk: __webpack_require__(66) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -7695,7 +7696,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'services' },
+	    { page: 'services', bk: __webpack_require__(69) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -7760,6 +7761,12 @@
 
 /***/ },
 /* 69 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/jpg/aircon-1I1Y3OSc.jpg";
+
+/***/ },
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7786,7 +7793,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'performance-tuning' },
+	    { page: 'performance-tuning', bk: __webpack_require__(71) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -7888,7 +7895,13 @@
 	};
 
 /***/ },
-/* 70 */
+/* 71 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/jpg/performance-tuning-1VuaA_Du.jpg";
+
+/***/ },
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -7915,7 +7928,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'performance-tuning' },
+	    { page: 'performance-tuning', bk: __webpack_require__(71) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -7977,7 +7990,7 @@
 	};
 
 /***/ },
-/* 71 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8004,7 +8017,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'performance-tuning' },
+	    { page: 'performance-tuning', bk: __webpack_require__(71) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8113,7 +8126,7 @@
 	};
 
 /***/ },
-/* 72 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8140,7 +8153,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'performance-tuning' },
+	    { page: 'performance-tuning', bk: __webpack_require__(71) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8201,7 +8214,7 @@
 	};
 
 /***/ },
-/* 73 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8228,7 +8241,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'performance-tuning' },
+	    { page: 'performance-tuning', bk: __webpack_require__(71) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8288,7 +8301,7 @@
 	};
 
 /***/ },
-/* 74 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8315,7 +8328,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'reconditioning' },
+	    { page: 'reconditioning', bk: __webpack_require__(77) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8394,7 +8407,13 @@
 	};
 
 /***/ },
-/* 75 */
+/* 77 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/jpg/reconditioning-IwNZ5V3d.jpg";
+
+/***/ },
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8421,7 +8440,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'reconditioning' },
+	    { page: 'reconditioning', bk: __webpack_require__(77) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8451,7 +8470,7 @@
 	};
 
 /***/ },
-/* 76 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8478,7 +8497,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'reconditioning' },
+	    { page: 'reconditioning', bk: __webpack_require__(77) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8503,7 +8522,7 @@
 	};
 
 /***/ },
-/* 77 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8530,7 +8549,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'reconditioning' },
+	    { page: 'reconditioning', bk: __webpack_require__(77) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8579,7 +8598,7 @@
 	};
 
 /***/ },
-/* 78 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8599,7 +8618,7 @@
 
 	var _template2 = _interopRequireDefault(_template);
 
-	var _styles = __webpack_require__(79);
+	var _styles = __webpack_require__(82);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -8740,7 +8759,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'parts', grey: true },
+	    { page: 'parts', grey: true, bk: __webpack_require__(85) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8751,7 +8770,7 @@
 	};
 
 /***/ },
-/* 79 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -8761,9 +8780,15 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 80 */,
-/* 81 */,
-/* 82 */
+/* 83 */,
+/* 84 */,
+/* 85 */
+/***/ function(module, exports) {
+
+	module.exports = "/dpl-motors/jpg/trade-tID8NGsF.jpg";
+
+/***/ },
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8795,7 +8820,7 @@
 
 	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 
-	var _booking = __webpack_require__(83);
+	var _booking = __webpack_require__(87);
 
 	var _booking2 = _interopRequireDefault(_booking);
 
@@ -8835,7 +8860,7 @@
 	};
 
 /***/ },
-/* 83 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -8845,8 +8870,8 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 84 */,
-/* 85 */
+/* 88 */,
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8873,7 +8898,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'trade' },
+	    { page: 'trade', bk: __webpack_require__(85) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8888,7 +8913,7 @@
 	};
 
 /***/ },
-/* 86 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8916,7 +8941,7 @@
 
 	__webpack_require__(11);
 
-	var _styles = __webpack_require__(87);
+	var _styles = __webpack_require__(91);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -9010,7 +9035,7 @@
 	};
 
 /***/ },
-/* 87 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -9020,14 +9045,14 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 88 */,
-/* 89 */
+/* 92 */,
+/* 93 */
 /***/ function(module, exports) {
 
 	module.exports = "/dpl-motors/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 90 */
+/* 94 */
 /***/ function(module, exports) {
 
 	"use strict";

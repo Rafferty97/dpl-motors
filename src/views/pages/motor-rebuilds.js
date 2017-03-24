@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="reconditioning">
+  <Page page="reconditioning" bk={require('./bks/reconditioning.jpg')}>
     <h1>Motor Rebuilds</h1>
     <h3>The Reconditioning process</h3>
     <p>

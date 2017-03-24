@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="reconditioning">
+  <Page page="reconditioning" bk={require('./bks/reconditioning.jpg')}>
     <h1>Reconditioning</h1>
     <p>
       Engine Rebuild, Repair, Replacement and Rebore services from DPL MOTORS.
