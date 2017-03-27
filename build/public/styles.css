@@ -7,8 +7,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/dpl-motors/eot/fontawesome-webfont-jVM_i1ai.eot);
-  src: url(/dpl-motors/eot/fontawesome-webfont-jVM_i1ai.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/dpl-motors/woff2/fontawesome-webfont--xPowCeq.woff2) format("woff2"), url(/dpl-motors/woff/fontawesome-webfont-2JcyC9hB.woff) format("woff"), url(/dpl-motors/ttf/fontawesome-webfont-2VqpeKww.ttf) format("truetype"), url(/dpl-motors/svg/fontawesome-webfont-3u2QumAP.svg#fontawesomeregular) format("svg");
+  src: url(/demo/eot/fontawesome-webfont-jVM_i1ai.eot);
+  src: url(/demo/eot/fontawesome-webfont-jVM_i1ai.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/demo/woff2/fontawesome-webfont--xPowCeq.woff2) format("woff2"), url(/demo/woff/fontawesome-webfont-2JcyC9hB.woff) format("woff"), url(/demo/ttf/fontawesome-webfont-2VqpeKww.ttf) format("truetype"), url(/demo/svg/fontawesome-webfont-3u2QumAP.svg#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1623,7 +1623,7 @@
     clip: auto; }
 @font-face {
   font-family: 'Abel';
-  src: url(/dpl-motors/woff2/abel-regular_1-webfont-7Ct0skmh.woff2) format("woff2"), url(/dpl-motors/woff/abel-regular_1-webfont-ZejM71pl.woff) format("woff");
+  src: url(/demo/woff2/abel-regular_1-webfont-7Ct0skmh.woff2) format("woff2"), url(/demo/woff/abel-regular_1-webfont-ZejM71pl.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1641,7 +1641,7 @@ a {
 .src-views-home-page-styles---video---V5M_K {
   position: relative;
   height: 400px;
-  background-image: url(/dpl-motors/jpg/home-367wBOdf.jpg);
+  background-image: url(/demo/jpg/home-367wBOdf.jpg);
   background-size: cover;
   background-position: 50% 50%; }
   .src-views-home-page-styles---video---V5M_K video {
@@ -1650,8 +1650,7 @@ a {
 .src-views-header-styles---header---10oqo {
   position: relative;
   border-bottom: 1px solid black;
-  z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }
+  z-index: 1000; }
 
 .src-views-header-styles---logo---21UGf {
   display: inline-block;
@@ -1688,6 +1687,8 @@ a {
     color: #e0e0e0;
     text-decoration: none;
     cursor: pointer; }
+    .src-views-header-styles---menu-item__text--minwid---3eSUn {
+      min-width: 90px; }
     @media (min-width: 1200px) {
       .src-views-header-styles---menu-item__text---4J8E6 {
         font-size: 1.3rem;
@@ -1909,7 +1910,7 @@ a {
       -webkit-transform: matrix(1, 0, 0.35, 1, 0, 0);
       -ms-transform: matrix(1, 0, 0.35, 1, 0, 0);
       transform: matrix(1, 0, 0.35, 1, 0, 0);
-      background-image: url(/dpl-motors/png/icons-3gUTBSaf.png);
+      background-image: url(/demo/png/icons-3gUTBSaf.png);
       background-size: auto 70px;
       background-position: 0 50%;
       background-repeat: no-repeat;
@@ -2060,7 +2061,7 @@ a {
       right: 225px;
       bottom: 0;
       width: 55px;
-      background-image: url(/dpl-motors/png/icons-3V4y03W0.png);
+      background-image: url(/demo/png/icons-3V4y03W0.png);
       background-size: 40px;
       background-position: 9px -4px;
       background-repeat: no-repeat;
@@ -2126,7 +2127,7 @@ a {
       .src-views-sidemenu-styles---newsletterForm__status--visible---3wbKs ~ * {
         display: none; }
   .src-views-sidemenu-styles---newsletterForm---1Jb3f button {
-    background-color: #b04040;
+    background-color: #006e9c;
     color: white; }
 .src-views-pages-styles---content---15gAm {
   position: relative;
@@ -2216,7 +2217,8 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
   .src-views-pages-styles---book-btn---JVOXc:hover {
-    background-color: #0092cf; }
+    background-color: #0092cf;
+    color: white; }
 .src-views-parts-styles---form---2ktVT {
   margin-right: -8px; }
   .src-views-parts-styles---form---2ktVT select, .src-views-parts-styles---form---2ktVT input, .src-views-parts-styles---form---2ktVT textarea {
@@ -2237,7 +2239,7 @@ a {
         .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {
           width: calc(98% - 8px); } }
   .src-views-parts-styles---form---2ktVT select {
-    background-image: url(/dpl-motors/png/chevron-3vB6y-nq.png);
+    background-image: url(/demo/png/chevron-3vB6y-nq.png);
     background-size: 30px;
     background-position: 100% 50%;
     background-repeat: no-repeat;
@@ -2260,6 +2262,37 @@ a {
   @media (max-width: 1000px) {
     .src-views-parts-styles---form---2ktVT {
       margin-top: 50px; } }
+
+.src-views-parts-styles---status---3MwYA {
+  width: calc(98% - 8px);
+  box-sizing: border-box;
+  line-height: 16px; }
+  .src-views-parts-styles---status--loading---18Wby, .src-views-parts-styles---status--error---5g_J8, .src-views-parts-styles---status--success---t4IST {
+    padding: 8px 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 3px; }
+  .src-views-parts-styles---status--loading---18Wby {
+    border: 1px solid #d0d0d0;
+    background: #f0f0f0; }
+    .src-views-parts-styles---status--loading---18Wby:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 8px 0 0;
+      background-image: url(/demo/gif/ajax-loader-2OUu6u2H.gif);
+      width: 16px;
+      height: 16px; }
+  .src-views-parts-styles---status--error---5g_J8 {
+    border: 1px solid #d04040;
+    background: #fff0f0;
+    color: #802020;
+    font-weight: bold; }
+  .src-views-parts-styles---status--success---t4IST {
+    border: 1px solid #40d040;
+    background: #f0fff0;
+    font-weight: bold; }
 .src-views-pages-booking---iframe---3i5ol {
   width: 100%;
   height: 750px; }

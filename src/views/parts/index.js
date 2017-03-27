@@ -1,5 +1,5 @@
 import { createElement } from 'cmmn';
-//import request from 'superagent';
+import request from 'superagent';
 //import superagentJSONP from 'superagent-jsonp';
 
 import Page from '../pages/template';
@@ -12,6 +12,8 @@ export const getMeta = () => ({
 
 const years = [];
 for (let i=2017; i >= 1950; i--) years.push(i);
+
+const postFormURL = '/submit-parts-form';
 
 class Form {
   render() {
@@ -34,12 +36,19 @@ class Form {
         <input type="text" name="model" placeholder="Model" className={styles.half} />
         <select name="category">
           <option value="-1">Category</option>
+          <option value="engine">Engine</option>
+          <option value="cooling-system">Cooling System</option>
+          <option value="electrical">Electrical</option>
+          <option value="transmission">Transmission</option>
+          <option value="brakes">Brakes</option>
+          <option value="tyres">Tyres</option>
           <option value="other">Other...</option>
         </select>
         <input style="display: none;" type="text" name="category-other" placeholder="Category" />
         <textarea name="message">
         </textarea>
         <input type="submit" name="submit" value="Submit" />
+        <div className={"js-formStatus " + styles.status}></div>
       </form>
     );
   }
@@ -108,6 +117,61 @@ class Form {
     const categorySel = form.querySelector('[name="category"]');
     categorySel.addEventListener('change', event => {
       categoryInput.style = categorySel.value == 'other' ? '' : 'display: none;';
+    });
+
+    const formStatus = form.querySelector('.js-formStatus');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const payload = {
+        year: form.querySelector('[name="year"]').value.trim(),
+        make: form.querySelector('[name="make"]').value.trim(),
+        model: form.querySelector('[name="model"]').value.trim(),
+        category: form.querySelector('[name="category"]').value.trim(),
+        categoryOther: form.querySelector('[name="category-other"]').value.trim(),
+        message: form.querySelector('[name="message"]').value.trim()
+      };
+      console.log(payload);
+      if (isNaN(payload.year) || (payload.year == "")) {
+        formStatus.className = styles.status.with('error');
+        formStatus.innerHTML = 'Please select a year.';
+        return;
+      }
+      if (payload.make == "") {
+        formStatus.className = styles.status.with('error');
+        formStatus.innerHTML = 'Please select a make.';
+        return;
+      }
+      if (payload.model == "") {
+        formStatus.className = styles.status.with('error');
+        formStatus.innerHTML = 'Please select a model.';
+        return;
+      }
+      if (payload.category == "-1" || (payload.category == "other" && (payload.categoryOther == ""))) {
+        formStatus.className = styles.status.with('error');
+        formStatus.innerHTML = 'Please choose a category.';
+        return;
+      }
+      if (payload.message == "") {
+        formStatus.className = styles.status.with('error');
+        formStatus.innerHTML = 'Please enter a message.';
+        return;
+      }
+      formStatus.className = styles.status.with('loading');
+      formStatus.innerHTML = 'Working...';
+      request
+        .post(postFormURL)
+        .send(payload)
+        .end((err, res) => {
+          if (err) {
+            console.error(err);
+            formStatus.className = styles.status.with('error');
+            formStatus.innerHTML = 'An error occurred. Try again in a minute';
+          } else {
+            formStatus.className = styles.status.with('success');
+            formStatus.innerHTML = 'Your form has been sent';
+            form.reset();
+          }
+        });
     });
   }
 }

@@ -56,3 +56,40 @@
     margin-top: 50px;
   }
 }
+
+.status {
+  width: calc(98% - 8px);
+  box-sizing: border-box;
+  line-height: 16px;
+  &--loading, &--error, &--success {
+    padding: 8px 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 3px;
+  }
+  &--loading {
+    border: 1px solid #d0d0d0;
+    background: #f0f0f0;
+    &:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 8px 0 0;
+      background-image: url(./ajax-loader.gif);
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &--error {
+    border: 1px solid #d04040;
+    background: #fff0f0;
+    color: #802020;
+    font-weight: bold;
+  }
+  &--success {
+    border: 1px solid #40d040;
+    background: #f0fff0;
+    font-weight: bold;
+  }
+}
