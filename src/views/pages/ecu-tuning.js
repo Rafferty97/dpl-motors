@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="performance-tuning" bk={require('./bks/performance-tuning.jpg')}>
+  <Page page="performance-tuning" bk={require('./bks/ecu-tuning.jpg')}>
     <h1>ECU Tuning</h1>
     <h3>What is ECU Remapping/Programming?</h3>
     <p>

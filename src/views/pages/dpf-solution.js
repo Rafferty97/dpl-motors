@@ -7,7 +7,7 @@ export const getMeta = () => ({
 });
 
 export default () => (
-  <Page page="performance-tuning" bk={require('./bks/performance-tuning.jpg')}>
+  <Page page="performance-tuning" bk={require('./bks/dpf.jpg')}>
     <h1>DPF Solution</h1>
     <h3>What is a DPF?</h3>
     <p>
