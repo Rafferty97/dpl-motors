@@ -2001,6 +2001,8 @@ a {
     vertical-align: middle; }
     .src-views-footer-styles---contact__info---9fVb4 i {
       color: #006e9c; }
+  .src-views-footer-styles---contact---72kR5 a {
+    color: inherit; }
   @media (max-width: 450px) {
     .src-views-footer-styles---contact---72kR5 {
       text-align: center; }
@@ -2065,7 +2067,7 @@ a {
       right: 225px;
       bottom: 0;
       width: 55px;
-      background-image: url(/demo/png/icons-3V4y03W0.png);
+      background-image: url(/demo/png/icons-3xBCFCpV.png);
       background-size: 40px;
       background-position: 9px -4px;
       background-repeat: no-repeat;
@@ -2092,6 +2094,8 @@ a {
         background-color: #00b8f1; }
       .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ i {
         line-height: 48px; }
+      .src-views-sidemenu-styles---sidebar__item__social-link---3LKpQ:hover {
+        color: white; }
   .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item---3tF0f {
     margin-right: 0; }
   .src-views-sidemenu-styles---sidebar--visible---3-E6V .src-views-sidemenu-styles---sidebar__item__icon---VvZ3o {
@@ -2260,6 +2264,8 @@ a {
     min-height: 140px;
     max-width: calc(98% - 8px); }
   .src-views-parts-styles---form---2ktVT input[type="submit"] {
+    font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05em;
     background-color: #006e9c;
     border: none;
     color: white;
@@ -2342,13 +2348,15 @@ a {
     max-width: 350px;
     min-height: 150px; }
   .src-views-pages-tradeForm---form---11t2L input[type="submit"] {
+    font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05em;
     background-color: #006e9c;
     color: white;
     padding: 0.75em 1.25em;
     border-radius: none;
     -webkit-appearance: none;
     border: none;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin: 0;
     text-transform: uppercase;
     min-width: 150px; }

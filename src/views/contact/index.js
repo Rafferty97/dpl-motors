@@ -33,7 +33,7 @@ export default () => (
           <p><strong>DPL Motors</strong></p>
           <p>22 Muchison Terrace, Perth, WA 6000</p>
           <p><i className={styles.pIcon + ' fa fa-phone'} /><a href="tel:0892275374">(08) 9227 5374</a></p>
-          <p><i className={styles.pIcon + ' fa fa-envelope'} /><a href="mailto:info@dplmotors.com.au">info@dplmotors.com.au</a></p>
+          <p><i className={styles.pIcon + ' fa fa-envelope'} /><a href="mailto:service@dplmotors.com.au">service@dplmotors.com.au</a></p>
           <a href="*/book/" className={pageStyles.bookBtn}>Book Service</a>
         </div>
       </Container>

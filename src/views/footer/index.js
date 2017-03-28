@@ -47,7 +47,7 @@ export default () => (
         <div className={styles.contact.info}>
           22 Muchison Terrace<br/>
           Perth WA 6000<br/><br/>
-          <i className="fa fa-phone" />&nbsp;(08) 9227 5374
+          <i className="fa fa-phone" />&nbsp;<a href="tel:0892275374">(08) 9227 5374</a>
         </div>
       </Container>
     </div>

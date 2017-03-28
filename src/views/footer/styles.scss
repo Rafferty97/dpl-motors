@@ -178,6 +178,9 @@
       color: $primary;
     }
   }
+  a {
+    color: inherit;
+  }
   @media (max-width: $bp-smallest) {
     text-align: center;
     &__logo {

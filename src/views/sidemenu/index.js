@@ -34,8 +34,8 @@ export default class Sidemenu {
         <NewsletterForm />
         <MenuItem href="*/parts/" icon={3}>Find a Part</MenuItem>
         <div className={styles.sidebar.item.with('no-hover')} href="#">
-          <a className={styles.sidebar.item.socialLink.with('fb')} href="/" target="_blank"><i className="fa fa-facebook" /></a>
-          <a className={styles.sidebar.item.socialLink.with('twitter')} href="/" target="_blank"><i className="fa fa-twitter" /></a>
+          <a className={styles.sidebar.item.socialLink.with('fb')} href="javascript:void(0);" target="_blank"><i className="fa fa-facebook" /></a>
+          <a className={styles.sidebar.item.socialLink.with('twitter')} href="javascript:void(0);" target="_blank"><i className="fa fa-twitter" /></a>
           <span className={styles.sidebar.item.icon} style={"background-position-y: " + (-53.5*4 - 4) + "px"} />
         </div>
       </div>

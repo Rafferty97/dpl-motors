@@ -38,6 +38,8 @@
   }
 
   input[type="submit"] {
+    font-family: 'Abel', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05em;
     background-color: $primary;
     border: none;
     color: white;

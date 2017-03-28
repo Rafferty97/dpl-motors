@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(102);
+	var _cmmnDatasource = __webpack_require__(103);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4450,7 +4450,7 @@
 
 	var trade = _interopRequireWildcard(_trade);
 
-	var _contact = __webpack_require__(98);
+	var _contact = __webpack_require__(99);
 
 	var contact = _interopRequireWildcard(_contact);
 
@@ -4536,8 +4536,8 @@
 	        null,
 	        '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,\'script\',\'dataLayer\',\'GTM-TD3SK9D\');'
 	      ),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(101) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(101) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(102) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(102) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -5230,7 +5230,12 @@
 	          (0, _cmmn.createElement)('br', null),
 	          (0, _cmmn.createElement)('br', null),
 	          (0, _cmmn.createElement)('i', { className: 'fa fa-phone' }),
-	          '\xA0(08) 9227 5374'
+	          '\xA0',
+	          (0, _cmmn.createElement)(
+	            'a',
+	            { href: 'tel:0892275374' },
+	            '(08) 9227 5374'
+	          )
 	        )
 	      )
 	    )
@@ -5396,12 +5401,12 @@
 	          { className: _styles2.default.sidebar.item.with('no-hover'), href: '#' },
 	          (0, _cmmn.createElement)(
 	            'a',
-	            { className: _styles2.default.sidebar.item.socialLink.with('fb'), href: '/', target: '_blank' },
+	            { className: _styles2.default.sidebar.item.socialLink.with('fb'), href: 'javascript:void(0);', target: '_blank' },
 	            (0, _cmmn.createElement)('i', { className: 'fa fa-facebook' })
 	          ),
 	          (0, _cmmn.createElement)(
 	            'a',
-	            { className: _styles2.default.sidebar.item.socialLink.with('twitter'), href: '/', target: '_blank' },
+	            { className: _styles2.default.sidebar.item.socialLink.with('twitter'), href: 'javascript:void(0);', target: '_blank' },
 	            (0, _cmmn.createElement)('i', { className: 'fa fa-twitter' })
 	          ),
 	          (0, _cmmn.createElement)('span', { className: _styles2.default.sidebar.item.icon, style: "background-position-y: " + (-53.5 * 4 - 4) + "px" })
@@ -9147,7 +9152,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'trade', bk: __webpack_require__(91), nobook: true },
+	    { page: 'trade', bk: __webpack_require__(98), nobook: true },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -9175,6 +9180,12 @@
 /***/ },
 /* 97 */,
 /* 98 */
+/***/ function(module, exports) {
+
+	module.exports = "/demo/jpg/cars-mnTaWn8-.jpg";
+
+/***/ },
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9202,7 +9213,7 @@
 
 	__webpack_require__(11);
 
-	var _styles = __webpack_require__(99);
+	var _styles = __webpack_require__(100);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -9278,8 +9289,8 @@
 	            (0, _cmmn.createElement)('i', { className: _styles2.default.pIcon + ' fa fa-envelope' }),
 	            (0, _cmmn.createElement)(
 	              'a',
-	              { href: 'mailto:info@dplmotors.com.au' },
-	              'info@dplmotors.com.au'
+	              { href: 'mailto:service@dplmotors.com.au' },
+	              'service@dplmotors.com.au'
 	            )
 	          ),
 	          (0, _cmmn.createElement)(
@@ -9296,7 +9307,7 @@
 	};
 
 /***/ },
-/* 99 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -9306,14 +9317,14 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 100 */,
-/* 101 */
+/* 101 */,
+/* 102 */
 /***/ function(module, exports) {
 
 	module.exports = "/demo/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 102 */
+/* 103 */
 /***/ function(module, exports) {
 
 	"use strict";
