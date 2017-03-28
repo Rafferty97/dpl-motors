@@ -4327,7 +4327,7 @@
 	              type: 'element',
 	              tag: 'link',
 	              attribs: {
-	                href: ('/demo/') + 'styles.css',
+	                href: ('/') + 'styles.css',
 	                rel: 'stylesheet',
 	                type: 'text/css'
 	              },
@@ -4346,13 +4346,13 @@
 	              type: 'element',
 	              tag: 'script',
 	              attribs: {
-	                src: ('/demo/') + 'scripts.js'
+	                src: ('/') + 'scripts.js'
 	              },
 	              children: []
 	            });
 	            _context.next = 6;
 	            return (0, _cmmn.renderToHtml)(page, (0, _cmmnDatasource2.default)(props), {
-	              publicPath: ('/demo/')
+	              publicPath: ('/')
 	            });
 
 	          case 6:
@@ -5117,7 +5117,7 @@
 /* 37 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/svg/dpl-motors-logo-1KrUtWGe.svg";
+	module.exports = "/svg/dpl-motors-logo-1KrUtWGe.svg";
 
 /***/ },
 /* 38 */
@@ -5258,49 +5258,49 @@
 /* 42 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/mercedes-benz-3KhEKosv.png";
+	module.exports = "/png/mercedes-benz-3KhEKosv.png";
 
 /***/ },
 /* 43 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/bmw-2K_cZx8C.png";
+	module.exports = "/png/bmw-2K_cZx8C.png";
 
 /***/ },
 /* 44 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/audi-3sjvTOk_.png";
+	module.exports = "/png/audi-3sjvTOk_.png";
 
 /***/ },
 /* 45 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/aston-martin-2dd25U3z.png";
+	module.exports = "/png/aston-martin-2dd25U3z.png";
 
 /***/ },
 /* 46 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/maserati-sXtXj2IM.png";
+	module.exports = "/png/maserati-sXtXj2IM.png";
 
 /***/ },
 /* 47 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/porche-2RSKGy2i.png";
+	module.exports = "/png/porche-2RSKGy2i.png";
 
 /***/ },
 /* 48 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/jaguar-3wiN46ZC.png";
+	module.exports = "/png/jaguar-3wiN46ZC.png";
 
 /***/ },
 /* 49 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/land-rover-EorU9x4G.png";
+	module.exports = "/png/land-rover-EorU9x4G.png";
 
 /***/ },
 /* 50 */
@@ -7622,7 +7622,7 @@
 /* 66 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/services-X4rtbtnv.jpg";
+	module.exports = "/jpg/services-X4rtbtnv.jpg";
 
 /***/ },
 /* 67 */
@@ -7771,7 +7771,7 @@
 /* 69 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/aircon-1I1Y3OSc.jpg";
+	module.exports = "/jpg/aircon-1I1Y3OSc.jpg";
 
 /***/ },
 /* 70 */
@@ -7906,7 +7906,7 @@
 /* 71 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/performance-tuning-1VuaA_Du.jpg";
+	module.exports = "/jpg/performance-tuning-1VuaA_Du.jpg";
 
 /***/ },
 /* 72 */
@@ -8001,7 +8001,7 @@
 /* 73 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/ecu-tuning-cExzlhb0.jpg";
+	module.exports = "/jpg/ecu-tuning-cExzlhb0.jpg";
 
 /***/ },
 /* 74 */
@@ -8143,7 +8143,7 @@
 /* 75 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/dpf-o9OfPlPQ.jpg";
+	module.exports = "/jpg/dpf-o9OfPlPQ.jpg";
 
 /***/ },
 /* 76 */
@@ -8237,7 +8237,7 @@
 /* 77 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpeg/egr-1KA6OEKU.jpeg";
+	module.exports = "/jpeg/egr-1KA6OEKU.jpeg";
 
 /***/ },
 /* 78 */
@@ -8330,7 +8330,7 @@
 /* 79 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpeg/truck-dQM6jRwx.jpeg";
+	module.exports = "/jpeg/truck-dQM6jRwx.jpeg";
 
 /***/ },
 /* 80 */
@@ -8442,7 +8442,7 @@
 /* 81 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/reconditioning-IwNZ5V3d.jpg";
+	module.exports = "/jpg/reconditioning-IwNZ5V3d.jpg";
 
 /***/ },
 /* 82 */
@@ -8557,7 +8557,7 @@
 /* 84 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpeg/cylinder-head-3jDHwUo8.jpeg";
+	module.exports = "/jpeg/cylinder-head-3jDHwUo8.jpeg";
 
 /***/ },
 /* 85 */
@@ -8910,7 +8910,7 @@
 /* 91 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/trade-tID8NGsF.jpg";
+	module.exports = "/jpg/trade-tID8NGsF.jpg";
 
 /***/ },
 /* 92 */
@@ -9182,7 +9182,7 @@
 /* 98 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/cars-mnTaWn8-.jpg";
+	module.exports = "/jpg/cars-mnTaWn8-.jpg";
 
 /***/ },
 /* 99 */
@@ -9321,7 +9321,7 @@
 /* 102 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/favicon-32x32-2iPQseXc.png";
+	module.exports = "/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
 /* 103 */

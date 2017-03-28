@@ -7,8 +7,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/demo/eot/fontawesome-webfont-jVM_i1ai.eot);
-  src: url(/demo/eot/fontawesome-webfont-jVM_i1ai.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/demo/woff2/fontawesome-webfont--xPowCeq.woff2) format("woff2"), url(/demo/woff/fontawesome-webfont-2JcyC9hB.woff) format("woff"), url(/demo/ttf/fontawesome-webfont-2VqpeKww.ttf) format("truetype"), url(/demo/svg/fontawesome-webfont-3u2QumAP.svg#fontawesomeregular) format("svg");
+  src: url(/eot/fontawesome-webfont-jVM_i1ai.eot);
+  src: url(/eot/fontawesome-webfont-jVM_i1ai.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/woff2/fontawesome-webfont--xPowCeq.woff2) format("woff2"), url(/woff/fontawesome-webfont-2JcyC9hB.woff) format("woff"), url(/ttf/fontawesome-webfont-2VqpeKww.ttf) format("truetype"), url(/svg/fontawesome-webfont-3u2QumAP.svg#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1623,7 +1623,7 @@
     clip: auto; }
 @font-face {
   font-family: 'Abel';
-  src: url(/demo/woff2/abel-regular_1-webfont-7Ct0skmh.woff2) format("woff2"), url(/demo/woff/abel-regular_1-webfont-ZejM71pl.woff) format("woff");
+  src: url(/woff2/abel-regular_1-webfont-7Ct0skmh.woff2) format("woff2"), url(/woff/abel-regular_1-webfont-ZejM71pl.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -1641,7 +1641,7 @@ a {
 .src-views-home-page-styles---video---V5M_K {
   position: relative;
   height: 400px;
-  background-image: url(/demo/jpg/home-367wBOdf.jpg);
+  background-image: url(/jpg/home-367wBOdf.jpg);
   background-size: cover;
   background-position: 50% 50%; }
   .src-views-home-page-styles---video---V5M_K video {
@@ -1914,7 +1914,7 @@ a {
       -webkit-transform: matrix(1, 0, 0.35, 1, 0, 0);
       -ms-transform: matrix(1, 0, 0.35, 1, 0, 0);
       transform: matrix(1, 0, 0.35, 1, 0, 0);
-      background-image: url(/demo/png/icons-3gUTBSaf.png);
+      background-image: url(/png/icons-3gUTBSaf.png);
       background-size: auto 70px;
       background-position: 0 50%;
       background-repeat: no-repeat;
@@ -2067,7 +2067,7 @@ a {
       right: 225px;
       bottom: 0;
       width: 55px;
-      background-image: url(/demo/png/icons-3xBCFCpV.png);
+      background-image: url(/png/icons-3xBCFCpV.png);
       background-size: 40px;
       background-position: 9px -4px;
       background-repeat: no-repeat;
@@ -2255,7 +2255,7 @@ a {
         .src-views-parts-styles---form---2ktVT select.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT input.src-views-parts-styles---half---25g4o, .src-views-parts-styles---form---2ktVT textarea.src-views-parts-styles---half---25g4o {
           width: calc(98% - 8px); } }
   .src-views-parts-styles---form---2ktVT select {
-    background-image: url(/demo/png/chevron-3vB6y-nq.png);
+    background-image: url(/png/chevron-3vB6y-nq.png);
     background-size: 30px;
     background-position: 100% 50%;
     background-repeat: no-repeat;
@@ -2299,7 +2299,7 @@ a {
       display: inline-block;
       vertical-align: middle;
       margin: 0 8px 0 0;
-      background-image: url(/demo/gif/ajax-loader-2OUu6u2H.gif);
+      background-image: url(/gif/ajax-loader-2OUu6u2H.gif);
       width: 16px;
       height: 16px; }
   .src-views-parts-styles---status--error---5g_J8 {
@@ -2382,7 +2382,7 @@ a {
       display: inline-block;
       vertical-align: middle;
       margin: 0 8px 0 0;
-      background-image: url(/demo/gif/ajax-loader-2OUu6u2H.gif);
+      background-image: url(/gif/ajax-loader-2OUu6u2H.gif);
       width: 16px;
       height: 16px; }
   .src-views-pages-tradeForm---status--error---1_Cts {

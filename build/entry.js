@@ -540,7 +540,7 @@ require("source-map-support").install();
 	              type: 'element',
 	              tag: 'link',
 	              attribs: {
-	                href: ('/demo/') + 'styles.css',
+	                href: ('/') + 'styles.css',
 	                rel: 'stylesheet',
 	                type: 'text/css'
 	              },
@@ -559,13 +559,13 @@ require("source-map-support").install();
 	              type: 'element',
 	              tag: 'script',
 	              attribs: {
-	                src: ('/demo/') + 'scripts.js'
+	                src: ('/') + 'scripts.js'
 	              },
 	              children: []
 	            });
 	            _context.next = 6;
 	            return (0, _cmmn.renderToHtml)(page, (0, _cmmnDatasource2.default)(props), {
-	              publicPath: ('/demo/')
+	              publicPath: ('/')
 	            });
 	
 	          case 6:
@@ -917,37 +917,37 @@ require("source-map-support").install();
 /* 13 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/eot/fontawesome-webfont-jVM_i1ai.eot";
+	module.exports = "/eot/fontawesome-webfont-jVM_i1ai.eot";
 
 /***/ },
 /* 14 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/eot/fontawesome-webfont-jVM_i1ai.eot";
+	module.exports = "/eot/fontawesome-webfont-jVM_i1ai.eot";
 
 /***/ },
 /* 15 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/woff2/fontawesome-webfont--xPowCeq.woff2";
+	module.exports = "/woff2/fontawesome-webfont--xPowCeq.woff2";
 
 /***/ },
 /* 16 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/woff/fontawesome-webfont-2JcyC9hB.woff";
+	module.exports = "/woff/fontawesome-webfont-2JcyC9hB.woff";
 
 /***/ },
 /* 17 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/ttf/fontawesome-webfont-2VqpeKww.ttf";
+	module.exports = "/ttf/fontawesome-webfont-2VqpeKww.ttf";
 
 /***/ },
 /* 18 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/svg/fontawesome-webfont-3u2QumAP.svg";
+	module.exports = "/svg/fontawesome-webfont-3u2QumAP.svg";
 
 /***/ },
 /* 19 */
@@ -1057,13 +1057,13 @@ require("source-map-support").install();
 /* 21 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/woff2/abel-regular_1-webfont-7Ct0skmh.woff2";
+	module.exports = "/woff2/abel-regular_1-webfont-7Ct0skmh.woff2";
 
 /***/ },
 /* 22 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/woff/abel-regular_1-webfont-ZejM71pl.woff";
+	module.exports = "/woff/abel-regular_1-webfont-ZejM71pl.woff";
 
 /***/ },
 /* 23 */
@@ -1091,7 +1091,7 @@ require("source-map-support").install();
 /* 24 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/home-367wBOdf.jpg";
+	module.exports = "/jpg/home-367wBOdf.jpg";
 
 /***/ },
 /* 25 */
@@ -1494,7 +1494,7 @@ require("source-map-support").install();
 /* 30 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/svg/dpl-motors-logo-1KrUtWGe.svg";
+	module.exports = "/svg/dpl-motors-logo-1KrUtWGe.svg";
 
 /***/ },
 /* 31 */
@@ -1658,55 +1658,55 @@ require("source-map-support").install();
 /* 33 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/icons-3gUTBSaf.png";
+	module.exports = "/png/icons-3gUTBSaf.png";
 
 /***/ },
 /* 34 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/mercedes-benz-3KhEKosv.png";
+	module.exports = "/png/mercedes-benz-3KhEKosv.png";
 
 /***/ },
 /* 35 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/bmw-2K_cZx8C.png";
+	module.exports = "/png/bmw-2K_cZx8C.png";
 
 /***/ },
 /* 36 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/audi-3sjvTOk_.png";
+	module.exports = "/png/audi-3sjvTOk_.png";
 
 /***/ },
 /* 37 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/aston-martin-2dd25U3z.png";
+	module.exports = "/png/aston-martin-2dd25U3z.png";
 
 /***/ },
 /* 38 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/maserati-sXtXj2IM.png";
+	module.exports = "/png/maserati-sXtXj2IM.png";
 
 /***/ },
 /* 39 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/porche-2RSKGy2i.png";
+	module.exports = "/png/porche-2RSKGy2i.png";
 
 /***/ },
 /* 40 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/jaguar-3wiN46ZC.png";
+	module.exports = "/png/jaguar-3wiN46ZC.png";
 
 /***/ },
 /* 41 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/land-rover-EorU9x4G.png";
+	module.exports = "/png/land-rover-EorU9x4G.png";
 
 /***/ },
 /* 42 */
@@ -1924,7 +1924,7 @@ require("source-map-support").install();
 /* 45 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/icons-3xBCFCpV.png";
+	module.exports = "/png/icons-3xBCFCpV.png";
 
 /***/ },
 /* 46 */
@@ -2107,7 +2107,7 @@ require("source-map-support").install();
 /* 49 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/services-X4rtbtnv.jpg";
+	module.exports = "/jpg/services-X4rtbtnv.jpg";
 
 /***/ },
 /* 50 */
@@ -2256,7 +2256,7 @@ require("source-map-support").install();
 /* 52 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/aircon-1I1Y3OSc.jpg";
+	module.exports = "/jpg/aircon-1I1Y3OSc.jpg";
 
 /***/ },
 /* 53 */
@@ -2391,7 +2391,7 @@ require("source-map-support").install();
 /* 54 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/performance-tuning-1VuaA_Du.jpg";
+	module.exports = "/jpg/performance-tuning-1VuaA_Du.jpg";
 
 /***/ },
 /* 55 */
@@ -2486,7 +2486,7 @@ require("source-map-support").install();
 /* 56 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/ecu-tuning-cExzlhb0.jpg";
+	module.exports = "/jpg/ecu-tuning-cExzlhb0.jpg";
 
 /***/ },
 /* 57 */
@@ -2628,7 +2628,7 @@ require("source-map-support").install();
 /* 58 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/dpf-o9OfPlPQ.jpg";
+	module.exports = "/jpg/dpf-o9OfPlPQ.jpg";
 
 /***/ },
 /* 59 */
@@ -2722,7 +2722,7 @@ require("source-map-support").install();
 /* 60 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpeg/egr-1KA6OEKU.jpeg";
+	module.exports = "/jpeg/egr-1KA6OEKU.jpeg";
 
 /***/ },
 /* 61 */
@@ -2815,7 +2815,7 @@ require("source-map-support").install();
 /* 62 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpeg/truck-dQM6jRwx.jpeg";
+	module.exports = "/jpeg/truck-dQM6jRwx.jpeg";
 
 /***/ },
 /* 63 */
@@ -2927,7 +2927,7 @@ require("source-map-support").install();
 /* 64 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/reconditioning-IwNZ5V3d.jpg";
+	module.exports = "/jpg/reconditioning-IwNZ5V3d.jpg";
 
 /***/ },
 /* 65 */
@@ -3042,7 +3042,7 @@ require("source-map-support").install();
 /* 67 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpeg/cylinder-head-3jDHwUo8.jpeg";
+	module.exports = "/jpeg/cylinder-head-3jDHwUo8.jpeg";
 
 /***/ },
 /* 68 */
@@ -3409,19 +3409,19 @@ require("source-map-support").install();
 /* 71 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/chevron-3vB6y-nq.png";
+	module.exports = "/png/chevron-3vB6y-nq.png";
 
 /***/ },
 /* 72 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/gif/ajax-loader-2OUu6u2H.gif";
+	module.exports = "/gif/ajax-loader-2OUu6u2H.gif";
 
 /***/ },
 /* 73 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/trade-tID8NGsF.jpg";
+	module.exports = "/jpg/trade-tID8NGsF.jpg";
 
 /***/ },
 /* 74 */
@@ -3720,7 +3720,7 @@ require("source-map-support").install();
 /* 78 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/jpg/cars-mnTaWn8-.jpg";
+	module.exports = "/jpg/cars-mnTaWn8-.jpg";
 
 /***/ },
 /* 79 */
@@ -3870,7 +3870,7 @@ require("source-map-support").install();
 /* 81 */
 /***/ function(module, exports) {
 
-	module.exports = "/demo/png/favicon-32x32-2iPQseXc.png";
+	module.exports = "/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
 /* 82 */
