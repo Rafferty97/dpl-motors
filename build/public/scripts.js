@@ -9158,11 +9158,6 @@
 	      null,
 	      'Do you have a fleet of vehicles? Why not let us look after all your service and repair needs. For fleet and business customers we offer substantial discounts, fixed price servicing, final invoices always matching the quote, monthly invoicing, a pick up and drop off service and we can provide a loan car. With our loan cars we will try our best to give you like for like. We normally have small cars, vans and table top utes in stock.'
 	    ),
-	    (0, _cmmn.createElement)(
-	      'h2',
-	      null,
-	      'Contact Us'
-	    ),
 	    (0, _cmmn.createElement)(Form, null)
 	  );
 	};
@@ -9172,7 +9167,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"form__row":"src-views-pages-tradeForm---form__row---1xyub","form":"src-views-pages-tradeForm---form---11t2L","status":"src-views-pages-tradeForm---status---32cgo","status--loading":"src-views-pages-tradeForm---status--loading---20lNN","status--error":"src-views-pages-tradeForm---status--error---1_Cts","status--success":"src-views-pages-tradeForm---status--success---rbV9p"};
+	module.exports = {"form":"src-views-pages-tradeForm---form---11t2L","form__row":"src-views-pages-tradeForm---form__row---1xyub","status":"src-views-pages-tradeForm---status---32cgo","status--loading":"src-views-pages-tradeForm---status--loading---20lNN","status--error":"src-views-pages-tradeForm---status--error---1_Cts","status--success":"src-views-pages-tradeForm---status--success---rbV9p"};
 
 	// Bemify
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
