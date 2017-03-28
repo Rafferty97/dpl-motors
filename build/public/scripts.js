@@ -4302,7 +4302,7 @@
 
 	var _cmmnRouter2 = _interopRequireDefault(_cmmnRouter);
 
-	var _cmmnDatasource = __webpack_require__(95);
+	var _cmmnDatasource = __webpack_require__(102);
 
 	var _cmmnDatasource2 = _interopRequireDefault(_cmmnDatasource);
 
@@ -4410,47 +4410,47 @@
 
 	var ecuTuning = _interopRequireWildcard(_ecuTuning);
 
-	var _dpfSolution = __webpack_require__(73);
+	var _dpfSolution = __webpack_require__(74);
 
 	var dpfSolution = _interopRequireWildcard(_dpfSolution);
 
-	var _egrSolution = __webpack_require__(74);
+	var _egrSolution = __webpack_require__(76);
 
 	var egrSolution = _interopRequireWildcard(_egrSolution);
 
-	var _truckTuning = __webpack_require__(75);
+	var _truckTuning = __webpack_require__(78);
 
 	var truckTuning = _interopRequireWildcard(_truckTuning);
 
-	var _reconditioning = __webpack_require__(76);
+	var _reconditioning = __webpack_require__(80);
 
 	var reconditioning = _interopRequireWildcard(_reconditioning);
 
-	var _motorRebuilds = __webpack_require__(78);
+	var _motorRebuilds = __webpack_require__(82);
 
 	var motorRebuilds = _interopRequireWildcard(_motorRebuilds);
 
-	var _cylinderHeadRepair = __webpack_require__(79);
+	var _cylinderHeadRepair = __webpack_require__(83);
 
 	var cylinderHeadRepair = _interopRequireWildcard(_cylinderHeadRepair);
 
-	var _headGasketRepair = __webpack_require__(80);
+	var _headGasketRepair = __webpack_require__(85);
 
 	var headGasketRepair = _interopRequireWildcard(_headGasketRepair);
 
-	var _parts = __webpack_require__(81);
+	var _parts = __webpack_require__(86);
 
 	var parts = _interopRequireWildcard(_parts);
 
-	var _booking = __webpack_require__(87);
+	var _booking = __webpack_require__(92);
 
 	var book = _interopRequireWildcard(_booking);
 
-	var _trade = __webpack_require__(90);
+	var _trade = __webpack_require__(95);
 
 	var trade = _interopRequireWildcard(_trade);
 
-	var _contact = __webpack_require__(91);
+	var _contact = __webpack_require__(98);
 
 	var contact = _interopRequireWildcard(_contact);
 
@@ -4536,8 +4536,8 @@
 	        null,
 	        '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':\n        new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=\n        \'https://www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,\'script\',\'dataLayer\',\'GTM-TD3SK9D\');'
 	      ),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(94) }),
-	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(94) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: __webpack_require__(101) }),
+	      (0, _cmmn.createElement)('link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: __webpack_require__(101) }),
 	      (0, _cmmn.createElement)('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' }),
 	      (0, _cmmn.createElement)('meta', { charset: 'utf-8' }),
 	      (0, _cmmn.createElement)(
@@ -5323,7 +5323,7 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var subscribeEmailURL = '/subscribe';
+	var subscribeEmailURL = '/subscribe.php';
 
 	var MenuItem = function MenuItem(_ref) {
 	  var icon = _ref.icon,
@@ -5437,12 +5437,13 @@
 	        var address = newsletterForm.querySelector('form input[name="email"]').value;
 	        formStatus.className = _styles2.default.newsletterForm.status.with('visible');
 	        formStatus.innerHTML = 'Working...';
-	        _superagent2.default.post(subscribeEmailURL).send({ emailaddress: address }).end(function (err, res) {
+	        _superagent2.default.post(subscribeEmailURL).type('form').send({ emailaddress: address }).end(function (err, res) {
 	          if (err) {
 	            console.error(err);
 	            formStatus.innerHTML = 'An error occurred.';
 	          } else {
 	            formStatus.innerHTML = 'Thanks for subscribing!';
+	            newsletterForm.querySelector('form').reset();
 	          }
 	          setTimeout(closeForm, 1500);
 	        });
@@ -7930,7 +7931,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'performance-tuning', bk: __webpack_require__(71) },
+	    { page: 'performance-tuning', bk: __webpack_require__(73) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -7993,6 +7994,12 @@
 
 /***/ },
 /* 73 */
+/***/ function(module, exports) {
+
+	module.exports = "/demo/jpg/ecu-tuning-cExzlhb0.jpg";
+
+/***/ },
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8019,7 +8026,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'performance-tuning', bk: __webpack_require__(71) },
+	    { page: 'performance-tuning', bk: __webpack_require__(75) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8128,7 +8135,13 @@
 	};
 
 /***/ },
-/* 74 */
+/* 75 */
+/***/ function(module, exports) {
+
+	module.exports = "/demo/jpg/dpf-o9OfPlPQ.jpg";
+
+/***/ },
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8155,7 +8168,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'performance-tuning', bk: __webpack_require__(71) },
+	    { page: 'performance-tuning', bk: __webpack_require__(77) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8216,7 +8229,13 @@
 	};
 
 /***/ },
-/* 75 */
+/* 77 */
+/***/ function(module, exports) {
+
+	module.exports = "/demo/jpeg/egr-1KA6OEKU.jpeg";
+
+/***/ },
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8243,7 +8262,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'performance-tuning', bk: __webpack_require__(71) },
+	    { page: 'performance-tuning', bk: __webpack_require__(79) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8303,7 +8322,13 @@
 	};
 
 /***/ },
-/* 76 */
+/* 79 */
+/***/ function(module, exports) {
+
+	module.exports = "/demo/jpeg/truck-dQM6jRwx.jpeg";
+
+/***/ },
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8330,7 +8355,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'reconditioning', bk: __webpack_require__(77) },
+	    { page: 'reconditioning', bk: __webpack_require__(81) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8409,13 +8434,13 @@
 	};
 
 /***/ },
-/* 77 */
+/* 81 */
 /***/ function(module, exports) {
 
 	module.exports = "/demo/jpg/reconditioning-IwNZ5V3d.jpg";
 
 /***/ },
-/* 78 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8442,7 +8467,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'reconditioning', bk: __webpack_require__(77) },
+	    { page: 'reconditioning', bk: __webpack_require__(81) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8472,7 +8497,7 @@
 	};
 
 /***/ },
-/* 79 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8499,7 +8524,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'reconditioning', bk: __webpack_require__(77) },
+	    { page: 'reconditioning', bk: __webpack_require__(84) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8524,7 +8549,13 @@
 	};
 
 /***/ },
-/* 80 */
+/* 84 */
+/***/ function(module, exports) {
+
+	module.exports = "/demo/jpeg/cylinder-head-3jDHwUo8.jpeg";
+
+/***/ },
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8551,7 +8582,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'reconditioning', bk: __webpack_require__(77) },
+	    { page: 'reconditioning', bk: __webpack_require__(81) },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8600,7 +8631,7 @@
 	};
 
 /***/ },
-/* 81 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8623,7 +8654,7 @@
 
 	var _template2 = _interopRequireDefault(_template);
 
-	var _styles = __webpack_require__(82);
+	var _styles = __webpack_require__(87);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -8640,7 +8671,7 @@
 	var years = [];
 	for (var i = 2017; i >= 1950; i--) {
 	  years.push(i);
-	}var postFormURL = '/submit-parts-form';
+	}var postFormURL = '/submit-parts-form.php';
 
 	var Form = function () {
 	  function Form() {
@@ -8799,7 +8830,6 @@
 	          categoryOther: form.querySelector('[name="category-other"]').value.trim(),
 	          message: form.querySelector('[name="message"]').value.trim()
 	        };
-	        console.log(payload);
 	        if (isNaN(payload.year) || payload.year == "") {
 	          formStatus.className = _styles2.default.status.with('error');
 	          formStatus.innerHTML = 'Please select a year.';
@@ -8827,7 +8857,7 @@
 	        }
 	        formStatus.className = _styles2.default.status.with('loading');
 	        formStatus.innerHTML = 'Working...';
-	        _superagent2.default.post(postFormURL).send(payload).end(function (err, res) {
+	        _superagent2.default.post(postFormURL).type('form').send(payload).end(function (err, res) {
 	          if (err) {
 	            console.error(err);
 	            formStatus.className = _styles2.default.status.with('error');
@@ -8848,7 +8878,7 @@
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'parts', grey: true, bk: __webpack_require__(86), nobook: true },
+	    { page: 'parts', grey: true, bk: __webpack_require__(91), nobook: true },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -8859,7 +8889,7 @@
 	};
 
 /***/ },
-/* 82 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -8869,16 +8899,16 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */
 /***/ function(module, exports) {
 
 	module.exports = "/demo/jpg/trade-tID8NGsF.jpg";
 
 /***/ },
-/* 87 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8910,7 +8940,7 @@
 
 	var _sidemenu2 = _interopRequireDefault(_sidemenu);
 
-	var _booking = __webpack_require__(88);
+	var _booking = __webpack_require__(93);
 
 	var _booking2 = _interopRequireDefault(_booking);
 
@@ -8950,7 +8980,7 @@
 	};
 
 /***/ },
-/* 88 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -8960,8 +8990,8 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 89 */,
-/* 90 */
+/* 94 */,
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -8971,7 +9001,13 @@
 	});
 	exports.getMeta = undefined;
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _cmmn = __webpack_require__(4);
+
+	var _superagent = __webpack_require__(51);
+
+	var _superagent2 = _interopRequireDefault(_superagent);
 
 	var _template = __webpack_require__(63);
 
@@ -8981,7 +9017,13 @@
 
 	var _styles2 = _interopRequireDefault(_styles);
 
+	var _tradeForm = __webpack_require__(96);
+
+	var _tradeForm2 = _interopRequireDefault(_tradeForm);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var getMeta = exports.getMeta = function getMeta() {
 	  return {
@@ -8989,10 +9031,123 @@
 	  };
 	};
 
+	var postFormURL = '/submit-trade-form.php';
+
+	var Form = function () {
+	  function Form() {
+	    _classCallCheck(this, Form);
+	  }
+
+	  _createClass(Form, [{
+	    key: 'render',
+	    value: function render() {
+	      return (0, _cmmn.createElement)(
+	        'form',
+	        { className: _tradeForm2.default.form },
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _tradeForm2.default.form.row },
+	          (0, _cmmn.createElement)(
+	            'label',
+	            null,
+	            'Company name'
+	          ),
+	          (0, _cmmn.createElement)('input', { type: 'text', name: 'company-name' })
+	        ),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _tradeForm2.default.form.row },
+	          (0, _cmmn.createElement)(
+	            'label',
+	            null,
+	            'ABN'
+	          ),
+	          (0, _cmmn.createElement)('input', { type: 'text', name: 'abn' })
+	        ),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _tradeForm2.default.form.row },
+	          (0, _cmmn.createElement)(
+	            'label',
+	            null,
+	            'Email address'
+	          ),
+	          (0, _cmmn.createElement)('input', { type: 'email', name: 'email' })
+	        ),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _tradeForm2.default.form.row },
+	          (0, _cmmn.createElement)(
+	            'label',
+	            null,
+	            'Request'
+	          ),
+	          (0, _cmmn.createElement)('textarea', { name: 'request' })
+	        ),
+	        (0, _cmmn.createElement)(
+	          'div',
+	          { className: _tradeForm2.default.form.row },
+	          (0, _cmmn.createElement)(
+	            'label',
+	            null,
+	            '\xA0'
+	          ),
+	          (0, _cmmn.createElement)('input', { type: 'submit' })
+	        ),
+	        (0, _cmmn.createElement)('div', { className: 'js-formStatus ' + _tradeForm2.default.status })
+	      );
+	    }
+	  }, {
+	    key: 'mount',
+	    value: function mount(form) {
+	      var formStatus = form.querySelector('.js-formStatus');
+	      form.addEventListener('submit', function (event) {
+	        event.preventDefault();
+	        var payload = {
+	          companyName: form.querySelector('[name="company-name"]').value.trim(),
+	          abn: form.querySelector('[name="abn"]').value.trim(),
+	          email: form.querySelector('[name="email"]').value.trim(),
+	          request: form.querySelector('[name="request"]').value.trim()
+	        };
+	        if (payload.companyName == "" && payload.abn == "") {
+	          formStatus.className = _tradeForm2.default.status.with('error');
+	          formStatus.innerHTML = 'Please enter a company name or an ABN.';
+	          return;
+	        }
+	        if (payload.email == "") {
+	          formStatus.className = _tradeForm2.default.status.with('error');
+	          formStatus.innerHTML = 'Please enter an email address.';
+	          return;
+	        }
+	        if (payload.request == "") {
+	          formStatus.className = _tradeForm2.default.status.with('error');
+	          formStatus.innerHTML = 'Please enter a request.';
+	          return;
+	        }
+	        formStatus.className = _tradeForm2.default.status.with('loading');
+	        formStatus.innerHTML = 'Working...';
+	        _superagent2.default.post(postFormURL).type('form').send(payload).end(function (err, res) {
+	          if (err) {
+	            console.error(err);
+	            formStatus.className = _tradeForm2.default.status.with('error');
+	            formStatus.innerHTML = 'An error occurred. Try again in a minute';
+	          } else {
+	            formStatus.className = _tradeForm2.default.status.with('success');
+	            formStatus.innerHTML = 'Your form has been sent';
+	            form.reset();
+	          }
+	        });
+	      });
+	    }
+	  }]);
+
+	  return Form;
+	}();
+
 	exports.default = function () {
 	  return (0, _cmmn.createElement)(
 	    _template2.default,
-	    { page: 'trade', bk: __webpack_require__(86), nobook: true },
+	    { page: 'trade', bk: __webpack_require__(91), nobook: true },
 	    (0, _cmmn.createElement)(
 	      'h1',
 	      null,
@@ -9004,15 +9159,27 @@
 	      'Do you have a fleet of vehicles? Why not let us look after all your service and repair needs. For fleet and business customers we offer substantial discounts, fixed price servicing, final invoices always matching the quote, monthly invoicing, a pick up and drop off service and we can provide a loan car. With our loan cars we will try our best to give you like for like. We normally have small cars, vans and table top utes in stock.'
 	    ),
 	    (0, _cmmn.createElement)(
-	      'a',
-	      { href: '*/contact-us/', className: _styles2.default.bookBtn },
+	      'h2',
+	      null,
 	      'Contact Us'
-	    )
+	    ),
+	    (0, _cmmn.createElement)(Form, null)
 	  );
 	};
 
 /***/ },
-/* 91 */
+/* 96 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"form__row":"src-views-pages-tradeForm---form__row---1xyub","form":"src-views-pages-tradeForm---form---11t2L","status":"src-views-pages-tradeForm---status---32cgo","status--loading":"src-views-pages-tradeForm---status--loading---20lNN","status--error":"src-views-pages-tradeForm---status--error---1_Cts","status--success":"src-views-pages-tradeForm---status--success---rbV9p"};
+
+	// Bemify
+	module.exports = (__webpack_require__(22).default)(module.exports || {});
+
+/***/ },
+/* 97 */,
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9040,7 +9207,7 @@
 
 	__webpack_require__(11);
 
-	var _styles = __webpack_require__(92);
+	var _styles = __webpack_require__(99);
 
 	var _styles2 = _interopRequireDefault(_styles);
 
@@ -9134,7 +9301,7 @@
 	};
 
 /***/ },
-/* 92 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// removed by extract-text-webpack-plugin
@@ -9144,14 +9311,14 @@
 	module.exports = (__webpack_require__(22).default)(module.exports || {});
 
 /***/ },
-/* 93 */,
-/* 94 */
+/* 100 */,
+/* 101 */
 /***/ function(module, exports) {
 
 	module.exports = "/demo/png/favicon-32x32-2iPQseXc.png";
 
 /***/ },
-/* 95 */
+/* 102 */
 /***/ function(module, exports) {
 
 	"use strict";

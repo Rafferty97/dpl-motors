@@ -13,7 +13,7 @@ export const getMeta = () => ({
 const years = [];
 for (let i=2017; i >= 1950; i--) years.push(i);
 
-const postFormURL = '/submit-parts-form';
+const postFormURL = '/submit-parts-form.php';
 
 class Form {
   render() {
@@ -130,7 +130,6 @@ class Form {
         categoryOther: form.querySelector('[name="category-other"]').value.trim(),
         message: form.querySelector('[name="message"]').value.trim()
       };
-      console.log(payload);
       if (isNaN(payload.year) || (payload.year == "")) {
         formStatus.className = styles.status.with('error');
         formStatus.innerHTML = 'Please select a year.';
@@ -160,6 +159,7 @@ class Form {
       formStatus.innerHTML = 'Working...';
       request
         .post(postFormURL)
+        .type('form')
         .send(payload)
         .end((err, res) => {
           if (err) {

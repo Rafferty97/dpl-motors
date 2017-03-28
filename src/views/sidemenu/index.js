@@ -3,7 +3,7 @@ import request from 'superagent';
 
 import styles from './styles.scss';
 
-const subscribeEmailURL = '/subscribe';
+const subscribeEmailURL = '/subscribe.php';
 
 const MenuItem = ({ icon, href, children }) => (
   <a className={styles.sidebar.item} href={href}>
@@ -67,6 +67,7 @@ export default class Sidemenu {
       formStatus.innerHTML = 'Working...';
       request
         .post(subscribeEmailURL)
+        .type('form')
         .send({ emailaddress: address })
         .end((err, res) => {
           if (err) {
@@ -74,6 +75,7 @@ export default class Sidemenu {
             formStatus.innerHTML = 'An error occurred.';
           } else {
             formStatus.innerHTML = 'Thanks for subscribing!';
+            newsletterForm.querySelector('form').reset();
           }
           setTimeout(closeForm, 1500);
         });
