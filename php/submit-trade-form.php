@@ -24,6 +24,7 @@ function send_email($fields)
   $content .= '</table><br/>DPL MOTORS - Trade Form';
 
   return mail('service@dplmotors.com.au', $subject, $content, $headers);
+  //return mail('alex@flashbang.io', $subject, $content, $headers);
 }
 
 function submit() {

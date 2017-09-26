@@ -9,15 +9,7 @@ function send_email($fields)
   // $headers .= 'Bcc: alex@justsites.com.au' . "\r\n";
 
   $content = '<style>td { padding: 0.25em 0.5em; }</style><table>';
-  $isCustom = false;
   foreach ($fields as $key => $value) {
-    if ($key == 'type-of-shed') {
-      $isCustom = $value == 'custom';
-    }
-    if ($key == 'dimensions' && $isCustom) continue;
-    if ($key == 'shed-span' && !$isCustom) continue;
-    if ($key == 'shed-length' && !$isCustom) continue;
-    if ($key == 'shed-height' && !$isCustom) continue;
     $key = str_replace('-', ' ', $key);
     $content .= '<tr><td><b>'. $key. '</b></td><td>'. $value. '</td></tr>';
   }

@@ -19,8 +19,8 @@ const menu = [
     title: 'Services', href: 'services', active: 'services',
     items: [
       { title: 'Air Conditioning', href: 'services/air-conditioning' },
-      { title: 'Scheduled Servicing', href: 'services/scheduled-servicing' }
-      //{ title: 'Repairs', href: 'services/repairs' }
+      { title: 'Scheduled Servicing', href: 'services/scheduled-servicing' },
+      { title: 'Brakes', href: 'services/brakes' }
     ]
   },
   {

@@ -3,7 +3,7 @@ let routes = [
   '/services/',
   '/services/air-conditioning/',
   '/services/scheduled-servicing/',
-  '/services/repairs/',
+  '/services/brakes/',
   '/performance-tuning/',
   '/performance-tuning/ecu-tuning/',
   '/performance-tuning/dpf-solution/',

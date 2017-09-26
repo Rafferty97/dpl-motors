@@ -42,15 +42,23 @@ export default class Sidemenu {
     );
   }
   mount(node) {
-    let mousein = false, formopen = false;
+    let mousein = false, formopen = false, slideopen = false, int = null;
+    node.querySelectorAll('a').forEach(n => n.addEventListener('click', (event) => {
+      console.log(slideopen);
+      if (!slideopen) event.preventDefault();
+    }));
     node.addEventListener('mouseover', () => {
       mousein = true;
       node.className = styles.sidebar.with(this.top ? 'top' : '', 'visible');
+      clearTimeout(int);
+      int = setTimeout(() => { slideopen = true; }, 100);
     });
     node.addEventListener('mouseout', () => {
       mousein = false;
       if (formopen) return;
       node.className = styles.sidebar.with(this.top ? 'top' : '');
+      clearTimeout(int);
+      int = setTimeout(() => { slideopen = false; }, 100);
     });
     const newsletterBtn = node.querySelector('.' + styles.sidebar.item.toString().trim() + ':nth-child(3)');
     const newsletterForm = node.querySelector('.' + styles.sidebar.item.toString().trim() + ':nth-child(4)');
@@ -89,7 +97,11 @@ export default class Sidemenu {
       formStatus.className = styles.newsletterForm.status
       newsletterBtn.className = styles.sidebar.item.with();
       newsletterForm.className = styles.sidebar.item.with('backface', 'no-hover');
-      if (!mousein) node.className = styles.sidebar.with(this.top ? 'top' : '');
+      if (!mousein) {
+        node.className = styles.sidebar.with(this.top ? 'top' : '');
+        slideopen = false;
+        clearInterval(int);
+      }
     };
   }
 };

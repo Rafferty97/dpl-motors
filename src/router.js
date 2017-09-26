@@ -4,6 +4,7 @@ import * as home from './views/home-page';
 import * as services from './views/pages/services';
 import * as servicing from './views/pages/servicing';
 import * as airConditioning from './views/pages/air-conditioning';
+import * as brakes from './views/pages/brakes';
 import * as performanceTuning from './views/pages/performance-tuning';
 import * as ecuTuning from './views/pages/ecu-tuning';
 import * as dpfSolution from './views/pages/dpf-solution';
@@ -29,6 +30,7 @@ function route(props) {
           switch (props.route[1]) {
             case 'air-conditioning': page = airConditioning; break;
             case 'scheduled-servicing': page = servicing; break;
+            case 'brakes': page = brakes; break;
           }
         }
         break;

@@ -25,7 +25,7 @@ export default () => (
           <img src={require('./makes/audi.png')} />
           <img src={require('./makes/aston-martin.png')} />
           <img src={require('./makes/maserati.png')} />
-          <img src={require('./makes/porche.png')} />
+          <img src={require('./makes/porsche.png')} />
           <img src={require('./makes/jaguar.png')} />
           <img src={require('./makes/land-rover.png')} />
         </div>

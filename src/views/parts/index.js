@@ -45,6 +45,7 @@ class Form {
           <option value="other">Other...</option>
         </select>
         <input style="display: none;" type="text" name="category-other" placeholder="Category" />
+        <input type="email" name="email" placeholder="Email" />
         <textarea name="message">
         </textarea>
         <input type="submit" name="submit" value="Submit" />
@@ -128,6 +129,7 @@ class Form {
         model: form.querySelector('[name="model"]').value.trim(),
         category: form.querySelector('[name="category"]').value.trim(),
         categoryOther: form.querySelector('[name="category-other"]').value.trim(),
+        email: form.querySelector('[name="email"]').value.trim(),
         message: form.querySelector('[name="message"]').value.trim()
       };
       if (isNaN(payload.year) || (payload.year == "")) {
@@ -148,6 +150,11 @@ class Form {
       if (payload.category == "-1" || (payload.category == "other" && (payload.categoryOther == ""))) {
         formStatus.className = styles.status.with('error');
         formStatus.innerHTML = 'Please choose a category.';
+        return;
+      }
+      if (payload.email == "") {
+        formStatus.className = styles.status.with('error');
+        formStatus.innerHTML = 'Please enter an email address.';
         return;
       }
       if (payload.message == "") {
