@@ -45,7 +45,7 @@ export default () => (
           <img className={styles.contact.logo} src={require('../header/dpl-motors-logo.svg')} />
         </a>
         <div className={styles.contact.info}>
-          22 Muchison Terrace<br/>
+          22 Murchison Terrace<br/>
           Perth WA 6000<br/><br/>
           <i className="fa fa-phone" />&nbsp;<a href="tel:0892275374">(08) 9227 5374</a>
         </div>
