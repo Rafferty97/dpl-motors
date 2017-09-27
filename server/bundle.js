@@ -1940,6 +1940,7 @@ request.put = function(url, data, fn){
 },{"./is-object":1,"./request-base":2,"./response-base":3,"./should-retry":4,"component-emitter":6}]},{},[7])(7)
 });
 
+
 function navigationMenu(node)
 {
   if (node == null) return;
@@ -2072,7 +2073,8 @@ function newsletterForm(node)
   });
   newsletterForm.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault();
-    var address = newsletterForm.querySelector('form input[name="email"]').value;
+		var address = newsletterForm.querySelector('form input[name="email"]').value.trim();
+		if (address == '') return;
     formStatus.className = classNewsletterFormStatus + ' src-views-sidemenu-styles---newsletterForm__status--visible---3wbKs';
     formStatus.innerHTML = 'Working...';
     superagent.post(subscribeEmailURL).type('form').send({ emailaddress: address }).end(function (err, res) {
@@ -2136,6 +2138,7 @@ function partsForm(form)
 			model: form.querySelector('[name="model"]').value.trim(),
 			category: form.querySelector('[name="category"]').value.trim(),
 			categoryOther: form.querySelector('[name="category-other"]').value.trim(),
+			email: form.querySelector('[name="email"]').value.trim(),
 			message: form.querySelector('[name="message"]').value.trim()
 		};
 		if (isNaN(payload.year) || payload.year == "") {
@@ -2156,6 +2159,11 @@ function partsForm(form)
 		if (payload.category == "-1" || payload.category == "other" && payload.categoryOther == "") {
 			formStatus.className = 'src-views-parts-styles---status---3MwYA src-views-parts-styles---status--error---5g_J8';
 			formStatus.innerHTML = 'Please choose a category.';
+			return;
+		}
+		if (payload.email == "") {
+			formStatus.className = 'src-views-parts-styles---status---3MwYA src-views-parts-styles---status--error---5g_J8';
+			formStatus.innerHTML = 'Please enter an email address.';
 			return;
 		}
 		if (payload.message == "") {

@@ -15,8 +15,8 @@ function send_email($fields)
   }
   $content .= '</table><br/>DPL MOTORS - Parts Form';
 
-  //return mail('service@dplmotors.com.au', $subject, $content, $headers);
-  return mail('websites@alexanderrafferty.com', $subject, $content, $headers);
+  return mail('service@dplmotors.com.au', $subject, $content, $headers);
+  //return mail('websites@alexanderrafferty.com', $subject, $content, $headers);
 }
 
 function submit() {
