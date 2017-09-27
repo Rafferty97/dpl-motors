@@ -14,10 +14,10 @@
   </div>
   <div class="src-views-footer-styles---contact---72kR5">
     <div class="src-views-theme-components---container---gAeH-">
-      <!--<div class="social-icons">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-      </div>-->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/DPL-Motors-403721846666563"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/dplmotors/"><i class="fa fa-instagram"></i></a>
+      </div>
       <a href="/"><img class="src-views-footer-styles---contact__logo----TpaK" src="/svg/dpl-motors-logo-1KrUtWGe.svg"></a>
       <div class="src-views-footer-styles---contact__info---9fVb4">
         22 Murchison Terrace<br>
